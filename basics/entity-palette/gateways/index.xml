@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gateways on My New Hugo Site</title>
-    <link>http://example.org/basics/entity-palette/gateways/</link>
-    <description>Recent content in Gateways on My New Hugo Site</description>
+    <title>Gateways on LunchBadger Documentation site</title>
+    <link>https://docs.lunchbadger.com/basics/entity-palette/gateways/</link>
+    <description>Recent content in Gateways on LunchBadger Documentation site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 May 2018 18:37:58 +0300</lastBuildDate>
     
-	<atom:link href="http://example.org/basics/entity-palette/gateways/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.lunchbadger.com/basics/entity-palette/gateways/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

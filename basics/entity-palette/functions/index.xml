@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Functions on My New Hugo Site</title>
-    <link>http://example.org/basics/entity-palette/functions/</link>
-    <description>Recent content in Functions on My New Hugo Site</description>
+    <title>Functions on LunchBadger Documentation site</title>
+    <link>https://docs.lunchbadger.com/basics/entity-palette/functions/</link>
+    <description>Recent content in Functions on LunchBadger Documentation site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 May 2018 18:37:43 +0300</lastBuildDate>
     
-	<atom:link href="http://example.org/basics/entity-palette/functions/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.lunchbadger.com/basics/entity-palette/functions/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

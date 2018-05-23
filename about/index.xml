@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About on My New Hugo Site</title>
-    <link>http://example.org/about/</link>
-    <description>Recent content in About on My New Hugo Site</description>
+    <title>About on LunchBadger Documentation site</title>
+    <link>https://docs.lunchbadger.com/about/</link>
+    <description>Recent content in About on LunchBadger Documentation site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 May 2018 15:18:39 +0300</lastBuildDate>
     
-	<atom:link href="http://example.org/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.lunchbadger.com/about/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
