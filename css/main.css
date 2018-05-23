@@ -1,0 +1,10 @@
+#logo img{
+    width: 100%;
+    background-color: red;
+    height: 300px;
+}
+
+body {
+    background: red !important;
+    color: #777;
+}
