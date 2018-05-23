@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/basics/entity-palette/api-endpoints/</loc>
+    <lastmod>2018-05-21T18:38:14+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics/entity-palette/gateways/</loc>
+    <lastmod>2018-05-21T18:37:58+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics/entity-palette/data-sources/</loc>
+    <lastmod>2018-05-21T18:37:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics/entity-palette/functions/</loc>
+    <lastmod>2018-05-21T18:37:43+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics/entity-palette/models/</loc>
+    <lastmod>2018-05-21T18:37:43+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics/canvas/</loc>
+    <lastmod>2018-05-21T18:25:07+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics/entity-palette/</loc>
+    <lastmod>2018-05-21T18:24:24+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/basics/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/demo/</loc>
+    <lastmod>2018-05-21T18:13:35+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/about/</loc>
+    <lastmod>2018-05-18T15:18:39+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2018-05-18T15:16:56+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

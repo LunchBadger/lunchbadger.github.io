@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>HOME :: My New Hugo Site</title>
+    <title>Gateways :: My New Hugo Site</title>
     
     
     <link href="/css/nucleus.css?1527089542" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/basics/entity-palette/gateways/">
     <nav id="sidebar" class="">
 
 
@@ -83,7 +83,7 @@
   
     
     <li data-nav-id="/basics/" title="Basics" class="dd-item 
-        
+        parent
         
         
         ">
@@ -134,7 +134,7 @@
   
     
     <li data-nav-id="/basics/entity-palette/" title="Entity Palette" class="dd-item 
-        
+        parent
         
         
         ">
@@ -185,8 +185,8 @@
   
     
     <li data-nav-id="/basics/entity-palette/gateways/" title="Gateways" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/basics/entity-palette/gateways/">
@@ -355,45 +355,110 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>HOME</a> > <a href='/basics/'>Basics</a> > <a href='/basics/entity-palette/'>Entity Palette</a> > Gateways
+          
+         
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#accessing-gateway-instances">Accessing Gateway Instances</a></li>
+<li><a href="#consumer-management">Consumer Management</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
 
         
         <div id="body-inner">
           
+            <h1>Gateways</h1>
+          
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
-</span>
-
- 
 
 
-<h2 id="lunchbadger-documentation">LunchBadger Documentation</h2>
 
-<p>Welcome to LunchBadger! Documentation for LunchBadger is provided on [name platform or how it is written. Ex. “written in Markdown”] or sign up for a private demo.</p>
+<p>Clicking this icon creates a new Gateway Entity on the canvas with a corresponding Gateway Deployment running in Kubernetes.</p>
 
-<h3 id="open-source-technology-used-in-lunchbadger">Open Source Technology Used in LunchBadger</h3>
+<p>Example:</p>
 
-<p>LunchBadger Canvas Objects are wired into elements of open source software.  Source-level access to these components provides opportunities in portability and environment-specific testing.  Here are some projects used behind the scenes and integrated into LunchBadger:</p>
+<p>Each Gateway consists of one or more Pipelines.  Model, Service Endpoint, and Function Entities can all be connected to the left-hand side of a Pipeline.  API Endpoint Entities connect to the right-hand side of a Pipeline.</p>
 
-<ul>
-<li>Express Gateway - Provides advanced gateway features using Service Endpoint, Gateway, and API Endpoint Objects.</li>
-<li>Loopback - Provides features of Data Source and Model Objects.</li>
-<li>Kubernetes - Provides advanced container orchestration.</li>
-<li>Serverless - Acts as an adapter for Function-as-a-Service (FaaS) platforms.</li>
-<li>Kubeless - A FaaS solution that&rsquo;s native to Kubernetes.  This project powers LunchBadger&rsquo;s out-of-the-box serverless platform.</li>
-</ul>
+<p>Pipelines contain a list of Policies.  Policies contain a list of condition-action pairs.</p>
 
-<h4 id="interested-in-our-open-source-project-express-gateway">Interested in our open source project, Express Gateway?</h4>
+<p>Example:</p>
 
-<p>If you’d like to contribute, please see our Github website repo or you can join our Community on Gitter. [Commercial Support options are also available for Express Gateway. ] [ Link to support page when ready]</p>
+<p>More details on available conditions and policies can be found in the Express Gateway Documentation.</p>
 
-<h3 id="need-support">Need Support?</h3>
+<h2 id="accessing-gateway-instances">Accessing Gateway Instances</h2>
 
-<p>Now that you&rsquo;re armed with the basics of how to use LunchBadger, have fun!  Feel free to play around with Entities on the Canvas and direct any questions to your LunchBadger Support Team at hello@lunchbadger.com.</p>
+<p>All gateways will be accessible via the following domain name pattern:</p>
+
+<p>http://{gateway-name}-{user-id}-dev.lunchbadger.io</p>
+
+<p>For example, if your gateway is named &ldquo;Gateway&rdquo; and your User ID is &ldquo;999&rdquo;, your gateway will be accessible at:</p>
+
+<p><a href="http://gateway-999-dev.lunchbadger.io">http://gateway-999-dev.lunchbadger.io</a></p>
+
+<h2 id="consumer-management">Consumer Management</h2>
+
+<p>Note: This feature is currently on staging for testing and will be in production soon.</p>
+
+<p>All Gateway Entities contain an icon for accessing Consumer Management.</p>
+
+
+<footer class=" footline" >
 	
-  
+</footer>
+
         
         </div> 
         
@@ -425,8 +490,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -442,6 +505,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -459,6 +525,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -473,6 +540,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -490,21 +560,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -522,21 +577,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -545,12 +587,6 @@
                     
                     
 
-                    
-            
-        
-                    
-            
-        
                     
             
         
@@ -589,13 +625,53 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
         
         
 
 
         
+            <a class="nav nav-prev" href="/basics/entity-palette/api-endpoints/" title="API Endpoints"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/basics/entity-palette/data-sources/" title="Data Sources" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -633,4 +709,3 @@
 </script>
   </body>
 </html>
-
