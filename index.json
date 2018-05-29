@@ -1,5 +1,12 @@
 [
 {
+	"uri": "https://docs.lunchbadger.com/basics/git-access/",
+	"title": "Git Access",
+	"tags": [],
+	"description": "",
+	"content": "LunchBadger provide 2 GIT repositories containing your code. First is the repo for code containing all models. git clone git@git.lunchbadger.com:customer-{your user id}/dev.git The Second contains code of functions git clone git@git.lunchbadger.com:customer-{your user id}/functions.git\nTo access the repos you need to upload your public SSH key first. Press setting cog icon in the top right corner of the App.\nYou should see settings page; scroll down to see: Note the git URL is shown in Access via Git section\nPress + icon to add new SSH key To copy your public SSH key into clipboard use\npbcopy \u0026lt; ~/.ssh/id_rsa.pub  Paste content into Key field and add some label to identify the key in future and press the Uploadbutton\nnow just git clone ...\n"
+},
+{
 	"uri": "https://docs.lunchbadger.com/basics/entity-palette/api-endpoints/",
 	"title": "API Endpoints",
 	"tags": [],
@@ -25,21 +32,21 @@
 	"title": "Functions",
 	"tags": [],
 	"description": "",
-	"content": "Function Entities A function entity represents a serverless function that runs in your Kubernetes cluster. LunchBadger includes a built-in editor.\nExample:\n"
+	"content": "Function Entities A function entity represents a serverless function that runs in your Kubernetes cluster. LunchBadger includes a built-in editor.\nDuring beta, functions can be created in Node.JS 6 and Python 2.7\nExample: for Node.JS version function editor will look like\nhandler.js is the file with main entry point. you can create another files and reference them\npackage.json contains node.js package dependencies. LunchBadger will install them during function launch.\nCode is stored in git repo. See Git Access for details.\n"
 },
 {
 	"uri": "https://docs.lunchbadger.com/basics/entity-palette/models/",
 	"title": "Models",
 	"tags": [],
 	"description": "",
-	"content": "Model Entity represent a visual interface on top of a Loopback Model. Here, you can add properties you\u0026rsquo;d like to expose from your Data Source through your API Endpoint.\nExample:\n"
+	"content": " Model Entity represent a visual interface on top of a Loopback Model. Here, you can add properties you\u0026rsquo;d like to expose from your Data Source through your API Endpoint.\nYou can define properties of the model directly in the Model box on Canvas. Press Quick Edit button on the model to enter this mode. Or use full version of editor with access to Loopback Model code Publishing model Once model connected to a datasource it will automatically generate Swagger\\OpenAPIv2 spec and corresponding fully functional endpoints.\nThe url to access available in the Settings menu Visit the .../explorer to try out API "
 },
 {
 	"uri": "https://docs.lunchbadger.com/basics/canvas/",
 	"title": "Canvas",
 	"tags": [],
 	"description": "",
-	"content": " The LunchBadger platform Canvas is a single pane of glass where you can design, build and create your microservices and APIs.\n TODO: INSERT BIG CANVAS IMAGE The Canvas is divided into the following columns: Backend: TODO: Describe Private: TODO: Describe Gateway: TODO: Describe Public: TODO: Describe From here you will navigate to the Entity Palette on the left to choose which Entities you would like to add to the Canvas.\n\u0026lt;\u0026mdash; Each of these icons need to be explained.\n"
+	"content": " The LunchBadger platform Canvas is a single pane of glass where you can design, build and create your microservices and APIs.\n The Canvas is divided into the following columns: Entity Palette Left most Menu. This is the toolbox for creation all LunchBadger Entities More Details: Entity Palette\nBackend: TODO: why name is backend instead of Data Sources Shows all Data Sources available to Models. You can define database connection details for your Models\nPrivate: The section contain all models, service endpoints and functions in your system. They are not exposed publically, but can communicate with each other. In LunchBadger communication with external services is done through the Gateway\nGateway: Hosted Express-Gateway that provides routing, authentication, authorization, rate-limiting etc. for private endpoints More details about Gateways\nPublic: A section for Api Endpoints. They define how incoming(ingress) traffic is routed to the Gateways\n"
 },
 {
 	"uri": "https://docs.lunchbadger.com/basics/entity-palette/",

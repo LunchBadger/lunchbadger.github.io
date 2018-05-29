@@ -14,11 +14,12 @@
     --MENU-SEARCH-BG-color:#c4eff8; /* Search field background color (by default borders + icons) */
     --MENU-SEARCH-BOX-color: #33a1ff; /* Override search field border color */
     --MENU-SEARCH-BOX-ICONS-color: black; /* Override search field icons color */
+    --MENU-SEARCH-BOX-PLACEHOLDER-color: black; /* Override search field icons color */
 
     --MENU-SECTIONS-ACTIVE-BG-color:white; /* Background color of the active section and its childs */
     --MENU-SECTIONS-BG-color:#c4eff8; /* Background color of other sections */
     --MENU-SECTIONS-LINK-color: #4a4a4a; /* Color of links in menu */
-    --MENU-SECTIONS-LINK-HOVER-color: #e6e6e6;  /* Color of links in menu, when hovered */
+    --MENU-SECTIONS-LINK-HOVER-color: #0c6c7b;  /* Color of links in menu, when hovered */
     --MENU-SECTION-ACTIVE-CATEGORY-color: #777; /* Color of active category text */
     --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #fff; /* Color of background for the active category (only) */
 
@@ -85,6 +86,12 @@ a:hover {
 #sidebar .searchbox * {
     color: var(--MENU-SEARCH-BOX-ICONS-color);
 }
+.searchbox input::placeholder {
+    color: var(--MENU-SEARCH-BOX-PLACEHOLDER-color);
+}
+.searchbox input:-ms-input-placeholder {
+    color: var(--MENU-SEARCH-BOX-PLACEHOLDER-color);
+} 
 
 #sidebar a {
     color: var(--MENU-SECTIONS-LINK-color);

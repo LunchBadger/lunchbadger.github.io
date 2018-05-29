@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Categories :: LunchBadger Documentation site</title>
+    <title>Git Access :: LunchBadger Documentation site</title>
     
     
     <link href="/css/nucleus.css?1527599312" rel="stylesheet">
@@ -35,7 +35,7 @@
     
 <link rel="stylesheet" id="google_fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,latin-ext" type="text/css" media="all">
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/basics/git-access/">
     <nav id="sidebar" class="">
 
 
@@ -84,7 +84,7 @@
   
     
     <li data-nav-id="/basics/" title="Basics" class="dd-item 
-        
+        parent
         
         
         ">
@@ -111,8 +111,8 @@
   
     
     <li data-nav-id="/basics/git-access/" title="Git Access" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/basics/git-access/">
@@ -400,7 +400,19 @@ Link and make it BIG
                     
           
           
-            Categories
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>HOME</a> > <a href='/basics/'>Basics</a> > Git Access
+          
+         
+          
+         
           
            
                   </span>
@@ -420,12 +432,36 @@ Link and make it BIG
         
         <div id="body-inner">
           
-            <h1>Categories</h1>
+            <h1>Git Access</h1>
           
 
         
 
 
+<p>LunchBadger provide 2 GIT repositories containing your code.
+First is the repo for code containing all models.
+<code>git clone git@git.lunchbadger.com:customer-{your user id}/dev.git</code>
+The Second contains code of functions
+<code>git clone git@git.lunchbadger.com:customer-{your user id}/functions.git</code></p>
+
+<p>To access the repos you need to upload your public SSH key first.
+Press setting cog icon in the top right corner of the App.</p>
+
+<p>You should see settings page; scroll down to see:
+<img src="/images/settings_ssh.png" alt="SSH settings" />
+Note the git URL is shown in <code>Access via Git</code> section</p>
+
+<p>Press <code>+</code> icon to add new SSH key
+<img src="/images/settings_ssh_add.png" alt="SSH settings" /></p>
+
+<p>To copy your <code>public</code> SSH key into clipboard use</p>
+
+<pre><code>pbcopy &lt; ~/.ssh/id_rsa.pub
+</code></pre>
+
+<p>Paste content into <code>Key</code> field and add some label to identify the key in future and press the <code>Upload</code>button</p>
+
+<p>now just <code>git clone ...</code></p>
 
 
 <footer class=" footline" >
@@ -463,8 +499,6 @@ Link and make it BIG
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -480,6 +514,26 @@ Link and make it BIG
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -502,42 +556,10 @@ Link and make it BIG
 
                     
                     
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                         
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -603,6 +625,22 @@ Link and make it BIG
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -648,8 +686,10 @@ Link and make it BIG
 
 
         
+            <a class="nav nav-prev" href="/basics/" title="Basics"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/basics/" title="Basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/basics/canvas/" title="Canvas" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
