@@ -1,31 +1,52 @@
 [
 {
+	"uri": "https://docs.lunchbadger.com/about/",
+	"title": "About",
+	"tags": [],
+	"description": "",
+	"content": " What is LunchBadger? LunchBadger is a microservices platform that developers and devops engineers can use to build microservices, deploy them to any cloud, and expose them as APIs for consumption.\nWhy would I want to use LunchBadger? Time. You\u0026rsquo;ll save massive amounts of time trying to attain the benefits of a microservices architecture. LunchBadger provides the following to repeatedly save you time:\n best practices for microservices built into the tool code scaffolding and built in boilerplates automated real time deployment to the cloud(s) of your choice visual orchestration and wiring of microservices to an API gateway, data sources, and more  How does LunchBadger Work? LunchBadger is driven by a GUI known as the [Canvas]. The Canvas guides user in the process of building, deploying, and managing microservices and exposing them as APIs.\nLunchBadger utilizes the best of breed open source projects for easy adoption, constant innovation and specialization of what each component brings to putting together a holistic microservices platform.\nSource-level access to these components provides opportunities in portability and environment-specific testing. Here are the main projects used behind the scenes and integrated into LunchBadger:\n Express Gateway - an API gateway to expose microservices by defining them as service endpoints and exposing them as API endpoints externally LoopBackJS - a Node.js based framework that lets you create microservices using a model driven approach Serverless - a cloud agnostic framework that Acts as an adapter to serverless (a.k.a Function-as-a-Service (FaaS)) platforms. Kubeless - A Kubernetes native serverless engine that allows you to write functions in many supported languages Kubernetes - a container orchestrator that runs in any cloud that deploys microservices as they are built in LunchBadger ReactJS - a GUI framework that allows you to extend and build on top of LunchBadger\u0026rsquo;s visual interface  Interested in our open source project, Express Gateway? If you’d like to contribute, please see our Github website repo or you can join our Community on Gitter. [Commercial Support options are also available for Express Gateway. ] [ Link to support page when ready]\nNeed Support? Now that you\u0026rsquo;re armed with the basics of how to use LunchBadger, have fun! Feel free to play around with Entities on the Canvas and direct any questions to your LunchBadger Support Team at hello@lunchbadger.com.\n"
+},
+{
+	"uri": "https://docs.lunchbadger.com/basics/entity-palette/connectors/",
+	"title": "Connectors",
+	"tags": [],
+	"description": "",
+	"content": "Connectors are prebuilt libraries that allow you to utlize a wide array of popular data sources and services. At this time, Connectors can be directly utilzed by Models only by connecting the Connector port to the left Model port.\nEach connector entity will come with its own set of properties specific for that type of connection.\nConnectors in LunchBadger are based on LoopBack data sources and their corresponding connectors\n LunchBadger comes with the following connectors:\n Memory REST SOAP MongoDB Redis MySQL PostgreSQL Etherum Salesforce Triton Object Storage  LunchBadger provides a graphical interface for the LoopBack based connectors listed above. Any LoopBack connector can be utilized by LunchBadger.\n "
+},
+{
+	"uri": "https://docs.lunchbadger.com/basics/canvas/",
+	"title": "Canvas",
+	"tags": [],
+	"description": "",
+	"content": " The LunchBadger platform Canvas is a single pane of glass where you can design, build and create your microservices and APIs.\n The Canvas is broken up into a few easy parts to understand:\n the entity palettte quadrants panels  Entity Palette The left most toolbar is called the Entity Palette. Each icon in the palette represents a different entity that you can create. The entity palette is divided up into different entity types.\nSome entities are used when you are developing your microservcies and integrating to existing data and application. Others are used when you want to expose microservices as APIs and secure them through an API gateway. More Details: Entity Palette\nQuadrants Quadrants represent different tiers within your application. They are designed to help you logically classify the different parts of your application in a microservices architecture.\nBackend The backend quadrant represents where you data and services exist and or persisted. Microservices can be built on top of existing legacy applications and or data.\nThere\u0026rsquo;s no need to throw away your old applications as you move into a microservices architecture. LunchBadger has tooling to help you create a new layer of microservices on top of your old applications. This will allow you to build entirely new microservices alongside microservices that sit as a layer on top of legacy.\n LunchBadger utilizes the same tooling to connect to new data sources where you want to persist data utilized with new microserivces.\nExample:\n You have data in MySQL that exists as rows and tables and you want to create a set of microservices that represent that data. A MySQL connector can be created in the backend quadrant and represents a connection to MySQL as a legacy data source.\n Example:\n You are creating a new microservice that handles payments. The microservices requires each payment performed to be recorded with transaction details as a JSON object. A MongoDB connector can be created in the backend quadrant that represents the connection to new MongoDB instance that will store the new transaction data.\n Private The private quadrant represents all business functionality within your application. This quadrant contains all models, service endpoints and functions in your system. They are not exposed publically, but can communicate with each other. In LunchBadger communication with external services is done through the Gateway\nExample:\n You have a legacy SOAP service that represents a customer. The customer SOAP object has 100 properties. You want to surface a new credit application API backed by a model based microservcie that only requires 10 of the 100 fields that are minimally needed for a new customer applying for credit. A customer microsevice model can be created with the 10 fields that are required connecte to an instance of the SOAP connector in the backend quadrant pointed to the legacy SOAP service.\n Example:\n You have a function that calculates\n Gateway Hosted Express-Gateway that provides routing, authentication, authorization, rate-limiting etc. for private endpoints More details about Gateways\nPublic A section for Api Endpoints. They define how incoming(ingress) traffic is routed to the Gateways\n"
+},
+{
+	"uri": "https://docs.lunchbadger.com/basics/",
+	"title": "Basics",
+	"tags": [],
+	"description": "",
+	"content": " Basics Learn the basics to understand key concepts to get started and be productive building microservices and APIs.\n"
+},
+{
+	"uri": "https://docs.lunchbadger.com/basics/entity-palette/models/",
+	"title": "Models",
+	"tags": [],
+	"description": "",
+	"content": " The Model Entity is a graphical representation of a LoopBack Model. Models can have properties you\u0026rsquo;d like to expose from data sources and services through [Connectors].\nYou can define properties of the model directly in the Model box on Canvas. Press Quick Edit button on the model to enter this mode. Or use full version of editor with access to Model code Publishing model Once model connected to a datasource it will automatically generate Swagger\\OpenAPIv2 spec and corresponding fully functional endpoints.\nThe url to access available in the Settings menu Visit the .../explorer to try out API "
+},
+{
+	"uri": "https://docs.lunchbadger.com/basics/entity-palette/",
+	"title": "Entity Palette",
+	"tags": [],
+	"description": "",
+	"content": " The entity palette let\u0026rsquo;s you create new entities onto the Canvas. Entities on the palettte are divided up into different types.\nTypes:\n Microservice Composition API Management  Microservice Composition Entities If you don\u0026rsquo;t already have backend microservices, you\u0026rsquo;ll want to start here. The entities here let you build new microserivces with existing data and legacy applications OR start from scratch.\nComposition entities include:\n Connectors - let\u0026rsquo;s you connect to data sources and existing services so that you can take advantage of them in a microservice built with a model Models - a prebuilt JavaScript function that represents an object with properties that can utilize Connectors Functions - a serverelss function that can be written in Node.js, Go, Python, Ruby and other supported languages.  Models can be connected to data sources and services through a Connector.\n API Management Entities API Management entities include:\n Gateways - a microgateway that secures and manages your microservices and exposes them as consumable APIs Service Endpoints - any internal endpoint that the API Gateway proxies in front of API Endpoints - externalized endpoints that are exposed by the API Gateway to be consumed as an API by a client  "
+},
+{
 	"uri": "https://docs.lunchbadger.com/basics/git-access/",
 	"title": "Git Access",
 	"tags": [],
 	"description": "",
 	"content": "LunchBadger provide 2 GIT repositories containing your code. First is the repo for code containing all models. git clone git@git.lunchbadger.com:customer-{your user id}/dev.git The Second contains code of functions git clone git@git.lunchbadger.com:customer-{your user id}/functions.git\nTo access the repos you need to upload your public SSH key first. Press setting cog icon in the top right corner of the App.\nYou should see settings page; scroll down to see: Note the git URL is shown in Access via Git section\nPress + icon to add new SSH key To copy your public SSH key into clipboard use\npbcopy \u0026lt; ~/.ssh/id_rsa.pub  Paste content into Key field and add some label to identify the key in future and press the Uploadbutton\nnow just git clone ...\n"
-},
-{
-	"uri": "https://docs.lunchbadger.com/basics/entity-palette/api-endpoints/",
-	"title": "API Endpoints",
-	"tags": [],
-	"description": "",
-	"content": "Used as Express Gateway API Endpoints for clients connecting to Gateway Entities.\n"
-},
-{
-	"uri": "https://docs.lunchbadger.com/basics/entity-palette/gateways/",
-	"title": "Gateways",
-	"tags": [],
-	"description": "",
-	"content": " Clicking this icon creates a new Gateway Entity on the canvas with a corresponding Gateway Deployment running in Kubernetes.\nExample:\nEach Gateway consists of one or more Pipelines. Model, Service Endpoint, and Function Entities can all be connected to the left-hand side of a Pipeline. API Endpoint Entities connect to the right-hand side of a Pipeline.\nPipelines contain a list of Policies. Policies contain a list of condition-action pairs.\nExample:\nMore details on available conditions and policies can be found in the Express Gateway Documentation.\nAccessing Gateway Instances All gateways will be accessible via the following domain name pattern:\nhttp://{gateway-name}-{user-id}-dev.lunchbadger.io\nFor example, if your gateway is named \u0026ldquo;Gateway\u0026rdquo; and your User ID is \u0026ldquo;999\u0026rdquo;, your gateway will be accessible at:\nhttp://gateway-999-dev.lunchbadger.io\nConsumer Management All Gateway Entities contain an icon for accessing Consumer Management. Create User\\Apps\\Scopes buy pressing plus + icon Create credentials by clicking on row with user or app Please refer to Express Gateway Consumer Management for more information\n"
-},
-{
-	"uri": "https://docs.lunchbadger.com/basics/entity-palette/data-sources/",
-	"title": "Data Sources",
-	"tags": [],
-	"description": "",
-	"content": "Each data source entity will come with its own set of properties specific for that type of connection.\nThese entities correspond with a matching data source connector that can be used with your underlying Loopback project.\n Memory REST SOAP MongoDB Redis MySQL PostgreSQL Etherum Salesforce Triton Object Storage  "
 },
 {
 	"uri": "https://docs.lunchbadger.com/basics/entity-palette/functions/",
@@ -35,34 +56,6 @@
 	"content": "Function Entities A function entity represents a serverless function that runs in your Kubernetes cluster. LunchBadger includes a built-in editor.\nDuring beta, functions can be created in Node.JS 6 and Python 2.7\nExample: for Node.JS version function editor will look like\nhandler.js is the file with main entry point. you can create another files and reference them\npackage.json contains node.js package dependencies. LunchBadger will install them during function launch.\nCode is stored in git repo. See Git Access for details.\n"
 },
 {
-	"uri": "https://docs.lunchbadger.com/basics/entity-palette/models/",
-	"title": "Models",
-	"tags": [],
-	"description": "",
-	"content": " Model Entity represent a visual interface on top of a Loopback Model. Here, you can add properties you\u0026rsquo;d like to expose from your Data Source through your API Endpoint.\nYou can define properties of the model directly in the Model box on Canvas. Press Quick Edit button on the model to enter this mode. Or use full version of editor with access to Loopback Model code Publishing model Once model connected to a datasource it will automatically generate Swagger\\OpenAPIv2 spec and corresponding fully functional endpoints.\nThe url to access available in the Settings menu Visit the .../explorer to try out API "
-},
-{
-	"uri": "https://docs.lunchbadger.com/basics/canvas/",
-	"title": "Canvas",
-	"tags": [],
-	"description": "",
-	"content": " The LunchBadger platform Canvas is a single pane of glass where you can design, build and create your microservices and APIs.\n The Canvas is divided into the following columns: Entity Palette Left most Menu. This is the toolbox for creation all LunchBadger Entities More Details: Entity Palette\nBackend: TODO: why name is backend instead of Data Sources Shows all Data Sources available to Models. You can define database connection details for your Models\nPrivate: The section contain all models, service endpoints and functions in your system. They are not exposed publically, but can communicate with each other. In LunchBadger communication with external services is done through the Gateway\nGateway: Hosted Express-Gateway that provides routing, authentication, authorization, rate-limiting etc. for private endpoints More details about Gateways\nPublic: A section for Api Endpoints. They define how incoming(ingress) traffic is routed to the Gateways\n"
-},
-{
-	"uri": "https://docs.lunchbadger.com/basics/entity-palette/",
-	"title": "Entity Palette",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://docs.lunchbadger.com/basics/",
-	"title": "Basics",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://docs.lunchbadger.com/demo/",
 	"title": "Demo",
 	"tags": [],
@@ -70,18 +63,32 @@
 	"content": ""
 },
 {
-	"uri": "https://docs.lunchbadger.com/about/",
-	"title": "About",
+	"uri": "https://docs.lunchbadger.com/basics/entity-palette/gateways/",
+	"title": "Gateways",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " Clicking this icon creates a new Gateway Entity on the canvas with a corresponding Gateway Deployment running in Kubernetes.\nExample:\nEach Gateway consists of one or more Pipelines. Model, Service Endpoint, and Function Entities can all be connected to the left-hand side of a Pipeline. API Endpoint Entities connect to the right-hand side of a Pipeline.\nPipelines contain a list of Policies. Policies contain a list of condition-action pairs.\nExample:\nMore details on available conditions and policies can be found in the Express Gateway Documentation.\nAccessing Gateway Instances All gateways will be accessible via the following domain name pattern:\nhttp://{gateway-name}-{user-id}-dev.lunchbadger.io\nFor example, if your gateway is named \u0026ldquo;Gateway\u0026rdquo; and your User ID is \u0026ldquo;999\u0026rdquo;, your gateway will be accessible at:\nhttp://gateway-999-dev.lunchbadger.io\nConsumer Management All Gateway Entities contain an icon for accessing Consumer Management. Create User\\Apps\\Scopes buy pressing plus + icon Create credentials by clicking on row with user or app Please refer to Express Gateway Consumer Management for more information\n"
+},
+{
+	"uri": "https://docs.lunchbadger.com/basics/entity-palette/service-endpoints/",
+	"title": "Service Endpoints",
+	"tags": [],
+	"description": "",
+	"content": "Used as Express Gateway API Endpoints for clients connecting to Gateway Entities.\n"
+},
+{
+	"uri": "https://docs.lunchbadger.com/basics/entity-palette/api-endpoints/",
+	"title": "API Endpoints",
+	"tags": [],
+	"description": "",
+	"content": "Used as Express Gateway API Endpoints for clients connecting to Gateway Entities.\n"
 },
 {
 	"uri": "https://docs.lunchbadger.com/",
 	"title": "HOME",
 	"tags": [],
 	"description": "",
-	"content": " LunchBadger Documentation Welcome to LunchBadger! Documentation for LunchBadger is provided on [name platform or how it is written. Ex. “written in Markdown”] or sign up for a private demo.\nOpen Source Technology Used in LunchBadger LunchBadger Canvas Objects are wired into elements of open source software. Source-level access to these components provides opportunities in portability and environment-specific testing. Here are some projects used behind the scenes and integrated into LunchBadger:\n Express Gateway - Provides advanced gateway features using Service Endpoint, Gateway, and API Endpoint Objects. Loopback - Provides features of Data Source and Model Objects. Kubernetes - Provides advanced container orchestration. Serverless - Acts as an adapter for Function-as-a-Service (FaaS) platforms. Kubeless - A FaaS solution that\u0026rsquo;s native to Kubernetes. This project powers LunchBadger\u0026rsquo;s out-of-the-box serverless platform.  Interested in our open source project, Express Gateway? If you’d like to contribute, please see our Github website repo or you can join our Community on Gitter. [Commercial Support options are also available for Express Gateway. ] [ Link to support page when ready]\nNeed Support? Now that you\u0026rsquo;re armed with the basics of how to use LunchBadger, have fun! Feel free to play around with Entities on the Canvas and direct any questions to your LunchBadger Support Team at hello@lunchbadger.com.\n"
+	"content": " Overview Welcome to LunchBadger Documentation! LunchBadger takes the idea behind microserivces and APIs and makes it concrete and real.\nWith LunchBadger it\u0026rsquo;s easy to\u0026hellip;\n develop microservices - starting with existing applications and data or with something completely greenfield. build and deploy your microservices into the cloud in real time expose your microservices as APIs consumable by other applications or clients internally or externally  If you haven\u0026rsquo;t already - please check out the LunchBadger Quickstart to see how you can get up and running with microservices and APIs in no time.\n"
 },
 {
 	"uri": "https://docs.lunchbadger.com/categories/",
