@@ -12,19 +12,19 @@
     <title>Models :: LunchBadger Documentation site</title>
     
     
-    <link href="/css/nucleus.css?1528314553" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1528314553" rel="stylesheet">
-    <link href="/css/hybrid.css?1528314553" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1528314553" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1528314553" rel="stylesheet">
-    <link href="/css/auto-complete.css?1528314553" rel="stylesheet">
-    <link href="/css/theme.css?1528314553" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1528314553" rel="stylesheet">
+    <link href="/css/nucleus.css?1528400601" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1528400601" rel="stylesheet">
+    <link href="/css/hybrid.css?1528400601" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1528400601" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1528400601" rel="stylesheet">
+    <link href="/css/auto-complete.css?1528400601" rel="stylesheet">
+    <link href="/css/theme.css?1528400601" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1528400601" rel="stylesheet">
     
-      <link href="/css/theme-lb.css?1528314553" rel="stylesheet">
+      <link href="/css/theme-lb.css?1528400601" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1528314553"></script>
+    <script src="/js/jquery-2.x.min.js?1528400601"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -60,14 +60,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1528314553"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1528314553"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1528400601"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1528400601"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1528314553"></script>
+<script type="text/javascript" src="/js/search.js?1528400601"></script>
 
     
   </div>
@@ -454,10 +454,9 @@ Link and make it BIG
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li><a href="#publishing-model">Publishing model</a></li>
-</ul></li>
+<li><a href="#quick-edit-a-model">Quick Edit a Model</a></li>
+<li><a href="#model-details">Model Details</a></li>
+<li><a href="#auto-rest-generation">Auto REST Generation</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -480,23 +479,64 @@ Link and make it BIG
 
 
 
-<p>The Model Entity is a graphical representation of a <a href="https://loopback.io/doc/en/lb3/Defining-models.html">LoopBack Model</a>.  Models can have properties you&rsquo;d like to expose from data sources and services through [Connectors].</p>
+<p>To create a Model click on the model icon on the entity palette: 
+<figure>
+    
+        <img src="/images/icon_model_dark.svg" width="50" height="50" />
+    
+    
+</figure>
+</p>
 
-<p>You can define properties of the model directly in the Model box on Canvas.
-Press <code>Quick Edit</code> button on the model to enter this mode.
-<img src="/images/model_qedit.png" alt="Model" /></p>
+<p>The Model Entity is a graphical representation of a <a href="https://loopback.io/doc/en/lb3/Defining-models.html">LoopBack Model</a>.  Models can have properties you&rsquo;d like to expose from data sources and services through <a href="/basics/entity-palette-connectors">Connectors</a>.</p>
 
-<p>Or use full version of editor with access to Model code
-<img src="/images/model.png" alt="Model" /></p>
+<div class="notices info" ><p>If you&rsquo;re familiar with the <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Model-View-Controller pattern</a>, Models in LunchBadger are exactly the <code>M</code> in <code>MVC</code>. For folks who are more backend, a model is very much like a <a href="https://en.wikipedia.org/wiki/Data_access_object">data access object</a>.</p>
+</div>
 
-<h3 id="publishing-model">Publishing model</h3>
 
-<p>Once model connected to a datasource it will automatically generate Swagger\OpenAPIv2 spec and corresponding fully functional endpoints.</p>
+<p>All Models are Node.js JavaScript functions. Models have the following basic built in functionality:</p>
 
-<p>The url to access available in the Settings menu
+<ul>
+<li>properties</li>
+<li>read and or write data through <a href="/basics/connectors">Connectors</a>.</li>
+<li>scaffold a REST representation dynamically based on its definition</li>
+</ul>
+
+<h2 id="quick-edit-a-model">Quick Edit a Model</h2>
+
+<p>After creating a Model in the <a href="/basics/canvas/#private">private quadrant</a>, you&rsquo;ll be ready to enter properties with a property name and property type while in <strong>Quick Edit</strong> mode.
+To enter quick edit mode for a Model, click the pencil <strong>Quick Edit</strong> icon on the Model, by hovering over its title bar to display the context menu.</p>
+
+<p><img src="/images/model_qedit_icon.png" alt="Model Quick Edit Icon" /></p>
+
+<h2 id="model-details">Model Details</h2>
+
+<p>Models have advanced functionality that can be access through its <strong>Details</strong>.  To access a Model&rsquo;s <strong>Details</strong>, hover over the title bar to display the context menuu and chose the ellipses icon.</p>
+
+<p><img src="/images/model_details_icon.png" alt="Model Details Icon" /></p>
+
+<p>Models details expose things like relationships, connector metadata, user defined fields, and other advanced functionality.</p>
+
+<p><img src="/images/model_details.png" alt="Model Details" /></p>
+
+<p>Because Models are really nothing more than JavaScript functions, a code editor is also provided in Model Details to script anything that doesn&rsquo;t have a GUI representation including custom logic.</p>
+
+<p><img src="/images/model_code_editor.png" alt="Model Code Editor" /></p>
+
+<p>LunchBadger provides a GUI experience to help you get started and gives you have complete control once you become a more advanced user. For more information on advanced features and customizing Models programatically through code refer to the <a href="https://loopback.io/doc/en/lb3/Defining-models.html">LoopBack model documentation</a>.</p>
+
+<h2 id="auto-rest-generation">Auto REST Generation</h2>
+
+<p>Once a Model is connected to a Connector it will automatically generate a REST interface and corresponding <a href="https://github.com/OAI/OpenAPI-Specification">Swagger/OpenAPIv2 specification</a> and with fully functional endpoints.</p>
+
+<div class="notices tip" ><p>The REST Generation is not only automatic by dynamically updated as you edit your Model.</p>
+</div>
+
+
+<p>Click on the gear icon in the right hand toolbar to actiave the Settings Panel.
 <img src="/images/settings_lbws_url.png" alt="LBWS urls" /></p>
 
-<p>Visit the <code>.../explorer</code> to try out API
+<p>Visit the URL listed for the API Explorer to try out the REST API.
 <img src="/images/swagger_lbws.png" alt="LBWS urls" /></p>
 
 
@@ -760,20 +800,20 @@ Press <code>Quick Edit</code> button on the model to enter this mode.
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1528314553"></script>
-    <script src="/js/perfect-scrollbar.min.js?1528314553"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1528314553"></script>
-    <script src="/js/jquery.sticky.js?1528314553"></script>
-    <script src="/js/featherlight.min.js?1528314553"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1528314553"></script>
-    <script src="/js/highlight.pack.js?1528314553"></script>
+    <script src="/js/clipboard.min.js?1528400601"></script>
+    <script src="/js/perfect-scrollbar.min.js?1528400601"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1528400601"></script>
+    <script src="/js/jquery.sticky.js?1528400601"></script>
+    <script src="/js/featherlight.min.js?1528400601"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1528400601"></script>
+    <script src="/js/highlight.pack.js?1528400601"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1528314553"></script>
-    <script src="/js/learn.js?1528314553"></script>
-    <script src="/js/hugo-learn.js?1528314553"></script>
+    <script src="/js/modernizr.custom.71422.js?1528400601"></script>
+    <script src="/js/learn.js?1528400601"></script>
+    <script src="/js/hugo-learn.js?1528400601"></script>
 
-    <link href="/mermaid/mermaid.css?1528314553" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1528314553"></script>
+    <link href="/mermaid/mermaid.css?1528400601" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1528400601"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -12,19 +12,19 @@
     <title>Entity Palette :: LunchBadger Documentation site</title>
     
     
-    <link href="/css/nucleus.css?1528314553" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1528314553" rel="stylesheet">
-    <link href="/css/hybrid.css?1528314553" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1528314553" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1528314553" rel="stylesheet">
-    <link href="/css/auto-complete.css?1528314553" rel="stylesheet">
-    <link href="/css/theme.css?1528314553" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1528314553" rel="stylesheet">
+    <link href="/css/nucleus.css?1528400601" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1528400601" rel="stylesheet">
+    <link href="/css/hybrid.css?1528400601" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1528400601" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1528400601" rel="stylesheet">
+    <link href="/css/auto-complete.css?1528400601" rel="stylesheet">
+    <link href="/css/theme.css?1528400601" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1528400601" rel="stylesheet">
     
-      <link href="/css/theme-lb.css?1528314553" rel="stylesheet">
+      <link href="/css/theme-lb.css?1528400601" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1528314553"></script>
+    <script src="/js/jquery-2.x.min.js?1528400601"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -60,14 +60,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1528314553"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1528314553"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1528400601"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1528400601"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1528314553"></script>
+<script type="text/javascript" src="/js/search.js?1528400601"></script>
 
     
   </div>
@@ -448,6 +448,7 @@ Link and make it BIG
 <ul>
 <li>
 <ul>
+<li><a href="#microservice-integration-entities">Microservice Integration Entities</a></li>
 <li><a href="#microservice-composition-entities">Microservice Composition Entities</a></li>
 <li><a href="#api-management-entities">API Management Entities</a></li>
 </ul></li>
@@ -472,40 +473,54 @@ Link and make it BIG
 
 
 
-<p>The entity palette let&rsquo;s you create new entities onto the Canvas.  Entities on the palettte are divided up into different types.</p>
+<p>The entity palette let&rsquo;s you create new entities onto the <a href="/basics/canvas">Canvas</a> by simply clicking on the icon.  Entities are automatically created and placed into their corresponding <a href="/basics/canvas/#quadrants">Quadrants</a>.</p>
 
-<p>Types:</p>
+<p>Entity Types:</p>
 
 <ul>
+<li>Microservice Integration</li>
 <li>Microservice Composition</li>
 <li>API Management</li>
 </ul>
 
+<h2 id="microservice-integration-entities">Microservice Integration Entities</h2>
+
+<p>If you have existing data or services that you want to leverage in your new microservies application, you can use these entities to leverage them.</p>
+
+<p>Integration entities include:</p>
+
+<ul>
+<li><a href="/basics/entity-palette/connectors">Connectors</a> - let&rsquo;s you connect to data sources and existing services so that you can take advantage of them in a microservice built with a model</li>
+</ul>
+
+<div class="notices tip" ><p><a href="/basics/models">Model</a> entities can be connected to data sources and services through a Connector.</p>
+</div>
+
+
 <h2 id="microservice-composition-entities">Microservice Composition Entities</h2>
 
-<p>If you don&rsquo;t already have backend microservices, you&rsquo;ll want to start here. The entities here let you build new microserivces with existing data and legacy applications OR start from scratch.</p>
+<p>Composition entities let you build new microserivces with existing data and legacy applications or start greenfield often utilizing Connectors.</p>
 
 <p>Composition entities include:</p>
 
 <ul>
-<li>Connectors - let&rsquo;s you connect to data sources and existing services so that you can take advantage of them in a microservice built with a model</li>
-<li>Models - a prebuilt JavaScript function that represents an object with properties that can utilize Connectors</li>
-<li>Functions - a serverelss function that can be written in Node.js, Go, Python, Ruby and other supported languages.</li>
+<li><a href="/basics/entity-palette/models">Models</a> - a prebuilt JavaScript function that represents an object with properties that can utilize Connectors</li>
+<li><a href="/basics/entity-palette/functions">Functions</a> - a serverelss function that can be written in Node.js, Go, Python, Ruby and other supported languages.</li>
 </ul>
-
-<div class="notices info" ><p>Models can be connected to data sources and services through a Connector.</p>
-</div>
-
 
 <h2 id="api-management-entities">API Management Entities</h2>
 
 <p>API Management entities include:</p>
 
 <ul>
-<li>Gateways - a microgateway that secures and manages your microservices and exposes them as consumable APIs</li>
-<li>Service Endpoints - any internal endpoint that the API Gateway proxies in front of</li>
-<li>API Endpoints - externalized endpoints that are exposed by the API Gateway to be consumed as an API by a client</li>
+<li><a href="/basics/entity-palette/gateways">Gateways</a> - microgateways that function as an API Gateway that secures and manages your microservices and exposes them as consumable APIs</li>
+<li><a href="/basics/entity-palette/service-endpoints">Service Endpoints</a> - any internal endpoint that a Gateway proxies</li>
+<li><a href="/basics/entity-palette/api-endpoints">API Endpoints</a> - externalized endpoints that are exposed by the API Gateway to be consumed as an API by a client</li>
 </ul>
+
+<div class="notices tip" ><p>Everything proxied by a Gateway is technically considered a Service Endpoint.  A Service Endpoint is really nothing more than a referenced proxied URL. Models and Functions can be proxied by a Gateway and are seen as service endpoints to the Gateway because they automatically have HTTP based URLs assigned to them as microservices.</p>
+</div>
+
 
 
 <footer class=" footline" >
@@ -764,20 +779,20 @@ Link and make it BIG
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1528314553"></script>
-    <script src="/js/perfect-scrollbar.min.js?1528314553"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1528314553"></script>
-    <script src="/js/jquery.sticky.js?1528314553"></script>
-    <script src="/js/featherlight.min.js?1528314553"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1528314553"></script>
-    <script src="/js/highlight.pack.js?1528314553"></script>
+    <script src="/js/clipboard.min.js?1528400601"></script>
+    <script src="/js/perfect-scrollbar.min.js?1528400601"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1528400601"></script>
+    <script src="/js/jquery.sticky.js?1528400601"></script>
+    <script src="/js/featherlight.min.js?1528400601"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1528400601"></script>
+    <script src="/js/highlight.pack.js?1528400601"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1528314553"></script>
-    <script src="/js/learn.js?1528314553"></script>
-    <script src="/js/hugo-learn.js?1528314553"></script>
+    <script src="/js/modernizr.custom.71422.js?1528400601"></script>
+    <script src="/js/learn.js?1528400601"></script>
+    <script src="/js/hugo-learn.js?1528400601"></script>
 
-    <link href="/mermaid/mermaid.css?1528314553" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1528314553"></script>
+    <link href="/mermaid/mermaid.css?1528400601" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1528400601"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
