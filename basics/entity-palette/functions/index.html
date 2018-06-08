@@ -12,19 +12,19 @@
     <title>Functions :: LunchBadger Documentation site</title>
     
     
-    <link href="/css/nucleus.css?1528400601" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1528400601" rel="stylesheet">
-    <link href="/css/hybrid.css?1528400601" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1528400601" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1528400601" rel="stylesheet">
-    <link href="/css/auto-complete.css?1528400601" rel="stylesheet">
-    <link href="/css/theme.css?1528400601" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1528400601" rel="stylesheet">
+    <link href="/css/nucleus.css?1528427808" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1528427808" rel="stylesheet">
+    <link href="/css/hybrid.css?1528427808" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1528427808" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1528427808" rel="stylesheet">
+    <link href="/css/auto-complete.css?1528427808" rel="stylesheet">
+    <link href="/css/theme.css?1528427808" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1528427808" rel="stylesheet">
     
-      <link href="/css/theme-lb.css?1528400601" rel="stylesheet">
+      <link href="/css/theme-lb.css?1528427808" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1528400601"></script>
+    <script src="/js/jquery-2.x.min.js?1528427808"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -60,14 +60,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1528400601"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1528400601"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1528427808"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1528427808"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1528400601"></script>
+<script type="text/javascript" src="/js/search.js?1528427808"></script>
 
     
   </div>
@@ -450,7 +450,14 @@ Link and make it BIG
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#function-details">Function Details</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -468,21 +475,46 @@ Link and make it BIG
         
 
 
-<p>Function Entities
-A function entity represents a serverless function that runs in your Kubernetes cluster.  LunchBadger includes a built-in editor.</p>
 
-<p>During beta, functions can be created in Node.JS 6 and Python 2.7</p>
 
-<p>Example:
-for Node.JS version function editor will look like</p>
+<p>To create a Function click on the function icon on the entity palette: 
+<figure>
+    
+        <img src="/images/icon_function_dark.svg" width="50" height="50" />
+    
+    
+</figure>
+</p>
 
-<p><img src="/images/fn.png" alt="LunchBadger Function" /></p>
+<p>The Function entity represents a serverless function that runs in the <a href="https://kubeless.io">Kubeless</a> serverless engine in your Kubernetes cluster.</p>
 
+<p>Serverless functions are self contained pieces of functionality that run when triggered.</p>
+
+<p>When you create a new Function, you select the supported language to be used within the function and specify a name.  Once you create a function, it is automatically deployed.</p>
+
+<div class="notices info" ><p>What&rsquo;s the difference between Models and Functions?  Both Models and Functions are functions.  Models are Node.js only and have built in capabilites provided by the LoopBack framework. Functions are barebone functions that can be written in a number of supported languages through the Kubeless engine.</p>
+</div>
+
+
+<h2 id="function-details">Function Details</h2>
+
+<p>To enter code into the body of a Function, go to the Function Details by hovering over the title bar on the Function entity and click the ellipses icon on the context menu.</p>
+
+<p><img src="/images/function_details_icon.png" alt="Function Details Icon" /></p>
+
+<p>A code editor similar to the one provided in Model Details will be presented.</p>
+
+<p><img src="/images/function_details.png" alt="Function Details" /></p>
+
+<p>Node.js Example:</p>
+
+<blockquote>
 <p><code>handler.js</code> is the file with main entry point. you can create another files and reference them</p>
 
 <p><code>package.json</code> contains node.js package dependencies. LunchBadger will install them during function launch.</p>
+</blockquote>
 
-<p>Code is stored in git repo. See <a href="/basics/git-access">Git Access</a> for details.</p>
+<p>All LunchBadger Function code is stored in its own git repository. See <a href="/basics/git-access">Git Access</a> for details.</p>
 
 
 <footer class=" footline" >
@@ -745,20 +777,20 @@ for Node.JS version function editor will look like</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1528400601"></script>
-    <script src="/js/perfect-scrollbar.min.js?1528400601"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1528400601"></script>
-    <script src="/js/jquery.sticky.js?1528400601"></script>
-    <script src="/js/featherlight.min.js?1528400601"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1528400601"></script>
-    <script src="/js/highlight.pack.js?1528400601"></script>
+    <script src="/js/clipboard.min.js?1528427808"></script>
+    <script src="/js/perfect-scrollbar.min.js?1528427808"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1528427808"></script>
+    <script src="/js/jquery.sticky.js?1528427808"></script>
+    <script src="/js/featherlight.min.js?1528427808"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1528427808"></script>
+    <script src="/js/highlight.pack.js?1528427808"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1528400601"></script>
-    <script src="/js/learn.js?1528400601"></script>
-    <script src="/js/hugo-learn.js?1528400601"></script>
+    <script src="/js/modernizr.custom.71422.js?1528427808"></script>
+    <script src="/js/learn.js?1528427808"></script>
+    <script src="/js/hugo-learn.js?1528427808"></script>
 
-    <link href="/mermaid/mermaid.css?1528400601" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1528400601"></script>
+    <link href="/mermaid/mermaid.css?1528427808" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1528427808"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
