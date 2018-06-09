@@ -12,19 +12,19 @@
     <title>Service Endpoints :: LunchBadger Documentation site</title>
     
     
-    <link href="/css/nucleus.css?1528529505" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1528529505" rel="stylesheet">
-    <link href="/css/hybrid.css?1528529505" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1528529505" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1528529505" rel="stylesheet">
-    <link href="/css/auto-complete.css?1528529505" rel="stylesheet">
-    <link href="/css/theme.css?1528529505" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1528529505" rel="stylesheet">
+    <link href="/css/nucleus.css?1528533997" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1528533997" rel="stylesheet">
+    <link href="/css/hybrid.css?1528533997" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1528533997" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1528533997" rel="stylesheet">
+    <link href="/css/auto-complete.css?1528533997" rel="stylesheet">
+    <link href="/css/theme.css?1528533997" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1528533997" rel="stylesheet">
     
-      <link href="/css/theme-lb.css?1528529505" rel="stylesheet">
+      <link href="/css/theme-lb.css?1528533997" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1528529505"></script>
+    <script src="/js/jquery-2.x.min.js?1528533997"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -60,14 +60,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1528529505"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1528529505"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1528533997"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1528533997"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1528529505"></script>
+<script type="text/javascript" src="/js/search.js?1528533997"></script>
 
     
   </div>
@@ -255,13 +255,13 @@
  
   
     
-    <li data-nav-id="/basics/entity-palette/gateways/" title="Gateways" class="dd-item 
-        
-        
+    <li data-nav-id="/basics/entity-palette/service-endpoints/" title="Service Endpoints" class="dd-item 
+        parent
+        active
         
         ">
-      <a href="/basics/entity-palette/gateways/">
-          Gateways
+      <a href="/basics/entity-palette/service-endpoints/">
+          Service Endpoints
           
       </a>
       
@@ -279,13 +279,13 @@
  
   
     
-    <li data-nav-id="/basics/entity-palette/service-endpoints/" title="Service Endpoints" class="dd-item 
-        parent
-        active
+    <li data-nav-id="/basics/entity-palette/gateways/" title="Gateways" class="dd-item 
+        
+        
         
         ">
-      <a href="/basics/entity-palette/service-endpoints/">
-          Service Endpoints
+      <a href="/basics/entity-palette/gateways/">
+          Gateways
           
       </a>
       
@@ -468,7 +468,22 @@ Link and make it BIG
         
 
 
-<p>Used as Express Gateway API Endpoints for clients connecting to Gateway Entities.</p>
+<p>To create a Service Endpoint click on the endpoint submenu on the entity palette and choose the service endpoint icon: 
+<figure>
+    
+        <img src="/images/icon_endpoint_dark.svg" width="50" height="50" />
+    
+    
+</figure>
+</p>
+
+<p>The Service Endpoint Entity is a simple generic HTTP based resource with a URL.</p>
+
+<p>Gateways in LunchBadger are Express Gateway instances. A Service Endpoint in Express Gateway is any resource that the gateway proxies in front of.</p>
+
+<div class="notices info" ><p>Models and Functions have HTTP URls pointing to them as HTTP based microservices. When you connect a Model or Function to a Gateway, a service endpoint is declared behind the scenes in Express Gateway to point to the HTTP URL of the Model or Function.</p>
+</div>
+
 
 
 <footer class=" footline" >
@@ -627,22 +642,6 @@ Link and make it BIG
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -670,9 +669,6 @@ Link and make it BIG
                     
                     
 
-                    
-            
-        
                     
             
         
@@ -714,15 +710,34 @@ Link and make it BIG
                     
             
         
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
         
         
 
 
         
-            <a class="nav nav-prev" href="/basics/entity-palette/gateways/" title="Gateways"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/basics/entity-palette/functions/" title="Functions"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/basics/entity-palette/api-endpoints/" title="API Endpoints" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/basics/entity-palette/gateways/" title="Gateways" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -731,20 +746,20 @@ Link and make it BIG
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1528529505"></script>
-    <script src="/js/perfect-scrollbar.min.js?1528529505"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1528529505"></script>
-    <script src="/js/jquery.sticky.js?1528529505"></script>
-    <script src="/js/featherlight.min.js?1528529505"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1528529505"></script>
-    <script src="/js/highlight.pack.js?1528529505"></script>
+    <script src="/js/clipboard.min.js?1528533997"></script>
+    <script src="/js/perfect-scrollbar.min.js?1528533997"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1528533997"></script>
+    <script src="/js/jquery.sticky.js?1528533997"></script>
+    <script src="/js/featherlight.min.js?1528533997"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1528533997"></script>
+    <script src="/js/highlight.pack.js?1528533997"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1528529505"></script>
-    <script src="/js/learn.js?1528529505"></script>
-    <script src="/js/hugo-learn.js?1528529505"></script>
+    <script src="/js/modernizr.custom.71422.js?1528533997"></script>
+    <script src="/js/learn.js?1528533997"></script>
+    <script src="/js/hugo-learn.js?1528533997"></script>
 
-    <link href="/mermaid/mermaid.css?1528529505" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1528529505"></script>
+    <link href="/mermaid/mermaid.css?1528533997" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1528533997"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
