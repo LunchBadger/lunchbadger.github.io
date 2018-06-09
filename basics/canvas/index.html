@@ -12,19 +12,19 @@
     <title>Canvas :: LunchBadger Documentation site</title>
     
     
-    <link href="/css/nucleus.css?1528533997" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1528533997" rel="stylesheet">
-    <link href="/css/hybrid.css?1528533997" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1528533997" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1528533997" rel="stylesheet">
-    <link href="/css/auto-complete.css?1528533997" rel="stylesheet">
-    <link href="/css/theme.css?1528533997" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1528533997" rel="stylesheet">
+    <link href="/css/nucleus.css?1528578690" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1528578690" rel="stylesheet">
+    <link href="/css/hybrid.css?1528578690" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1528578690" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1528578690" rel="stylesheet">
+    <link href="/css/auto-complete.css?1528578690" rel="stylesheet">
+    <link href="/css/theme.css?1528578690" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1528578690" rel="stylesheet">
     
-      <link href="/css/theme-lb.css?1528533997" rel="stylesheet">
+      <link href="/css/theme-lb.css?1528578690" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1528533997"></script>
+    <script src="/js/jquery-2.x.min.js?1528578690"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -60,14 +60,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1528533997"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1528533997"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1528578690"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1528578690"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1528533997"></script>
+<script type="text/javascript" src="/js/search.js?1528578690"></script>
 
     
   </div>
@@ -459,6 +459,7 @@ Link and make it BIG
 <li><a href="#public">Public</a></li>
 </ul></li>
 <li><a href="#panels">Panels</a></li>
+<li><a href="#right-hand-toolbar-icons">Right Hand Toolbar Icons</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -513,41 +514,41 @@ The columns that take up most of the area witihn the Canvas with a gray header a
 
 <p>The backend quadrant represents where you data and services exist and or persisted.  Microservices can be built on top of existing legacy applications and or data.</p>
 
-<div class="notices tip" ><p>There&rsquo;s no need to throw away your old applications as you move into a microservices architecture. LunchBadger has tooling to help you create a new layer of microservices on top of your old applications. This will allow you to build entirely new microservices alongside microservices that sit as a layer on top of legacy.</p>
+<div class="notices tip" ><p>There&rsquo;s no need to throw away your old applications as you move into a microservices architecture. LunchBadger has tooling to help you create a new layer of microservices on top of your legacy applications and data. This will allow you to build entirely new microservices alongside microservices that sit as a layer on top of what already exists.</p>
 </div>
 
 
 <p>LunchBadger utilizes the same tooling to connect to new data sources where you want to persist data utilized with new microserivces.</p>
 
-<p>Example:</p>
+<p>Example: Legacy Data in MySQL</p>
 
 <blockquote>
-<p>You have data in MySQL that exists as rows and tables and you want to create a set of microservices that represent that data. A MySQL connector can be created in the backend quadrant and represents a connection to MySQL as a legacy data source.</p>
+<p>You have data in MySQL that exists as rows and tables and you want to create a set of microservices that represent that data. A MySQL Connector can be created in the backend quadrant and represents a connection to MySQL as a legacy data source.</p>
 </blockquote>
 
-<p>Example:</p>
+<p>Example: New Data to be stored in MongoDB</p>
 
 <blockquote>
-<p>You are creating a new microservice that handles payments.  The microservices requires each payment performed to be recorded with transaction details as a JSON object. A MongoDB connector can be created in the backend quadrant that represents the connection to new MongoDB instance that will store the new transaction data.</p>
+<p>You are creating a new microservice that handles payments.  The microservices requires each payment performed to be recorded with transaction details as a JSON object. A MongoDB Connector can be created in the backend quadrant that represents the connection to new MongoDB instance that will store the new transaction data.</p>
 </blockquote>
 
 <h4 id="private">Private</h4>
 
-<p>The private quadrant represents all business functionality within your application.  This quadrant contains all <a href="/basics/entity-palette/models">models</a>, <a href="/basics/entity-palette/service-endpoints">service endpoints</a> and <a href="/basics/entity-palette/functions">functions</a> in your system. They are not exposed publically, but can communicate with each other. In LunchBadger communication with external services is done through a <a href="/basics/entity-palette/gateways">Gateway</a></p>
+<p>The private quadrant represents all business functionality within your application.  This quadrant contains all <a href="/basics/entity-palette/models">Models</a>, <a href="/basics/entity-palette/service-endpoints">Service Endpoints</a> and <a href="/basics/entity-palette/functions">Functions</a> in your system. They are not exposed publically, but can communicate with each other. In LunchBadger communication with external services is done through a <a href="/basics/entity-palette/gateways">Gateway</a></p>
 
-<p>Example:</p>
-
-<blockquote>
-<p>You have a legacy SOAP service that represents a customer.  The customer SOAP object has 100 properties. You want to surface a new credit application API backed by a model based microservice that only requires 10 of the 100 fields that are minimally needed for a new customer applying for credit.  A customer microsevice model can be created with the 10 fields that are required connecte to an instance of the SOAP connector in the backend quadrant pointed to the legacy SOAP service.</p>
-</blockquote>
-
-<p>Example:</p>
+<p>Example: Legacy SOAP Service Leveraged by New Customer Model Microservice</p>
 
 <blockquote>
-<p>You have a function that calculates and suggests a recommended price for a particular car given an historical list of average prices and dates paid by past buyers for the car. A SuggestedPriceCalculator function can be deployed and written in Node, Python and other languages to take the list of average prices and dates and do a weighted calcuation of a price to look for when shopping for a car.</p>
+<p>You have a legacy SOAP service that represents a customer.  The customer SOAP object has 100 properties. You want to surface a new credit application API backed by a Model based microservice that only requires 10 of the 100 fields that are minimally needed for a new customer applying for credit.  A customer microsevice Model can be created with the 10 fields that are required connecte to an instance of the SOAP Connector in the backend quadrant pointed to the legacy SOAP service.</p>
 </blockquote>
 
-<p>Example:</p>
+<p>Example: Serverless Function</p>
+
+<blockquote>
+<p>You have a function that calculates and suggests a recommended price for a particular car given an historical list of average prices and dates paid by past buyers for the car. A SuggestedPriceCalculator Function can be deployed and written in Node, Python and other languages to take the list of average prices and dates and do a weighted calcuation of a price to look for when shopping for a car.</p>
+</blockquote>
+
+<p>Example: Barebone Service Endpoint Proxing an External Service</p>
 
 <blockquote>
 <p>You want to surface a uniform API that powers a Yelp like application that shows all restaurants near your user.  The list of restaurants and their addresses are handled by a Restaurant model based microservice and the geolocation lookup is done by a 3rd party API - Google Maps.  A Service Endpoint can be created to point to the Google Maps URL to pass in geolocation coordinates to do a lookup calculation for distance between the user and each of the restaurants.</p>
@@ -555,22 +556,22 @@ The columns that take up most of the area witihn the Canvas with a gray header a
 
 <h4 id="gateway">Gateway</h4>
 
-<p>The gateway quadrant is a dividing line between what is public facing and consumed by consumers through an API and what is private and managed by producers as a set of microservices connected to backend systems. The only entity created within this quadrant are gateways. <a href="/basics/entity-palette/gateways">Gateway entities</a> represent created and deployed instances of Express Gateway. These instances act as an API Gateway within your application. Gateways expose HTTP based API endpoints, provide policy based quality of services (like routing, authentication, authorization, rate-limiting etc.) and proxy in front of entities within the private quadrant.</p>
+<p>The gateway quadrant is a dividing line between what is public facing and consumed by consumers through an API and what is private and managed by producers as a set of microservices connected to backend systems. The only entity created within this quadrant are gateways. <a href="/basics/entity-palette/gateways">Gateway Entities</a> represent created and deployed instances of Express Gateway. These instances act as an API Gateway within your application. Gateways expose HTTP based API endpoints, provide policy based quality of services (like routing, authentication, authorization, rate-limiting etc.) and proxy in front of entities within the private quadrant.</p>
 
 <p>Example:</p>
 
 <blockquote>
-<p>You have a couple of model based microservices that act as REST resources - cart, catalog, user. Each of these models can be wired up to a gateway entity in this quadrant and be exposed as REST API endpoint by the gateway. The gateway in this qudadrant can be configured with policies to proxy to these backned models and secure them with authentication and authorization policies like key authorization.</p>
+<p>You have a couple of Model based microservices that act as REST resources - cart, catalog, user. Each of these Models can be wired up to a Gateway entity in this quadrant and be exposed as REST API endpoint by the gateway. The Gateway in this quadrant can be configured with policies to proxy to these backend Models and secure them with authentication and authorization policies like key authorization.</p>
 </blockquote>
 
 <h4 id="public">Public</h4>
 
-<p>The public quadrant contains entities that are exposed and directly visible to any consumer of your application. Consumers can interact directly with these entities. The public quadrant contains <a href="/basics/entity-palette/api-endpoints">API endpoint entities</a> exposed by gateways in the gateway quadrant. API endpoints are HTTP based URLs that can be called directly by a client external to your application.</p>
+<p>The public quadrant contains entities that are exposed and directly visible to any consumer of your application. Consumers can interact directly with these entities. The public quadrant contains <a href="/basics/entity-palette/api-endpoints">API Endpoint entities</a> exposed by Gateways in the gateway quadrant. API Endpoints are HTTP based URLs that can be called directly by a client external to your application.</p>
 
 <p>Example:</p>
 
 <blockquote>
-<p>You have a domain and URL for exposing a REST API for cart as <a href="http://www.petstore.com/api/v1/cart">http://www.petstore.com/api/v1/cart</a>.  This URL is exposed as an API endpoint in the public quadrant.</p>
+<p>You have a domain and URL for exposing a REST API for cart as <a href="http://www.petstore.com/api/v1/cart">http://www.petstore.com/api/v1/cart</a>.  This URL is exposed as an API Endpoint in the public quadrant.</p>
 </blockquote>
 
 <h3 id="panels">Panels</h3>
@@ -579,6 +580,10 @@ The columns that take up most of the area witihn the Canvas with a gray header a
 Panels are different views within LunchBadger. Panels are featured alongside other icons on the top right toolbar in the header within the user interface.  Each panel slides down the quadrants from sight partially to review a new panel of controls.  The Settings Panel featured by the cogs icon is the only panel available at this time.</p>
 
 <p><img src="/images/panel_open.png" alt="Open Panel" /></p>
+
+<h3 id="right-hand-toolbar-icons">Right Hand Toolbar Icons</h3>
+
+<p>There are a few other toolbar icons near the Settings panel icon.</p>
 
 
 <footer class=" footline" >
@@ -834,20 +839,20 @@ Panels are different views within LunchBadger. Panels are featured alongside oth
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1528533997"></script>
-    <script src="/js/perfect-scrollbar.min.js?1528533997"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1528533997"></script>
-    <script src="/js/jquery.sticky.js?1528533997"></script>
-    <script src="/js/featherlight.min.js?1528533997"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1528533997"></script>
-    <script src="/js/highlight.pack.js?1528533997"></script>
+    <script src="/js/clipboard.min.js?1528578690"></script>
+    <script src="/js/perfect-scrollbar.min.js?1528578690"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1528578690"></script>
+    <script src="/js/jquery.sticky.js?1528578690"></script>
+    <script src="/js/featherlight.min.js?1528578690"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1528578690"></script>
+    <script src="/js/highlight.pack.js?1528578690"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1528533997"></script>
-    <script src="/js/learn.js?1528533997"></script>
-    <script src="/js/hugo-learn.js?1528533997"></script>
+    <script src="/js/modernizr.custom.71422.js?1528578690"></script>
+    <script src="/js/learn.js?1528578690"></script>
+    <script src="/js/hugo-learn.js?1528578690"></script>
 
-    <link href="/mermaid/mermaid.css?1528533997" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1528533997"></script>
+    <link href="/mermaid/mermaid.css?1528578690" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1528578690"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

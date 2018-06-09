@@ -12,19 +12,19 @@
     <title>Git Access :: LunchBadger Documentation site</title>
     
     
-    <link href="/css/nucleus.css?1528533997" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1528533997" rel="stylesheet">
-    <link href="/css/hybrid.css?1528533997" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1528533997" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1528533997" rel="stylesheet">
-    <link href="/css/auto-complete.css?1528533997" rel="stylesheet">
-    <link href="/css/theme.css?1528533997" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1528533997" rel="stylesheet">
+    <link href="/css/nucleus.css?1528578690" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1528578690" rel="stylesheet">
+    <link href="/css/hybrid.css?1528578690" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1528578690" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1528578690" rel="stylesheet">
+    <link href="/css/auto-complete.css?1528578690" rel="stylesheet">
+    <link href="/css/theme.css?1528578690" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1528578690" rel="stylesheet">
     
-      <link href="/css/theme-lb.css?1528533997" rel="stylesheet">
+      <link href="/css/theme-lb.css?1528578690" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1528533997"></script>
+    <script src="/js/jquery-2.x.min.js?1528578690"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -60,14 +60,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1528533997"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1528533997"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1528578690"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1528578690"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1528533997"></script>
+<script type="text/javascript" src="/js/search.js?1528578690"></script>
 
     
   </div>
@@ -444,7 +444,20 @@ Link and make it BIG
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#git-access-to-your-lunchbadger-project">Git Access to Your LunchBadger Project</a></li>
+<li><a href="#git-repository-access">Git Repository Access</a></li>
+<li><a href="#git-repo-structures">Git Repo Structures</a>
+<ul>
+<li><a href="#model-and-connectors">Model and Connectors</a></li>
+<li><a href="#functions">Functions</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -462,30 +475,68 @@ Link and make it BIG
         
 
 
-<p>LunchBadger provide 2 GIT repositories containing your code.
-First is the repo for code containing all models.
-<code>git clone git@git.lunchbadger.com:customer-{your user id}/dev.git</code>
-The Second contains code of functions
-<code>git clone git@git.lunchbadger.com:customer-{your user id}/functions.git</code></p>
 
-<p>To access the repos you need to upload your public SSH key first.
-Press setting cog icon in the top right corner of the App.</p>
 
-<p>You should see settings page; scroll down to see:
-<img src="/images/settings_ssh.png" alt="SSH settings" />
-Note the git URL is shown in <code>Access via Git</code> section</p>
+<p>All business functionality and custom code for your microservices are stored git repositories.</p>
 
-<p>Press <code>+</code> icon to add new SSH key
-<img src="/images/settings_ssh_add.png" alt="SSH settings" /></p>
+<p>LunchBadger provide two Git repositories containing your project&rsquo;s code.</p>
 
-<p>To copy your <code>public</code> SSH key into clipboard use</p>
+<h2 id="git-access-to-your-lunchbadger-project">Git Access to Your LunchBadger Project</h2>
 
-<pre><code>pbcopy &lt; ~/.ssh/id_rsa.pub
+<p>In order to access git repositories within LunchBadger, you need to upload your public SSH key.</p>
+
+<p>Access the Settings panel by clicking the cogs icon in the top right toolbar.</p>
+
+<p><img src="/images/public_keys.png" alt="Public Key" /></p>
+
+<p>Press <code>+</code> icon to add new SSH key</p>
+
+<p>Example: Copying your SSH key to clipboard on macOS</p>
+
+<p>To copy your <code>public</code> SSH key into the clipboard, open a Terminal window and run the following:</p>
+
+<pre><code class="language-shell">pbcopy &lt; ~/.ssh/id_rsa.pub
 </code></pre>
 
-<p>Paste content into <code>Key</code> field and add some label to identify the key in future and press the <code>Upload</code>button</p>
+<p><img src="/images/settings_ssh_add.png" alt="SSH settings" /></p>
 
-<p>now just <code>git clone ...</code></p>
+<p>Add a Label to identify the key in the future, paste the contents of your clipboard into the <code>Key</code> field, and click the <code>Upload</code> icon.</p>
+
+<h2 id="git-repository-access">Git Repository Access</h2>
+
+<p>Models and Connectors to data sources are enabled through <a href="http://www.loopback.io">LoopBack</a>.</p>
+
+<p>Serverless Functions are enabled through <a href="http://www.kubeless.io">Kubeless</a></p>
+
+<p><img src="/images/git_access_url.png" alt="Git Access URL" /></p>
+
+<p>In the Settings panel, locate the <code>Access via Git</code> section.</p>
+
+<h2 id="git-repo-structures">Git Repo Structures</h2>
+
+<p>Each Git reposistory has its own directory convention and structure.</p>
+
+<h3 id="model-and-connectors">Model and Connectors</h3>
+
+<p>Models and Connectors are within the LoopBack project directory structure.</p>
+
+<div class="notices info" ><p>Refer to the <a href="https://loopback.io/doc/en/lb3/Project-layout-reference.html">LoopBack project layout reference</a> for more in-depth information about the LoopBack project</p>
+</div>
+
+
+<p>The Model JSON based schema and JavaScript files can be found in the <code>server/models</code> directory once you clone the repository for Models and Connectors.</p>
+
+<h3 id="functions">Functions</h3>
+
+<p>The Functions repository contains a subdirectory for each folder by Function name.</p>
+
+<p>Example:</p>
+
+<p>If you have a Function on the Canvas named <code>PriceCalculator</code>, you will have a corresponding top level subdirectory with the same name with all the files related to the Function.  The main file for Functions is often the <code>handler.js</code></p>
+
+<div class="notices info" ><p>For more information on how to structure the code for you serverless Functions refer to the <a href="https://kubeless.io/docs/runtimes/">Runtime reference</a> in the Kubeless documentation.</p>
+</div>
+
 
 
 <footer class=" footline" >
@@ -744,20 +795,20 @@ Note the git URL is shown in <code>Access via Git</code> section</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1528533997"></script>
-    <script src="/js/perfect-scrollbar.min.js?1528533997"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1528533997"></script>
-    <script src="/js/jquery.sticky.js?1528533997"></script>
-    <script src="/js/featherlight.min.js?1528533997"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1528533997"></script>
-    <script src="/js/highlight.pack.js?1528533997"></script>
+    <script src="/js/clipboard.min.js?1528578690"></script>
+    <script src="/js/perfect-scrollbar.min.js?1528578690"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1528578690"></script>
+    <script src="/js/jquery.sticky.js?1528578690"></script>
+    <script src="/js/featherlight.min.js?1528578690"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1528578690"></script>
+    <script src="/js/highlight.pack.js?1528578690"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1528533997"></script>
-    <script src="/js/learn.js?1528533997"></script>
-    <script src="/js/hugo-learn.js?1528533997"></script>
+    <script src="/js/modernizr.custom.71422.js?1528578690"></script>
+    <script src="/js/learn.js?1528578690"></script>
+    <script src="/js/hugo-learn.js?1528578690"></script>
 
-    <link href="/mermaid/mermaid.css?1528533997" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1528533997"></script>
+    <link href="/mermaid/mermaid.css?1528578690" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1528578690"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
