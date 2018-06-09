@@ -12,19 +12,19 @@
     <title>Gateways :: LunchBadger Documentation site</title>
     
     
-    <link href="/css/nucleus.css?1528427808" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1528427808" rel="stylesheet">
-    <link href="/css/hybrid.css?1528427808" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1528427808" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1528427808" rel="stylesheet">
-    <link href="/css/auto-complete.css?1528427808" rel="stylesheet">
-    <link href="/css/theme.css?1528427808" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1528427808" rel="stylesheet">
+    <link href="/css/nucleus.css?1528529505" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1528529505" rel="stylesheet">
+    <link href="/css/hybrid.css?1528529505" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1528529505" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1528529505" rel="stylesheet">
+    <link href="/css/auto-complete.css?1528529505" rel="stylesheet">
+    <link href="/css/theme.css?1528529505" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1528529505" rel="stylesheet">
     
-      <link href="/css/theme-lb.css?1528427808" rel="stylesheet">
+      <link href="/css/theme-lb.css?1528529505" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1528427808"></script>
+    <script src="/js/jquery-2.x.min.js?1528529505"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -60,14 +60,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1528427808"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1528427808"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1528529505"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1528529505"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1528427808"></script>
+<script type="text/javascript" src="/js/search.js?1528529505"></script>
 
     
   </div>
@@ -454,8 +454,14 @@ Link and make it BIG
 <ul>
 <li>
 <ul>
+<li><a href="#how-gateways-work">How Gateways Work</a></li>
+<li><a href="#walkthrough-example">Walkthrough Example</a></li>
 <li><a href="#accessing-gateway-instances">Accessing Gateway Instances</a></li>
-<li><a href="#consumer-management">Consumer Management</a></li>
+<li><a href="#consumer-management">Consumer Management</a>
+<ul>
+<li><a href="#api-consumers">API Consumers</a></li>
+<li><a href="#credentials">Credentials</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -478,38 +484,123 @@ Link and make it BIG
 
 
 
-<p>Clicking this icon creates a new Gateway Entity on the canvas with a corresponding Gateway Deployment running in Kubernetes.</p>
+<p>To create a Gateway click on the function icon on the entity palette: 
+<figure>
+    
+        <img src="/images/icon_gateway_dark.svg" width="50" height="50" />
+    
+    
+</figure>
+</p>
 
-<p>Example:</p>
+<p>The Gateway entity represents an instance of Express Gateway. Express Gateway is a microservices API Gateway.</p>
 
-<p>Each Gateway consists of one or more Pipelines.  Model, Service Endpoint, and Function Entities can all be connected to the left-hand side of a Pipeline.  API Endpoint Entities connect to the right-hand side of a Pipeline.</p>
+<p>In LunchBadger, Gateways are used to provide API management functionality for your microservices application. A Gateway expose private and internal microservices publicly through APIs.</p>
 
-<p>Pipelines contain a list of Policies.  Policies contain a list of condition-action pairs.</p>
+<h2 id="how-gateways-work">How Gateways Work</h2>
 
-<p>Example:</p>
+<p>Gateways in LunchBadger are used to proxy to microservice entities in the private quadrant and manage and expose them as APIs as API endpoints in the public quadrant.</p>
 
-<p>More details on available conditions and policies can be found in the Express Gateway Documentation.</p>
+<p>Each Gateway consists of one or more Pipelines. A Pipeline is a set of policies. Each Pipeline has connection ports to its left an right hand side.</p>
+
+<p>The Models, Functions and Service Endpoints are proxied entities connected to the Gateway&rsquo;s Pipeline from the left hand side.</p>
+
+<p>A corresponding API Endpoint in the public quadrant is created and connected to the right hand side of the Pipeline.</p>
+
+<div class="notices info" ><p>Gateways in LunchBadger are powered by Express Gateway.  More details on Express Gateway can be found in the <a href="https://www.express-gateway.io/docs/">Express Gateway Documentation</a></p>
+</div>
+
+
+<h2 id="walkthrough-example">Walkthrough Example</h2>
+
+<p><img src="/images/gateway_example.png" alt="Gateway Example" /></p>
+
+<p>A complete example microservice application is displayed in the LunchBadger Canvas depicted above.</p>
+
+<p><img src="/images/gateway_flow_1.png" alt="Gateway Flow 1" /></p>
+
+<ol>
+<li><p>A TemperatureAPIEndpoint exists in the public quadrant. This API Endpoint is publicly accessible through HTTP.  You can cURL this endpoint through its URL.</p>
+
+<pre><code class="language-shell">cURL http://&lt;root url&gt;/api/temperature
+</code></pre>
+
+<p><img src="/images/gateway_flow_2.png" alt="Gateway Flow 2" /></p></li>
+
+<li><p>cURLing the API Endpoint sends the request to the Pipeline within the Gateway that is present in the Gateway quadrant.</p>
+
+<p><img src="/images/gateway_flow_3.png" alt="Gateway Flow 3" /></p></li>
+
+<li><p>The Pipeline contains a Proxy Policy which routes the request to the entity connected on its left hand port.</p>
+
+<p><img src="/images/gateway_flow_4.png" alt="Gateway Flow 4" /></p></li>
+
+<li><p>The Temperature Model is connected to the left hand port of the Pipeline and receives the request because of the Proxy policy within the Pipeline.</p>
+
+<p><img src="/images/gateway_flow_5.png" alt="Gateway Flow 5" /></p></li>
+
+<li><p>The Temperature Model is connected to the Memory Connector and the API Request to GET data.</p>
+
+<p><img src="/images/gateway_flow_6.png" alt="Gateway Flow 6" /></p></li>
+
+<li><p>The Temperature Model grabs temperature data from the Memory Connector populates a Temperature object through its Model definition with its properties and then sends that representation back through as the response.</p></li>
+</ol>
 
 <h2 id="accessing-gateway-instances">Accessing Gateway Instances</h2>
 
-<p>All gateways will be accessible via the following domain name pattern:</p>
+<p>API Endpoints hosted by a Gateway iare accessible via URL and path(s) specified in the API Endpoint.</p>
 
-<p><code>http://{gateway-name}-{user-id}-dev.lunchbadger.io</code></p>
+<p>Example:</p>
 
-<p>For example, if your gateway is named &ldquo;Gateway&rdquo; and your User ID is &ldquo;999&rdquo;, your gateway will be accessible at:</p>
+<p><img src="/images/gateway_access.png" alt="Access Gateway" /></p>
 
-<p><a href="http://gateway-999-dev.lunchbadger.io">http://gateway-999-dev.lunchbadger.io</a></p>
+<p>The CarAPIEndpoint depicted above is accessible through the URL - <code>http://gateway-al2-dev.staging.lunchbadger.io/api/car</code></p>
+
+<p>URLs for API Endpoints follow the convention listed below:</p>
+
+<p><code>http://&lt;gateway root url&gt;.lunchbadger.io/&lt;api endpoint path&gt;</code></p>
 
 <h2 id="consumer-management">Consumer Management</h2>
 
-<p>All Gateway Entities contain an icon for accessing Consumer Management.
-<img src="/images/gw_consumer_mgmt.png" alt="Consumer Management" /></p>
+<p>Gateways have a built in consumer management system as a reference implementation for identity management.
+The purpose of consumer management is to define API Consumers that are known and managed by the Gateway.</p>
 
-<p>Create User\Apps\Scopes buy pressing plus <code>+</code> icon
-<img src="/images/gw_cm_add_user.png" alt="Consumer Management Add User" /></p>
+<p><img src="/images/gw_consumer_mgmt.png" alt="Consumer Management" /></p>
 
-<p>Create credentials by clicking on row with user or app
-<img src="/images/gw_cm_add_user_cred.png" alt="Consumer Management Add User Credentials" /></p>
+<p>Click on the man with the suitecase icon on the Gateway context toolbar to access Consumer Management</p>
+
+<h3 id="api-consumers">API Consumers</h3>
+
+<p>An API Consumer is one of the following:</p>
+
+<ul>
+<li>User</li>
+<li>Application (App)</li>
+</ul>
+
+<div class="notices info" ><p>For more information on the Consumer Management capabilities within the Gateway, see the <a href="https://www.express-gateway.io/docs/consumer-management/">Consumer Management</a> documentation on Express Gateway.</p>
+</div>
+
+
+<p><img src="/images/gw_cm_add_user.png" alt="Consumer Management Add User" />
+To create Users,Apps, and Scopes press the plus <code>+</code> icon.</p>
+
+<h3 id="credentials">Credentials</h3>
+
+<p>Every API Consumer has their own set of Credentials.  There are several types of Credentials supported by the Gateway in LunchBadger:</p>
+
+<ul>
+<li>basic authorization</li>
+<li>key authorization</li>
+<li>OAuth2</li>
+</ul>
+
+<p><img src="/images/gw_cm_add_user_cred.png" alt="Consumer Management Add User Credentials" />
+To create Credentials click on row of the User or App.</p>
+
+<div class="notices info" ><p>For more information on the Credentials supported bythe Gateway, see the <a href="https://www.express-gateway.io/docs/credential-management/">Credential Management</a> documentation on Express Gateway.</p>
+</div>
+
 
 <p>Please refer to <a href="https://www.express-gateway.io/docs/consumer-management/">Express Gateway Consumer Management</a> for more information</p>
 
@@ -774,20 +865,20 @@ Link and make it BIG
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1528427808"></script>
-    <script src="/js/perfect-scrollbar.min.js?1528427808"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1528427808"></script>
-    <script src="/js/jquery.sticky.js?1528427808"></script>
-    <script src="/js/featherlight.min.js?1528427808"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1528427808"></script>
-    <script src="/js/highlight.pack.js?1528427808"></script>
+    <script src="/js/clipboard.min.js?1528529505"></script>
+    <script src="/js/perfect-scrollbar.min.js?1528529505"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1528529505"></script>
+    <script src="/js/jquery.sticky.js?1528529505"></script>
+    <script src="/js/featherlight.min.js?1528529505"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1528529505"></script>
+    <script src="/js/highlight.pack.js?1528529505"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1528427808"></script>
-    <script src="/js/learn.js?1528427808"></script>
-    <script src="/js/hugo-learn.js?1528427808"></script>
+    <script src="/js/modernizr.custom.71422.js?1528529505"></script>
+    <script src="/js/learn.js?1528529505"></script>
+    <script src="/js/hugo-learn.js?1528529505"></script>
 
-    <link href="/mermaid/mermaid.css?1528427808" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1528427808"></script>
+    <link href="/mermaid/mermaid.css?1528529505" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1528529505"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
