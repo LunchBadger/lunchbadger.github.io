@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Runtime on LunchBadger Documentation site</title>
+    <link>https://docs.lunchbadger.com/basics/cloud-runtime/</link>
+    <description>Recent content in Cloud Runtime on LunchBadger Documentation site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 May 2018 18:25:07 +0300</lastBuildDate>
+    
+	<atom:link href="https://docs.lunchbadger.com/basics/cloud-runtime/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

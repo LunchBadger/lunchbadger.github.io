@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Functions :: LunchBadger Documentation site</title>
+    <title>Cloud Runtime :: LunchBadger Documentation site</title>
     
     
     <link href="/css/nucleus.css?1528783714" rel="stylesheet">
@@ -35,7 +35,7 @@
     
 <link rel="stylesheet" id="google_fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,latin-ext" type="text/css" media="all">
   </head>
-  <body class="" data-url="/basics/entity-palette/functions/">
+  <body class="" data-url="/basics/cloud-runtime/">
     <nav id="sidebar" class="">
 
 
@@ -157,7 +157,7 @@
   
     
     <li data-nav-id="/basics/entity-palette/" title="Entity Palette" class="dd-item 
-        parent
+        
         
         
         ">
@@ -232,8 +232,8 @@
   
     
     <li data-nav-id="/basics/entity-palette/functions/" title="Functions" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/basics/entity-palette/functions/">
@@ -337,8 +337,8 @@
   
     
     <li data-nav-id="/basics/cloud-runtime/" title="Cloud Runtime" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/basics/cloud-runtime/">
@@ -433,13 +433,7 @@
             
           
           
-            
-            
-          
-          
-            <a href='/'>HOME</a> > <a href='/basics/'>Basics</a> > <a href='/basics/entity-palette/'>Entity Palette</a> > Functions
-          
-         
+            <a href='/'>HOME</a> > <a href='/basics/'>Basics</a> > Cloud Runtime
           
          
           
@@ -455,7 +449,11 @@
 <ul>
 <li>
 <ul>
-<li><a href="#function-details">Function Details</a></li>
+<li><a href="#kubernetes">Kubernetes</a></li>
+<li><a href="#lunchbadger-makes-kubernetes-easy">LunchBadger Makes Kubernetes Easy</a>
+<ul>
+<li><a href="#canvas-microservices-to-kubernetes-pod-mapping">Canvas Microservices to Kubernetes Pod Mapping</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -470,7 +468,7 @@
         
         <div id="body-inner">
           
-            <h1>Functions</h1>
+            <h1>Cloud Runtime</h1>
           
 
         
@@ -478,44 +476,107 @@
 
 
 
-<p>To create a Function click on the function icon on the entity palette: 
-<figure>
-    
-        <img src="/images/icon_function_dark.svg" width="50" height="50" />
-    
-    
-</figure>
-</p>
+<p>One of the key advantages of what LunchBadger brings is true cloud native freedom and choice.</p>
 
-<p>The Function entity represents a serverless function that runs in the <a href="https://kubeless.io">Kubeless</a> serverless engine in your Kubernetes cluster.</p>
+<p>Amazon Web Services Lambda and API Gateway, Azure Functions, Google Cloud Functions - do you like the productivity gains of what these cloud providers offer?</p>
 
-<p>Serverless functions are self contained pieces of functionality that run when triggered.</p>
+<p>LunchBadger gives you the same functionality with a <strong>better</strong> experience, complete transparency and control and allows you to run you microservices and serverless functions in any public or private cloud including your own datacenter.</p>
 
-<p>When you create a new Function, you select the supported language to be used within the function and specify a name.  Once you create a function, it is automatically deployed.</p>
+<h2 id="kubernetes">Kubernetes</h2>
 
-<div class="notices info" ><p>What&rsquo;s the difference between Models and Functions?  Both Models and Functions are functions.  Models are Node.js only and have built in capabilites provided by the LoopBack framework. Functions are barebone functions that can be written in a number of supported languages through the Kubeless engine.</p>
+<p><a href="https://kubernetes.io">Kubernetes</a> has become the common cloud substrate that allows you to run all containerized microservices based applications in the cloud.  All cloud providers either support Kubernetes as a direct cloud orchestration platform or are capable of running it on their barebone compute instances.</p>
+
+<p>Kubernetes goes beyond containers.  Containers are the commonly accepted packaging of any application. Having containers isn&rsquo;t enough.</p>
+
+<p>Microservices require many many container instances. A container orchestrator is require to tie all the microservices running in containers in a meaningful and practical way.</p>
+
+<h2 id="lunchbadger-makes-kubernetes-easy">LunchBadger Makes Kubernetes Easy</h2>
+
+<p>LunchBadger leverages Kubernetes as its cloud runtime.</p>
+
+<div class="notices info" ><p>All your microservices built within LunchBadger are automatically built and packaged as containers and deployed into Kubernetes dynamically.</p>
 </div>
 
 
-<h2 id="function-details">Function Details</h2>
+<p><img src="/images/full_canvas.png" alt="LunchBadger Canvas" /></p>
 
-<p>To enter code into the body of a Function, go to the Function Details by hovering over the title bar on the Function entity and click the ellipses icon on the context menu.</p>
+<p>When you are in the <code>development</code> environmnent building and configuring your microservices via the <a href="/basics/canvas">Canvas</a></p>
 
-<p><img src="/images/function_details_icon.png" alt="Function Details Icon" /></p>
+<p><img src="/images/kubernetes_pods.png" alt="Kubernetes Pods" /></p>
 
-<p>A code editor similar to the one provided in Model Details will be presented.</p>
+<p>&hellip; LunchBadger is deploying them in real time to Kubernetes as <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod/">pods</a>.</p>
 
-<p><img src="/images/function_details.png" alt="Function Details" /></p>
+<p>Once your microservices based application is complete and you are happy with its logical topology, <strong>immutable</strong> copies can be made into other Kubernetes environemnts like <code>staging</code>, <code>testing</code> and <code>production</code> etc.</p>
 
-<p>Node.js Example:</p>
+<h3 id="canvas-microservices-to-kubernetes-pod-mapping">Canvas Microservices to Kubernetes Pod Mapping</h3>
 
-<blockquote>
-<p><code>handler.js</code> is the file with main entry point. you can create another files and reference them</p>
+<p>LunchBadger groups Canvas entities into separate pods running in Kubernetes.</p>
 
-<p><code>package.json</code> contains node.js package dependencies. LunchBadger will install them during function launch.</p>
-</blockquote>
+<p>Here is a table to understand what gets run as its own microservice as a pod in Kubernetes</p>
 
-<p>All LunchBadger Function code is stored in its own git repository. See <a href="/basics/git-access">Git Access</a> for details.</p>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Kubernetes Pod Name</th>
+<th>Notes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Models</td>
+<td>workspace</td>
+<td>All Models and Connectors are in one LoopBack project running in one workspace pod</td>
+</tr>
+
+<tr>
+<td>Connectors</td>
+<td>workspace</td>
+<td>(see note above)</td>
+</tr>
+
+<tr>
+<td>Service Endpoint</td>
+<td>gateway</td>
+<td>all Service Endpoints are linked to a Gateway and its correponding pod</td>
+</tr>
+
+<tr>
+<td>Functions</td>
+<td>function</td>
+<td>1 per Function Entity on the Canvas</td>
+</tr>
+
+<tr>
+<td>API Endpoint</td>
+<td>gateway</td>
+<td>all API Endpoitns are linked to a Gateway and its correpsonding pod</td>
+</tr>
+
+<tr>
+<td>Gateway</td>
+<td>gateway</td>
+<td>1 per Gateway Entity on the Canvas</td>
+</tr>
+</tbody>
+</table>
+
+<div class="notices info" ><p>In the near future, LunchBadger will allow you group individual Models that are related or have dependencies into a Microservice entity.  Microserivce entities will have their own pods in Kubernetes.</p>
+</div>
+
+
+<p>Example:</p>
+
+<p><img src="/images/canvas_to_pods.png" alt="Canvas To Pod Mapping" /></p>
+
+<p>Pod Breakdown in Kubernetes</p>
+
+<ul>
+<li>Blue - ONE workspace pod</li>
+<li>Green - TWO function pods, 1 for each individual Function</li>
+<li>Purple - ONE gateway pod</li>
+</ul>
 
 
 <footer class=" footline" >
@@ -607,7 +668,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -622,9 +682,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -658,7 +715,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -674,9 +730,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -729,6 +782,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -745,6 +799,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -766,10 +823,10 @@
 
 
         
-            <a class="nav nav-prev" href="/basics/entity-palette/models/" title="Models"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/basics/entity-palette/api-endpoints/" title="API Endpoints"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/basics/entity-palette/service-endpoints/" title="Service Endpoints" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/basics/git-access/" title="Git Access" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
