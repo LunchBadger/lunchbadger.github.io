@@ -12,19 +12,19 @@
     <title>Cloud Runtime :: LunchBadger Documentation site</title>
     
     
-    <link href="/css/nucleus.css?1538414923" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1538414923" rel="stylesheet">
-    <link href="/css/hybrid.css?1538414923" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1538414923" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1538414923" rel="stylesheet">
-    <link href="/css/auto-complete.css?1538414923" rel="stylesheet">
-    <link href="/css/theme.css?1538414923" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1538414923" rel="stylesheet">
+    <link href="/css/nucleus.css?1538431857" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1538431857" rel="stylesheet">
+    <link href="/css/hybrid.css?1538431857" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1538431857" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1538431857" rel="stylesheet">
+    <link href="/css/auto-complete.css?1538431857" rel="stylesheet">
+    <link href="/css/theme.css?1538431857" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1538431857" rel="stylesheet">
     
-      <link href="/css/theme-lb.css?1538414923" rel="stylesheet">
+      <link href="/css/theme-lb.css?1538431857" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1538414923"></script>
+    <script src="/js/jquery-2.x.min.js?1538431857"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -60,14 +60,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1538414923"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1538414923"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1538431857"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1538431857"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1538414923"></script>
+<script type="text/javascript" src="/js/search.js?1538431857"></script>
 
     
   </div>
@@ -183,13 +183,13 @@
  
   
     
-    <li data-nav-id="/basics/entity-palette/connectors/" title="Connectors" class="dd-item 
+    <li data-nav-id="/basics/entity-palette/connectors/" title="Model Connectors" class="dd-item 
         
         
         
         ">
       <a href="/basics/entity-palette/connectors/">
-          Connectors
+          Model Connectors
           
       </a>
       
@@ -450,7 +450,7 @@
 <li>
 <ul>
 <li><a href="#kubernetes">Kubernetes</a></li>
-<li><a href="#lunchbadger-makes-kubernetes-easy">LunchBadger Makes Kubernetes Easy</a>
+<li><a href="#express-serverless-platform-makes-kubernetes-easy">Express Serverless Platform Makes Kubernetes Easy</a>
 <ul>
 <li><a href="#canvas-microservices-to-kubernetes-pod-mapping">Canvas Microservices to Kubernetes Pod Mapping</a></li>
 </ul></li>
@@ -476,11 +476,15 @@
 
 
 
-<p>One of the key advantages of what LunchBadger brings is true cloud native freedom and choice.</p>
+<p>One of the key advantages of what Express Serverless Platform brings is true cloud native freedom and choice.</p>
 
 <p>Amazon Web Services Lambda and API Gateway, Azure Functions, Google Cloud Functions - do you like the productivity gains of what these cloud providers offer?</p>
 
-<p>LunchBadger gives you the same functionality with a <strong>better</strong> experience, complete transparency and control and allows you to run you microservices and serverless functions in any public or private cloud including your own datacenter.</p>
+<p>Express Serverless Platform gives you the same functionality with a <strong>better</strong> experience, complete transparency and control and allows you to run you microservices and serverless functions in any public or private cloud including your own datacenter.</p>
+
+<div class="notices info" ><p>When running Express Serverless Platform in your public cloud you can run serverless function in the public cloud&rsquo;s native serverless offering.  For example: running Express Serverless Platform on AWS means you can run serverless functions in AWS Lambda.</p>
+</div>
+
 
 <h2 id="kubernetes">Kubernetes</h2>
 
@@ -490,27 +494,27 @@
 
 <p>Microservices require many many container instances. A container orchestrator is require to tie all the microservices running in containers in a meaningful and practical way.</p>
 
-<h2 id="lunchbadger-makes-kubernetes-easy">LunchBadger Makes Kubernetes Easy</h2>
+<h2 id="express-serverless-platform-makes-kubernetes-easy">Express Serverless Platform Makes Kubernetes Easy</h2>
 
-<p>LunchBadger leverages Kubernetes as its cloud runtime.</p>
+<p>Express Serverless Platform leverages Kubernetes as its cloud runtime.</p>
 
-<div class="notices info" ><p>All your microservices built within LunchBadger are automatically built and packaged as containers and deployed into Kubernetes dynamically.</p>
+<div class="notices info" ><p>All your microservices built within Express Serverless Platform are automatically built and packaged as containers and deployed into Kubernetes dynamically.</p>
 </div>
 
 
-<p><img src="/images/full_canvas.png" alt="LunchBadger Canvas" /></p>
+<p><img src="/images/full_canvas.png" alt="Express Serverless Platform Canvas" /></p>
 
 <p>When you are in the <code>development</code> environmnent building and configuring your microservices via the <a href="/basics/canvas">Canvas</a></p>
 
 <p><img src="/images/kubernetes_pods.png" alt="Kubernetes Pods" /></p>
 
-<p>&hellip; LunchBadger is deploying them in real time to Kubernetes as <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod/">pods</a>.</p>
+<p>&hellip; Express Serverless Platform is deploying them in real time to Kubernetes as <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod/">pods</a>.</p>
 
 <p>Once your microservices based application is complete and you are happy with its logical topology, <strong>immutable</strong> copies can be made into other Kubernetes environemnts like <code>staging</code>, <code>testing</code> and <code>production</code> etc.</p>
 
 <h3 id="canvas-microservices-to-kubernetes-pod-mapping">Canvas Microservices to Kubernetes Pod Mapping</h3>
 
-<p>LunchBadger groups Canvas entities into separate pods running in Kubernetes.</p>
+<p>Express Serverless Platform groups Canvas entities into separate pods running in Kubernetes.</p>
 
 <p>Here is a table to understand what gets run as its own microservice as a pod in Kubernetes</p>
 
@@ -562,7 +566,7 @@
 </tbody>
 </table>
 
-<div class="notices info" ><p>In the near future, LunchBadger will allow you group individual Models that are related or have dependencies into a Microservice entity.  Microserivce entities will have their own pods in Kubernetes.</p>
+<div class="notices info" ><p>In the near future, Express Serverless Platform will allow you group individual Models that are related or have dependencies into a Microservice entity.  Microserivce entities will have their own pods in Kubernetes.</p>
 </div>
 
 
@@ -835,20 +839,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1538414923"></script>
-    <script src="/js/perfect-scrollbar.min.js?1538414923"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1538414923"></script>
-    <script src="/js/jquery.sticky.js?1538414923"></script>
-    <script src="/js/featherlight.min.js?1538414923"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1538414923"></script>
-    <script src="/js/highlight.pack.js?1538414923"></script>
+    <script src="/js/clipboard.min.js?1538431857"></script>
+    <script src="/js/perfect-scrollbar.min.js?1538431857"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1538431857"></script>
+    <script src="/js/jquery.sticky.js?1538431857"></script>
+    <script src="/js/featherlight.min.js?1538431857"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1538431857"></script>
+    <script src="/js/highlight.pack.js?1538431857"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1538414923"></script>
-    <script src="/js/learn.js?1538414923"></script>
-    <script src="/js/hugo-learn.js?1538414923"></script>
+    <script src="/js/modernizr.custom.71422.js?1538431857"></script>
+    <script src="/js/learn.js?1538431857"></script>
+    <script src="/js/hugo-learn.js?1538431857"></script>
 
-    <link href="/mermaid/mermaid.css?1538414923" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1538414923"></script>
+    <link href="/mermaid/mermaid.css?1538431857" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1538431857"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
