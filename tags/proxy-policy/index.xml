@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Proxy policy on Express Serverless Platform</title>
+    <link>https://express-serverless.io/tags/proxy-policy/</link>
+    <description>Recent content in Proxy policy on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Nov 2018 09:09:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://express-serverless.io/tags/proxy-policy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>API Management - Setting Up Key-Based Authentication</title>
+      <link>https://express-serverless.io/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/</link>
+      <pubDate>Thu, 08 Nov 2018 09:09:25 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/</guid>
+      <description>We&amp;#8217;ve discussed API Management and setting up the Service and API Endpoints. As long time champions of all the ways you could be using an API Gateway, we&amp;#8217;re going to walk through how take the next step with API Management and set up your Authentication.
+To recap, features in an API Gateway are often categorized in three broad categories:
+ Authentication: Who is allowed to access (Access Control) Authorization: Who is allowed to perform operations of exposed APIs (Permissions / Privileges) Audit: Analyzing sufficient information for each client request   Here&amp;#8217;s a quick diagram of what that looks like:</description>
+    </item>
+    
+  </channel>
+</rss>

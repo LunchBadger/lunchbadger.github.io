@@ -1,15 +1,177 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome on LunchBadger Documentation site</title>
-    <link>https://docs.lunchbadger.com/</link>
-    <description>Recent content in Welcome on LunchBadger Documentation site</description>
+    <title>Open Source, Kubernetes-native, Microservices &amp; Serverless Platform on Express Serverless Platform</title>
+    <link>https://express-serverless.io/</link>
+    <description>Recent content in Open Source, Kubernetes-native, Microservices &amp; Serverless Platform on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 May 2018 15:16:56 +0300</lastBuildDate>
     
-	<atom:link href="https://docs.lunchbadger.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://express-serverless.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ESP vs AWS Lambda</title>
+      <link>https://express-serverless.io/blog/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</guid>
+      <description>Developer Challenges of Serverless and AWS AWS pioneered the idea behind serverless when they introduced AWS Lambda: focus on your business logic down to its atomic parts of your applications—functions—and let them worry about the rest. This whole idea eventually led to the NoOps movement.
+&amp;nbsp;
+Serverless is a great idea! It&amp;#8217;s a new paradigm that can be applied to how modern applications are developed and run in the cloud to drastically increase developer focus and productivity.</description>
+    </item>
+    
+    <item>
+      <title>Building Serverless Based Functions</title>
+      <link>https://express-serverless.io/blog/serverless-based-functions/</link>
+      <pubDate>Tue, 07 Aug 2018 02:50:41 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/serverless-based-functions/</guid>
+      <description>Fired up! Ready to go! You’ve heard every buzzword. Microservices, APIs, Kubernetes and serverless just to name a few catchy ones. Let’s get real for a moment and acknowledge that these are just fancy words for the work that you and your team are doing day in and day out. What if there was a way to do this work that was less painful? Less frustrating?
+&amp;nbsp;
+Using Express Serverless Platform, we believe in the power of developers.</description>
+    </item>
+    
+    <item>
+      <title>How To Get Started with API Management and Express Serverless Platform</title>
+      <link>https://express-serverless.io/blog/get-started-api-management-express-serverless-platform/</link>
+      <pubDate>Mon, 05 Nov 2018 12:21:22 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/get-started-api-management-express-serverless-platform/</guid>
+      <description>In our last post, we discussed API Management and the key role that an API Gateway could play. API Gateways can enable secure access to its API endpoints. Features in an API Gateway are often categorized in three broad categories:
+ Authentication: Who is allowed to access (Access Control) Authorization: Who is allowed to perform operations of exposed APIs (Permissions / Privileges) Audit: Analyzing sufficient information for each client request   How does this work?</description>
+    </item>
+    
+    <item>
+      <title>ESP vs Google Cloud Functions</title>
+      <link>https://express-serverless.io/blog/hello-world-esp-vs-google-cloud-functions-example/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/hello-world-esp-vs-google-cloud-functions-example/</guid>
+      <description>Google Cloud Functions are Google Cloud&amp;#8217;s equivalent to AWS Lambda. Like Lambda, Google Cloud Functions let you write custom functions and expose them via an HTTP interface through either Google Cloud Function&amp;#8217;s minimal HTTP configuration or Google Cloud Endpoints for more sophisticated use cases. Express Serverless Platfom is a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I&amp;#8217;ll walk through setting up a rudimentary Node.</description>
+    </item>
+    
+    <item>
+      <title>API Management - Setting Up Key-Based Authentication</title>
+      <link>https://express-serverless.io/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/</link>
+      <pubDate>Thu, 08 Nov 2018 09:09:25 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/</guid>
+      <description>We&amp;#8217;ve discussed API Management and setting up the Service and API Endpoints. As long time champions of all the ways you could be using an API Gateway, we&amp;#8217;re going to walk through how take the next step with API Management and set up your Authentication.
+To recap, features in an API Gateway are often categorized in three broad categories:
+ Authentication: Who is allowed to access (Access Control) Authorization: Who is allowed to perform operations of exposed APIs (Permissions / Privileges) Audit: Analyzing sufficient information for each client request   Here&amp;#8217;s a quick diagram of what that looks like:</description>
+    </item>
+    
+    <item>
+      <title>ESP vs Azure Functions</title>
+      <link>https://express-serverless.io/blog/get-started-azure-functions-vs-express-serverless-platform-tutorial/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/get-started-azure-functions-vs-express-serverless-platform-tutorial/</guid>
+      <description>If you&amp;#8217;re looking at getting started with Azure, we&amp;#8217;ve put together a comprehensive &amp;#8220;Hello, World&amp;#8217; guide. In addition to Azure, we&amp;#8217;ve put together a no-frills comparison of the getting started experience from the developer perspective. Learn more, build more and check out the latest from Val Karpov in this latest installment of our Developer Spotlight Series.
+Azure Functions are Microsoft Azure&amp;#8217;s equivalent to AWS Lambda. Like Lambda, Azure Functions let you write custom functions and expose them via an HTTP interface using Azure API Management.</description>
+    </item>
+    
+    <item>
+      <title>ESP vs IBM Cloud Functions</title>
+      <link>https://express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/</link>
+      <pubDate>Tue, 03 Apr 2018 12:31:41 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/</guid>
+      <description>IBM Cloud Functions are IBM Cloud&amp;#8217;s equivalent to AWS Lambda. Like Lambda, IBM Cloud Functions let you write custom functions and expose them via an HTTP interface through either IBM Cloud Function&amp;#8217;s minimal HTTP configuration or IBM API Connect for more sophisticated use cases. Express Serverless Platform offers a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I&amp;#8217;ll walk through setting up a rudimentary Node.</description>
+    </item>
+    
+    <item>
+      <title>Hello World with Express Serverless Platform vs Apigee Edge</title>
+      <link>https://express-serverless.io/blog/vs-apigee-features/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/vs-apigee-features/</guid>
+      <description>Apigee Edge (acquired by Google in 2016) is a popular platform for deploying API proxies. Express Serverless Platform, like Apigee, allows you to build and deploy API gateways on their internal cloud computing service. At a high level, Express Serverless Platform and Apigee are similar, but there are several key differences in terms of Node.js version compatibility and vendor lock-in that you should be aware of before choosing one or the other.</description>
+    </item>
+    
+    <item>
+      <title>API Management Reimagined: Authentication Authorization Audit</title>
+      <link>https://express-serverless.io/blog/api-management-authentication-authorization-audit/</link>
+      <pubDate>Tue, 16 Oct 2018 21:06:48 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/api-management-authentication-authorization-audit/</guid>
+      <description>Authentication Authorization And Audit: The Operations Perspective API Gateways provide a set of features that enable secure access to its API endpoints. These features fall under three broad categories:
+ Authentication: Who is allowed to access the API Gateway at all? (Access Control) Authorization: Who is allowed to perform a certain operation using exposed APIs (Permissions / Privileges) Audit: Capturing sufficient information for each client request to be able to detect and possibly prevent malicious activity  An administrator of any API Gateway platform need to be aware of these capabilities, which could be a bit different compared to securing web sites and databases.</description>
+    </item>
+    
+    <item>
+      <title>LunchBadger Platform is now Express Serverless Platform</title>
+      <link>https://express-serverless.io/blog/express-serverless-platform-lunchbadger/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/express-serverless-platform-lunchbadger/</guid>
+      <description>Express Serverless Platform has arrived! After three long months of hard work, we&amp;#8217;re proud to announce that the LunchBadger Platform is now the Express Serverless Platform. New name, new features and an opportunity to experience a visual canvas ripe with all the important functionality that developers need, without the hype.
+&amp;nbsp;
+TLDR: Install ESP right over here
+&amp;nbsp;
+For Developers, DevOps teams and CTOs driving impact in top companies, it&amp;#8217;s not just a name change &amp;#8211; it&amp;#8217;s a game changer and we can&amp;#8217;t wait to show you why.</description>
+    </item>
+    
+    <item>
+      <title>Leveraging Kubernetes For Microservices Based Cloud Strategy</title>
+      <link>https://express-serverless.io/blog/kubernetes-scalability/</link>
+      <pubDate>Mon, 13 Aug 2018 19:26:15 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/kubernetes-scalability/</guid>
+      <description>Enterprise applications have to be designed upfront for scalability and change. This has significant implications for both application architecture and application infrastructure. Application architecture is evolving from unmanageable monolithic or three-tier patterns to interconnected microservices. Microservices introduce new form factors not only for functionality and team-size (the so-called two-pizza teams), but also for the unit of infrastructure. It is not surprising that a portable container or a pod of handful interrelated containers often works out as the most befitting unit of infrastructure for microservices-based architecture.</description>
+    </item>
+    
+    <item>
+      <title>API Gateways Comparison – Features and Pricing of Tyk API Gateway vs. Express Gateway</title>
+      <link>https://express-serverless.io/blog/compare-tyk-api-gateway-express-features/</link>
+      <pubDate>Tue, 13 Feb 2018 13:42:54 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/compare-tyk-api-gateway-express-features/</guid>
+      <description>Tyk API Gateway VS. Express Gateway Open source: beyond the pretty packaging. There are a lot of choices when it comes to choosing and API Gateway. If you&amp;#8217;re considering a new API strategy or just kicking the tires, we&amp;#8217;ve found that it&amp;#8217;s tough find hype-free information that actually helps understand what to look for in an API Gateway and how it fits into even traditional Microservices architecture. So, we rallied the community of developers, executives and thought leaders to get the skinny on the differences (and similarities) of the most popular projects for the API Gateway use case.</description>
+    </item>
+    
+    <item>
+      <title>API Gateways Comparison: Features &amp; Pricing of Kong vs. Express Gateway</title>
+      <link>https://express-serverless.io/blog/compare-kong-api-gateway-express-features/</link>
+      <pubDate>Tue, 30 Jan 2018 14:10:49 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/compare-kong-api-gateway-express-features/</guid>
+      <description>Kong API Gateway VS. Express Gateway Two popular open source projects &amp;#8211; two very different approaches. We&amp;#8217;ve gotten a lot of questions about what to look for in an API Gateway, what is an API Gateway and even how an API gateway fits into your Microservices architecture. So, let&amp;#8217;s take a deeper look at all of this and more as we break down the differences (and similarities) of the most popular projects for the API Gateway use case.</description>
+    </item>
+    
+    <item>
+      <title>API Gateway Comparison – Features and Pricing of Amazon AWS API Gateway and Express Gateway</title>
+      <link>https://express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</link>
+      <pubDate>Tue, 23 Jan 2018 13:30:58 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</guid>
+      <description>Amazon API Gateway VS. Express Gateway If you&amp;#8217;re curious about how your API Gateway stacks up, now&amp;#8217;s the time to listen up because we&amp;#8217;re breaking down the differences (and similarities) of the most popular projects for the API Gateway use case.
+First up, we&amp;#8217;ve got Amazon API Gateway and we&amp;#8217;re going to compare it toExpress Gateway, an open source API Gateway built entirely on Express.js.
+&amp;nbsp;
+TLDR: You can skip ahead to the deep dive.</description>
+    </item>
+    
+    <item>
+      <title>How you can use a Multi-cloud Strategy to Grow your Company</title>
+      <link>https://express-serverless.io/blog/can-use-multi-cloud-strategy-grow-company/</link>
+      <pubDate>Tue, 09 Jan 2018 15:42:13 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/can-use-multi-cloud-strategy-grow-company/</guid>
+      <description>Over the last few months it seems like everyone has been getting in on that hot multi-cloud action. Unlike a lot of other companies, we&amp;#8217;ve been cloud agnostic since day one (before it was cool). So for LunchBadger, we&amp;#8217;d like like to take a moment and get on the mic about what this is really all about and how you can use a multi-cloud strategy to achieve maximum growth, sustainably.</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>https://express-serverless.io/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/license/</guid>
+      <description>Express Serverless Platform is licensed under APACHE LICENSE 2.0 The Apache License 2.0 is a permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+Permissions Commercial use | Modification | Distribution | Patent use | Private use
+ Limitations Trademark use | Liability | Warranty</description>
+    </item>
     
   </channel>
 </rss>

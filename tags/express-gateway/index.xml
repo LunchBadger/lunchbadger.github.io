@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Express Gateway on Express Serverless Platform</title>
+    <link>https://express-serverless.io/tags/express-gateway/</link>
+    <description>Recent content in Express Gateway on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Apr 2018 12:31:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://express-serverless.io/tags/express-gateway/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ESP vs Azure Functions</title>
+      <link>https://express-serverless.io/blog/get-started-azure-functions-vs-express-serverless-platform-tutorial/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/get-started-azure-functions-vs-express-serverless-platform-tutorial/</guid>
+      <description>If you&amp;#8217;re looking at getting started with Azure, we&amp;#8217;ve put together a comprehensive &amp;#8220;Hello, World&amp;#8217; guide. In addition to Azure, we&amp;#8217;ve put together a no-frills comparison of the getting started experience from the developer perspective. Learn more, build more and check out the latest from Val Karpov in this latest installment of our Developer Spotlight Series.
+Azure Functions are Microsoft Azure&amp;#8217;s equivalent to AWS Lambda. Like Lambda, Azure Functions let you write custom functions and expose them via an HTTP interface using Azure API Management.</description>
+    </item>
+    
+    <item>
+      <title>ESP vs IBM Cloud Functions</title>
+      <link>https://express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/</link>
+      <pubDate>Tue, 03 Apr 2018 12:31:41 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/</guid>
+      <description>IBM Cloud Functions are IBM Cloud&amp;#8217;s equivalent to AWS Lambda. Like Lambda, IBM Cloud Functions let you write custom functions and expose them via an HTTP interface through either IBM Cloud Function&amp;#8217;s minimal HTTP configuration or IBM API Connect for more sophisticated use cases. Express Serverless Platform offers a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I&amp;#8217;ll walk through setting up a rudimentary Node.</description>
+    </item>
+    
+  </channel>
+</rss>

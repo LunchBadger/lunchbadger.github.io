@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on Express Serverless Platform</title>
+    <link>https://express-serverless.io/blog/intro-articles/</link>
+    <description>Recent content in Introduction on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 May 2018 18:23:50 +0300</lastBuildDate>
+    
+	<atom:link href="https://express-serverless.io/blog/intro-articles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building Serverless Based Functions</title>
+      <link>https://express-serverless.io/blog/serverless-based-functions/</link>
+      <pubDate>Tue, 07 Aug 2018 02:50:41 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/serverless-based-functions/</guid>
+      <description>Fired up! Ready to go! You’ve heard every buzzword. Microservices, APIs, Kubernetes and serverless just to name a few catchy ones. Let’s get real for a moment and acknowledge that these are just fancy words for the work that you and your team are doing day in and day out. What if there was a way to do this work that was less painful? Less frustrating?
+&amp;nbsp;
+Using Express Serverless Platform, we believe in the power of developers.</description>
+    </item>
+    
+    <item>
+      <title>How To Get Started with API Management and Express Serverless Platform</title>
+      <link>https://express-serverless.io/blog/get-started-api-management-express-serverless-platform/</link>
+      <pubDate>Mon, 05 Nov 2018 12:21:22 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/get-started-api-management-express-serverless-platform/</guid>
+      <description>In our last post, we discussed API Management and the key role that an API Gateway could play. API Gateways can enable secure access to its API endpoints. Features in an API Gateway are often categorized in three broad categories:
+ Authentication: Who is allowed to access (Access Control) Authorization: Who is allowed to perform operations of exposed APIs (Permissions / Privileges) Audit: Analyzing sufficient information for each client request   How does this work?</description>
+    </item>
+    
+    <item>
+      <title>API Management - Setting Up Key-Based Authentication</title>
+      <link>https://express-serverless.io/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/</link>
+      <pubDate>Thu, 08 Nov 2018 09:09:25 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/</guid>
+      <description>We&amp;#8217;ve discussed API Management and setting up the Service and API Endpoints. As long time champions of all the ways you could be using an API Gateway, we&amp;#8217;re going to walk through how take the next step with API Management and set up your Authentication.
+To recap, features in an API Gateway are often categorized in three broad categories:
+ Authentication: Who is allowed to access (Access Control) Authorization: Who is allowed to perform operations of exposed APIs (Permissions / Privileges) Audit: Analyzing sufficient information for each client request   Here&amp;#8217;s a quick diagram of what that looks like:</description>
+    </item>
+    
+  </channel>
+</rss>

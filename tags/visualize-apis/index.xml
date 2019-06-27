@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualize APIs on Express Serverless Platform</title>
+    <link>https://express-serverless.io/tags/visualize-apis/</link>
+    <description>Recent content in Visualize APIs on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Oct 2018 00:12:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://express-serverless.io/tags/visualize-apis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LunchBadger Platform is now Express Serverless Platform</title>
+      <link>https://express-serverless.io/blog/express-serverless-platform-lunchbadger/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/blog/express-serverless-platform-lunchbadger/</guid>
+      <description>Express Serverless Platform has arrived! After three long months of hard work, we&amp;#8217;re proud to announce that the LunchBadger Platform is now the Express Serverless Platform. New name, new features and an opportunity to experience a visual canvas ripe with all the important functionality that developers need, without the hype.
+&amp;nbsp;
+TLDR: Install ESP right over here
+&amp;nbsp;
+For Developers, DevOps teams and CTOs driving impact in top companies, it&amp;#8217;s not just a name change &amp;#8211; it&amp;#8217;s a game changer and we can&amp;#8217;t wait to show you why.</description>
+    </item>
+    
+  </channel>
+</rss>

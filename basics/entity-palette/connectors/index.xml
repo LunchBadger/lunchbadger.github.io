@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Model Connectors on LunchBadger Documentation site</title>
-    <link>https://docs.lunchbadger.com/basics/entity-palette/connectors/</link>
-    <description>Recent content in Model Connectors on LunchBadger Documentation site</description>
+    <title>Model Connectors on Express Serverless Platform</title>
+    <link>https://express-serverless.io/basics/entity-palette/connectors/</link>
+    <description>Recent content in Model Connectors on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 May 2018 18:37:50 +0300</lastBuildDate>
     
-	<atom:link href="https://docs.lunchbadger.com/basics/entity-palette/connectors/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://express-serverless.io/basics/entity-palette/connectors/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

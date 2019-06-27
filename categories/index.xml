@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on LunchBadger Documentation site</title>
-    <link>https://docs.lunchbadger.com/categories/</link>
-    <description>Recent content in Categories on LunchBadger Documentation site</description>
+    <title>Categories on Express Serverless Platform</title>
+    <link>https://express-serverless.io/categories/</link>
+    <description>Recent content in Categories on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 29 Nov 2018 01:08:42 +0000</lastBuildDate>
     
-	<atom:link href="https://docs.lunchbadger.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://express-serverless.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Featured</title>
+      <link>https://express-serverless.io/categories/featured/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/categories/featured/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>https://express-serverless.io/categories/technology/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/categories/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://express-serverless.io/categories/development/</link>
+      <pubDate>Thu, 08 Nov 2018 09:09:25 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Announcement</title>
+      <link>https://express-serverless.io/categories/announcement/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://express-serverless.io/categories/announcement/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

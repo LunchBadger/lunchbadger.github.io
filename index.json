@@ -1,106 +1,1093 @@
 [
 {
-	"uri": "https://docs.lunchbadger.com/",
-	"title": "Welcome",
-	"tags": [],
-	"description": "",
-	"content": " Welcome to LunchBadger Documentation! LunchBadger takes the idea behind microserivces and APIs and makes it concrete and real.\nWith LunchBadger it\u0026rsquo;s easy to\u0026hellip;\n develop microservices - starting with existing applications and data or with something completely greenfield. build and deploy your microservices into the cloud in real time expose your microservices as APIs consumable by other applications or clients internally or externally  If you haven\u0026rsquo;t already - please check out the Getting Started guide.\n"
+	"uri": "https://express-serverless.io/blog/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/",
+	"title": "ESP vs AWS Lambda",
+	"tags": ["Amazon API Gateway", "Amazon Web Services Pricing", "Amiram Shachar", "api gateway", "AWS Lambda", "Developers", "DevOps", "Functions as a Service", "Lambda", "No-Ops", "On Premise Serverless Solutions"],
+	"description": "Find out the truth about using AWS Lambda and why resilient microservices platforms like Express Serverless Platform running on AWS is a better option for both developers and operations.",
+	"content": " Developer Challenges of Serverless and AWS AWS pioneered the idea behind serverless when they introduced AWS Lambda: focus on your business logic down to its atomic parts of your applications—functions—and let them worry about the rest. This whole idea eventually led to the NoOps movement.\n\u0026nbsp;\nServerless is a great idea! It\u0026#8217;s a new paradigm that can be applied to how modern applications are developed and run in the cloud to drastically increase developer focus and productivity.\n\u0026nbsp;\nBut there are challenges and even \u0026#8220;gotchas\u0026#8221;…\n\u0026nbsp;\nkitchen sink\u0026#8211; As with any new technology, developers want to utilize it for every use case imaginable. We call this “shiny object syndrome,” and this leads to a lot of misunderstanding of best practices for when to use serverless functions  killer latency\u0026#8211; There’s a cost to spinning up and spinning down the underlying containers that run serverless functions. This latency can be very prohibitive, depending on your use case.\n  vendor lock-in\u0026#8211; Relying on a single cloud provider\u0026#8217;s serverless solution means investing a lot of time and money in a technology that isn\u0026#8217;t portable should your needs change in the future.  no on-premises equivalent\u0026#8211; While several attempts have been made to bring serverless to the on-premises data center, they are often cumbersome, difficult to maintain, and incompatible with cloud-based solutions.  per-cloud duplication\u0026#8211; Even if you find a way to adopt multiple serverless implementations, it\u0026#8217;s at the cost of non-uniformity and duplication \nTruth About The Costs And Pricing Behind AWS Lambda and Amazon API Gateway When you start with two completely different products and try to integrate them together, you’re often left with a diluted experience and a compromise on functionality. \n\u0026nbsp;\nThat’s exactly the case for AWS Lambda and Amazon API Gateway.\n\u0026nbsp;\nIf you want to trigger AWS Lambda functions from HTTP requests, AWS forces you to use Amazon API Gateway, a consideration and constraint for all Web-based use cases.\n\u0026nbsp;\nThe real cost of utilizing AWS Lambda for Web-based use cases is not AWS Lambda itself; it’s exposing Lambda functions through Amazon API Gateway. \n\u0026nbsp;\nA lot of articles have been written about this and other challenges utilizing Lambda. Here are a few\u0026#8230;\n\u0026nbsp;\nAmiram Shachar’s Medium article  Sumit Maingi’s traffic cost analysis of serverless  Viacom’s Lambda cost and functionality tradeoffs \n\u0026nbsp;\nHigh Performance Experience, Same AWS. We saw these challenges and worked with companies that either wanted a better experience or needed a true multi-cloud solution. \n\u0026nbsp;\nWe took the idea behind serverless and ran with it by providing a seamless experience on top of AWS with Express Serverless Platform. \n\u0026nbsp;\nIt gives developers a better way to write and orchestrate serverless functions. It eliminates hidden costs and gives complete control of API Management with a much better API gateway experience.\n\u0026nbsp;\nThe adoption of Express Serverless Platform means you can also fulfill a hybrid or multi-cloud strategy by writing functions once and running them anywhere, including your own data center, with the same efficiency and experience.\n\u0026nbsp;\nWe\u0026#8217;ve written a complete guide towards understanding the major differences and similarities between Express Serverless Platform on AWS versus AWS Lambda across multiple dimensions, including features and pricing, which is available for download, from our Resources page.\n\u0026nbsp;\nHow Express Serverless Platform Lets Developers Have Their Serverless and Kubernetes Cake and Eat it Too \u0026nbsp;\n\u0026nbsp;\nExpress Serverless Platform installs and runs on your AWS account in Kubernetes. You don’t have to manage Kubernetes, because EKS on AWS does that for you.\n\u0026nbsp;\nThe installer provisions a Kubernetes cluster on EKS. Once Kubernetes is up and running, Express Serverless Platform is installed into Kubernetes through Helm.\n\u0026nbsp;\nThe following components are deployed as microservices running in Kubernetes pods through Express Serverless Platform:\n\u0026nbsp;\n model functions serverless functions integrations (connectors) API Gateways  \u0026nbsp;\nExpress Serverless Platform is the only platform that seamlessly let’s you write functions and run them in public cloud infrastructure or opt to use long-running containers in a managed Kubernetes cluster.\n\u0026nbsp;\nInstead of being forced to wire up AWS Lambda functions to Amazon API Gateway, you can wire them up to Express Gateway and have a much better starting point with built-in policies and enterprise features out-of-the-box. \n\u0026nbsp;\nThis short video shows you exactly how Express Serverless Platform runs on AWS.\n\u0026nbsp;\n \u0026nbsp;\nHope you found this post beneficial. Don\u0026#8217;t forget to download the AWS Lambda versus Express Serverless Platform on AWS comparison guide.\n\u0026nbsp;\nAnd if you\u0026#8217;re interested in more of these topics, join the live discussion on Twitter @lunchbadger or @express_gateway.\n\u0026nbsp; \u0026nbsp;\n Share   Tweet   Link  "
 },
 {
-	"uri": "https://docs.lunchbadger.com/about/",
+	"uri": "https://express-serverless.io/blog/serverless-based-functions/",
+	"title": "Building Serverless Based Functions",
+	"tags": ["a minimalistic framework for Node.js", "API endpoints", "Build a Microservice", "Build an API", "Building Enterprise-Ready Serverless Functions", "Deploy an API Gateway", "express.js", "How to build an API", "How to get started with Kubernetes", "Kubernetes", "Kubernetes Runtime"],
+	"description": "Auto deployment in a Kubernetes Runtime isn&#39;t a myth - it&#39;s the Express Serverless Platform. Build enterprise ready serverless functions now.",
+	"content": " Fired up! Ready to go! You’ve heard every buzzword. Microservices, APIs, Kubernetes and serverless just to name a few catchy ones. Let’s get real for a moment and acknowledge that these are just fancy words for the work that you and your team are doing day in and day out. What if there was a way to do this work that was less painful? Less frustrating?\n\u0026nbsp;\nUsing Express Serverless Platform, we believe in the power of developers. From day 1, our ambitious mission has been to make life a little easier for developers. When developers get the job done quicker, businesses grow faster. It’s just that simple. So, when you access Express Serverless Platform, you’re treated to a visual canvas with drag-n-drop, automatic deployment of your microservices in a Kubernetes Runtime so you don’t have to navigate all of the complexity and so much more.\nIn a matter of minutes, you can get serverless function based microservices up and running. You may already know the drill: connect legacy data sources, deploy this business logic using functions and finish it out by exposing this new functionality as a brand new API. New APIs in less time than it takes to order the next flat of Red Bull off Amazon Prime (we tested this!).\n\u0026nbsp;\nWhat seems like an easy task….is actually complex and hard.\n\u0026nbsp;\nWe get it. So, instead of doing all of the day-in-day-out heavy lifting, you can focus on business requirements, logic and how your microservices are being automatically deployed to a Kubernetes Runtime. \n\u0026nbsp;\nAs part of using Express Serverless Platform, you get a documented walkthrough that will take you through the entire process. From choosing your data source to creating API Endpoints and tracing your API workflow, the environment lets you try out all of the features and get a taste for how easy composing, managing and deploying APIs and Microservices can be. Finding and exploring next gen technology like Express Serverless Platform isn’t just for ease-of-use. If you want to stay agile and continue to build, code and deploy fast \u0026#8211; you need new ways of working that will drive your business forward.\n\u0026nbsp;\nExpress Gateway is the API Gateway of Choice in Express Serverless Platform As cosponsors of Express Gateway, you’ve heard us talk a lot about the open source API Gateway. Guilty as charged. In the Express Serverless platform you can put Express Gateway to work exposing and managing your microservices for consumption as APIs. Deploy or configure an API gateway to connect your APIs \u0026#8211; internally or externally. Quickly scaling your application is just that simple. So, when it came time to choosing an API Gateway that was cloud agnostic, flexible and developer friendly, Express Gateway was the right choice.\n\u0026nbsp;\nIn case you’re not familiar with the project, Express Gateway is built on Express.js, a minimalistic framework for Node.js. For enterprises, it’s clear that implementing and supporting an API Gateway can be difficult. In fact, as maintainers of Express Gateway, we’ve found more than a few enterprises shared critical support needs.\n\u0026nbsp;\nAs part of the environment, you can learn more about Express Gateway and get the support you need to build web applications, mobile, B2B integrations, or deploy your developer SDK fast and easy. \n\u0026nbsp;\nKubernetes Runtime and What’s Next for Express Serverless Platform As we look forward to building out the Express Serverless Platform, we hope to incorporate the important feedback of developers, enterprises and every day builders, like you. Right now, we’ve included an automatic deployment in a Kubernetes Runtime as part of the platform.\n\u0026nbsp;\nThis wasn’t an accident \u0026#8211; it was direct feedback from enterprises and developers, like you.\n\u0026nbsp;\nOnce you\u0026rsquo;re done with the installation, hit us up in chat or social media and share your use cases, or ask and get answers to tough questions about APIs or Microservices. So, now’s the time to get onboard and help shape the future of Express Serverless Platform!\nAdditionally, if you\u0026#8217;re interested in more of these topics, join the live discussion on twitter @lunchbadger or @express_gateway\n\u0026nbsp; \u0026nbsp;\n Share   Tweet   Link  "
+},
+{
+	"uri": "https://express-serverless.io/resources/comparison-guides/",
+	"title": "Comparison Guides",
+	"tags": [],
+	"description": "Download detailed comparison guides on serverless platform pricing, features and more",
+	"content": " Download detailed comparison guides on pricing, features and more.   Serverless Plaform Comparison Guides   Comparison - AWS Lambda vs Express Serverless Platform on AWS.pdf  (1700 ko)   Comparison - Apigee Edge vs Express Serverless Platform.pdf  (605 ko)   Comparison - Azure Functions vs Express Serverless Platform on Azure.pdf  (695 ko)   Comparison - Google Cloud Functions vs Express Serverless Platform on GCP.pdf  (693 ko)   Comparison - IBM Cloud Functions vs Express Serverless Platform on IBM.pdf  (591 ko)      API Gateway Comparison Guides   LunchBadger_API Gateways - Amazon API Gateway vs Express Gateway.pdf  (800 ko)   LunchBadger_API Gateways - Kong vs Express Gateway.pdf  (1131 ko)   LunchBadger_API Gateways - Tyk vs Express Gateway.pdf  (352 ko)    "
+},
+{
+	"uri": "https://express-serverless.io/blog/intro-articles/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "Get started here to understand the history behind Express Serverless Platforms, why it was created and how you can benefit.",
+	"content": " Intro Articles Get started here to understand the history behind Express Serverless Platforms, why it was created and how you can benefit.\n"
+},
+{
+	"uri": "https://express-serverless.io/",
+	"title": "Open Source, Kubernetes-native, Microservices &amp; Serverless Platform",
+	"tags": [],
+	"description": "",
+	"content": " Express Serverless Platform An open source, Kubernetes-native, microservices and serverless platform. Express Serverless Platform (ESP) takes the idea behind microserivces and APIs and makes it concrete and real.\nWith ESP it\u0026rsquo;s easy to\u0026hellip;\n develop microservices - starting with existing applications and data or with something completely greenfield. build and deploy your microservices into the cloud in real time expose your microservices as APIs consumable by other applications or clients internally or externally  If you haven\u0026rsquo;t already - please check out the Getting Started guide.\n"
+},
+{
+	"uri": "https://express-serverless.io/blog/get-started-api-management-express-serverless-platform/",
+	"title": "How To Get Started with API Management and Express Serverless Platform",
+	"tags": ["API Consumer Management", "api gateway", "model-based microservices and serverless functions", "Service Endpoint", "Service Endpoint can be front-ended by an API Gateway"],
+	"description": "API Management begins with setting up the ServiceEndpoint. Get a step-by-step walkthrough of how to do this with Express Gateway, an API Gateway.",
+	"content": " In our last post, we discussed API Management and the key role that an API Gateway could play. API Gateways can enable secure access to its API endpoints. Features in an API Gateway are often categorized in three broad categories:\n Authentication: Who is allowed to access (Access Control) Authorization: Who is allowed to perform operations of exposed APIs (Permissions / Privileges) Audit: Analyzing sufficient information for each client request   How does this work? How can developers and DevOps teams get started? We\u0026#8217;ve broken out a step-by-step guide on how to get started with API Management with Express Serverless Platform including best practices on API Management along the way.\nHere\u0026#8217;s a quick diagram of what that looks like:\nSetting Up The Service And API Endpoint in Express Serverless Platform We will have to complete a few pre-requisite steps before configuring authentication, authorization and audit.\n First we have to set up a Service Endpoint using the Canvas Then we have to set up a Gateway instance  Before setting up a pipeline within this Gateway, it will be helpful to create a \u0026#8216;scope\u0026#8217; (which may be later associated with API endpoints and API users)\n Then, we will create two users with credentials to access the APIs. For the purpose of this blog, we will work with Key-based Authentication. Finally we will set up a pipeline in our Gateway instance that is configured for authentication, authorization and audit  We have an existing service (worldclockapi.com) that we want to expose an API with appropriate rate limits. So, we need to drop in a \u0026#8216;Service Endpoint\u0026#8217; from the Canvas (on to the \u0026#8216;Private\u0026#8217; quadrant). This component only needs one configuration information: the base URL of the service (http://worldclockapi.com/api/json/utc/).\n\nThe Service Endpoint can be front-ended by an API Gateway, just like other services (model-based microservices and serverless functions) in the Express Serverless Platform. So, next, we drop in a Gateway instance on the Gateway quadrant.\n\u0026nbsp;\nBefore we jump into creating a pipeline, we will create a scope, and two users by clicking on the \u0026#8216;Consumer Management\u0026#8217; button on the Gateway element on our Canvas.\nTo create a new scope, we will navigate to the \u0026#8216;Scopes\u0026#8217; tab under Consumer Management.\n\u0026nbsp;\nNow we will create a scope named \u0026#8216;timewatchers\u0026#8217;. we just need to type in the scope name and hit \u0026#8216;Enter\u0026#8217;.\n\u0026nbsp;\n\u0026nbsp;\nNow we will create a new user with user id \u0026#8216;bob\u0026#8217; and set up the following:\n Allocate a API key for key-based authentication for this user  Associate this user with the \u0026#8216;timewatchers\u0026#8217; scope  First we create a user \u0026#8216;bob\u0026#8217; from the \u0026#8216;User\u0026#8217; tab under Consumer Management.\n\u0026nbsp;\n\u0026nbsp;\nTo allocate an API key, expand the information on user bob from the \u0026#8216;User\u0026#8217; tab under Consumer Management.\n\u0026nbsp;\n\nScroll down the pop-up showin the user details for \u0026#8216;bob\u0026#8217;, and focus on the Key-based authentication section. Click on the \u0026#8216;Create\u0026#8217; button.\n\u0026nbsp;\n\u0026nbsp;\nThis will generate a Key id and secret for the user \u0026#8216;bob\u0026#8217;. We need to take note of these credentials in order to access API endpoints.\n\u0026nbsp;\nFinally, we will associate the \u0026#8216;timewatchers\u0026#8217; scope with the user \u0026#8216;bob\u0026#8217;.\n\u0026nbsp;\n\u0026nbsp;\nWe will actually create one more user \u0026#8216;alice\u0026#8217; and allocate API keys in a similar fashion. However, we will not assign any scope to this user.\n\u0026nbsp;\n\u0026nbsp;\nNow we are ready to set up a pipeline in our Gateway instance with key-based authentication enabled.\n\u0026nbsp;\n\u0026nbsp;\nNow that we\u0026#8217;ve covered how to set up the ServiceEndpoint, we\u0026#8217;ll move on to Authentication. Authentication is an important key aspect to API Management. To enable key-based authentication, we\u0026#8217;ll add policies to our pipeline and provide a complete easy-to-follow guide written by developers for developers on how to set this up.\n\u0026nbsp;\nIf you\u0026#8217;re interested in more of these topics, join the live discussion on twitter @lunchbadger or @express_gateway\n\u0026nbsp; \u0026nbsp;\n Share   Tweet   Link  "
+},
+{
+	"uri": "https://express-serverless.io/blog/2018/",
+	"title": "2018 Articles",
+	"tags": [],
+	"description": "Articles on Express Serverless Platform&#39;s how-to&#39;s, use-cases, examples and comparisons with other serverless platforms",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/resources/use-cases/",
+	"title": "Use Cases",
+	"tags": [],
+	"description": "In depth use-cases on Microservices and Serverless Platforms and Functions across various industries.",
+	"content": " In depth use-cases on Express Serverless Platform across various industries.   Use Cases   Use Case - Credit Application Automation for a Multi-National Bank.pdf  (1456 ko)   Use Case - Mobile Device Management System for a Telecom Provider.pdf  (1276 ko)    "
+},
+{
+	"uri": "https://express-serverless.io/blog/hello-world-esp-vs-google-cloud-functions-example/",
+	"title": "ESP vs Google Cloud Functions",
+	"tags": ["Cloud Functions", "Express Gateway pipeline.", "express.js", "Get Started with Google Cloud Functions", "Get started with how to write custom functions", "Get started with Node.js functions in LunchBadger", "Google Cloud", "Google Cloud Functions", "Google&#39;s cloud functions emulator", "LunchBadger GUI", "minimal HTTP configuration", "Node.js", "Node.js function"],
+	"description": "A detailed getting started tutorial guide between Express Serverless Platform and Google Cloud Functions with examples by developers for developers.",
+	"content": " Google Cloud Functions are Google Cloud\u0026#8217;s equivalent to AWS Lambda. Like Lambda, Google Cloud Functions let you write custom functions and expose them via an HTTP interface through either Google Cloud Function\u0026#8217;s minimal HTTP configuration or Google Cloud Endpoints for more sophisticated use cases. Express Serverless Platfom is a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I\u0026#8217;ll walk through setting up a rudimentary Node.js function in both Express Serverless Platform and Google Cloud, and discuss the tradeoffs of using one over the other.\nGet Started with Google Cloud Functions Go to the Google Cloud Functions landing page and click \u0026#8220;Try it free\u0026#8221;. Google Cloud offers a free trial with $300 in credits for 1 year, which should be more than enough for this simple walkthrough.\n\u0026nbsp;\n\u0026nbsp;\nClick on the hamburger icon in the upper left and find the \u0026#8220;Cloud Functions\u0026#8221; link in the sidebar, then click \u0026#8220;Create function\u0026#8221;.\n\u0026nbsp;\nName your function \u0026#8220;hello-world\u0026#8221; and leave the rest of the options in the \u0026#8220;Create function\u0026#8221; form unchanged. In particular, leave \u0026#8220;Function to execute\u0026#8221; as \u0026#8220;helloWorld\u0026#8221;, because that needs to match the name of the function your source code exports. Enter the below code as the source code for your function to print out the version of Node.js your cloud function is running on.\n\u0026nbsp;\nexports.helloWorld = (req, res) =\u0026gt; { res.send('Hello from Node.js ' + process.version); }; \u0026nbsp;\n\u0026nbsp;\nClick \u0026#8220;Create\u0026#8221; and wait for Google to deploy your cloud function. It will take a few minutes, so you might take this time to check out Google\u0026#8217;s cloud functions emulator that lets you run cloud functions locally and deploy them from the command line.\nOnce your function is deployed, click on it to display the function\u0026#8217;s details.\n\u0026nbsp;\n\u0026nbsp;\nClick the \u0026#8220;Trigger\u0026#8221; tab to find your cloud function\u0026#8217;s URL.\n\u0026nbsp;\n\u0026nbsp;\nCopy the URL and use curl to run your cloud function.\n\u0026nbsp;\n$ curl https://us-central1-test21-201718.cloudfunctions.net/hello-world Hello from Node.js v6.11.5 $  Google Cloud Functions don\u0026#8217;t give you any control over what version of Node.js you run, they run Node.js v6.11.5 currently and will upgrade when they upgrade. Google\u0026#8217;s stated policy is to follow the Node.js LTS release schedule, but as of this writing they have not upgraded to Node.js 8.x despite it being an LTS release for 6 months.\nExpress Serverless Platform and Express Gateway In Express Serverless Platform, first create a new function and name it \u0026#8216;myfunction\u0026#8217;:\n\u0026nbsp;\n\u0026nbsp;\nNode.js functions in Express Serverless Platform have the same function signature as native Node.js HTTP request listeners. The function to print \u0026#8216;Hello, world!\u0026#8217; with Express Serverless Platform is shown below. Note that the exported function **must** have the same name as the function name you assigned in the Express Serverless Platform GUI.\n\u0026nbsp;\nmodule.exports = { myfunction (req, res) { res.end('Hello, world!'); } };  \u0026nbsp;\n\u0026nbsp;\nNote that this function does not have to create an actual HTTP server. Express Serverless Platform handles creating a server for you, so you can write \u0026#8220;serverless\u0026#8221; functions without having to actually write an Express.js application. You still get access to the Node.js HTTP response, so you can set HTTP headers and set the HTTP status code.\nFrom the menu on the left, add a new gateway. This will add an Express Gateway instance to your project.\n\u0026nbsp;\n\u0026nbsp;\nClick the plus icon next to \u0026#8220;Policies\u0026#8221; to add a policy to the default Express Gateway pipeline. In Express Gateway, a pipeline is a sequence of policies for handling a request. Add an empty \u0026#8216;proxy\u0026#8217; pipeline.\n\u0026nbsp;\n\u0026nbsp;\nDrag a line from your gateway to your function, and Express Serverless Platform will automatically connect your proxy policy to your function.\n\u0026nbsp;\n\u0026nbsp;\nExpress Serverless Platform will also create a function endpoint for you. Keep the \u0026#8220;paths\u0026#8221; for your function endpoint empty for now.\nClick on the \u0026#8220;settings\u0026#8221; icon to find the publicly accessible URL for your Express Serverless Platform project.\n\u0026nbsp;\nRunning curl on the URL will now run your custom function and give you the \u0026#8220;Hello, world!\u0026#8221; text.\n\u0026nbsp;\n$ curl http://gateway-148-dev.lunchbadger.io Hello, World! $  Moving On The combination of Express Serverless Platform and Express Gateway is a great alternative to Google Cloud Functions if you\u0026#8217;re looking to avoid vendor lock-in.\nThe Google Cloud Function emulator lets you develop locally and deploy to Google Cloud, but it only supports invoking functions from the command line, so running a production application on the emulator isn\u0026#8217;t a viable option.\nOn the other hand, Express Serverless Platform scaffolds out an app for you and stores it in a git repo that you can clone. That enables you to run your app locally or on any cloud provider. Express Serverless Platform does automatically host your app for you, but that isn\u0026#8217;t your only option.\nGoogle Cloud is appealing because Google is a well-established company with a proven track record of running sophisticated developer tools at massive scale. But using Google Cloud Functions means you must run your code on Google Cloud and manage your API using Google Cloud Endpoints.\nFurthermore, Google Cloud Functions have slightly different syntax than Azure Functions or IBM Cloud, so switching cloud function providers requires significant refactoring.\n\u0026nbsp;\nWe\u0026#8217;ve done up a detailed comparison analysis on features, pricing and more between Express Serverless Platform running on GCP compared to Google Cloud Functions, which you may download from our Resources page.\n\u0026nbsp;\nAdditionally, if you\u0026#8217;re interested in more of these topics, join the live discussion on twitter @lunchbadger or @express_gateway.\n\u0026nbsp; \u0026nbsp;\n Share   Tweet   Link  "
+},
+{
+	"uri": "https://express-serverless.io/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/",
+	"title": "API Management - Setting Up Key-Based Authentication",
+	"tags": ["API endpoints", "API keys sent over HTTPS", "best practices on API Management", "end-to-end request path from the API endpoint to the back-end service", "key-auth policy", "Proxy policy"],
+	"description": "Learn how to set up key-based authentication and other API Management best practices with Express Serverless Platform with code snippets.",
+	"content": " We\u0026#8217;ve discussed API Management and setting up the Service and API Endpoints. As long time champions of all the ways you could be using an API Gateway, we\u0026#8217;re going to walk through how take the next step with API Management and set up your Authentication.\nTo recap, features in an API Gateway are often categorized in three broad categories:\n Authentication: Who is allowed to access (Access Control) Authorization: Who is allowed to perform operations of exposed APIs (Permissions / Privileges) Audit: Analyzing sufficient information for each client request   Here\u0026#8217;s a quick diagram of what that looks like:\nHow does all of this work together? We\u0026#8217;ve broken out a step-by-step guide on how to get started with setting up key-based authentication with Express Serverless Platform including best practices on API Management along the way.\nHow To Set Up Key-Based Authentication  To enable key-based authentication, we recommend adding two policies in our pipeline in this order: \n key-auth, and proxy  Check it out:\n\u0026nbsp;\n\u0026nbsp;\n\u0026nbsp;\nNow we will connect our Service Endpoint to the pipeline just created. The first time we do so, an API Endpoint will be automatically created in the \u0026#8216;Public\u0026#8217; quadrant and connected to the Gateway. This creates an end-to-end request path from the API Endpoint to the back-end service.\n\u0026nbsp;\n\u0026nbsp;\nThe API Endpoint will expect a path to be specified. Here we have specified the path \u0026#8216;/now\u0026#8217;. \nSo, when a request comes into the Express Serverless Platform for the URL: /now, it is routed to the URL: /now. So effectively, the response will come from the backend service.\nTesting: Now the API end-point should be accessible to an authenticated user.\nFirst let us simply access it without supplying credentials for key-based authentication.\n\u0026nbsp;\n\u0026nbsp;\nWe get a message \u0026#8216;Unauthorized\u0026#8217;, which is expected.\nNow we access the API as user \u0026#8216;bob\u0026#8217;. We will receive a response indicating current UTC time, from the back-end service. To send the key-based authentication credentials, the request should be as follows:\ncurl -H \u0026#8220;Authorization: apiKey ${keyId}:${keySecret}\u0026#8221; \n\u0026nbsp;\nUser \u0026#8216;alice\u0026#8217; would also be able to access the API as shown below.\n\u0026nbsp;\n\u0026nbsp;\nPro Tip: API keys should only be sent over HTTPS, so that it is not intercepted on the wire. Note that Express Serverless Platform by default creates API Endpoints that are secured using HTTPS protocol.\n\u0026nbsp;\nIf you\u0026#8217;re interested in more of these topics, join the live discussion on twitter @lunchbadger or @express_gateway.\n\u0026nbsp; \u0026nbsp;\n Share   Tweet   Link  "
+},
+{
+	"uri": "https://express-serverless.io/blog/2017/",
+	"title": "2017 Articles",
+	"tags": [],
+	"description": "Articles on Express Serverless Platform&#39;s how-to&#39;s, use-cases, examples and comparisons with other serverless platforms",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/blog/get-started-azure-functions-vs-express-serverless-platform-tutorial/",
+	"title": "ESP vs Azure Functions",
+	"tags": ["AWS Lambda", "AWS Lambda versus Azure", "Azure Function App", "Azure UI", "Create a resource in Azure Portal", "Express Gateway", "Getting started with Microsoft Azure", "Hello world with Azure", "HTTP Interafce", "Microsofot Azure UI", "Microsoft Azure", "open source API"],
+	"description": "Compare getting started on Azure Functions versus Express Serverless Platform on Azure using this easy to follow guide with the &#34;Hello, World&#34; experience.",
+	"content": " If you\u0026#8217;re looking at getting started with Azure, we\u0026#8217;ve put together a comprehensive \u0026#8220;Hello, World\u0026#8217; guide. In addition to Azure, we\u0026#8217;ve put together a no-frills comparison of the getting started experience from the developer perspective. Learn more, build more and check out the latest from Val Karpov in this latest installment of our Developer Spotlight Series.\nAzure Functions are Microsoft Azure\u0026#8217;s equivalent to AWS Lambda. Like Lambda, Azure Functions let you write custom functions and expose them via an HTTP interface using Azure API Management. Express Serverless Platform offers a similar stack that lets you write Node.js APIs and expose those APIs through Express Gatewaywithout vendor lock in. In this article, I\u0026#8217;ll walk through setting up a rudimentary function and gateway in both Express Serverless Platform and Azure and discuss the tradeoffs of using one or the other.\nAzure Functions Log in to the Azure Portal and click \u0026#8220;Create a resource.\u0026#8221; In Microsoft Azure, \u0026#8220;resource\u0026#8221; is a very broad term that applies to any manageable service Azure offers you. A function, a VM, an IP address, and storage space are all distinct resources.\n\u0026nbsp;\n\u0026nbsp;\nClicking on \u0026#8220;Create a resource\u0026#8221; will open up a new \u0026#8220;blade\u0026#8221; in the Azure UI. Blade is just a fancy name for a panel in the Azure UI. Click \u0026#8220;Compute\u0026#8221; and then \u0026#8220;Function App\u0026#8221; to create a new Function App. A Function App is a collection of individual functions.\n\u0026nbsp;.\n\u0026nbsp;\nOnce you click \u0026#8220;Function App\u0026#8221;, you\u0026#8217;ll see a blade that asks you for information about your Function App. Enter in a name, but be aware that your name needs to be unique across _all_ Azure function apps, so you should prefix the name with your name. For this example, there\u0026#8217;s no need to change any of the other options. Notice that, by default, Azure Functions run on Windows. Ideally your functions shouldn\u0026#8217;t care about what OS they run, so long as they\u0026#8217;re running on the right version of Node.js, but this is something to be aware of if you are using Node.js C++ add-ons compiled with node-gyp.\n\u0026nbsp;\n\u0026nbsp;\nClick \u0026#8220;Create\u0026#8221; and Azure will kick off creating your Function App. Click the bell icon on the upper right to look out for a notification that Azure finished creating your app.\n\u0026nbsp;\nOnce Azure has created your app, click \u0026#8220;Go to resource\u0026#8221; to configure your Function App.\n\u0026nbsp;\n\u0026nbsp;\nRemember that a Function App is a collection of functions. Click the plus icon next to \u0026#8220;Functions\u0026#8221; to create a new function.\n\u0026nbsp;\n\u0026nbsp;\nAzure makes it easy to create a function that\u0026#8217;s exposed via HTTP. Choose the \u0026#8220;Webhook + API\u0026#8221; scenario and \u0026#8220;JavaScript\u0026#8221; as your language, and then click \u0026#8220;Create this function.\u0026#8221;\n\u0026nbsp;\n\u0026nbsp;\nAzure will create a new \u0026#8220;Hello, world\u0026#8221; function for you. Change the code to print out the current Node.js version as well, and click \u0026#8220;Save and run\u0026#8221; to execute this function\nmodule.exports = function (context, req) { context.log('JavaScript HTTP trigger function processed a request.'); if (req.body.name) { context.res = { // status: 200, /* Defaults to 200 */ body: 'Hello ' + req.body.name + ' from Node.js ' + process.version }; } else { context.res = { status: 400, body: \"Please pass a name on the query string or in the request body\" }; } context.done(); };  \u0026nbsp; Click on \u0026#8220;Get function URL\u0026#8221; to get the publicly accessible URL for your function. Azure will automatically generate a key for you so your endpoint has some rudimentary security. \u0026nbsp; \u0026nbsp; You should now be able to access your function using curl. $ curl -H \"Content-Type: application/json\" -X POST -d '{\"name\":\"curl\"}' https://vkarpov15-test.azurewebsites.net/api/HttpTriggerJS1?code=OMITTED \"Hello curl from Node.js v6.11.2\" $ Note that, by default, Azure currently uses Node.js v6.11.2. You can configure this using package.json    , so you should be able to use Node.js 8 and async/await with Azure Functions.   Express Serverless Platform and Express Gateway   In Express Serverless Platform, first create a new function and name it \u0026#8216;myfunction\u0026#8217;:\n Node.js functions in Express Serverless Platform have the same function signature as native Node.js HTTP request listeners. The function to print \u0026#8216;Hello, world!\u0026#8217; with Express Serverless Platformis shown below. Note that the exported function must have the same name as the function name you assigned in the LunchBadger GUI. module.exports = { myfunction (req, res) { res.end('Hello, world!'); } };   \u0026nbsp;  Note that this function does not have to create an actual HTTP server.Express Serverless Platform handles creating a server for you, so you can write \u0026#8220;serverless\u0026#8221; functions without having to actually write an express application. You do still get access to the Node.js HTTP response, so you can set HTTP headers and set the HTTP status code.  From the menu on the left, add a new gateway. This will add an Express Gateway instance to your project.  \u0026nbsp;   \u0026nbsp;  Click the plus icon next to \u0026#8220;Policies\u0026#8221; to add a policy to the defaultExpress Gateway pipeline. In Express Gateway, a pipeline is a sequence of policies for handling a request. Add an empty \u0026#8216;proxy\u0026#8217; pipeline.  \u0026nbsp;   \u0026nbsp;  Drag a line from your gateway to your function, and Express Serverless Platform will automatically connect your proxy policy to your function.  \u0026nbsp;   \u0026nbsp;  Express Serverless Platform will also create a function endpoint for you. Keep the \u0026#8220;paths\u0026#8221; for your function endpoint empty for now. Click on the \u0026#8220;settings\u0026#8221; icon to find the publicly accessible URL for your Express Serverless Platform project.  \u0026nbsp;   \u0026nbsp;  Running curl on the URL will now run your custom function and give you the \u0026#8220;Hello, world!\u0026#8221; text. $ curl http://gateway-148-dev.lunchbadger.io Hello, World! $  Moving On   The combination of Express Serverless Platform and Express Gateway is a great alternative to Azure Functions if you\u0026#8217;re looking to avoid vendor lock-in. In particular, the fact that Express Serverless Platform scaffolds out an app for you and stores it in a git repo that you can clone enables you to run your app locally or on any cloud provider. Express Serverless Platform does automatically host your app for you, but that isn\u0026#8217;t your only option.  With Azure Functions, you can\u0026#8217;t clone your whole stack and run it locally. You can run your functions locally, but the API Management part of the stack lives exclusively in Microsoft Azure. Azure is appealing because Microsoft is a well-established company and Azure has a proven track record of running applications at massive scale.  However, using Azure Functions means you must run your code on Azure and use Azure API Management, so you can\u0026#8217;t run your full app locally or on another cloud provider.  \u0026nbsp;  This short video demonstrates Express Serverless Platform running on Azure. The demo utilizes a SOAP connector to interface with a legacy customer SOAP service and creates a new facade called a credit application through a model function.  \u0026nbsp;   \u0026nbsp;  \u0026nbsp;  We\u0026#8217;ve written a complete guide towards understanding the major differences and similarities between Express Serverless Platform on Azure versus Azure Functions across multiple dimensions, including features and pricing, which is available for download from our Resources page.  Additionally, if you\u0026#8217;re interested in more of these topics, join the live discussion on twitter @lunchbadger or @express_gateway. \u0026nbsp; \u0026nbsp;\n Share   Tweet   Link  "
+},
+{
+	"uri": "https://express-serverless.io/blog/2016/",
+	"title": "2016 Articles",
+	"tags": [],
+	"description": "Articles on Express Serverless Platform&#39;s how-to&#39;s, use-cases, examples and comparisons with other serverless platforms",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/",
+	"title": "ESP vs IBM Cloud Functions",
+	"tags": ["Bluemix", "Express Gateway", "express.js", "How Do I Get Started with IBM Connect", "IBM API Connect", "Node.js", "Node.js APIs", "What are IBM Cloud Functions"],
+	"description": "A detailed getting started tutorial guide between Express Serverless Platform and IBM Cloud Functions with examples by developers for developers.",
+	"content": " IBM Cloud Functions are IBM Cloud\u0026#8217;s equivalent to AWS Lambda. Like Lambda, IBM Cloud Functions let you write custom functions and expose them via an HTTP interface through either IBM Cloud Function\u0026#8217;s minimal HTTP configuration or IBM API Connect for more sophisticated use cases. Express Serverless Platform offers a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I\u0026#8217;ll walk through setting up a rudimentary Node.js function in both Express Serverless Platform and IBM Cloud, and discuss the tradeoffs of using one over the other.\n\u0026nbsp;\nIBM Cloud Go to IBM\u0026#8217;s OpenWhisk landing page and log in. IBM Cloud is the new name for what used to be called Bluemix, so don\u0026#8217;t be surprised by the bluemix.net URL. OpenWhisk is an Apache open source project that provides the backbone for IBM Cloud Functions.\n\u0026nbsp;\nOnce you\u0026#8217;ve logged in, click on the \u0026#8220;Actions\u0026#8221; tab on the left and then click \u0026#8220;Create.\u0026#8221;\n\u0026nbsp;\n\n\u0026nbsp;\nFor this simple example, click on \u0026#8220;Quickstart Templates\u0026#8221; to get a list of ready-made \u0026#8220;actions.\u0026#8221; In OpenWhisk, an action is just another name for a function.\n\u0026nbsp;\n\n\u0026nbsp;\nSelect the \u0026#8220;Hello World\u0026#8221; function template.\n\u0026nbsp;\n\n\u0026nbsp;\nThe next step asks you for a package name, a runtime, and the actual code. A package is just a container for one or more cloud functions, potentially with shared configuration. IBM Cloud will fill in the form with package name \u0026#8220;hello-world\u0026#8221;, Node.js 8 as the runtime, and a simple \u0026#8220;Hello World\u0026#8221; function as the code, so you shouldn\u0026#8217;t need to make any changes, just hit the \u0026#8220;Deploy\u0026#8221; button.\n\u0026nbsp;\n\n\u0026nbsp;\nGreat, now you have your first cloud function. You can execute the function, but it is not accessible via HTTP. Click the \u0026#8220;Endpoints\u0026#8221; tab on the left to create an endpoint for this function.\n\u0026nbsp;\n\n\u0026nbsp;\nNow, click the \u0026#8220;Enable as Web Action\u0026#8221; checkbox to expose this action via REST API. A web action has a couple special properties as opposed to a regular action. First, a web action _must_ return an object that is serializable into JSON, or a promise that resolves to such an object. Second, if a web action returns an object that has a headers, statusCode or body property, OpenWhisk will use those properties to structure the HTTP response, rather than just stringifying the resulting JSON object.\n\u0026nbsp;\n\n\u0026nbsp;\nOnce you\u0026#8217;ve made your action into a web action, you should be able to access it via REST API. Click the copy icon in the \u0026#8220;HTTP Method\u0026#8221; panel to copy the URL for your function. You should then be able to use curl to access your function via HTTP. Keep in mind IBM Cloud Functions do not have any authentication by default, so you don\u0026#8217;t need any API key.\n\u0026nbsp;\n\n\u0026nbsp;\nRunning curl on the URL will then execute your function and give you the result.\n\u0026nbsp;\n$ curl https://openwhisk.ng.bluemix.net/api/v1/web/val%40karpov.io_dev/hello-world/helloworld.json\n{\n\u0026nbsp; \"greeting\": \"Hello stranger!\"\n}\n$    Express Serverless Platform and Express Gateway In Express Serverless Platform, first create a new function and name it \u0026#8216;myfunction\u0026#8217;:\n\u0026nbsp;\n\n\u0026nbsp;\nNode.js functions in Express Serverless Platform have the same function signature as native Node.js HTTP request listeners. The function to print \u0026#8216;Hello, world!\u0026#8217; with Express Serverless Platform is shown below. Note that the exported function must have the same name as the function name you assigned in the Express Serverless Platform GUI.\n\u0026nbsp;\nmodule.exports = { myfunction (req, res) { res.end('Hello, world!'); } };   \u0026nbsp;\n\n\u0026nbsp;\n\u0026nbsp;\nNote that this function does not have to create an actual HTTP server. Express Serverless Platform handles creating a server for you, so you can write \u0026#8220;serverless\u0026#8221; functions without having to actually write an express application. You do still get access to the Node.js HTTP response, so you can set HTTP headers and set the HTTP status code.\nFrom the menu on the left, add a new gateway. This will add an Express Gateway instance to your project.\n\u0026nbsp;\n\n\u0026nbsp;\nClick the plus icon next to \u0026#8220;Policies\u0026#8221; to add a policy to the default Express Gateway pipeline. In Express Gateway, a pipeline is a sequence of policies for handling a request. Add an empty \u0026#8216;proxy\u0026#8217; pipeline.\n\u0026nbsp;\n\n\u0026nbsp;\nDrag a line from your gateway to your function, and Express Serverless Platform will automatically connect your proxy policy to your function.\n\u0026nbsp;\n\n\u0026nbsp;\nExpress Serverless Platform will also create a function endpoint for you. Keep the \u0026#8220;paths\u0026#8221; for your function endpoint empty for now. Click on the \u0026#8220;settings\u0026#8221; icon to find the publicly accessible URL for your Express Serverless Platform project.\n\u0026nbsp;\n\n\u0026nbsp;\nRunning curl on the URL will now run your custom function and give you the \u0026#8220;Hello, world!\u0026#8221; text.\n\u0026nbsp;\n$ curl http://gateway-148-dev.lunchbadger.io\nHello, World!\n$    Moving On The combination of Express Serverless Platform and Express Gateway is a great alternative to IBM Cloud Functions if you\u0026#8217;re looking to avoid vendor lock-in. IBM Cloud Functions are built on OpenWhisk, so in theory you should be able to migrate your IBM Cloud Functions deployment onto OpenWhisk, but IBM doesn\u0026#8217;t provide any documentation on how to do that. On the other hand, Express Serverless Platform scaffolds out an app for you and stores it in a git repo that you can clone. That enables you to run your app locally or on any cloud provider. Express Serverless Platform does automatically host your app for you, but that isn\u0026#8217;t your only option. IBM Cloud is appealing because IBM is a well-established company, but using IBM Cloud Functions means you must run your code on IBM Cloud and manage your API using IBM API Connect.\n\u0026nbsp;\nWe\u0026#8217;ve done up a detailed comparison analysis on features, pricing and more between Express Serverless Platform running on IBM compared to IBM Cloud Functions, which is available for download from our Resources page.\n\u0026nbsp;\nAdditionally, if you\u0026#8217;re interested in more of these topics, join the live discussion on twitter @lunchbadger or @express_gateway.\n\u0026nbsp; \u0026nbsp;\n Share   Tweet   Link  "
+},
+{
+	"uri": "https://express-serverless.io/about/",
 	"title": "About",
 	"tags": [],
-	"description": "",
-	"content": " What is Express Serverless Platform? Express Serverless Platform enables developers to quickly write serverless functions and seamlessly deploy them as microservices through a secure API gateway using one intuitive visual interface. With Express Serverless Platform, you can:\n Easily build new microservices from scratch Quickly write new model functions and connectors to integrate microservices with legacy data and applications Streamline the development and deployment of serverless architecture Automatically implement industry-standard API gateway security  Express Serverless Platform is deployed on a Kubernetes runtime and ships with its own management utilities, making it easy to manage and scale on any private cloud, public cloud, or multi-cloud hybrid.\nWhat is Express Gateway Enterprise? Express Gateway Enterprise is the same product but different edition of Express Serverless Platform. With Express Gateway Enterprise, writing model functions, serverless functions and model connectors are not enabled. All gateway related features as an API management solution only are enabled.\nWhy would I want to use Express Serverless Platform? TIME.\nYou\u0026rsquo;ll save massive amounts of time trying to attain the benefits of a microservices architecture. Express Serverless Platform provides the following to repeatedly save you time and build your microservices applications sustainably:\n best practices for microservices built into the tool cloud native separation of code, config and metadata code scaffolding and built-in boilerplates automated real time deployment to the cloud(s) of your choice visual orchestration and wiring of microservices to an API gateway, data sources, and more  By using Express Serverless Platform, you\u0026rsquo;ll be building, revising and innovating your microservice based applications more quickly and predictably through its automation and enablement.\nExample:\nGetting your application into the cloud as a container is already hard enough. Image now, deploying it to a container orchestrator and wiring it up to other dependent containers.\nExpress Serverless Platform containerizes your application for you. It deploys an image to Kubernetes by creating the deployment and other complicated YAML documents for you and calls its API rather than fumbling around with dozens of laborious kubectl commands.\nHow does Express Serverless Platform Work? Express Serverless Platform is driven by a GUI known as the Canvas. The Canvas guides user in the process of building, deploying, and managing microservices and exposing them as APIs.\nExpress Serverless Platform utilizes the best of breed open source projects for easy adoption, constant innovation and specialization of what each component brings to putting together a holistic microservices platform.\nSource-level access to these components provides opportunities in transparent customization and support along with community driven innovation. Here are the main projects used behind the scenes and integrated into Express Serverless Platform:\n Express Gateway - an API gateway to expose microservices by defining them as service endpoints and exposing them as API endpoints externally LoopBackJS - a Node.js based framework that lets you create microservices using a model driven approach Serverless - a cloud agnostic framework that acts as an adapter to serverless (a.k.a Function-as-a-Service (FaaS)) platforms. Kubeless - A Kubernetes native serverless engine that allows you to write functions in many supported languages Kubernetes - a container orchestrator that runs in any cloud that deploys microservices as they are built in LunchBadger ReactJS - a GUI framework that allows you to extend and build on top of LunchBadger\u0026rsquo;s visual interface  Interested in our open source project, Express Gateway? Express Serverless Platform is built around a microservices API gateway that was started as an open source project.\nIf you’d like to contribute, please see the Express Gateway website and the Github repository or you can join the Express Gateway Community on Gitter. Commercial Support options are also available for Express Gateway.\nNeed Support? Now that you\u0026rsquo;re armed with the basics of how to use LunchBadger, have fun! Feel free to play around with Entities on the Canvas and direct any questions to your LunchBadger Support Team via Chat on the lower right or drop us an email at support@lunchbadger.com.\n"
+	"description": "Express Serverless Platform is a MultiCloud Serverless Microservices Platform that provides a single pane of glass and cloud agnostic, portable canvas for building and deploying microservices.",
+	"content": " What is Express Serverless Platform? Express Serverless Platform enables developers to quickly write serverless functions and seamlessly deploy them as microservices through a secure API gateway using one intuitive visual interface. With Express Serverless Platform, you can:\n Easily build new microservices from scratch Quickly write new model functions and connectors to integrate microservices with legacy data and applications Streamline the development and deployment of serverless architecture Automatically implement industry-standard API gateway security  Express Serverless Platform is deployed on a Kubernetes runtime and ships with its own management utilities, making it easy to manage and scale on any private cloud, public cloud, or multi-cloud hybrid.\nWhy would I want to use Express Serverless Platform? TIME.\nYou\u0026rsquo;ll save massive amounts of time trying to attain the benefits of a microservices architecture. Express Serverless Platform provides the following to repeatedly save you time and build your microservices applications sustainably:\n best practices for microservices built into the tool cloud native separation of code, config and metadata code scaffolding and built-in boilerplates automated real time deployment to the cloud(s) of your choice visual orchestration and wiring of microservices to an API gateway, data sources, and more  By using Express Serverless Platform, you\u0026rsquo;ll be building, revising and innovating your microservice based applications more quickly and predictably through its automation and enablement.\nExample:\nGetting your application into the cloud as a container is already hard enough. Image now, deploying it to a container orchestrator and wiring it up to other dependent containers.\nExpress Serverless Platform containerizes your application for you. It deploys an image to Kubernetes by creating the deployment and other complicated YAML documents for you and calls its API rather than fumbling around with dozens of laborious kubectl commands.\nHow does Express Serverless Platform Work? Express Serverless Platform is driven by a GUI known as the Canvas. The Canvas guides user in the process of building, deploying, and managing microservices and exposing them as APIs.\nExpress Serverless Platform utilizes the best of breed open source projects for easy adoption, constant innovation and specialization of what each component brings to putting together a holistic microservices platform.\nSource-level access to these components provides opportunities in transparent customization and support along with community driven innovation. Here are the main projects used behind the scenes and integrated into Express Serverless Platform:\n Express Gateway - an API gateway to expose microservices by defining them as service endpoints and exposing them as API endpoints externally LoopBackJS - a Node.js based framework that lets you create microservices using a model driven approach Serverless - a cloud agnostic framework that acts as an adapter to serverless (a.k.a Function-as-a-Service (FaaS)) platforms. Kubeless - a Kubernetes native serverless engine that allows you to write functions in many supported languages Kubernetes - a container orchestrator that runs in any cloud that deploys microservices as they are built in LunchBadger ReactJS - a GUI framework that allows you to extend and build on top of LunchBadger\u0026rsquo;s visual interface  What is Express Gateway? Express Serverless Platform is built around another open source project, known as Express Gateway, which is a microservices and serverless API gateway built on ExpressJS.\nIf you’d like to learn more, please checkout the Express Gateway website and the Github repository or you can join the Express Gateway Community on Gitter.\nNeed Support? Now that you\u0026rsquo;re armed with the basics of how to use Express Serverless Platform, have fun! Feel free to play around with Entities on the Canvas and direct any questions to the Team via an email at support@lunchbadger.com.\n"
 },
 {
-	"uri": "https://docs.lunchbadger.com/basics/entity-palette/connectors/",
+	"uri": "https://express-serverless.io/blog/vs-apigee-features/",
+	"title": "Hello World with Express Serverless Platform vs Apigee Edge",
+	"tags": ["api gateway", "API Proxies", "Apigee Edge", "express.js", "Google", "Google acquired Apigee", "How do I deploy an API gateway?", "How to Deploy an API Proxy?", "Node", "Node.js", "What is Apigee Edge"],
+	"description": "Learn more about how Apigee Edge and Express Serverless Platform, two popular platforms, compare in this easy to follow getting started guide using real time examples, code snippets and more.",
+	"content": " Apigee Edge (acquired by Google in 2016) is a popular platform for deploying API proxies. Express Serverless Platform, like Apigee, allows you to build and deploy API gateways on their internal cloud computing service. At a high level, Express Serverless Platform and Apigee are similar, but there are several key differences in terms of Node.js version compatibility and vendor lock-in that you should be aware of before choosing one or the other.\nDeploying a Node.js Application to Apigee Edge Before you deploy a Node.js app to Apigee, you need to be aware that Apigee currently only supports Node.js v0.10.32. There is no way to use another version. Node.js 0.10.32 was released in 2014 and formally deprecated since 2016. Therefore, many modern Node.js libraries will not work on Apigee.\n\u0026nbsp;\nTo create a new API Gateway with Apigee, log into the Apigee Edge console and click on \u0026#8220;API Proxies.\u0026#8221;:\n\u0026nbsp;\n\u0026nbsp;\nClick on the add proxy button on the upper right corner to create a new proxy.\n\u0026nbsp;\nFor a fair comparison with Express Serverless Platform, click \u0026#8220;Node.js App\u0026#8221; to create a new Node application, and upload the below hello-apigee.js file. Note that with Apigee, your Node.js app needs to expose an HTTP server, Apigee does not currently support any sort of function-as-a-service interface.\n\u0026nbsp;\nvar http = require('http'); var svr = http.createServer(function(req, resp) { resp.writeHead(200, { 'Content-Type': 'text/plain' }); resp.end('Hello, World! ' + process.version + '\\n'); }); svr.listen(9000, function() { console.log('The server is listening on port 9000'); });  \u0026nbsp;\n\u0026nbsp;\nIn the \u0026#8220;Security\u0026#8221; step, select \u0026#8220;Pass through\u0026#8221; so make it easy to access your API Gateway. In production you would likely set API Key security here, but for this simple example you shouldn\u0026#8217;t set up any security.\n\u0026nbsp;\n\u0026nbsp;\nFor the \u0026#8220;Virtual Hosts\u0026#8221; and \u0026#8220;Build\u0026#8221; steps, just hit next and skip those steps. When you get to the \u0026#8220;Summary\u0026#8221; step, Apigee will deploy your API Gateway for you.\n\u0026nbsp;\n\u0026nbsp;\nOnce your API Gateway is finished deploying, you should be able to access your endpoint using curl. Note: once again that the Node.js version is v0.10.32.\n\u0026nbsp;\n$ curl http://val-eval-test.apigee.net/test\nHello, World! v0.10.32\n$    \u0026nbsp;\nYou may see the following error when accessing your endpoint using curl. This error usually occurs because it takes a little time for Apigee to finish deploying your API Gateway after the web interface says it is done. If you see this error, wait a couple minutes and try again.\n\u0026nbsp;\n$ curl http://val-eval-test.apigee.net/test\n{\"fault\":{\"faultstring\":\"APIProxy revision 1 of test does not exist in environment test of organization val-eval\",\"detail\":{\"errorcode\":\"messaging.runtime.ApplicationNotFound\"}}}\n$    \u0026nbsp;\nFor more sophisticated Node.js applications you need to use Apigee\u0026#8217;s apigeetool library to bundle your application. Unfortunately, apigeetool is known for giving mysterious HTTP 401 errors with no further information, so working with apigetool requires more sophistication.\n \u0026nbsp;  Express Serverless Platform and Express Gateway \n In Express Serverless Platform, first create a new function and name it \u0026#8216;myfunction\u0026#8217;:  \u0026nbsp; \n \u0026nbsp;  Node.js functions in Express Serverless Platform have the same function signature as native Node.js HTTP request listeners. The function to print \u0026#8216;Hello, world!\u0026#8217; with Express Serverless Platform is shown below. Note that the exported function must have the same name as the function name you assigned in the Express Serverless Platform GUI.  \u0026nbsp; module.exports = { myfunction (req, res) { res.end(\u0026lsquo;Hello, world!\u0026lsquo;); } };\n \n Note that this function does not have to create an actual HTTP server. Express Serverless Platform handles creating a server for you, so you can write \u0026#8220;serverless\u0026#8221; functions without having to actually write an express application. You do still get access to the Node.js HTTP response, so you can set HTTP headers and set the HTTP status code.  \u0026nbsp;  From the menu on the left, add a new gateway. This will add an Express Gateway instance to your project.  \u0026nbsp; \n \u0026nbsp;  Click the plus icon next to \u0026#8220;Policies\u0026#8221; to add a policy to the default Express Gateway pipeline. In Express Gateway, a pipeline is a sequence of policies for handling a request. Add an empty \u0026#8216;proxy\u0026#8217; pipeline.  \u0026nbsp; \n \u0026nbsp;  Drag a line from your gateway to your function, and Express Serverless Platform will automatically connect your proxy policy to your function.  \u0026nbsp; \n \u0026nbsp;  Express Serverless Platform will also create a function endpoint for you. Keep the \u0026#8220;paths\u0026#8221; for your function endpoint empty for now. Click on the \u0026#8220;settings\u0026#8221; icon to find the publicly accessible URL for your Express Serverless Platform project.  \u0026nbsp; \n \u0026nbsp;  Running curl on the URL will now run your custom function and give you the \u0026#8220;Hello, world!\u0026#8221; text.  \u0026nbsp; \n$ curl http://gateway-148-dev.lunchbadger.io\nHello, World!\n$   \n Moving On \n The combination of Express Serverless Platform and Express Gateway is a great alternative to Apigee for Node.js developers if you\u0026#8217;re looking to leverage modern JavaScript. \u0026nbsp; In particular, Apigee requires you to use a version of Node.js that\u0026#8217;s been deprecated for several years at the time of this writing. \u0026nbsp; Express Serverless Platform also allows you to simply write functions, rather than requiring you to build out a whole server application and then deploy it using an error-prone command line tool. Apigee is appealing if you want to deploy an existing Node.js application somewhere, or if you don\u0026#8217;t want to use Node.js and just use their web GUI to configure your API Gateway. \u0026nbsp; However, the latter approach suffers from vendor lock-in, because you can\u0026#8217;t simply take your API Gateway from Apigee\u0026#8217;s GUI and run it locally or on a different cloud provider. \u0026nbsp; Express Serverless Platform\u0026#8217;s GUI generates a git project for you, so you can clone your entire API Gateway stack, modify it in your preferred code editor, and run it locally or on your cloud provider of choice. \u0026nbsp;\n\nWe’ve done up a detailed comparison analysis on features, pricing and more between Express Serverless Platform and Apigee Edge, which is available for download from our Resources page.\n Additionally, if you\u0026#8217;re interested in more of these topics, join the live discussion on twitter @lunchbadger or @express_gateway. \n\u0026nbsp; \u0026nbsp;\n Share   Tweet   Link  "
+},
+{
+	"uri": "https://express-serverless.io/basics/entity-palette/connectors/",
 	"title": "Model Connectors",
 	"tags": [],
 	"description": "",
 	"content": "To create a Model Connector click on the connector icon on the entity palette:   a sub-menu of different connector types will appear:\nModel Connectors are prebuilt libraries that allow you to utlize a wide array of popular data sources and services. At this time, Model Connectors can be only directly utilized by Models by connecting the Model Connector port to the left Model port.\nEach model connector entity will come with its own set of properties specific for that type of connection.\nModel Connectors in Express Serverless Platform are based on LoopBack data sources and their corresponding connectors\n Express Serverless Platform comes with the following connectors:\n Memory REST SOAP MongoDB Redis MySQL PostgreSQL Ethereum Salesforce Triton Object Storage  Express Serverless Platform provides a graphical interface for configuring the LoopBack based connectors listed above. Any LoopBack connector can be utilized by Express Serverless Platform. There are many, many more LoopBack connectors that can be utilized by Express Serverless Platform even if there isn\u0026rsquo;t a supporting GUI entry in Model Connectors entity types! Check out the LoopBack Awesome List for more model connectors.\n "
 },
 {
-	"uri": "https://docs.lunchbadger.com/basics/canvas/",
+	"uri": "https://express-serverless.io/basics/canvas/",
 	"title": "Canvas",
 	"tags": [],
 	"description": "",
 	"content": " Within Express Serverless Platform, the Canvas is a single pane of glass where you can create, build, and deploy your microservices and APIs.\n The Canvas is broken up into a few easy parts to understand:\n header entity palettte quadrants toolbar panels chat  Header The information displayed at the very top of the Canvas is called the Header. The Header contains information about the current state of the Canvas, starting from left to right:\n username environment name project name  At this time, all environments are limited to dev(elopment) environments within the online trial and a single project called Canvas by default.\n Each Canvas is uniquely made up of a user, environment and project.\nEntity Palette The left most toolbar is called the Entity Palette. Each icon in the palette represents a different entity that you can create. The entity palette is divided up into different entity types.\nSome entities are used when you are developing your microservcies and integrating to existing data and application. Others are used when you want to expose microservices as APIs and secure them through an API gateway. More Details: Entity Palette\nQuadrants The columns that take up most of the area witihn the Canvas with a gray header are called Quadrants. Quadrants represent different tiers within your microservices application. They are designed to help you logically classify the different parts of your application in a microservices architecture. Having the logical model of your microservices defined makes it easier to scale individual microservices accordingly within the Kubernetes runtime.\nBackend The backend quadrant represents where you data and services exist and or persisted. Microservices can be built on top of existing legacy applications and or data.\nThere\u0026rsquo;s no need to throw away your old applications as you move into a microservices architecture. Express Serverless Platform has tooling to help you create a new layer of microservices on top of your legacy applications and data. This will allow you to build entirely new microservices alongside microservices that sit as a layer on top of what already exists.\n Express Serverless Platform utilizes the same tooling to connect to new data sources where you want to persist data utilized with new microserivces.\nExample: Legacy Data in MySQL\n You have data in MySQL that exists as rows and tables and you want to create a set of microservices that represent that data. A MySQL Connector can be created in the backend quadrant and represents a connection to MySQL as a legacy data source.\n Example: New Data to be stored in MongoDB\n You are creating a new microservice that handles payments. The microservices requires each payment performed to be recorded with transaction details as a JSON object. A MongoDB Connector can be created in the backend quadrant that represents the connection to new MongoDB instance that will store the new transaction data.\n Private The private quadrant represents all business functionality within your application. This quadrant contains all Models, Service Endpoints and Functions in your system. They are not exposed publically, but can communicate with each other. In Express Serverless Platform communication with external services is done through a Gateway\nExample: Legacy SOAP Service Leveraged by New Customer Model Microservice\n You have a legacy SOAP service that represents a customer. The customer SOAP object has 100 properties. You want to surface a new credit application API backed by a Model based microservice that only requires 10 of the 100 fields that are minimally needed for a new customer applying for credit. A customer microsevice Model can be created with the 10 fields that are required connecte to an instance of the SOAP Connector in the backend quadrant pointed to the legacy SOAP service.\n Example: Serverless Function\n You have a function that calculates and suggests a recommended price for a particular car given an historical list of average prices and dates paid by past buyers for the car. A SuggestedPriceCalculator Function can be deployed and written in Node, Python and other languages to take the list of average prices and dates and do a weighted calcuation of a price to look for when shopping for a car.\n Example: Barebone Service Endpoint Proxing an External Service\n You want to surface a uniform API that powers a Yelp like application that shows all restaurants near your user. The list of restaurants and their addresses are handled by a Restaurant model based microservice and the geolocation lookup is done by a 3rd party API - Google Maps. A Service Endpoint can be created to point to the Google Maps URL to pass in geolocation coordinates to do a lookup calculation for distance between the user and each of the restaurants.\n Gateway The gateway quadrant is a dividing line between what is public facing and consumed by consumers through an API and what is private and managed by producers as a set of microservices connected to backend systems. The only entity created within this quadrant are gateways. Gateway Entities represent created and deployed instances of Express Gateway. These instances act as an API Gateway within your application. Gateways expose HTTP based API endpoints, provide policy based quality of services (like routing, authentication, authorization, rate-limiting etc.) and proxy in front of entities within the private quadrant.\nExample:\n You have a couple of Model based microservices that act as REST resources - cart, catalog, user. Each of these Models can be wired up to a Gateway entity in this quadrant and be exposed as REST API endpoint by the gateway. The Gateway in this quadrant can be configured with policies to proxy to these backend Models and secure them with authentication and authorization policies like key authorization.\n Public The public quadrant contains entities that are exposed and directly visible to any consumer of your application. Consumers can interact directly with these entities. The public quadrant contains API Endpoint entities exposed by Gateways in the gateway quadrant. API Endpoints are HTTP based URLs that can be called directly by a client external to your application.\nExample:\n You have a domain and URL for exposing a REST API for cart as http://www.petstore.com/api/v1/cart. This URL is exposed as an API Endpoint in the public quadrant.\n Toolbar The top right hand icon menu is known as the Toolbar. The Toolbar displays various utilities that can be invokved including Panels (see below)\nThe following are the icons on the Toolbar:\n trash can - clear entire Canvas (use this caution!) gear - Settings Panel question mark - documenation power icon - logout  Panels Panels are different views within Express Serverless Platform. Panels are featured alongside other icons on the top right toolbar in the header within the user interface. Each panel slides down the quadrants from sight partially to review a new panel of controls. The Settings Panel featured by the cogs icon is the only panel available at this time.\nChat If you need help at any time, you can click on the Chat icon to contact the team at LunchBadger. Chat supports both live messaging and can leave messages asynchronously so you can always be assured that you\u0026rsquo;ll be heard and get a response.\n"
 },
 {
-	"uri": "https://docs.lunchbadger.com/basics/",
+	"uri": "https://express-serverless.io/basics/",
 	"title": "Basics",
 	"tags": [],
-	"description": "",
+	"description": "Get started with Express Serverless Platform documentation, examples and tutorials.",
 	"content": " Basics Learn the basics to understand key concepts to get started and be productive building microservices and APIs.\n"
 },
 {
-	"uri": "https://docs.lunchbadger.com/basics/entity-palette/models/",
+	"uri": "https://express-serverless.io/blog/",
+	"title": "Blog",
+	"tags": [],
+	"description": "Latest articles on Express Serverless Platform&#39;s how-to&#39;s, use-cases, examples and comparisons with other serverless platforms",
+	"content": " Blog Latest articles on Express Serverless Platform\u0026rsquo;s how-to\u0026rsquo;s, use-cases, examples and comparisons with other serverless platforms.\n"
+},
+{
+	"uri": "https://express-serverless.io/comparisons/",
+	"title": "Comparisons",
+	"tags": [],
+	"description": "Detailed side by side &#34;Hello World&#34; comparisons from a developer&#39;s perspective comparing serverless platforms.",
+	"content": " Comparisons Detailed side by side \u0026ldquo;Hello World\u0026rdquo; comparisons from a developer\u0026rsquo;s perspective comparing serverless platforms.\n"
+},
+{
+	"uri": "https://express-serverless.io/resources/",
+	"title": "Resources",
+	"tags": [],
+	"description": "Download Express Serverless Platform&#39;s pdf guides on serverless platform comparisons and use-cases here.",
+	"content": " Resources Download Express Serverless Platform\u0026rsquo;s pdf guides on platform comparisons and use-cases here.\n"
+},
+{
+	"uri": "https://express-serverless.io/support/",
+	"title": "Support",
+	"tags": [],
+	"description": "Express Serverless Platform email support and community",
+	"content": " Community Support Express Serverless Platform currently only comes with community support on Gitter.\nYou may access it here or drop an email to support@lunchbadger.com for questions or contribution enquiries.\n"
+},
+{
+	"uri": "https://express-serverless.io/install/",
+	"title": "Installation",
+	"tags": [],
+	"description": "Detailed installation instructions for both Express Serverless Platform frontend and backend",
+	"content": " Instructions Detailed installation instructions for both Express Serverless Platform frontend and backend are available from the respective Github repo\u0026rsquo;s README files.\n\u0026nbsp;\nExpress Serverless Front End Installation Express Serverless Back End Installation "
+},
+{
+	"uri": "https://express-serverless.io/basics/entity-palette/models/",
 	"title": "Models",
 	"tags": [],
 	"description": "",
 	"content": " To create a Model click on the model icon on the entity palette:   The Model Entity is a graphical representation of a LoopBack Model. Models can have properties you\u0026rsquo;d like to expose from data sources and services through Connectors.\nIf you\u0026rsquo;re familiar with the Model-View-Controller pattern, Models in Express Serverless Platform are exactly the M in MVC. For folks who are more backend, a model is very much like a data access object.\n All Models are Node.js JavaScript functions. Models have the following basic built in functionality:\n properties read and or write data through Connectors. scaffold a REST representation dynamically based on its definition  Quick Edit a Model After creating a Model in the private quadrant, you\u0026rsquo;ll be ready to enter properties with a property name and property type while in Quick Edit mode. To enter quick edit mode for a Model, click the pencil Quick Edit icon on the Model, by hovering over its title bar to display the context menu.\nModel Details Models have advanced functionality that can be access through its Details. To access a Model\u0026rsquo;s Details, hover over the title bar to display the context menuu and chose the ellipses icon.\nModels details expose things like relationships, connector metadata, user defined fields, and other advanced functionality.\nBecause Models are really nothing more than JavaScript functions, a code editor is also provided in Model Details to script anything that doesn\u0026rsquo;t have a GUI representation including custom logic.\nExpress Serverless Platform provides a GUI experience to help you get started and gives you have complete control once you become a more advanced user. For more information on advanced features and customizing Models programatically through code refer to the LoopBack model documentation.\nAuto REST Generation Once a Model is connected to a Connector it will automatically generate a REST interface and corresponding Swagger/OpenAPIv2 specification and with fully functional endpoints.\nThe REST Generation is not only automatic by dynamically updated as you edit your Model.\n Click on the gear icon in the right hand toolbar to actiave the Settings Panel. Visit the URL listed for the API Explorer to try out the REST API. "
 },
 {
-	"uri": "https://docs.lunchbadger.com/basics/entity-palette/",
+	"uri": "https://express-serverless.io/basics/entity-palette/",
 	"title": "Entity Palette",
 	"tags": [],
 	"description": "",
 	"content": " The entity palette let\u0026rsquo;s you create new entities onto the Canvas by simply clicking on the icon. Entities are automatically created and placed into their corresponding Quadrants.\nEntity Types:\n Microservice Integration Microservice Composition API Management  Microservice Integration Entities If you have existing data or services that you want to leverage in your new microservies application, you can use these entities to leverage them.\nIntegration entities include:\n Connectors - let\u0026rsquo;s you connect to data sources and existing services so that you can take advantage of them in a microservice built with a model  Model entities can be connected to data sources and services through a Connector.\n Microservice Composition Entities Composition entities let you build new microserivces with existing data and legacy applications or start greenfield often utilizing Connectors.\nComposition entities include:\n Models - a prebuilt JavaScript function that represents an object with properties that can utilize Connectors Functions - a serverelss function that can be written in Node.js, Go, Python, Ruby and other supported languages.  API Management Entities API Management entities include:\n Gateways - microgateways that function as an API Gateway that secures and manages your microservices and exposes them as consumable APIs Service Endpoints - any internal endpoint that a Gateway proxies API Endpoints - externalized endpoints that are exposed by the API Gateway to be consumed as an API by a client  Everything proxied by a Gateway is technically considered a Service Endpoint. A Service Endpoint is really nothing more than a referenced proxied URL. Models and Functions can be proxied by a Gateway and are seen as service endpoints to the Gateway because they automatically have HTTP based URLs assigned to them as microservices.\n "
 },
 {
-	"uri": "https://docs.lunchbadger.com/basics/entity-palette/functions/",
+	"uri": "https://express-serverless.io/basics/entity-palette/functions/",
 	"title": "Functions",
 	"tags": [],
 	"description": "",
 	"content": " To create a Function click on the function icon on the entity palette:   The Function entity represents a serverless function that runs in the Kubeless serverless engine in your Kubernetes cluster.\nServerless functions are self contained pieces of functionality that run when triggered.\nWhen you create a new Function, you select the supported language to be used within the function and specify a name. Once you create a function, it is automatically deployed.\nWhat\u0026rsquo;s the difference between Models and Functions? Both Models and Functions are functions. Models are Node.js only and have built in capabilites provided by the LoopBack framework. Functions are barebone functions that can be written in a number of supported languages through the Kubeless engine.\n Function Details To enter code into the body of a Function, go to the Function Details by hovering over the title bar on the Function entity and click the ellipses icon on the context menu.\nA code editor similar to the one provided in Model Details will be presented.\nNode.js Example:\n handler.js is the file with main entry point. you can create another files and reference them\npackage.json contains node.js package dependencies. Express Serverless Platform will install them during function launch.\n All Serverless Function code is stored in its own git repository. See Git Access for details.\n"
 },
 {
-	"uri": "https://docs.lunchbadger.com/basics/cloud-runtime/",
+	"uri": "https://express-serverless.io/basics/cloud-runtime/",
 	"title": "Cloud Runtime",
 	"tags": [],
 	"description": "",
 	"content": " One of the key advantages of what Express Serverless Platform brings is true cloud native freedom and choice.\nAmazon Web Services Lambda and API Gateway, Azure Functions, Google Cloud Functions - do you like the productivity gains of what these cloud providers offer?\nExpress Serverless Platform gives you the same functionality with a better experience, complete transparency and control and allows you to run you microservices and serverless functions in any public or private cloud including your own datacenter.\nWhen running Express Serverless Platform in your public cloud you can run serverless function in the public cloud\u0026rsquo;s native serverless offering. For example: running Express Serverless Platform on AWS means you can run serverless functions in AWS Lambda.\n Kubernetes Kubernetes has become the common cloud substrate that allows you to run all containerized microservices based applications in the cloud. All cloud providers either support Kubernetes as a direct cloud orchestration platform or are capable of running it on their barebone compute instances.\nKubernetes goes beyond containers. Containers are the commonly accepted packaging of any application. Having containers isn\u0026rsquo;t enough.\nMicroservices require many many container instances. A container orchestrator is require to tie all the microservices running in containers in a meaningful and practical way.\nExpress Serverless Platform Makes Kubernetes Easy Express Serverless Platform leverages Kubernetes as its cloud runtime.\nAll your microservices built within Express Serverless Platform are automatically built and packaged as containers and deployed into Kubernetes dynamically.\n When you are in the development environmnent building and configuring your microservices via the Canvas\n\u0026hellip; Express Serverless Platform is deploying them in real time to Kubernetes as pods.\nOnce your microservices based application is complete and you are happy with its logical topology, immutable copies can be made into other Kubernetes environemnts like staging, testing and production etc.\nCanvas Microservices to Kubernetes Pod Mapping Express Serverless Platform groups Canvas entities into separate pods running in Kubernetes.\nHere is a table to understand what gets run as its own microservice as a pod in Kubernetes\n   Entity Kubernetes Pod Name Notes     Models workspace All Models and Connectors are in one LoopBack project running in one workspace pod   Connectors workspace (see note above)   Service Endpoint gateway all Service Endpoints are linked to a Gateway and its correponding pod   Functions function 1 per Function Entity on the Canvas   API Endpoint gateway all API Endpoitns are linked to a Gateway and its correpsonding pod   Gateway gateway 1 per Gateway Entity on the Canvas    In the near future, Express Serverless Platform will allow you group individual Models that are related or have dependencies into a Microservice entity. Microserivce entities will have their own pods in Kubernetes.\n Example:\nPod Breakdown in Kubernetes\n Blue - ONE workspace pod Green - TWO function pods, ONE for each individual Function Purple - ONE gateway pod  "
 },
 {
-	"uri": "https://docs.lunchbadger.com/basics/git-access/",
+	"uri": "https://express-serverless.io/basics/git-access/",
 	"title": "Git Access",
 	"tags": [],
 	"description": "",
 	"content": " All business functionality and custom code for your microservices are stored git repositories.\nLunchBadger provide two Git repositories containing your project\u0026rsquo;s code.\nGit Access to Your LunchBadger Project In order to access git repositories within LunchBadger, you need to upload your public SSH key.\nAccess the Settings panel by clicking the cogs icon in the top right toolbar.\nPress + icon to add new SSH key\nExample: Copying your SSH key to clipboard on macOS\nTo copy your public SSH key into the clipboard, open a Terminal window and run the following:\npbcopy \u0026lt; ~/.ssh/id_rsa.pub  Add a Label to identify the key in the future, paste the contents of your clipboard into the Key field, and click the Upload icon.\nGit Repository Access Models and Connectors to data sources are enabled through LoopBack.\nServerless Functions are enabled through Kubeless\nIn the Settings panel, locate the Access via Git section.\nGit Repo Structures Each Git reposistory has its own directory convention and structure.\nModel and Connectors Models and Connectors are within the LoopBack project directory structure.\nRefer to the LoopBack project layout reference for more in-depth information about the LoopBack project\n The Model JSON based schema and JavaScript files can be found in the server/models directory once you clone the repository for Models and Connectors.\nFunctions The Functions repository contains a subdirectory for each folder by Function name.\nExample:\nIf you have a Function on the Canvas named PriceCalculator, you will have a corresponding top level subdirectory with the same name with all the files related to the Function. The main file for Functions is often the handler.js\nFor more information on how to structure the code for you serverless Functions refer to the Runtime reference in the Kubeless documentation.\n "
 },
 {
-	"uri": "https://docs.lunchbadger.com/basics/entity-palette/service-endpoints/",
+	"uri": "https://express-serverless.io/basics/entity-palette/service-endpoints/",
 	"title": "Service Endpoints",
 	"tags": [],
 	"description": "",
 	"content": "To create a Service Endpoint click on the endpoint submenu on the entity palette and choose the service endpoint icon:   The Service Endpoint Entity is a simple generic HTTP based resource with a URL.\nGateways in LunchBadger are Express Gateway instances. A Service Endpoint in Express Gateway is any resource that the gateway proxies in front of.\nModels and Functions have HTTP URls pointing to them as HTTP based microservices. When you connect a Model or Function to a Gateway, a service endpoint is declared behind the scenes in Express Gateway to point to the HTTP URL of the Model or Function.\n "
 },
 {
-	"uri": "https://docs.lunchbadger.com/basics/entity-palette/gateways/",
+	"uri": "https://express-serverless.io/basics/entity-palette/gateways/",
 	"title": "Gateways",
 	"tags": [],
 	"description": "",
-	"content": " To create a Gateway click on the function icon on the entity palette:   The Gateway entity represents an instance of Express Gateway. Express Gateway is a microservices API Gateway.\nIn Express Serverless Platform, Gateways are used to provide API management functionality for your microservices application. A Gateway expose private and internal microservices publicly through APIs.\nHow Gateways Work Gateways in Express Serverless Platform are used to proxy to microservice entities in the private quadrant and manage and expose them as APIs as API endpoints in the public quadrant.\nEach Gateway consists of one or more Pipelines. A Pipeline is a set of policies. Each Pipeline has connection ports to its left an right hand side.\nThe Models, Functions and Service Endpoints are proxied entities connected to the Gateway\u0026rsquo;s Pipeline from the left hand side.\nA corresponding API Endpoint in the public quadrant is created and connected to the right hand side of the Pipeline.\nGateways in Express Serverless Platform are powered by Express Gateway. More details on Express Gateway can be found in the Express Gateway Documentation\n Walkthrough Example A complete example microservice application is displayed in the Express Serverless Platform Canvas depicted above.\n A TemperatureAPIEndpoint exists in the public quadrant. This API Endpoint is publicly accessible through HTTP. You can cURL this endpoint through its URL.\ncURL http://\u0026lt;root url\u0026gt;/api/temperature   cURLing the API Endpoint sends the request to the Pipeline within the Gateway that is present in the Gateway quadrant.\n The Pipeline contains a Proxy Policy which routes the request to the entity connected on its left hand port.\n The Temperature Model is connected to the left hand port of the Pipeline and receives the request because of the Proxy policy within the Pipeline.\n The Temperature Model is connected to the Memory Connector and the API Request to GET data.\n The Temperature Model grabs temperature data from the Memory Connector populates a Temperature object through its Model definition with its properties and then sends that representation back through as the response.\n  Accessing Gateway Instances API Endpoints hosted by a Gateway iare accessible via URL and path(s) specified in the API Endpoint.\nExample:\nThe CarAPIEndpoint depicted above is accessible through the URL - http://gateway-al2-dev.staging.lunchbadger.io/api/car\nURLs for API Endpoints follow the convention listed below:\nhttp://\u0026lt;gateway root url\u0026gt;.lunchbadger.io/\u0026lt;api endpoint path\u0026gt;\nConsumer Management Gateways have a built in consumer management system as a reference implementation for identity management. The purpose of consumer management is to define API Consumers that are known and managed by the Gateway.\nClick on the man with the suitecase icon on the Gateway context toolbar to access Consumer Management\nAPI Consumers An API Consumer is one of the following:\n User Application (App)  For more information on the Consumer Management capabilities within the Gateway, see the Consumer Management documentation on Express Gateway.\n To create Users,Apps, and Scopes press the plus + icon.\nCredentials Every API Consumer has their own set of Credentials. There are several types of Credentials supported by the Gateway in LunchBadger:\n basic authorization key authorization OAuth2  To create Credentials click on row of the User or App.\nFor more information on the Credentials supported bythe Gateway, see the Credential Management documentation on Express Gateway.\n Please refer to Express Gateway Consumer Management for more information\n"
+	"content": " To create a Gateway click on the function icon on the entity palette:   The Gateway entity represents an instance of Express Gateway. Express Gateway is a microservices API Gateway.\nIn Express Serverless Platform, Gateways are used to provide API management functionality for your microservices application. A Gateway expose private and internal microservices publicly through APIs.\nHow Gateways Work Gateways in Express Serverless Platform are used to proxy to microservice entities in the private quadrant and manage and expose them as APIs as API endpoints in the public quadrant.\nEach Gateway consists of one or more Pipelines. A Pipeline is a set of policies. Each Pipeline has connection ports to its left an right hand side.\nThe Models, Functions and Service Endpoints are proxied entities connected to the Gateway\u0026rsquo;s Pipeline from the left hand side.\nA corresponding API Endpoint in the public quadrant is created and connected to the right hand side of the Pipeline.\nGateways in Express Serverless Platform are powered by Express Gateway. More details on Express Gateway can be found in the Express Gateway Documentation\n Walkthrough Example A complete example microservice application is displayed in the Express Serverless Platform Canvas depicted above.\n A TemperatureAPIEndpoint exists in the public quadrant. This API Endpoint is publicly accessible through HTTP. You can cURL this endpoint through its URL.\ncURL http://\u0026lt;root url\u0026gt;/api/temperature   cURLing the API Endpoint sends the request to the Pipeline within the Gateway that is present in the Gateway quadrant.   The Pipeline contains a Proxy Policy which routes the request to the entity connected on its left hand port.   The Temperature Model is connected to the left hand port of the Pipeline and receives the request because of the Proxy policy within the Pipeline.   The Temperature Model is connected to the Memory Connector and the API Request to GET data.   The Temperature Model grabs temperature data from the Memory Connector populates a Temperature object through its Model definition with its properties and then sends that representation back through as the response.  Accessing Gateway Instances API Endpoints hosted by a Gateway iare accessible via URL and path(s) specified in the API Endpoint.\nExample:\nThe CarAPIEndpoint depicted above is accessible through the URL - http://gateway-al2-dev.staging.lunchbadger.io/api/car\nURLs for API Endpoints follow the convention listed below:\nhttp://\u0026lt;gateway root url\u0026gt;.lunchbadger.io/\u0026lt;api endpoint path\u0026gt;\nConsumer Management Gateways have a built in consumer management system as a reference implementation for identity management. The purpose of consumer management is to define API Consumers that are known and managed by the Gateway.\nClick on the man with the suitecase icon on the Gateway context toolbar to access Consumer Management\nAPI Consumers An API Consumer is one of the following:\n User Application (App)  For more information on the Consumer Management capabilities within the Gateway, see the Consumer Management documentation on Express Gateway.\n To create Users,Apps, and Scopes press the plus + icon.\nCredentials Every API Consumer has their own set of Credentials. There are several types of Credentials supported by the Gateway in LunchBadger:\n basic authorization key authorization OAuth2  To create Credentials click on row of the User or App.\nFor more information on the Credentials supported bythe Gateway, see the Credential Management documentation on Express Gateway.\n Please refer to Express Gateway Consumer Management for more information\n  "
 },
 {
-	"uri": "https://docs.lunchbadger.com/basics/entity-palette/api-endpoints/",
+	"uri": "https://express-serverless.io/basics/entity-palette/api-endpoints/",
 	"title": "API Endpoints",
 	"tags": [],
 	"description": "",
 	"content": " To create an API Endpoint click on the endpoint submenu on the entity palette and choose the API endpoint icon:   The API Endpoint Entity is an HTTP based URL that exposes a microservice proxied by the Gateway.\nAPI Endpoints have two basic parts:\n a root URL path(s)  API Endpoints can have multiple paths to support different URLs.\n Accessing an API Endpoint To access an API Endpoint, the URL is a combination of the root url + the path.\nExample:\nThe CarAPIEndpoint depicted above has two parts:\n a root URL - http://gateway-al2-dev.staging.lunchbadger.io a path - /api/car  To access the CarEndpoint its complete URL is the following:\nhttp://gateway-al2-dev.staging.lunchbadger.io/api/car\nAPI Endpoint Details More advanced functionality can be accessed by accessing the API Endpoint Details by clicking the ellipses icon on the API Endpoint context toolbar.\nMethods By default, API Endpoints are accessible by all HTTP verb methods:\n GET PUT POST DELETE PATCH OPTIONS HEAD TRACE CONNECT  If you want to limit the HTTP methods available to access the API Endpoint you can specify them here.\nExample:\nOnly the GET method is supported by the Car API Endpoint shown above. If you were to try to POST to this API Endpoint, you would receive a 401 Unauthorized error.\nScopes Scopes are used to control authorization to the API Endpoint. When an API Endpoint is access, its associated Scope is passed into the Gateway\u0026rsquo;s Pipeline for evaluation. A Pipeline may utilize an authorization policy that can match the Scope against the API Consumer.\nExample:\nYou are listed as an API Consumer as user Bob. As Bob, you have a basic authorization credential specified a Scope of read:user.\nYou execute a GET on the Car API Endpoint shown above.\nThe read:user scope would be passed by the API Endpoint to the Pipeline hosted by the Gateway. A basic authorization policy is listed in the Pipeline.\nThe following authorization lookup is executed:\n User Bob is looked up in the system For user Bob, a basic authorization credential is checked The basic authorization credentials is checked to make sure that a read:user is present If the read:user scope is present, the API request is allowed, if it absent, then the API request is denied  For more information on Scopes, refer to the Scopes section in the Credential Management documentation.\n "
 },
 {
-	"uri": "https://docs.lunchbadger.com/categories/",
+	"uri": "https://express-serverless.io/tags/aws-lambda/",
+	"title": "AWS Lambda",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/amazon-api-gateway/",
+	"title": "Amazon API Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/amazon-web-services-pricing/",
+	"title": "Amazon Web Services Pricing",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/amiram-shachar/",
+	"title": "Amiram Shachar",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://docs.lunchbadger.com/tags/",
+	"uri": "https://express-serverless.io/tags/devops/",
+	"title": "DevOps",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/developers/",
+	"title": "Developers",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/categories/featured/",
+	"title": "Featured",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/functions-as-a-service/",
+	"title": "Functions as a Service",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/lambda/",
+	"title": "Lambda",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/no-ops/",
+	"title": "No-Ops",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/on-premise-serverless-solutions/",
+	"title": "On Premise Serverless Solutions",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/categories/technology/",
+	"title": "Technology",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/api-gateway/",
+	"title": "api gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/api-endpoints/",
+	"title": "API endpoints",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/api-keys-sent-over-https/",
+	"title": "API keys sent over HTTPS",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/categories/development/",
+	"title": "Development",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/proxy-policy/",
+	"title": "Proxy policy",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/best-practices-on-api-management/",
+	"title": "best practices on API Management",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/end-to-end-request-path-from-the-api-endpoint-to-the-back-end-service/",
+	"title": "end-to-end request path from the API endpoint to the back-end service",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/key-auth-policy/",
+	"title": "key-auth policy",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/api-consumer-management/",
+	"title": "API Consumer Management",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/service-endpoint/",
+	"title": "Service Endpoint",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/service-endpoint-can-be-front-ended-by-an-api-gateway/",
+	"title": "Service Endpoint can be front-ended by an API Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/model-based-microservices-and-serverless-functions/",
+	"title": "model-based microservices and serverless functions",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/api-management/",
+	"title": "API Management",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/blog/api-management-authentication-authorization-audit/",
+	"title": "API Management Reimagined: Authentication Authorization Audit",
+	"tags": ["API Management", "authentication", "Authentication with an API Gateways", "authorization and audit capabilities", "scalable Kubernetes infrastructure"],
+	"description": "",
+	"content": " Authentication Authorization And Audit: The Operations Perspective API Gateways provide a set of features that enable secure access to its API endpoints. These features fall under three broad categories:\n Authentication: Who is allowed to access the API Gateway at all? (Access Control) Authorization: Who is allowed to perform a certain operation using exposed APIs (Permissions / Privileges) Audit: Capturing sufficient information for each client request to be able to detect and possibly prevent malicious activity  An administrator of any API Gateway platform need to be aware of these capabilities, which could be a bit different compared to securing web sites and databases.\n\u0026nbsp;\nThere are a few important considerations beyond what most administrators typically manage.\n\u0026nbsp;\nHow can you define microservices and serverless functions and expose them as APIs? What about industry best practices for API Management?\n\u0026nbsp;\nDefining microservices and serverless functions and exposing them as APIs is just the beginning and can take time to do it right. For developers, industry standard authentication, authorization and audit capabilities also come at a price: time, scale and resources. It takes an experienced dev to ensure that these practices are followed throughout the entire software development lifecycle. \n\u0026nbsp;\nAPI Management with Express Serverless Platform Express Serverless Platform is a Microservices and Serverless Platform for APIs. It is unique in that it allows us to design and deploy microservices.\n\u0026nbsp;\nThe platform allows us to expose both model-based microservices and serverless Functions through REST APIs, using an API Gateway (the open source Express Gateway).\n\u0026nbsp;\nHow does this help developers and DevOps teams with API Management? The Express Serverless Platform is unique in that it brings together tooling to develop microservices, and one-click deployment to a scalable Kubernetes infrastructure. This accelerates development and significantly increases developer productivity. The tooling environment is actually browser-based and known as Canvas.\n\u0026nbsp;\nLet\u0026#8217;s focus some attention on the API Management component, that is, Express Gateway. However, all configurations on Express Gateway, including those relevant for authentication, authorization and audit, can be applied through the Canvas.\n\u0026nbsp;\nSimple and Straight forward AAA Features in Express Gateway Express Gateway supports three industry standard mechanisms for client authentication: basic authentication (username / password), Key-based authentication (using API access Keys) and OAuth2 (for granting access to APIs from third-party applications).\n\u0026nbsp;\nAuthorization mechanism in Express Gateway is simple and innovative. For each API endpoint, the administrator can specify one or more scope(s). A scope is just like a tag indicating the type of users / applications that may need access to this API endpoint. Correspondingly, users granted access to the API gateway may be assigned one or more scopes. A user can retrieve information from an API only if she is assigned a matching scope.\n\u0026nbsp;\nThis is a fine-grained authorization mechanism because:\n\u0026nbsp;\n Each API endpoint can be assigned a different set of scope(s)  Each type of operation on a given API endpoint can be assigned a different set of scope(s)  \u0026nbsp;\nAudit capabilities in Express Gateway are based upon customizable logging options. The administrator can include a customizable log message for each pipeline, that will apply to each incoming request on that pipeline. By including important request parameters like IP address, user id, request URL, etc., each request can be analyzed for malicious activities.\n\u0026nbsp;\nAuthentication   Authorization  Audit   basic-auth/ key-auth/ oauth policy  scopes  logpolicy    \u0026nbsp;\nExpress Gateway allows us to create API endpoints and then control how client requests for any given endpoint is handled. This is achieved by defining a pipeline for each endpoint and placing a set of \u0026#8216;policies\u0026#8217; in a specific order in the pipeline. Express Gateway is built on top of the Node.js Express framework, and the policies are akin to Express.js middleware. Authentication is set up by adding one of the three policies: \u0026#8216;basic-auth\u0026#8217;, \u0026#8216;key-auth\u0026#8217; or \u0026#8216;oauth\u0026#8217; to a pipeline. Audit logs can be enabled by adding the \u0026#8216;log\u0026#8217; policy. Authorization (scopes) is an attribute of an API endpoint and is not implemented as a policy.\n\u0026nbsp;\nAn Enterprise Use Case for Express Serverless Platform First, we will work with a simple API endpoint that simply supplies the Coordinated Universal Time (UTC) now.\n\u0026nbsp;\nTo implement this API endpoint, we will make use of the existing URL: http://worldclockapi.com/api/json/utc/now , instead of reinventing the wheel. When we access this URL, we receive a response body containing the UTC time in JSON format:\n\u0026nbsp;\n{\"$id\":\"1\",\"currentDateTime\":\"2018-09-25T10:25Z\",\"utcOffset\":\"00:00:00\",\"isDayLightSavingsTime\":false,\"dayOfTheWeek\":\"Tuesday\",\"timeZoneName\":\"UTC\",\"currentFileTime\":131823447213150424,\"ordinalDate\":\"2018-268\",\"serviceResponse\":null} \u0026nbsp;\nTherefore, our job would be to create an API endpoint on the Express Serverless Platform, that wraps around the above URL. This API endpoint will respond with the current Universal Time. Furthermore, we will enforce authentication, authorization and audit on this API endpoint by applying suitable configuration settings.\n\u0026nbsp;\nIn a more realistic scenario, an organization using Express Serverless Platform would build a service on its own that it wants to expose externally as an API. But our goal is to focus on the traffic management feature. So we will try not to code a new service from scratch. Stay tuned, because in our next post we\u0026#8217;ll dive head-first into technical detail on how to get this done.\n\u0026nbsp;\nIf you\u0026#8217;re interested in more of these topics, join the live discussion on twitter (@lunchbadger) or (@express_gateway).\n Try out Express Serverless Platform  \u0026#8211; your feedback helps prioritize our roadmap with the most value realized within the shortest amount of time   Next Post "
+},
+{
+	"uri": "https://express-serverless.io/tags/authentication-with-an-api-gateways/",
+	"title": "Authentication with an API Gateways",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/authentication/",
+	"title": "authentication",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/authorization-and-audit-capabilities/",
+	"title": "authorization and audit capabilities",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/scalable-kubernetes-infrastructure/",
+	"title": "scalable Kubernetes infrastructure",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/categories/announcement/",
+	"title": "Announcement",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/barebone-serverless-functions/",
+	"title": "Barebone serverless functions",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/brendan-burns/",
+	"title": "Brendan Burns",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/functions-in-java/",
+	"title": "Functions in Java",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/functions-in-node.js/",
+	"title": "Functions in Node.js",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/functions-in-php/",
+	"title": "Functions in PHP",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/functions-in-ruby/",
+	"title": "Functions in Ruby",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/go-language/",
+	"title": "Go Language",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/kubernetes/",
+	"title": "Kubernetes",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/blog/express-serverless-platform-lunchbadger/",
+	"title": "LunchBadger Platform is now Express Serverless Platform",
+	"tags": ["AWS Lambda", "Barebone serverless functions", "Brendan Burns", "Functions in Java", "Functions in Node.js", "Functions in PHP", "Functions in Ruby", "Go Language", "Kubernetes", "microservices", "Node.js", "open source", "Python", "Serverless orchestration", "Serverless Platform", "The NewStack", "Visualize APIs"],
+	"description": "",
+	"content": " Express Serverless Platform has arrived! After three long months of hard work, we\u0026#8217;re proud to announce that the LunchBadger Platform is now the Express Serverless Platform. New name, new features and an opportunity to experience a visual canvas ripe with all the important functionality that developers need, without the hype.\n\u0026nbsp;\nTLDR: Install ESP right over here\n\u0026nbsp;\nFor Developers, DevOps teams and CTOs driving impact in top companies, it\u0026#8217;s not just a name change \u0026#8211; it\u0026#8217;s a game changer and we can\u0026#8217;t wait to show you why.\nWhat is A Serverless Platform? When you\u0026#8217;re developing and launching an application, you\u0026#8217;ve got enough to worry about. As you may already know, serverless is a category of cloud computing that allows users to develop run and manage application functionalities without the complexity of building and maintaining infrastructure.\n\u0026nbsp;\nA serverless platform is a cloud offering that provides serverless computing and covers the complete systems development lifecycle (SDLC). A serverless platform should allow you to develop microservices as functions and expose them seamlessly as APIs \u0026#8211; all in one simplified developer centric experience.\n\u0026nbsp;\nAt LunchBadger, we built Express Serverless Platform with this vision.\n\u0026nbsp;\nFlexibility to Choose Between Model Driven Functions and Barebone Serverless Functions Express Serverless Platform is the only serverless platform to allow developers to build microservices as either model functions or barebone serverless functions. Model driven functions are special Node.js functions with pre-built functionality that developers needs like object properties, CRUD and a dynamically generated REST interface. Barebone Serverless functions have no pre-built functionality, but you can write your function in Node.js, Python, Ruby, Go, .NET, PHP, and Java.\n\u0026nbsp;\nFlexibility of Open Source With The Power of a Single Visual Canvas Express Serverless Platform provides a serverless computing experience by integrating all aspects of the Software Development Lifecycle holistically as one seamless experience powered by our visual interface \u0026#8211; the Canvas. Built with a foundation of best practices, your entire team can visualize your APIs and Microservices without diving into the complex world of infrastructure.\nWe\u0026#8217;ve included key pieces of developer trusted open source technology.\n Express Gateway \u0026#8211; a microservices API Gateway, built entirely on Express.js Kubernetes \u0026#8211; the foremost container orchestrator for automating deployment, scaling, and management of containerized applications, LoopBack.io \u0026#8211; the leading enterprise Node.js framework to write microservices and expose APIs Serverless \u0026#8211; a framework to abstract writing functions so that you can run them in multiple serverless engines Kubeless \u0026#8211; a Kubernetes native serverless engine  By bringing together important open source technology into a single platform, you can unlock the superhero in every DevOps team and developer with technology that is transparent, highly extensible and backed by rich communities.\n\u0026nbsp;\nExpress Serverless Platform and Seamless Kubernetes Orchestration We\u0026#8217;re huge fans of Kubernetes and recognized early on that Kubernetes was going to change the landscape for developers building next-gen applications.\n\u0026#8220;As we move forward, it’s becoming increasingly clear that the future will be containerized and those containers will run on serverless infrastructure.\u0026#8221; \u0026#8211; Brendan Burns, Source: The NewStack\nWe agree and this is why we included automated deployment in a Kubernetes Runtime so that you don\u0026#8217;t have to \u0026#8220;figure it all out\u0026#8221; yourself.\n\u0026nbsp;\nIn Practicum: Express Serverless Platform, Kubernetes and AWS Lambda Running Express Serverless Platform for AWS means you can utilize Amazon Elastic Container Service for Kubernetes (EKS) and AWS Lambda at the same time. Giving developers freedom of choice with container based processes or serverless functions was top of mind while we crafted Express Serverless Platform. Running Express Serverless Platform also means you won\u0026#8217;t have to pay for the real cost of running serverless on Lambda \u0026#8211; the AWS API Gateway \u0026#8211; because Express Serverless Platform utilizes Express Gateway, an open source microservices API gateway we started at LunchBadger.\n\u0026nbsp;\nYour Cloud. Your Cloud Everywhere with Express Serverless Platform. Express Serverless Platform runs in your public cloud of choice and can take advantage of fully managed Kubernetes and serverless offerings native to your public cloud. Express Serverless Platform is also wholly self contained. This means that it can run on bare metal or virtual machines in Kubernetes as a multi-cloud and on-premise solution.\n\u0026nbsp;\nWhat Happens Next with Express Serverless Platform If you\u0026#8217;re interested in giving Express Serverless Platform a try, head over to our install page. We\u0026#8217;re looking for feedback and real world use cases that Express Serverless Platform could help solve. If you have an important business use case and you\u0026#8217;re looking to leverage ESP, accessing the free trial gives you a guided walkthrough of how to set up your APIs and Microservices in minutes, not days. You\u0026#8217;ll also get access to a 1:1 demo by a microservices expert. Let us know what you think!\n\u0026nbsp;\nNext Post: "
+},
+{
+	"uri": "https://express-serverless.io/tags/node.js/",
+	"title": "Node.js",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/python/",
+	"title": "Python",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/serverless-platform/",
+	"title": "Serverless Platform",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/serverless-orchestration/",
+	"title": "Serverless orchestration",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/the-newstack/",
+	"title": "The NewStack",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/visualize-apis/",
+	"title": "Visualize APIs",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/microservices/",
+	"title": "microservices",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/open-source/",
+	"title": "open source",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/how-to-get-started-with-kubernetes/",
+	"title": "How to get started with Kubernetes",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/kubectl/",
+	"title": "Kubectl",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/kubernetes-pod/",
+	"title": "Kubernetes Pod",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/kubernetes-runtime/",
+	"title": "Kubernetes Runtime",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/blog/kubernetes-scalability/",
+	"title": "Leveraging Kubernetes For Microservices Based Cloud Strategy",
+	"tags": ["auto deployment in a kubernetes runtime", "command-line tool called kubectl for deploying containerized applications and managing services", "How to get started with Kubernetes", "Kubectl", "Kubernetes", "Kubernetes Pod", "Kubernetes Runtime"],
+	"description": "",
+	"content": " Enterprise applications have to be designed upfront for scalability and change. This has significant implications for both application architecture and application infrastructure. Application architecture is evolving from unmanageable monolithic or three-tier patterns to interconnected microservices. Microservices introduce new form factors not only for functionality and team-size (the so-called two-pizza teams), but also for the unit of infrastructure. It is not surprising that a portable container or a pod of handful interrelated containers often works out as the most befitting unit of infrastructure for microservices-based architecture. Fortunately, container-based scalable infrastructure is a reality today, thanks to the Kubernetes project incepted in and open-sourced by Google in 2014. But for the sake of business agility, it is critical for enterprise development teams to focus on the business logic with the insurance that deployment onto a suitable infrastructure would be relatively painless.\nHow LunchBadger integrates with Kubernetes \u0026nbsp;\nThis is where LunchBadger comes in. LunchBadger offers a visual interface called the Canvas to model and define services, and deploy them onto a Kubernetes-based infrastructure in a single pane of glass. These services could be business-to-business services or intra-organization, or even intra-application microservices. They could be synchronously invoked REST URLs or asynchronously invoked serverless functions. In any case, it allows the developer to focus on application development and deploy the application onto a scalable Kubernetes-based infrastructure without any administrative intervention. LunchBadger is a Kubernetes-native solution such that the application developer does not switch from the Canvas, even as the requisite container instances are created and orchestrated behind the scene. So, let\u0026#8217;s take a tour of life without LunchBadger \u0026#8211; how it takes a sequence of steps to deploy and expose a service on a Kubernetes cluster \u0026#8211; and then explore how LunchBadger cuts down the complexity to a one-click deployment.\n\u0026nbsp;\nKubernetes In A Nutshell Kubernetes is an deployment and orchestration framework for containerized applications. Given a farm of compute resources, Kubernetes allocates resources to containers and performs replication, scaling, failover, and other management tasks necessary to run enterprise applications reliably with efficient resource utilization.\n\u0026nbsp;\nDatacenters that run applications on virtualization technologies like VMWare depend on a suite of tools like VSphere to deploy and manage Virtual Machines on a server farm. Kubernetes plays a similar role in the world of containerized applications.\n\u0026nbsp;\nThe unit of deployment in Kubernetes is a \u0026#8216;pod\u0026#8217;. A Pod consists of one a small number of containers that are deployed and scaled together as a unit. A cluster consists of Nodes, which are compute resources that can join or leave a cluster. Pods can be deployed onto a running cluster using a deployment specification. Among other attributes, a deployment spec includes the desired state of the cluster in terms of number of replicas of a pod that should be running at any point in time. The run-time ensures that the desired number of replicas are always maintained, even if one or more pods crash. Secondly, a deployment spec can be used to run rolling upgrades on the specified pods. \n\u0026nbsp;\nFinally, Kubernetes defines \u0026#8216;Service\u0026#8216; as a location-independent abstraction of the server processes running within pods. That is, while the pods may be allocated to different compute resources at different times based on availability, the service endpoint remains unchanged, so that it can be discovered and accessed externally without any disruption.\n\u0026nbsp;\nKubernetes also comes with a command-line tool called kubectl for deploying containerized applications and managing services.\n\u0026nbsp;\nLet\u0026#8217;s break it down:\n\u0026nbsp;\nHow Kubernetes, Microservices And Serverless work together Martin Fowler lists out a few characteristics of Microservices architecture, two of which may be worth calling out here:\n\u0026nbsp;\n Componentization via Services Smart Endpoints and \u0026#8220;dumb pipes\u0026#8221;  \u0026nbsp;\nKubernetes is uniquely positioned to be the deployment platform of choice for Microservices. The \u0026#8216;components\u0026#8217; of a microservices-based application can be developed, built, tested, deployed and scaled independently. Kubernetes uses containers, and containers enable application components to be portable and easily integrated in a larger application.\n\u0026nbsp;\nIn event-driven scenarios, traditionally, enterprise service bus or similar technologies have been used to process message streams and trigger workflows. In microservices, the preference is to reduce complexity of the pipeline between application components, because otherwise the pipeline itself tends to become a monolithic component that has to be deployed and managed separately. Event driven microservices can be deployed as serverless functions. \n\u0026nbsp;\nWith Kubernetes-native serverless frameworks like kubeless, Kubernetes is capable of serving as the deployment infrastructure for event-driven microservices as well.\n\u0026nbsp;\nMicroservices components \u0026#8211; event-driven or otherwise, have to expose an interface for other components or the external world to access its services. This is where APIs have to be carefully defined, and an infrastructure for setting up and managing secure API endpoints has to be supported. LunchBadger brings together a development platform for microservices \u0026#8211; both synchronous and event-driven (serverless) \u0026#8211; with an API management framework, with end-to-end development and deployment support. \n\u0026nbsp;\nOver the next few posts, we\u0026#8217;ll cover tactical examples, guides and walk through how-tos so you can deploy a service in Kubernetes, understand and create a Kubernetes deployment spec, understand and create a Kubernetes Service Spec or just what Kubernetes is all about.\n\u0026nbsp;\nNext Post:\n"
+},
+{
+	"uri": "https://express-serverless.io/tags/auto-deployment-in-a-kubernetes-runtime/",
+	"title": "auto deployment in a kubernetes runtime",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/command-line-tool-called-kubectl-for-deploying-containerized-applications-and-managing-services/",
+	"title": "command-line tool called kubectl for deploying containerized applications and managing services",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/build-a-microservice/",
+	"title": "Build a Microservice",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/build-an-api/",
+	"title": "Build an API",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/building-enterprise-ready-serverless-functions/",
+	"title": "Building Enterprise-Ready Serverless Functions",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/deploy-an-api-gateway/",
+	"title": "Deploy an API Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/how-to-build-an-api/",
+	"title": "How to build an API",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/a-minimalistic-framework-for-node.js/",
+	"title": "a minimalistic framework for Node.js",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/express.js/",
+	"title": "express.js",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/cloud-functions/",
+	"title": "Cloud Functions",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/express-gateway-pipeline./",
+	"title": "Express Gateway pipeline.",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/get-started-with-google-cloud-functions/",
+	"title": "Get Started with Google Cloud Functions",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/get-started-with-node.js-functions-in-lunchbadger/",
+	"title": "Get started with Node.js functions in LunchBadger",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/get-started-with-how-to-write-custom-functions/",
+	"title": "Get started with how to write custom functions",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/google-cloud/",
+	"title": "Google Cloud",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/google-cloud-functions/",
+	"title": "Google Cloud Functions",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/googles-cloud-functions-emulator/",
+	"title": "Google&#39;s cloud functions emulator",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/lunchbadger-gui/",
+	"title": "LunchBadger GUI",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/node.js-function/",
+	"title": "Node.js function",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/minimal-http-configuration/",
+	"title": "minimal HTTP configuration",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/bluemix/",
+	"title": "Bluemix",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/express-gateway/",
+	"title": "Express Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/how-do-i-get-started-with-ibm-connect/",
+	"title": "How Do I Get Started with IBM Connect",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/ibm-api-connect/",
+	"title": "IBM API Connect",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/node.js-apis/",
+	"title": "Node.js APIs",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/what-are-ibm-cloud-functions/",
+	"title": "What are IBM Cloud Functions",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/aws-lambda-versus-azure/",
+	"title": "AWS Lambda versus Azure",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/azure-function-app/",
+	"title": "Azure Function App",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/azure-ui/",
+	"title": "Azure UI",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/create-a-resource-in-azure-portal/",
+	"title": "Create a resource in Azure Portal",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/getting-started-with-microsoft-azure/",
+	"title": "Getting started with Microsoft Azure",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/http-interafce/",
+	"title": "HTTP Interafce",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/hello-world-with-azure/",
+	"title": "Hello world with Azure",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/microsofot-azure-ui/",
+	"title": "Microsofot Azure UI",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/microsoft-azure/",
+	"title": "Microsoft Azure",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/open-source-api/",
+	"title": "open source API",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/api-proxies/",
+	"title": "API Proxies",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/apigee-edge/",
+	"title": "Apigee Edge",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/google/",
+	"title": "Google",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/google-acquired-apigee/",
+	"title": "Google acquired Apigee",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/how-do-i-deploy-an-api-gateway/",
+	"title": "How do I deploy an API gateway?",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/how-to-deploy-an-api-proxy/",
+	"title": "How to Deploy an API Proxy?",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/node/",
+	"title": "Node",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/what-is-apigee-edge/",
+	"title": "What is Apigee Edge",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/blog/compare-tyk-api-gateway-express-features/",
+	"title": "API Gateways Comparison – Features and Pricing of Tyk API Gateway vs. Express Gateway",
+	"tags": ["Administration of Tyk API Gateway", "Compare open source API Gateway", "Express API Gateway", "express.js", "How does Tyk compare to", "microservices", "Tyk API Gateway", "What is an API Gateway?"],
+	"description": "",
+	"content": "  Tyk API Gateway VS. Express Gateway Open source: beyond the pretty packaging. There are a lot of choices when it comes to choosing and API Gateway. If you\u0026#8217;re considering a new API strategy or just kicking the tires, we\u0026#8217;ve found that it\u0026#8217;s tough find hype-free information that actually helps understand what to look for in an API Gateway and how it fits into even traditional Microservices architecture. So, we rallied the community of developers, executives and thought leaders to get the skinny on the differences (and similarities) of the most popular projects for the API Gateway use case.\n\u0026nbsp;\nIn this easy-to-follow format, we\u0026#8217;re going to compare Tyk API Gateway and  Express Gateway, an open source API Gateway built entirely on Express.js.\n\u0026nbsp;\nSkip ahead to our resources page to download it.\n\u0026nbsp;\nNot ready? Let\u0026#8217;s kick things off then with a quick hype-free run down. Buzzword vortex is not our style, so we asked our community of developers and executives what the real deal was all about and here\u0026#8217;s a summary based on their real-time use cases, issues and solutions.\nOverview All you need is love! Sometimes, love and just a smart API Gateway. Express Gateway was built by developers for developers after the team heard countless stories of having to \u0026#8220;build your own\u0026#8221; when it came to an API Gateway. These real world scenarios are what has shaped the open source project. So when it comes to direct solutions for straight forward problems, you\u0026#8217;ve got a great option, even in complex API use patterns, there is a vast ecosystem of Express.js middleware and the plugins are all built on JavaScript.\n\u0026nbsp;\nIs it Go time?\n\nWhile Tyk does a lot more than just an API Gateway, it\u0026#8217;s important to keep in mind that it\u0026#8217;s built on Go while Express Gateway is built on JavaScript. It\u0026#8217;s true, Tyk can be customized to support other languages, but it\u0026#8217;s core runtime is Go. It still requires customization. Out of the box, Express Gateway\u0026#8217;s runtime is JavaScript (#1 most popular language used by devs surveyed by Stack Overflow in 2017).\nFactors to consider when comparing API Gateways  Elevator Pitches \u0026#8211; Ready. Set. TLDR. Features and Architecture \u0026#8211; How does the stack..well..stack up? Getting Started, Deployment and Configuration \u0026#8211; How you can get started right away. Database Support \u0026#8211; What is it and where to find it. Administration and Maintenance \u0026#8211; Admins to the front! Built-in Plugin Support \u0026#8211; Easy-to-follow, side-by-side comparison of popular features Custom Plugin Support \u0026#8211; Everything \u0026amp; the kitchen sink (and probably more) Enterprise Versions \u0026#8211; Both Tyk and Express Gateway have enterprise versions \u0026#8211; what are the key differences? + much more\u0026#8230;  Why are we talking API Gateways? In our analysis, we\u0026#8217;ll provide additional insight into what an API gateway is and how it works. In addition to comparing the Tyk API Gateway and Express Gateway, an API Gateway built entirely on Express.js, you\u0026#8217;ll get a hands-on tutorial on what this could mean for your tech stack, APIs and microservices. It\u0026#8217;s more than just APIs \u0026#8211; it\u0026#8217;s about strategy. Features and plugins pave the way for your ability to be agile in the market, spare developer resources and open up new growth for your company by offering rich customer experiences and integrations.\n\u0026nbsp;\nTLDR: API Gateways are a key asset to any API strategy.\n\u0026nbsp;\nNow it\u0026#8217;s time to take a look at what a little open source can do for your business.\n\u0026nbsp;\n Get The Deep Dive   Moving On \u0026nbsp;\nIf you\u0026#8217;ve got questions about this comparison or analysis, let us know. If you\u0026#8217;re interested in how to migrate from Tyk or even just to give Express Gateway a try,hit us up. We\u0026#8217;re always on the hunt for use cases and understanding more about what companies are using, issues they\u0026#8217;re facing or successes they\u0026#8217;ve felt.\n\u0026nbsp;\nAdditionally, if you\u0026#8217;re interested in more of these topics, join the live discussion on twitter (@lunchbadger) or (@express_gateway).\n"
+},
+{
+	"uri": "https://express-serverless.io/tags/administration-of-tyk-api-gateway/",
+	"title": "Administration of Tyk API Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/compare-open-source-api-gateway/",
+	"title": "Compare open source API Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/express-api-gateway/",
+	"title": "Express API Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/how-does-tyk-compare-to/",
+	"title": "How does Tyk compare to",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/tyk-api-gateway/",
+	"title": "Tyk API Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/what-is-an-api-gateway/",
+	"title": "What is an API Gateway?",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/blog/compare-kong-api-gateway-express-features/",
+	"title": "API Gateways Comparison: Features &amp; Pricing of Kong vs. Express Gateway",
+	"tags": ["Administration of Kong API Gateway", "Compare open source API Gateway", "Express API Gateway", "express.js", "How does Kong compare to", "Kong API Gateway", "microservices", "What is an API Gateway?"],
+	"description": "",
+	"content": "  Kong API Gateway VS. Express Gateway Two popular open source projects \u0026#8211; two very different approaches. We\u0026#8217;ve gotten a lot of questions about what to look for in an API Gateway, what is an API Gateway and even how an API gateway fits into your Microservices architecture. So, let\u0026#8217;s take a deeper look at all of this and more as we break down the differences (and similarities) of the most popular projects for the API Gateway use case.\nIn this tear down format, we\u0026#8217;ve got Kong API Gateway and we\u0026#8217;re going to compare it toExpress Gateway, an open source API Gateway built entirely on Express.js.\n\u0026nbsp;\nDownload the detailed guide here.\n\u0026nbsp;\nNot ready? Let\u0026#8217;s kick things off then with a quick hype-free run down. Buzzword vortex is not our style, so we asked our community of developers and executives what the real deal was all about and here\u0026#8217;s a summary based on their real-time use cases, issues and solutions.\nOverview Kong has a compelling story around performance and reliability because it is built on top of NGINX and we love NGINX. However; we\u0026#8217;ve come across some dependencies that can slow you down or make it more difficult to ship.\n\u0026nbsp;\nWhat\u0026#8217;s Lua? Well, we were asking ourselves the same thing because custom plugins for Kong must be written in Lua. In the recent 2017 Developer Survey by Stack Overflow, they listed popular technologies\u0026#8230;and only 2.8% of developers surveyed used Lua. With professional developers, it was even lower at 2.3%.\n\u0026nbsp;\nThat\u0026#8217;s a bummer. \n\u0026nbsp;\nExpress Gateway is also open source API Gateway, but it\u0026#8217;s built on Express.js, a minimal and flexible Node.js web application framework. Custom plugins are written in JavaScript (the number 1 result among the surveyed developers). In an era of speed and agility, we thought this was an especially poignant aspect to the way Express Gateway is built. \nFactors to consider when comparing API Gateways  Elevator Pitches \u0026#8211; What does it do in 3 sentences or less (ok maybe a bit more than that). Features and Architecture \u0026#8211; What\u0026#8217;s under the hood with Kong API Gateway and Express Gateway? Getting Started, Deployment and Configuration \u0026#8211; Are we up yet? Database Support \u0026#8211; What is it and where to find it. Administration and Maintenance \u0026#8211; How to maintain it, resource allocation and more Built-in Plugin Support \u0026#8211; No frills, side-by-side comparison of popular features of Kong API Gateway and Express Gateway Custom Plugin Support \u0026#8211; What else can we add Enterprise Versions \u0026#8211; Both Kong and Express Gateway have enterprise versions \u0026#8211; what are the key differences? + much more\u0026#8230;  Why are we talking API Gateways? In our analysis, we\u0026#8217;ll compare the Kong API Gateway and Express Gateway, an API Gateway built entirely on Express.js. We\u0026#8217;ll also explain exactly what an API Gateway is so that it puts it all into context. This interesting piece of architecture is important if you are working with APIs and Microservices. Even if you\u0026#8217;re just working on the strategy side, do not under estimate the flexibility and agility that comes from using API Gateways.\n\u0026nbsp;\nTLDR: API Gateways data where it needs to go in a secure, orderly fashion.\n\u0026nbsp;\nSo even if you think you\u0026#8217;ve got it all locked and loaded, it never hurts to take a look at what a little open source can do for your business or tech stack.\n\u0026nbsp;\n Get The Deep Dive   Moving On \u0026nbsp;\nIf you\u0026#8217;ve got questions about this comparison or analysis, let us know. If you\u0026#8217;re interested in how to migrate from Kong or even just to give Express Gateway a try, hit us up. We\u0026#8217;re always on the hunt for use cases and understanding more about what companies are using, issues they\u0026#8217;re facing or successes they\u0026#8217;ve felt.\n\u0026nbsp;\nAdditionally, if you\u0026#8217;re interested in more of these topics, join the live discussion on twitter (@lunchbadger) or (@express_gateway).\n"
+},
+{
+	"uri": "https://express-serverless.io/tags/administration-of-kong-api-gateway/",
+	"title": "Administration of Kong API Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/how-does-kong-compare-to/",
+	"title": "How does Kong compare to",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/kong-api-gateway/",
+	"title": "Kong API Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/",
+	"title": "API Gateway Comparison – Features and Pricing of Amazon AWS API Gateway and Express Gateway",
+	"tags": ["Administration and Maintenance of AWS API Gateway", "Amazon API Gateway", "AWS API Gateway", "Express API Gateway", "express.js", "How does AWS compare to", "microservices", "What is an API Gateway?"],
+	"description": "",
+	"content": "  Amazon API Gateway VS. Express Gateway If you\u0026#8217;re curious about how your API Gateway stacks up, now\u0026#8217;s the time to listen up because we\u0026#8217;re breaking down the differences (and similarities) of the most popular projects for the API Gateway use case.\nFirst up, we\u0026#8217;ve got Amazon API Gateway and we\u0026#8217;re going to compare it toExpress Gateway, an open source API Gateway built entirely on Express.js.\n\u0026nbsp;\nTLDR: You can skip ahead to the deep dive.\n\u0026nbsp;\nFor the rest of you, here\u0026#8217;s a quick hype-free run down. If you\u0026#8217;re like us and sick of the buzzword salad, then take a look at the real deal and let us know what you think.\nOverview While it\u0026#8217;s true that Amazon (AWS) is ubiquitous across most use cases, it\u0026#8217;s important to remember that it may not be right for everything. What do you do? That\u0026#8217;s the problem \u0026#8211; vendor lock in. Being locked into a vendor costs you money, but more importantly, it costs you time. Think of agility and speed as two of your best tools to be able to respond to the needs of customers or demands of the market. Amazon API Gateway is low level. If you want features like identity, authentication and authorization that other API gateways have natively \u0026#8211; guess what? You\u0026#8217;re looking at yet another proprietary offering like AWS Cognito OR coding everything yourself in a custom authorizer or in AWS Lambda \u0026#8211; from scratch.\n\u0026nbsp;\nSpeed=Survival\n\u0026nbsp;\nHidden fees and the cost of migration at scale can slow you down. There\u0026#8217;s more \u0026#8220;gotchas\u0026#8221; where that came from. For instance, Did you know that writing to AWS is part of your free Tier Usage but reading is not. What good does that do? AWS Lambda is low cost so you can catch a break there, but you\u0026#8217;ve got to use the Amazon API Gateway to surface AWS Lambda natively outside of AWS if you want to do so via HTTP. Check out this Medium article that reveals the real cost of serverless in AWS \u0026#8211; not Lambda \u0026#8211; yep \u0026#8211; Amazon API Gateway.\n\u0026nbsp;\nNews Flash: it\u0026#8217;s expensive.\n\u0026nbsp;\nSo while we won\u0026#8217;t cover those aspects in the comparison between Amazon (AWS) API Gateway and Express Gateway, keep this (and more) in mind when looking at Amazon (AWS) API Gateway.\nFactors to consider when comparing API Gateways  Elevator Pitches \u0026#8211; What\u0026#8217;s the short and sweet? Features and Architecture \u0026#8211; How does that backend look? Getting Started, Deployment and Configuration \u0026#8211; What does it take to get up and running? Administration and Maintenance \u0026#8211; How much effort is it on a daily basis? Features Comparison \u0026#8211; Side by Side showdown of popular features you are already using (or should be) Custom Extensions \u0026#8211; What does the extension ecosystem look like? + much more\u0026#8230;  Why are we talking API Gateways? In our analysis, we\u0026#8217;ll compare the Amazon (AWS) API Gateway and Express Gateway, an API Gateway built entirely on Express.js. We\u0026#8217;ll also explain exactly what an API Gateway s, but for now \u0026#8211; you need to know that this handy piece of architecture is important if you are working with APIs and Microservices. Two things, we\u0026#8217;re obviously passionate about. Think of an API Gateway\u0026#8230;like air traffic control. They get that data where it needs to go so even if you think you\u0026#8217;ve got it locked down, it never hurts to take a look at the latest and greatest (especially if it\u0026#8217;s open source!).\n Download the detailed guide here   Moving On Disclaimer: No actual HoneyBadgers were hurt during this comparison. Additionally, if you\u0026#8217;re interested in more of these topics, join the live discussion on twitter (@lunchbadger) or (@express_gateway).\n"
+},
+{
+	"uri": "https://express-serverless.io/tags/aws-api-gateway/",
+	"title": "AWS API Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/administration-and-maintenance-of-aws-api-gateway/",
+	"title": "Administration and Maintenance of AWS API Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/how-does-aws-compare-to/",
+	"title": "How does AWS compare to",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/apis/",
+	"title": "APIs",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/containerworld/",
+	"title": "Containerworld",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/blog/can-use-multi-cloud-strategy-grow-company/",
+	"title": "How you can use a Multi-cloud Strategy to Grow your Company",
+	"tags": ["APIs", "cloud agnostic to avoid vendor lock in", "Containerworld", "Joyent", "microservices", "multi-cloud strategy", "open source API Gateway", "Shubhra", "Shubhra Kar"],
+	"description": "",
+	"content": " Over the last few months it seems like everyone has been getting in on that hot multi-cloud action. Unlike a lot of other companies, we\u0026#8217;ve been cloud agnostic since day one (before it was cool). So for LunchBadger, we\u0026#8217;d like like to take a moment and get on the mic about what this is really all about and how you can use a multi-cloud strategy to achieve maximum growth, sustainably.\nWhat does multi-cloud mean? First of all, \u0026#8220;hybrid\u0026#8221; and multi-cloud are not the same thing. This might seem obvious, but we\u0026#8217;ve seen a few shifty articles out there that try to mix up the terms. It\u0026#8217;s also very easy to see how the two terms can get confusing.\n Hybrid cloud model: You use a cloud computing environment that is a mix of an on-prem/private cloud and a public cloud, with orchestration between each of them Multi-cloud: You use several public cloud providers representing a general approach to managing cloud services for your company  It\u0026#8217;s true, hybrid cloud model could be part of a multi-cloud deployment \u0026#8211; but it\u0026#8217;s important to recognize the difference in the two terms which represent different types of architecture.\nWhy does multi-cloud matter? Multi-cloud isn\u0026#8217;t just for the big enterprise and there are benefits that provide value even without large scale operations.\nHere are some of the most common:\n avoiding pesky and expensive vendor lock-in finding optimal cloud services for a particular business or technical need increased redundancy  Most importantly, speed and agility is a massive benefit with a multi-cloud strategy. This is an aspect that is not commonly considered, but should be put front and center. Businesses are facing more pressure from the market and consumers. Even if you\u0026#8217;re a B2B company, the B2C companies you sell to are being affected by consumer demand and changing global waves of innovation or regulation. So when you think about the agility and speed that a multi cloud environment can give you, these factors are at the core of it\u0026#8217;s disruptive potential.\nCompanies using a multi-cloud strategy to get ahead Almost every enterprise using a cloud or hybrid storage model has a multi-cloud strategy. This is why the multi-cloud fever has hit so hard. It\u0026#8217;s just a term that encapsulates the pressures that enterprise have been feeling for a long time. So if you\u0026#8217;re considering a multi-cloud strategy, you\u0026#8217;ve got a path of giants you can follow.\n “We recognized that we were spending a lot of time, energy, effort and management bandwidth to create infrastructure that already exists out there in a much better state and is evolving at a furious pace,” says Capital One CIO Rob Alexander.\n Additionally, a study of 1,734 companies paid for by Microsoft and conducted by 451 Research LLC in 2016, found many flavors of hybrid cloud formations emerging. With 74% of these companies managing on-premises private clouds with hosted private clouds. Additionally, just about 50% maintained on-prem private clouds with public clouds, and 33% managed hosted private clouds in conjunction with public cloud services. These are just a few tasty numbers that you should know.\nNew Partnership with Joyent If you\u0026#8217;re curious or feeling the burn for multi-cloud, we\u0026#8217;ve got more for you. Learn all about our partnership with Joyent (also featured on Containerworld, many more!). Together with Joyent, we’re upping the game with a simple, yet flexible, alternative to managing virtual applications across multiple providers. \nFrom the Press Release:\n “Our partnership with LunchBadger is the foundational third pillar of our open cloud strategy. The LunchBadger Serverless platform has been designed to be cloud agnostic and Kubernetes native. They are the ideal partner for us to build out Open Services like api-gateways, functional microservices, databases and event-streams, all running serverless across multiple clouds. This will provide a viable option to customers seeking to break free from the lock-in of proprietary ‘as a service’ offerings of cloud providers.” \u0026#8211; Shubhra Kar, VP of Product, Joyent.\n Also, this partnership is more than just two companies going out for a picnic. We\u0026#8217;ve also sponsored Express Gateway, an open source API Gateway built entirely on Express.js. So, in case you couldn\u0026#8217;t tell \u0026#8211; APIs and Microservices in the Enterprise is our bag and we\u0026#8217;re looking forward to understanding more about your use case for multi-cloud.\nMoving On Additionally, if you\u0026#8217;re interested in more of these topics, join the live discussion on twitter (@lunchbadger) or (@express_gateway).\n Try out our open source version \u0026#8211; your feedback helps prioritize our roadmap with the most value realized within the shortest amount of time View the entire joint press release with Joyent right over here  "
+},
+{
+	"uri": "https://express-serverless.io/tags/joyent/",
+	"title": "Joyent",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/shubhra/",
+	"title": "Shubhra",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/shubhra-kar/",
+	"title": "Shubhra Kar",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/cloud-agnostic-to-avoid-vendor-lock-in/",
+	"title": "cloud agnostic to avoid vendor lock in",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/multi-cloud-strategy/",
+	"title": "multi-cloud strategy",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/tags/open-source-api-gateway/",
+	"title": "open source API Gateway",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://express-serverless.io/license/",
+	"title": "License",
+	"tags": [],
+	"description": "",
+	"content": " Express Serverless Platform is licensed under APACHE LICENSE 2.0 The Apache License 2.0 is a permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.\nPermissions Commercial use | Modification | Distribution | Patent use | Private use\n Limitations Trademark use | Liability | Warranty\n "
 }]

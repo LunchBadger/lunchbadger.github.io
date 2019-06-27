@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="description" content="A detailed getting started tutorial guide between Express Serverless Platform and IBM Cloud Functions with examples by developers for developers.">
+<meta name="author" content="Al Tsang">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>ESP vs IBM Cloud Functions :: Express Serverless Platform</title>
+
+    
+    <link href="/css/nucleus.css?1561609756" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561609756" rel="stylesheet">
+    <link href="/css/hybrid.css?1561609756" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561609756" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561609756" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561609756" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561609756" rel="stylesheet">
+    <link href="/css/theme.css?1561609756" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561609756" rel="stylesheet">
+    
+      <link href="/css/theme-lb.css?1561609756" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1561609756"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+<link rel="stylesheet" id="google_fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,latin-ext" type="text/css" media="all">
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta property="og:locale" content="en_US">
+	<meta property="og:title" content="ESP vs IBM Cloud Functions | Express Serverless Platform">
+	<meta property="og:image" content="https://express-serverless.iowp-content/uploads/2018/04/2.png">
+	<meta property="og:description" content="A detailed getting started tutorial guide between Express Serverless Platform and IBM Cloud Functions with examples by developers for developers.">
+	<meta property="og:site_name" content="Express Serverless Platform">
+	
+	<link rel="preconnect" href="https://express-serverless.io">
+	<link rel="canonical" href="https://express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/">
+
+
+  </head>
+  <body class="" data-url="/blog/hello-world-esp-vs-ibm-cloud-functions-example/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+
+	<img class="logo"
+	src="/wp-content/uploads/2019/06/express-serverless-platform-final2.png" 
+	alt="Express Serverless Platform" 
+	title="Express Serverless Platform">
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1561609756"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1561609756"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/express-serverless.io";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1561609756"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/about/" title="About" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/about/">
+          About
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/">
+          Basics
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/canvas/" title="Canvas" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/canvas/">
+          Canvas
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/entity-palette/" title="Entity Palette" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/entity-palette/">
+          Entity Palette
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/entity-palette/connectors/" title="Model Connectors" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/entity-palette/connectors/">
+          Model Connectors
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/entity-palette/models/" title="Models" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/entity-palette/models/">
+          Models
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/entity-palette/functions/" title="Functions" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/entity-palette/functions/">
+          Functions
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/entity-palette/service-endpoints/" title="Service Endpoints" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/entity-palette/service-endpoints/">
+          Service Endpoints
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/entity-palette/gateways/" title="Gateways" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/entity-palette/gateways/">
+          Gateways
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/entity-palette/api-endpoints/" title="API Endpoints" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/entity-palette/api-endpoints/">
+          API Endpoints
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/cloud-runtime/" title="Cloud Runtime" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/cloud-runtime/">
+          Cloud Runtime
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/git-access/" title="Git Access" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/git-access/">
+          Git Access
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/" title="Blog" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/">
+          Blog
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/intro-articles/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/intro-articles/">
+          Introduction
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/serverless-based-functions/" title="Building Serverless Based Functions" class="dd-item ">
+        <a href="/blog/serverless-based-functions/">
+        Serverless Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/get-started-api-management-express-serverless-platform/" title="How To Get Started with API Management and Express Serverless Platform" class="dd-item ">
+        <a href="/blog/get-started-api-management-express-serverless-platform/">
+        Get Started
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/" title="API Management - Setting Up Key-Based Authentication" class="dd-item ">
+        <a href="/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/">
+        Key Based Authentication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/2018/" title="2018 Articles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/2018/">
+          2018 Articles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/api-management-authentication-authorization-audit/" title="API Management Reimagined: Authentication Authorization Audit" class="dd-item ">
+        <a href="/blog/api-management-authentication-authorization-audit/">
+        API Management Reimagined
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/express-serverless-platform-lunchbadger/" title="LunchBadger Platform is now Express Serverless Platform" class="dd-item ">
+        <a href="/blog/express-serverless-platform-lunchbadger/">
+        LunchBadger is now ESP
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/kubernetes-scalability/" title="Leveraging Kubernetes For Microservices Based Cloud Strategy" class="dd-item ">
+        <a href="/blog/kubernetes-scalability/">
+        Leveraging Kubernetes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/compare-tyk-api-gateway-express-features/" title="API Gateways Comparison – Features and Pricing of Tyk API Gateway vs. Express Gateway" class="dd-item ">
+        <a href="/blog/compare-tyk-api-gateway-express-features/">
+        Tyk vs EG
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/compare-kong-api-gateway-express-features/" title="API Gateways Comparison: Features &amp; Pricing of Kong vs. Express Gateway" class="dd-item ">
+        <a href="/blog/compare-kong-api-gateway-express-features/">
+        Kong vs EG
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/compare-amazon-aws-api-gateway-express-features/" title="API Gateway Comparison – Features and Pricing of Amazon AWS API Gateway and Express Gateway" class="dd-item ">
+        <a href="/blog/compare-amazon-aws-api-gateway-express-features/">
+        AWS API Gateway vs EG
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/can-use-multi-cloud-strategy-grow-company/" title="How you can use a Multi-cloud Strategy to Grow your Company" class="dd-item ">
+        <a href="/blog/can-use-multi-cloud-strategy-grow-company/">
+        Multi-cloud Strategy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/2017/" title="2017 Articles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/2017/">
+          2017 Articles
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/2016/" title="2016 Articles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/2016/">
+          2016 Articles
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/comparisons/" title="Comparisons" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/comparisons/">
+          Comparisons
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/" title="ESP vs AWS Lambda" class="dd-item ">
+        <a href="/blog/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/">
+        ESP vs AWS Lambda
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/hello-world-esp-vs-google-cloud-functions-example/" title="ESP vs Google Cloud Functions" class="dd-item ">
+        <a href="/blog/hello-world-esp-vs-google-cloud-functions-example/">
+        ESP vs Google Cloud Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/get-started-azure-functions-vs-express-serverless-platform-tutorial/" title="ESP vs Azure Functions" class="dd-item ">
+        <a href="/blog/get-started-azure-functions-vs-express-serverless-platform-tutorial/">
+        ESP vs Azure Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/hello-world-esp-vs-ibm-cloud-functions-example/" title="ESP vs IBM Cloud Functions" class="dd-item active">
+        <a href="/blog/hello-world-esp-vs-ibm-cloud-functions-example/">
+        ESP vs IBM Cloud Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/vs-apigee-features/" title="Hello World with Express Serverless Platform vs Apigee Edge" class="dd-item ">
+        <a href="/blog/vs-apigee-features/">
+        ESP vs Apigee Edge
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/resources/" title="Resources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/resources/">
+          Resources
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/resources/comparison-guides/" title="Comparison Guides" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/resources/comparison-guides/">
+          Comparison Guides
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/resources/use-cases/" title="Use Cases" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/resources/use-cases/">
+          Use Cases
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/support/" title="Support" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/support/">
+          Support
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/install/" title="Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/install/">
+          Install
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/LunchBadger/lunchbadger-ui"><i class='fab fa-github'></i> ESP Frontend</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/LunchBadger/helm-charts/tree/feature/akt-experimental-deploy"><i class='fab fa-github'></i> ESP Backend</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://express-serverless.io/license"><i class='fab fa-osi'></i> Licensing</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <span >
+</span>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Open Source, Kubernetes-native, Microservices & Serverless Platform</a> > <a href='/comparisons/'>Comparisons</a> > ESP vs IBM Cloud Functions
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#a-id-user-content-ibm-cloud-class-anchor-href-https-gist-github-com-vkarpov15-a1c24e42dd7362ffefc9c6242242efbf-ibm-cloud-aria-hidden-true-a-ibm-cloud"><a id="user-content-ibm-cloud" class="anchor" href="https://gist.github.com/vkarpov15/a1c24e42dd7362ffefc9c6242242efbf#ibm-cloud" aria-hidden="true"></a>IBM Cloud</a></li>
+<li><a href="#a-id-user-content-lunchbadger-and-express-gateway-class-anchor-href-https-gist-github-com-vkarpov15-a1c24e42dd7362ffefc9c6242242efbf-lunchbadger-and-express-gateway-aria-hidden-true-a-express-serverless-platform-and-express-gateway"><a id="user-content-lunchbadger-and-express-gateway" class="anchor" href="https://gist.github.com/vkarpov15/a1c24e42dd7362ffefc9c6242242efbf#lunchbadger-and-express-gateway" aria-hidden="true"></a>Express Serverless Platform and Express Gateway</a></li>
+<li><a href="#moving-on">Moving On</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/bluemix">Bluemix</a>
+
+  <a class="tag-link" href="/tags/express-gateway">Express Gateway</a>
+
+  <a class="tag-link" href="/tags/express.js">express.js</a>
+
+  <a class="tag-link" href="/tags/how-do-i-get-started-with-ibm-connect">How Do I Get Started with IBM Connect</a>
+
+  <a class="tag-link" href="/tags/ibm-api-connect">IBM API Connect</a>
+
+  <a class="tag-link" href="/tags/node.js">Node.js</a>
+
+  <a class="tag-link" href="/tags/node.js-apis">Node.js APIs</a>
+
+  <a class="tag-link" href="/tags/what-are-ibm-cloud-functions">What are IBM Cloud Functions</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              ESP vs IBM Cloud Functions
+            </h1>
+          
+
+        
+
+
+
+
+
+<p><a href="https://www.ibm.com/cloud/functions" rel="nofollow">IBM Cloud Functions</a> are <a href="https://www.ibm.com/cloud/" rel="nofollow">IBM Cloud&#8217;s</a> equivalent to <a href="https://aws.amazon.com/lambda/" rel="nofollow">AWS Lambda</a>. Like Lambda, IBM Cloud Functions let you write custom functions and expose them via an HTTP interface through either IBM Cloud Function&#8217;s minimal HTTP configuration or <a href="https://www.ibm.com/cloud/api-connect" rel="nofollow">IBM API Connect</a> for more sophisticated use cases. Express Serverless Platform offers a similar stack that lets you write Node.js APIs and expose those APIs through <a href="http://www.express-gateway.io?utm_source=Comparison_GS_IBM&amp;utm_medium=blog&amp;utm_campaign=2018-10-comparisons&amp;utm_content=link">Express Gateway</a> without vendor lock in. In this article, I&#8217;ll walk through setting up a rudimentary Node.js function in both Express Serverless Platform and IBM Cloud, and discuss the tradeoffs of using one over the other.</p>
+
+<p>&nbsp;</p>
+
+<h2 id="a-id-user-content-ibm-cloud-class-anchor-href-https-gist-github-com-vkarpov15-a1c24e42dd7362ffefc9c6242242efbf-ibm-cloud-aria-hidden-true-a-ibm-cloud"><a id="user-content-ibm-cloud" class="anchor" href="https://gist.github.com/vkarpov15/a1c24e42dd7362ffefc9c6242242efbf#ibm-cloud" aria-hidden="true"></a>IBM Cloud</h2>
+
+<p>Go to <a href="https://console.bluemix.net/openwhisk/" rel="nofollow">IBM&#8217;s OpenWhisk landing page</a> and log in. IBM Cloud is the new name for what used to be called <a href="https://en.wikipedia.org/wiki/Bluemix" rel="nofollow">Bluemix</a>, so don&#8217;t be surprised by the bluemix.net URL.
+ <a href="https://openwhisk.apache.org/" rel="nofollow">OpenWhisk</a> is an Apache open source project that provides the backbone for IBM Cloud Functions.</p>
+
+<p>&nbsp;</p>
+
+<p>Once you&#8217;ve logged in, click on the &#8220;Actions&#8221; tab on the left and then click &#8220;Create.&#8221;</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/0b05f6a52aed4010649e27ace5c0481cd5261eb4/68747470733a2f2f692e696d6775722e636f6d2f623971703453372e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/0b05f6a52aed4010649e27ace5c0481cd5261eb4/68747470733a2f2f692e696d6775722e636f6d2f623971703453372e706e67" data-canonical-src="https://i.imgur.com/b9qp4S7.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>For this simple example, click on &#8220;Quickstart Templates&#8221; to get a list of ready-made &#8220;actions.&#8221; In OpenWhisk, an action is just another name for a function.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/da7e59ee303fc991afc74f8ad26c1e4d0cba1a37/68747470733a2f2f692e696d6775722e636f6d2f613863554b57442e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/da7e59ee303fc991afc74f8ad26c1e4d0cba1a37/68747470733a2f2f692e696d6775722e636f6d2f613863554b57442e706e67" data-canonical-src="https://i.imgur.com/a8cUKWD.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>Select the &#8220;Hello World&#8221; function template.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/0a0dde542115a5cc86564c579433fe4b7cd7ee6d/68747470733a2f2f692e696d6775722e636f6d2f4f3347306f4d682e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/0a0dde542115a5cc86564c579433fe4b7cd7ee6d/68747470733a2f2f692e696d6775722e636f6d2f4f3347306f4d682e706e67" data-canonical-src="https://i.imgur.com/O3G0oMh.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>The next step asks you for a package name, a runtime, and the actual code. A package is just a container for one or more cloud functions, potentially with shared configuration. IBM Cloud will fill in the form with package name &#8220;hello-world&#8221;, Node.js 8 as the runtime, and a simple &#8220;Hello World&#8221; function as the code, so you shouldn&#8217;t need to make any changes, just hit the &#8220;Deploy&#8221; button.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/068be3a9406ddacfe97f4c5b5f14bf25020599a3/68747470733a2f2f692e696d6775722e636f6d2f42374c4c5a4f542e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/068be3a9406ddacfe97f4c5b5f14bf25020599a3/68747470733a2f2f692e696d6775722e636f6d2f42374c4c5a4f542e706e67" data-canonical-src="https://i.imgur.com/B7LLZOT.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>Great, now you have your first cloud function. You can execute the function, but it is not accessible via HTTP. Click the &#8220;Endpoints&#8221; tab on the left to create an endpoint for this function.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/267e7a69a1532f8e2bf013b8f00b0074a7b8427a/68747470733a2f2f692e696d6775722e636f6d2f3452474a4d45702e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/267e7a69a1532f8e2bf013b8f00b0074a7b8427a/68747470733a2f2f692e696d6775722e636f6d2f3452474a4d45702e706e67" data-canonical-src="https://i.imgur.com/4RGJMEp.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>Now, click the &#8220;Enable as Web Action&#8221; checkbox to expose this action via REST API. A web action has a couple special properties as opposed to a regular action. First, a web action _must_ return an object that is serializable into JSON, or a <a href="https://github.com/apache/incubator-openwhisk/blob/master/docs/actions.md#creating-asynchronous-actions">promise that resolves to such an object</a>. Second, if a web action returns an object that has a headers, statusCode or body property, OpenWhisk will use those properties to structure the HTTP response, rather than just stringifying the resulting JSON object.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/bbe4c955db68488a73f34cf4f1b2eaadc1a2c477/68747470733a2f2f692e696d6775722e636f6d2f68784b4b4a69442e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/bbe4c955db68488a73f34cf4f1b2eaadc1a2c477/68747470733a2f2f692e696d6775722e636f6d2f68784b4b4a69442e706e67" data-canonical-src="https://i.imgur.com/hxKKJiD.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>Once you&#8217;ve made your action into a web action, you should be able to access it via REST API. Click the copy icon in the &#8220;HTTP Method&#8221; panel to copy the URL for your function. You should then be able to use <a href="https://en.wikipedia.org/wiki/CURL" rel="nofollow">curl</a> to access your function via HTTP. Keep in mind IBM Cloud Functions do not have any authentication by default, so you don&#8217;t need any API key.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/0193b6917d985adc8d6a506a0ba0b24ecc3202e3/68747470733a2f2f692e696d6775722e636f6d2f706732776976342e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/0193b6917d985adc8d6a506a0ba0b24ecc3202e3/68747470733a2f2f692e696d6775722e636f6d2f706732776976342e706e67" data-canonical-src="https://i.imgur.com/pg2wiv4.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>Running curl on the URL will then execute your function and give you the result.</p>
+
+<p>&nbsp;</p>
+
+<pre><div class="codecolorer-container text default" style="overflow:auto;white-space:nowrap;width:435px;">
+  <div class="text codecolorer">
+    $ curl https://openwhisk.ng.bluemix.net/api/v1/web/val%40karpov.io_dev/hello-world/helloworld.json<br />
+    {<br />
+    &nbsp; "greeting": "Hello stranger!"<br />
+    }<br />
+    $
+  </div>
+</div>
+
+</pre>
+
+<h2 id="a-id-user-content-lunchbadger-and-express-gateway-class-anchor-href-https-gist-github-com-vkarpov15-a1c24e42dd7362ffefc9c6242242efbf-lunchbadger-and-express-gateway-aria-hidden-true-a-express-serverless-platform-and-express-gateway"><a id="user-content-lunchbadger-and-express-gateway" class="anchor" href="https://gist.github.com/vkarpov15/a1c24e42dd7362ffefc9c6242242efbf#lunchbadger-and-express-gateway" aria-hidden="true"></a>Express Serverless Platform and Express Gateway</h2>
+
+<p>In Express Serverless Platform, first create a new function and name it &#8216;myfunction&#8217;:</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/b8e799e5084eecd2ed5e59a8637f97ba419cb4fc/68747470733a2f2f692e696d6775722e636f6d2f427062785041662e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/b8e799e5084eecd2ed5e59a8637f97ba419cb4fc/68747470733a2f2f692e696d6775722e636f6d2f427062785041662e706e67" data-canonical-src="https://i.imgur.com/BpbxPAf.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>Node.js functions in Express Serverless Platform have the same function signature as <a href="https://nodejs.org/api/http.html#http_event_request" rel="nofollow">native Node.js HTTP request listeners</a>. The function to print &#8216;Hello, world!&#8217; with Express Serverless Platform is shown below. Note that the exported function <strong>must</strong> have the same name as the function name you assigned in the Express Serverless Platform GUI.</p>
+
+<p>&nbsp;</p>
+
+<div class="highlight highlight-source-js">
+  <pre><span class="pl-c1">module</span>.<span class="pl-smi">exports</span> <span class="pl-k">=</span> {
+  <span class="pl-en">myfunction</span> (<span class="pl-smi">req</span>, <span class="pl-smi">res</span>) {
+    <span class="pl-smi">res</span>.<span class="pl-en">end</span>(<span class="pl-s"><span class="pl-pds">'</span>Hello, world!<span class="pl-pds">'</span></span>);
+  }
+};
+</pre>
+</div>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/eebad2fc2e2bd1180e9a341f36991fc6746e186f/68747470733a2f2f692e696d6775722e636f6d2f50684967536f7a2e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/eebad2fc2e2bd1180e9a341f36991fc6746e186f/68747470733a2f2f692e696d6775722e636f6d2f50684967536f7a2e706e67" data-canonical-src="https://i.imgur.com/PhIgSoz.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Note that this function does not have to create an actual HTTP server. Express Serverless Platform handles creating a server for you, so you can write &#8220;serverless&#8221; functions without having to actually write an <a href="https://www.npmjs.com/package/express" rel="nofollow">express</a> application. You do still get access to the <a href="https://nodejs.org/api/http.html#http_class_http_serverresponse" rel="nofollow">Node.js HTTP response</a>, so you can set HTTP headers and set the <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" rel="nofollow">HTTP status code</a>.</p>
+
+<p>From the menu on the left, add a new gateway. This will add an <a href="http://www.express-gateway.io?utm_source=Comparison_GS_IBM&utm_medium=blog&utm_campaign=2018-10-comparisons&utm_content=link" rel="nofollow">Express Gateway</a> instance to your project.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/057251058e4cb828664b45a42789682b4cf16d04/68747470733a2f2f692e696d6775722e636f6d2f777249315848442e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/057251058e4cb828664b45a42789682b4cf16d04/68747470733a2f2f692e696d6775722e636f6d2f777249315848442e706e67" data-canonical-src="https://i.imgur.com/wrI1XHD.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>Click the plus icon next to &#8220;Policies&#8221; to add a policy to the default <a href="https://www.express-gateway.io/docs/core-concepts#pipelines?utm_source=Comparison_GS_IBM&utm_medium=blog&utm_campaign=2018-10-comparisons&utm_content=link" rel="nofollow">Express Gateway pipeline</a>. In Express Gateway, a pipeline is a sequence of <a href="https://www.express-gateway.io/docs/core-concepts#policies?utm_source=Comparison_GS_IBM&utm_medium=blog&utm_campaign=2018-10-comparisons&utm_content=link" rel="nofollow">policies</a> for handling a request. Add an empty &#8216;proxy&#8217; pipeline.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/8bddf36779d88170c810f44ebfd6fd28adc359a0/68747470733a2f2f692e696d6775722e636f6d2f6a35374e5366512e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/8bddf36779d88170c810f44ebfd6fd28adc359a0/68747470733a2f2f692e696d6775722e636f6d2f6a35374e5366512e706e67" data-canonical-src="https://i.imgur.com/j57NSfQ.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>Drag a line from your gateway to your function, and Express Serverless Platform will automatically connect your proxy policy to your function.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/60e5536e92b8d6c1b7c73c7b8c21e2a56bf90eff/68747470733a2f2f692e696d6775722e636f6d2f44726c5a7a4b652e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/60e5536e92b8d6c1b7c73c7b8c21e2a56bf90eff/68747470733a2f2f692e696d6775722e636f6d2f44726c5a7a4b652e706e67" data-canonical-src="https://i.imgur.com/DrlZzKe.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>Express Serverless Platform will also create a function endpoint for you. Keep the &#8220;paths&#8221; for your function endpoint empty for now. Click on the &#8220;settings&#8221; icon to find the publicly accessible URL for your Express Serverless Platform project.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://camo.githubusercontent.com/593e0c211416de74d83559ccb476a2e67aaf8fb0/68747470733a2f2f692e696d6775722e636f6d2f344232736e61312e706e67" target="_blank" rel="noopener noreferrer"><img src="https://camo.githubusercontent.com/593e0c211416de74d83559ccb476a2e67aaf8fb0/68747470733a2f2f692e696d6775722e636f6d2f344232736e61312e706e67" data-canonical-src="https://i.imgur.com/4B2sna1.png" /></a></p>
+
+<p>&nbsp;</p>
+
+<p>Running <a href="https://en.wikipedia.org/wiki/CURL" rel="nofollow">curl</a> on the URL will now run your custom function and give you the &#8220;Hello, world!&#8221; text.</p>
+
+<p>&nbsp;</p>
+
+<pre><div class="codecolorer-container text default" style="overflow:auto;white-space:nowrap;width:435px;">
+  <div class="text codecolorer">
+    $ curl http://gateway-148-dev.lunchbadger.io<br />
+    Hello, World!<br />
+    $
+  </div>
+</div>
+
+</pre>
+
+<h2 id="moving-on">Moving On</h2>
+
+<p>The combination of Express Serverless Platform and Express Gateway is a great alternative to IBM Cloud Functions if you&#8217;re looking to avoid vendor lock-in. IBM Cloud Functions are built on OpenWhisk, so in theory you should be able to migrate your IBM Cloud Functions deployment onto OpenWhisk, but IBM doesn&#8217;t provide any documentation on how to do that. On the other hand, Express Serverless Platform scaffolds out an app for you and stores it in a git repo that you can clone. That enables you to run your app locally or on any cloud provider. Express Serverless Platform does automatically host your app for you, but that isn&#8217;t your only option. IBM Cloud is appealing because IBM is a well-established company, but using IBM Cloud Functions means you must run your code on IBM Cloud and manage your API using <a href="https://www.ibm.com/cloud/api-connect" rel="nofollow">IBM API Connect</a>.</p>
+
+<p>&nbsp;</p>
+
+<p>We&#8217;ve done up a detailed comparison analysis on features, pricing and more between Express Serverless Platform running on IBM compared to IBM Cloud Functions, which is available for download from our <a href="/resources/comparison-guides/" target="_blank">Resources page.</a></p>
+
+<p>&nbsp;</p>
+
+<p>Additionally, if you&#8217;re interested in more of these topics, join the live discussion on twitter <strong><a href="http://www.twitter.com/lunchbadger">@lunchbadger</a></strong> or <strong><a href="https://twitter.com/express_gateway">@express_gateway.</a></strong></p>
+
+<p>&nbsp;
+&nbsp;</p>
+
+
+<a  href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fexpress-serverless.io%2Fblog%2Fhello-world-esp-vs-ibm-cloud-functions-example%2F" target="_blank"  class="btn btn-default">
+  
+  
+  
+    
+  <i class="fab fa-facebook"></i>
+    
+  
+  Share
+  
+</a>
+
+
+
+<a  href="https://twitter.com/intent/tweet/?text=ESP%20vs%20IBM%20Cloud%20Functions&amp;amp;url=https%3A%2F%2Fexpress-serverless.io%2Fblog%2Fhello-world-esp-vs-ibm-cloud-functions-example%2F" target="_blank"  class="btn btn-default">
+  
+  
+  
+    
+  <i class="fab fa-twitter"></i>
+    
+  
+  Tweet
+  
+</a>
+
+
+
+<a  href="https://www.linkedin.com/shareArticle?mini=true&amp;amp;url=https%3A%2F%2Fexpress-serverless.io%2Fblog%2Fhello-world-esp-vs-ibm-cloud-functions-example%2F&amp;amp;title=ESP%20vs%20IBM%20Cloud%20Functions&amp;amp;summary=ESP%20vs%20IBM%20Cloud%20Functions&amp;amp;source=https%3A%2F%2Fexpress-serverless.io%2Fblog%2Fhello-world-esp-vs-ibm-cloud-functions-example%2F" target="_blank"  class="btn btn-default">
+  
+  
+  
+    
+  <i class="fab fa-linkedin"></i>
+    
+  
+  Link
+  
+</a>
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/blog/get-started-azure-functions-vs-express-serverless-platform-tutorial/" title="ESP vs Azure Functions"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/blog/vs-apigee-features/" title="Hello World with Express Serverless Platform vs Apigee Edge" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1561609756"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561609756"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561609756"></script>
+    <script src="/js/jquery.sticky.js?1561609756"></script>
+    <script src="/js/featherlight.min.js?1561609756"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561609756"></script>
+    <script src="/js/highlight.pack.js?1561609756"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561609756"></script>
+    <script src="/js/learn.js?1561609756"></script>
+    <script src="/js/hugo-learn.js?1561609756"></script>
+
+    <link href="/mermaid/mermaid.css?1561609756" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561609756"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+  </body>
+</html>
+

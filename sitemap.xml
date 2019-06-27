@@ -3,78 +3,898 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://docs.lunchbadger.com/</loc>
-    <lastmod>2018-05-18T15:16:56+03:00</lastmod>
+    <loc>https://express-serverless.io/blog/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.lunchbadger.com/about/</loc>
-    <lastmod>2018-05-18T15:18:39+03:00</lastmod>
+    <loc>https://express-serverless.io/blog/serverless-based-functions/</loc>
+    <lastmod>2018-08-07T02:50:41+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.lunchbadger.com/basics/entity-palette/connectors/</loc>
-    <lastmod>2018-05-21T18:37:50+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.lunchbadger.com/basics/canvas/</loc>
-    <lastmod>2018-05-21T18:25:07+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.lunchbadger.com/basics/</loc>
+    <loc>https://express-serverless.io/resources/comparison-guides/</loc>
     <lastmod>2018-05-21T18:23:50+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.lunchbadger.com/basics/entity-palette/models/</loc>
-    <lastmod>2018-05-21T18:37:43+03:00</lastmod>
+    <loc>https://express-serverless.io/blog/intro-articles/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.lunchbadger.com/basics/entity-palette/</loc>
-    <lastmod>2018-05-21T18:24:24+03:00</lastmod>
+    <loc>https://express-serverless.io/</loc>
+    <lastmod>2018-05-18T15:16:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.lunchbadger.com/basics/entity-palette/functions/</loc>
-    <lastmod>2018-05-21T18:37:43+03:00</lastmod>
+    <loc>https://express-serverless.io/blog/get-started-api-management-express-serverless-platform/</loc>
+    <lastmod>2018-11-05T12:21:22+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.lunchbadger.com/basics/cloud-runtime/</loc>
+    <loc>https://express-serverless.io/blog/2018/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/resources/use-cases/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/hello-world-esp-vs-google-cloud-functions-example/</loc>
+    <lastmod>2018-05-01T17:04:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/</loc>
+    <lastmod>2018-11-08T09:09:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/2017/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/get-started-azure-functions-vs-express-serverless-platform-tutorial/</loc>
+    <lastmod>2018-03-22T22:38:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/2016/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/</loc>
+    <lastmod>2018-04-03T12:31:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/about/</loc>
+    <lastmod>2018-05-18T15:18:39+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/vs-apigee-features/</loc>
+    <lastmod>2018-03-15T13:00:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/basics/entity-palette/connectors/</loc>
+    <lastmod>2018-05-21T18:37:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/basics/canvas/</loc>
     <lastmod>2018-05-21T18:25:07+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.lunchbadger.com/basics/git-access/</loc>
+    <loc>https://express-serverless.io/basics/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/comparisons/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/resources/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/support/</loc>
+    <lastmod>2018-05-18T15:16:56+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/install/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/basics/entity-palette/models/</loc>
+    <lastmod>2018-05-21T18:37:43+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/basics/entity-palette/</loc>
+    <lastmod>2018-05-21T18:24:24+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/basics/entity-palette/functions/</loc>
+    <lastmod>2018-05-21T18:37:43+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/basics/cloud-runtime/</loc>
+    <lastmod>2018-05-21T18:25:07+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/basics/git-access/</loc>
     <lastmod>2018-05-29T15:31:09+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.lunchbadger.com/basics/entity-palette/service-endpoints/</loc>
+    <loc>https://express-serverless.io/basics/entity-palette/service-endpoints/</loc>
     <lastmod>2018-05-21T18:38:14+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.lunchbadger.com/basics/entity-palette/gateways/</loc>
+    <loc>https://express-serverless.io/basics/entity-palette/gateways/</loc>
     <lastmod>2018-05-21T18:37:58+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.lunchbadger.com/basics/entity-palette/api-endpoints/</loc>
+    <loc>https://express-serverless.io/basics/entity-palette/api-endpoints/</loc>
     <lastmod>2018-05-21T18:38:14+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.lunchbadger.com/categories/</loc>
+    <loc>https://express-serverless.io/tags/aws-lambda/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://docs.lunchbadger.com/tags/</loc>
+    <loc>https://express-serverless.io/tags/amazon-api-gateway/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/amazon-web-services-pricing/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/amiram-shachar/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/categories/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/devops/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/developers/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/categories/featured/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/functions-as-a-service/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/lambda/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/no-ops/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/on-premise-serverless-solutions/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/categories/technology/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/api-gateway/</loc>
+    <lastmod>2018-11-29T01:08:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/api-endpoints/</loc>
+    <lastmod>2018-11-08T09:09:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/api-keys-sent-over-https/</loc>
+    <lastmod>2018-11-08T09:09:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/categories/development/</loc>
+    <lastmod>2018-11-08T09:09:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/proxy-policy/</loc>
+    <lastmod>2018-11-08T09:09:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/best-practices-on-api-management/</loc>
+    <lastmod>2018-11-08T09:09:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/end-to-end-request-path-from-the-api-endpoint-to-the-back-end-service/</loc>
+    <lastmod>2018-11-08T09:09:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/key-auth-policy/</loc>
+    <lastmod>2018-11-08T09:09:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/api-consumer-management/</loc>
+    <lastmod>2018-11-05T12:21:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/service-endpoint/</loc>
+    <lastmod>2018-11-05T12:21:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/service-endpoint-can-be-front-ended-by-an-api-gateway/</loc>
+    <lastmod>2018-11-05T12:21:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/model-based-microservices-and-serverless-functions/</loc>
+    <lastmod>2018-11-05T12:21:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/api-management/</loc>
+    <lastmod>2018-10-16T21:06:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/api-management-authentication-authorization-audit/</loc>
+    <lastmod>2018-10-16T21:06:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/authentication-with-an-api-gateways/</loc>
+    <lastmod>2018-10-16T21:06:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/authentication/</loc>
+    <lastmod>2018-10-16T21:06:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/authorization-and-audit-capabilities/</loc>
+    <lastmod>2018-10-16T21:06:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/scalable-kubernetes-infrastructure/</loc>
+    <lastmod>2018-10-16T21:06:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/categories/announcement/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/barebone-serverless-functions/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/brendan-burns/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/functions-in-java/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/functions-in-node.js/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/functions-in-php/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/functions-in-ruby/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/go-language/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/kubernetes/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/express-serverless-platform-lunchbadger/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/node.js/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/python/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/serverless-platform/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/serverless-orchestration/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/the-newstack/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/visualize-apis/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/microservices/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/open-source/</loc>
+    <lastmod>2018-10-09T00:12:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/how-to-get-started-with-kubernetes/</loc>
+    <lastmod>2018-08-13T19:26:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/kubectl/</loc>
+    <lastmod>2018-08-13T19:26:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/kubernetes-pod/</loc>
+    <lastmod>2018-08-13T19:26:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/kubernetes-runtime/</loc>
+    <lastmod>2018-08-13T19:26:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/kubernetes-scalability/</loc>
+    <lastmod>2018-08-13T19:26:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/auto-deployment-in-a-kubernetes-runtime/</loc>
+    <lastmod>2018-08-13T19:26:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/command-line-tool-called-kubectl-for-deploying-containerized-applications-and-managing-services/</loc>
+    <lastmod>2018-08-13T19:26:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/build-a-microservice/</loc>
+    <lastmod>2018-08-07T02:50:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/build-an-api/</loc>
+    <lastmod>2018-08-07T02:50:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/building-enterprise-ready-serverless-functions/</loc>
+    <lastmod>2018-08-07T02:50:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/deploy-an-api-gateway/</loc>
+    <lastmod>2018-08-07T02:50:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/how-to-build-an-api/</loc>
+    <lastmod>2018-08-07T02:50:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/a-minimalistic-framework-for-node.js/</loc>
+    <lastmod>2018-08-07T02:50:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/express.js/</loc>
+    <lastmod>2018-08-07T02:50:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/cloud-functions/</loc>
+    <lastmod>2018-05-01T17:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/express-gateway-pipeline./</loc>
+    <lastmod>2018-05-01T17:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/get-started-with-google-cloud-functions/</loc>
+    <lastmod>2018-05-01T17:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/get-started-with-node.js-functions-in-lunchbadger/</loc>
+    <lastmod>2018-05-01T17:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/get-started-with-how-to-write-custom-functions/</loc>
+    <lastmod>2018-05-01T17:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/google-cloud/</loc>
+    <lastmod>2018-05-01T17:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/google-cloud-functions/</loc>
+    <lastmod>2018-05-01T17:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/googles-cloud-functions-emulator/</loc>
+    <lastmod>2018-05-01T17:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/lunchbadger-gui/</loc>
+    <lastmod>2018-05-01T17:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/node.js-function/</loc>
+    <lastmod>2018-05-01T17:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/minimal-http-configuration/</loc>
+    <lastmod>2018-05-01T17:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/bluemix/</loc>
+    <lastmod>2018-04-03T12:31:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/express-gateway/</loc>
+    <lastmod>2018-04-03T12:31:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/how-do-i-get-started-with-ibm-connect/</loc>
+    <lastmod>2018-04-03T12:31:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/ibm-api-connect/</loc>
+    <lastmod>2018-04-03T12:31:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/node.js-apis/</loc>
+    <lastmod>2018-04-03T12:31:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/what-are-ibm-cloud-functions/</loc>
+    <lastmod>2018-04-03T12:31:41+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/aws-lambda-versus-azure/</loc>
+    <lastmod>2018-03-22T22:38:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/azure-function-app/</loc>
+    <lastmod>2018-03-22T22:38:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/azure-ui/</loc>
+    <lastmod>2018-03-22T22:38:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/create-a-resource-in-azure-portal/</loc>
+    <lastmod>2018-03-22T22:38:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/getting-started-with-microsoft-azure/</loc>
+    <lastmod>2018-03-22T22:38:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/http-interafce/</loc>
+    <lastmod>2018-03-22T22:38:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/hello-world-with-azure/</loc>
+    <lastmod>2018-03-22T22:38:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/microsofot-azure-ui/</loc>
+    <lastmod>2018-03-22T22:38:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/microsoft-azure/</loc>
+    <lastmod>2018-03-22T22:38:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/open-source-api/</loc>
+    <lastmod>2018-03-22T22:38:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/api-proxies/</loc>
+    <lastmod>2018-03-15T13:00:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/apigee-edge/</loc>
+    <lastmod>2018-03-15T13:00:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/google/</loc>
+    <lastmod>2018-03-15T13:00:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/google-acquired-apigee/</loc>
+    <lastmod>2018-03-15T13:00:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/how-do-i-deploy-an-api-gateway/</loc>
+    <lastmod>2018-03-15T13:00:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/how-to-deploy-an-api-proxy/</loc>
+    <lastmod>2018-03-15T13:00:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/node/</loc>
+    <lastmod>2018-03-15T13:00:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/what-is-apigee-edge/</loc>
+    <lastmod>2018-03-15T13:00:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/compare-tyk-api-gateway-express-features/</loc>
+    <lastmod>2018-02-13T13:42:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/administration-of-tyk-api-gateway/</loc>
+    <lastmod>2018-02-13T13:42:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/compare-open-source-api-gateway/</loc>
+    <lastmod>2018-02-13T13:42:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/express-api-gateway/</loc>
+    <lastmod>2018-02-13T13:42:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/how-does-tyk-compare-to/</loc>
+    <lastmod>2018-02-13T13:42:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/tyk-api-gateway/</loc>
+    <lastmod>2018-02-13T13:42:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/what-is-an-api-gateway/</loc>
+    <lastmod>2018-02-13T13:42:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/compare-kong-api-gateway-express-features/</loc>
+    <lastmod>2018-01-30T14:10:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/administration-of-kong-api-gateway/</loc>
+    <lastmod>2018-01-30T14:10:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/how-does-kong-compare-to/</loc>
+    <lastmod>2018-01-30T14:10:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/kong-api-gateway/</loc>
+    <lastmod>2018-01-30T14:10:49+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</loc>
+    <lastmod>2018-01-23T13:30:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/aws-api-gateway/</loc>
+    <lastmod>2018-01-23T13:30:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/administration-and-maintenance-of-aws-api-gateway/</loc>
+    <lastmod>2018-01-23T13:30:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/how-does-aws-compare-to/</loc>
+    <lastmod>2018-01-23T13:30:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/apis/</loc>
+    <lastmod>2018-01-09T15:42:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/containerworld/</loc>
+    <lastmod>2018-01-09T15:42:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/blog/can-use-multi-cloud-strategy-grow-company/</loc>
+    <lastmod>2018-01-09T15:42:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/joyent/</loc>
+    <lastmod>2018-01-09T15:42:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/shubhra/</loc>
+    <lastmod>2018-01-09T15:42:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/shubhra-kar/</loc>
+    <lastmod>2018-01-09T15:42:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/cloud-agnostic-to-avoid-vendor-lock-in/</loc>
+    <lastmod>2018-01-09T15:42:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/multi-cloud-strategy/</loc>
+    <lastmod>2018-01-09T15:42:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/tags/open-source-api-gateway/</loc>
+    <lastmod>2018-01-09T15:42:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://express-serverless.io/license/</loc>
   </url>
   
 </urlset>
