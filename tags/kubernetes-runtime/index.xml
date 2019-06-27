@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kubernetes Runtime on Express Serverless Platform</title>
-    <link>https://express-serverless.io/tags/kubernetes-runtime/</link>
+    <link>https://www.express-serverless.io/tags/kubernetes-runtime/</link>
     <description>Recent content in Kubernetes Runtime on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Aug 2018 19:26:15 +0000</lastBuildDate>
     
-	<atom:link href="https://express-serverless.io/tags/kubernetes-runtime/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.express-serverless.io/tags/kubernetes-runtime/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Building Serverless Based Functions</title>
-      <link>https://express-serverless.io/blog/serverless-based-functions/</link>
+      <link>https://www.express-serverless.io/blog/serverless-based-functions/</link>
       <pubDate>Tue, 07 Aug 2018 02:50:41 +0000</pubDate>
       
-      <guid>https://express-serverless.io/blog/serverless-based-functions/</guid>
+      <guid>https://www.express-serverless.io/blog/serverless-based-functions/</guid>
       <description>Fired up! Ready to go! You’ve heard every buzzword. Microservices, APIs, Kubernetes and serverless just to name a few catchy ones. Let’s get real for a moment and acknowledge that these are just fancy words for the work that you and your team are doing day in and day out. What if there was a way to do this work that was less painful? Less frustrating?
 &amp;nbsp;
 Using Express Serverless Platform, we believe in the power of developers.</description>
@@ -24,10 +24,10 @@ Using Express Serverless Platform, we believe in the power of developers.</descr
     
     <item>
       <title>Leveraging Kubernetes For Microservices Based Cloud Strategy</title>
-      <link>https://express-serverless.io/blog/kubernetes-scalability/</link>
+      <link>https://www.express-serverless.io/blog/kubernetes-scalability/</link>
       <pubDate>Mon, 13 Aug 2018 19:26:15 +0000</pubDate>
       
-      <guid>https://express-serverless.io/blog/kubernetes-scalability/</guid>
+      <guid>https://www.express-serverless.io/blog/kubernetes-scalability/</guid>
       <description>Enterprise applications have to be designed upfront for scalability and change. This has significant implications for both application architecture and application infrastructure. Application architecture is evolving from unmanageable monolithic or three-tier patterns to interconnected microservices. Microservices introduce new form factors not only for functionality and team-size (the so-called two-pizza teams), but also for the unit of infrastructure. It is not surprising that a portable container or a pod of handful interrelated containers often works out as the most befitting unit of infrastructure for microservices-based architecture.</description>
     </item>
     

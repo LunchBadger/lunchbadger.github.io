@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Express API Gateway on Express Serverless Platform</title>
-    <link>https://express-serverless.io/tags/express-api-gateway/</link>
+    <link>https://www.express-serverless.io/tags/express-api-gateway/</link>
     <description>Recent content in Express API Gateway on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Feb 2018 13:42:54 +0000</lastBuildDate>
     
-	<atom:link href="https://express-serverless.io/tags/express-api-gateway/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.express-serverless.io/tags/express-api-gateway/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>API Gateways Comparison – Features and Pricing of Tyk API Gateway vs. Express Gateway</title>
-      <link>https://express-serverless.io/blog/compare-tyk-api-gateway-express-features/</link>
+      <link>https://www.express-serverless.io/blog/compare-tyk-api-gateway-express-features/</link>
       <pubDate>Tue, 13 Feb 2018 13:42:54 +0000</pubDate>
       
-      <guid>https://express-serverless.io/blog/compare-tyk-api-gateway-express-features/</guid>
+      <guid>https://www.express-serverless.io/blog/compare-tyk-api-gateway-express-features/</guid>
       <description>Tyk API Gateway VS. Express Gateway Open source: beyond the pretty packaging. There are a lot of choices when it comes to choosing and API Gateway. If you&amp;#8217;re considering a new API strategy or just kicking the tires, we&amp;#8217;ve found that it&amp;#8217;s tough find hype-free information that actually helps understand what to look for in an API Gateway and how it fits into even traditional Microservices architecture. So, we rallied the community of developers, executives and thought leaders to get the skinny on the differences (and similarities) of the most popular projects for the API Gateway use case.</description>
     </item>
     
     <item>
       <title>API Gateways Comparison: Features &amp; Pricing of Kong vs. Express Gateway</title>
-      <link>https://express-serverless.io/blog/compare-kong-api-gateway-express-features/</link>
+      <link>https://www.express-serverless.io/blog/compare-kong-api-gateway-express-features/</link>
       <pubDate>Tue, 30 Jan 2018 14:10:49 +0000</pubDate>
       
-      <guid>https://express-serverless.io/blog/compare-kong-api-gateway-express-features/</guid>
+      <guid>https://www.express-serverless.io/blog/compare-kong-api-gateway-express-features/</guid>
       <description>Kong API Gateway VS. Express Gateway Two popular open source projects &amp;#8211; two very different approaches. We&amp;#8217;ve gotten a lot of questions about what to look for in an API Gateway, what is an API Gateway and even how an API gateway fits into your Microservices architecture. So, let&amp;#8217;s take a deeper look at all of this and more as we break down the differences (and similarities) of the most popular projects for the API Gateway use case.</description>
     </item>
     
     <item>
       <title>API Gateway Comparison – Features and Pricing of Amazon AWS API Gateway and Express Gateway</title>
-      <link>https://express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</link>
+      <link>https://www.express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</link>
       <pubDate>Tue, 23 Jan 2018 13:30:58 +0000</pubDate>
       
-      <guid>https://express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</guid>
+      <guid>https://www.express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</guid>
       <description>Amazon API Gateway VS. Express Gateway If you&amp;#8217;re curious about how your API Gateway stacks up, now&amp;#8217;s the time to listen up because we&amp;#8217;re breaking down the differences (and similarities) of the most popular projects for the API Gateway use case.
 First up, we&amp;#8217;ve got Amazon API Gateway and we&amp;#8217;re going to compare it toExpress Gateway, an open source API Gateway built entirely on Express.js.
 &amp;nbsp;

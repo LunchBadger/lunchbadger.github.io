@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Administration and Maintenance of AWS API Gateway on Express Serverless Platform</title>
-    <link>https://express-serverless.io/tags/administration-and-maintenance-of-aws-api-gateway/</link>
+    <link>https://www.express-serverless.io/tags/administration-and-maintenance-of-aws-api-gateway/</link>
     <description>Recent content in Administration and Maintenance of AWS API Gateway on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Jan 2018 13:30:58 +0000</lastBuildDate>
     
-	<atom:link href="https://express-serverless.io/tags/administration-and-maintenance-of-aws-api-gateway/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.express-serverless.io/tags/administration-and-maintenance-of-aws-api-gateway/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>API Gateway Comparison – Features and Pricing of Amazon AWS API Gateway and Express Gateway</title>
-      <link>https://express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</link>
+      <link>https://www.express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</link>
       <pubDate>Tue, 23 Jan 2018 13:30:58 +0000</pubDate>
       
-      <guid>https://express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</guid>
+      <guid>https://www.express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</guid>
       <description>Amazon API Gateway VS. Express Gateway If you&amp;#8217;re curious about how your API Gateway stacks up, now&amp;#8217;s the time to listen up because we&amp;#8217;re breaking down the differences (and similarities) of the most popular projects for the API Gateway use case.
 First up, we&amp;#8217;ve got Amazon API Gateway and we&amp;#8217;re going to compare it toExpress Gateway, an open source API Gateway built entirely on Express.js.
 &amp;nbsp;

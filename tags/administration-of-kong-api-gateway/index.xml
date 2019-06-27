@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Administration of Kong API Gateway on Express Serverless Platform</title>
-    <link>https://express-serverless.io/tags/administration-of-kong-api-gateway/</link>
+    <link>https://www.express-serverless.io/tags/administration-of-kong-api-gateway/</link>
     <description>Recent content in Administration of Kong API Gateway on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Jan 2018 14:10:49 +0000</lastBuildDate>
     
-	<atom:link href="https://express-serverless.io/tags/administration-of-kong-api-gateway/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.express-serverless.io/tags/administration-of-kong-api-gateway/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>API Gateways Comparison: Features &amp; Pricing of Kong vs. Express Gateway</title>
-      <link>https://express-serverless.io/blog/compare-kong-api-gateway-express-features/</link>
+      <link>https://www.express-serverless.io/blog/compare-kong-api-gateway-express-features/</link>
       <pubDate>Tue, 30 Jan 2018 14:10:49 +0000</pubDate>
       
-      <guid>https://express-serverless.io/blog/compare-kong-api-gateway-express-features/</guid>
+      <guid>https://www.express-serverless.io/blog/compare-kong-api-gateway-express-features/</guid>
       <description>Kong API Gateway VS. Express Gateway Two popular open source projects &amp;#8211; two very different approaches. We&amp;#8217;ve gotten a lot of questions about what to look for in an API Gateway, what is an API Gateway and even how an API gateway fits into your Microservices architecture. So, let&amp;#8217;s take a deeper look at all of this and more as we break down the differences (and similarities) of the most popular projects for the API Gateway use case.</description>
     </item>
     

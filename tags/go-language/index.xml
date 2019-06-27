@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go Language on Express Serverless Platform</title>
-    <link>https://express-serverless.io/tags/go-language/</link>
+    <link>https://www.express-serverless.io/tags/go-language/</link>
     <description>Recent content in Go Language on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Oct 2018 00:12:30 +0000</lastBuildDate>
     
-	<atom:link href="https://express-serverless.io/tags/go-language/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.express-serverless.io/tags/go-language/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LunchBadger Platform is now Express Serverless Platform</title>
-      <link>https://express-serverless.io/blog/express-serverless-platform-lunchbadger/</link>
+      <link>https://www.express-serverless.io/blog/express-serverless-platform-lunchbadger/</link>
       <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
       
-      <guid>https://express-serverless.io/blog/express-serverless-platform-lunchbadger/</guid>
+      <guid>https://www.express-serverless.io/blog/express-serverless-platform-lunchbadger/</guid>
       <description>Express Serverless Platform has arrived! After three long months of hard work, we&amp;#8217;re proud to announce that the LunchBadger Platform is now the Express Serverless Platform. New name, new features and an opportunity to experience a visual canvas ripe with all the important functionality that developers need, without the hype.
 &amp;nbsp;
 TLDR: Install ESP right over here

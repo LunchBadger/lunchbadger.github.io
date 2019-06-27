@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Node.js APIs on Express Serverless Platform</title>
-    <link>https://express-serverless.io/tags/node.js-apis/</link>
+    <link>https://www.express-serverless.io/tags/node.js-apis/</link>
     <description>Recent content in Node.js APIs on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Apr 2018 12:31:41 +0000</lastBuildDate>
     
-	<atom:link href="https://express-serverless.io/tags/node.js-apis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.express-serverless.io/tags/node.js-apis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ESP vs IBM Cloud Functions</title>
-      <link>https://express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/</link>
+      <link>https://www.express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/</link>
       <pubDate>Tue, 03 Apr 2018 12:31:41 +0000</pubDate>
       
-      <guid>https://express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/</guid>
+      <guid>https://www.express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/</guid>
       <description>IBM Cloud Functions are IBM Cloud&amp;#8217;s equivalent to AWS Lambda. Like Lambda, IBM Cloud Functions let you write custom functions and expose them via an HTTP interface through either IBM Cloud Function&amp;#8217;s minimal HTTP configuration or IBM API Connect for more sophisticated use cases. Express Serverless Platform offers a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I&amp;#8217;ll walk through setting up a rudimentary Node.</description>
     </item>
     

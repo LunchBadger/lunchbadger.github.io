@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Containerworld on Express Serverless Platform</title>
-    <link>https://express-serverless.io/tags/containerworld/</link>
+    <link>https://www.express-serverless.io/tags/containerworld/</link>
     <description>Recent content in Containerworld on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Jan 2018 15:42:13 +0000</lastBuildDate>
     
-	<atom:link href="https://express-serverless.io/tags/containerworld/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.express-serverless.io/tags/containerworld/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How you can use a Multi-cloud Strategy to Grow your Company</title>
-      <link>https://express-serverless.io/blog/can-use-multi-cloud-strategy-grow-company/</link>
+      <link>https://www.express-serverless.io/blog/can-use-multi-cloud-strategy-grow-company/</link>
       <pubDate>Tue, 09 Jan 2018 15:42:13 +0000</pubDate>
       
-      <guid>https://express-serverless.io/blog/can-use-multi-cloud-strategy-grow-company/</guid>
+      <guid>https://www.express-serverless.io/blog/can-use-multi-cloud-strategy-grow-company/</guid>
       <description>Over the last few months it seems like everyone has been getting in on that hot multi-cloud action. Unlike a lot of other companies, we&amp;#8217;ve been cloud agnostic since day one (before it was cool). So for LunchBadger, we&amp;#8217;d like like to take a moment and get on the mic about what this is really all about and how you can use a multi-cloud strategy to achieve maximum growth, sustainably.</description>
     </item>
     

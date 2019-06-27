@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google Cloud Functions on Express Serverless Platform</title>
-    <link>https://express-serverless.io/tags/google-cloud-functions/</link>
+    <link>https://www.express-serverless.io/tags/google-cloud-functions/</link>
     <description>Recent content in Google Cloud Functions on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 May 2018 17:04:42 +0000</lastBuildDate>
     
-	<atom:link href="https://express-serverless.io/tags/google-cloud-functions/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.express-serverless.io/tags/google-cloud-functions/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ESP vs Google Cloud Functions</title>
-      <link>https://express-serverless.io/blog/hello-world-esp-vs-google-cloud-functions-example/</link>
+      <link>https://www.express-serverless.io/blog/hello-world-esp-vs-google-cloud-functions-example/</link>
       <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
       
-      <guid>https://express-serverless.io/blog/hello-world-esp-vs-google-cloud-functions-example/</guid>
+      <guid>https://www.express-serverless.io/blog/hello-world-esp-vs-google-cloud-functions-example/</guid>
       <description>Google Cloud Functions are Google Cloud&amp;#8217;s equivalent to AWS Lambda. Like Lambda, Google Cloud Functions let you write custom functions and expose them via an HTTP interface through either Google Cloud Function&amp;#8217;s minimal HTTP configuration or Google Cloud Endpoints for more sophisticated use cases. Express Serverless Platfom is a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I&amp;#8217;ll walk through setting up a rudimentary Node.</description>
     </item>
     
