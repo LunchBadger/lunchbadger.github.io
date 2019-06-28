@@ -13,10 +13,10 @@
     
     <item>
       <title>ESP vs Google Cloud Functions</title>
-      <link>https://www.express-serverless.io/resources/hello-world-esp-vs-google-cloud-functions-example/</link>
+      <link>https://www.express-serverless.io/resource/hello-world-esp-vs-google-cloud-functions-example/</link>
       <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
       
-      <guid>https://www.express-serverless.io/resources/hello-world-esp-vs-google-cloud-functions-example/</guid>
+      <guid>https://www.express-serverless.io/resource/hello-world-esp-vs-google-cloud-functions-example/</guid>
       <description>Google Cloud Functions are Google Cloud&amp;#8217;s equivalent to AWS Lambda. Like Lambda, Google Cloud Functions let you write custom functions and expose them via an HTTP interface through either Google Cloud Function&amp;#8217;s minimal HTTP configuration or Google Cloud Endpoints for more sophisticated use cases. Express Serverless Platfom is a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I&amp;#8217;ll walk through setting up a rudimentary Node.</description>
     </item>
     

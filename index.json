@@ -1,6 +1,6 @@
 [
 {
-	"uri": "https://www.express-serverless.io/resources/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/",
+	"uri": "https://www.express-serverless.io/resource/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/",
 	"title": "ESP vs AWS Lambda",
 	"tags": ["Amazon API Gateway", "Amazon Web Services Pricing", "Amiram Shachar", "api gateway", "AWS Lambda", "Developers", "DevOps", "Functions as a Service", "Lambda", "No-Ops", "On Premise Serverless Solutions"],
 	"description": "Find out the truth about using AWS Lambda and why resilient microservices platforms like Express Serverless Platform running on AWS is a better option for both developers and operations.",
@@ -42,7 +42,7 @@
 	"content": ""
 },
 {
-	"uri": "https://www.express-serverless.io/resources/hello-world-esp-vs-google-cloud-functions-example/",
+	"uri": "https://www.express-serverless.io/resource/hello-world-esp-vs-google-cloud-functions-example/",
 	"title": "ESP vs Google Cloud Functions",
 	"tags": ["Cloud Functions", "Express Gateway pipeline.", "express.js", "Get Started with Google Cloud Functions", "Get started with how to write custom functions", "Get started with Node.js functions in LunchBadger", "Google Cloud", "Google Cloud Functions", "Google&#39;s cloud functions emulator", "LunchBadger GUI", "minimal HTTP configuration", "Node.js", "Node.js function"],
 	"description": "A detailed getting started tutorial guide between Express Serverless Platform and Google Cloud Functions with examples by developers for developers.",
@@ -63,7 +63,7 @@
 	"content": ""
 },
 {
-	"uri": "https://www.express-serverless.io/resources/get-started-azure-functions-vs-express-serverless-platform-tutorial/",
+	"uri": "https://www.express-serverless.io/resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/",
 	"title": "ESP vs Azure Functions",
 	"tags": ["AWS Lambda", "AWS Lambda versus Azure", "Azure Function App", "Azure UI", "Create a resource in Azure Portal", "Express Gateway", "Getting started with Microsoft Azure", "Hello world with Azure", "HTTP Interafce", "Microsofot Azure UI", "Microsoft Azure", "open source API"],
 	"description": "Compare getting started on Azure Functions versus Express Serverless Platform on Azure using this easy to follow guide with the &#34;Hello, World&#34; experience.",
@@ -77,7 +77,7 @@
 	"content": ""
 },
 {
-	"uri": "https://www.express-serverless.io/resources/hello-world-esp-vs-ibm-cloud-functions-example/",
+	"uri": "https://www.express-serverless.io/resource/hello-world-esp-vs-ibm-cloud-functions-example/",
 	"title": "ESP vs IBM Cloud Functions",
 	"tags": ["Bluemix", "Express Gateway", "express.js", "How Do I Get Started with IBM Connect", "IBM API Connect", "Node.js", "Node.js APIs", "What are IBM Cloud Functions"],
 	"description": "A detailed getting started tutorial guide between Express Serverless Platform and IBM Cloud Functions with examples by developers for developers.",
@@ -91,7 +91,7 @@
 	"content": " What is Express Serverless Platform? Express Serverless Platform enables developers to quickly write serverless functions and seamlessly deploy them as microservices through a secure API gateway using one intuitive visual interface. With Express Serverless Platform, you can:\n Easily build new microservices from scratch Quickly write new model functions and connectors to integrate microservices with legacy data and applications Streamline the development and deployment of serverless architecture Automatically implement industry-standard API gateway security  Express Serverless Platform is deployed on a Kubernetes runtime and ships with its own management utilities, making it easy to manage and scale on any private cloud, public cloud, or multi-cloud hybrid.\nWhy would I want to use Express Serverless Platform? TIME.\nYou\u0026rsquo;ll save massive amounts of time trying to attain the benefits of a microservices architecture. Express Serverless Platform provides the following to repeatedly save you time and build your microservices applications sustainably:\n best practices for microservices built into the tool cloud native separation of code, config and metadata code scaffolding and built-in boilerplates automated real time deployment to the cloud(s) of your choice visual orchestration and wiring of microservices to an API gateway, data sources, and more  By using Express Serverless Platform, you\u0026rsquo;ll be building, revising and innovating your microservice based applications more quickly and predictably through its automation and enablement.\nExample:\nGetting your application into the cloud as a container is already hard enough. Image now, deploying it to a container orchestrator and wiring it up to other dependent containers.\nExpress Serverless Platform containerizes your application for you. It deploys an image to Kubernetes by creating the deployment and other complicated YAML documents for you and calls its API rather than fumbling around with dozens of laborious kubectl commands.\nHow does Express Serverless Platform Work? Express Serverless Platform is driven by a GUI known as the Canvas. The Canvas guides user in the process of building, deploying, and managing microservices and exposing them as APIs.\nExpress Serverless Platform utilizes the best of breed open source projects for easy adoption, constant innovation and specialization of what each component brings to putting together a holistic microservices platform.\nSource-level access to these components provides opportunities in transparent customization and support along with community driven innovation. Here are the main projects used behind the scenes and integrated into Express Serverless Platform:\n Express Gateway - an API gateway to expose microservices by defining them as service endpoints and exposing them as API endpoints externally LoopBackJS - a Node.js based framework that lets you create microservices using a model driven approach Serverless - a cloud agnostic framework that acts as an adapter to serverless (a.k.a Function-as-a-Service (FaaS)) platforms. Kubeless - a Kubernetes native serverless engine that allows you to write functions in many supported languages Kubernetes - a container orchestrator that runs in any cloud that deploys microservices as they are built in LunchBadger ReactJS - a GUI framework that allows you to extend and build on top of LunchBadger\u0026rsquo;s visual interface  What is Express Gateway? Express Serverless Platform is built around another open source project, known as Express Gateway, which is a microservices and serverless API gateway built on ExpressJS.\nIf you’d like to learn more, please checkout the Express Gateway website and the Github repository or you can join the Express Gateway Community on Gitter.\nNeed Support? Now that you\u0026rsquo;re armed with the basics of how to use Express Serverless Platform, have fun! Feel free to play around with Entities on the Canvas and direct any questions to the Team via a git issue\n"
 },
 {
-	"uri": "https://www.express-serverless.io/resources/vs-apigee-features/",
+	"uri": "https://www.express-serverless.io/resource/vs-apigee-features/",
 	"title": "Hello World with Express Serverless Platform vs Apigee Edge",
 	"tags": ["api gateway", "API Proxies", "Apigee Edge", "express.js", "Google", "Google acquired Apigee", "How do I deploy an API gateway?", "How to Deploy an API Proxy?", "Node", "Node.js", "What is Apigee Edge"],
 	"description": "Learn more about how Apigee Edge and Express Serverless Platform, two popular platforms, compare in this easy to follow getting started guide using real time examples, code snippets and more.",
@@ -105,14 +105,14 @@
 	"content": " Instructions Detailed installation and getting instructions for both Express Serverless Platform frontend and backend are available from the respective Github repo\u0026rsquo;s README files.\n\u0026nbsp;\nExpress Serverless Front End Installation Express Serverless Back End Installation "
 },
 {
-	"uri": "https://www.express-serverless.io/resources/pdf-guides/",
+	"uri": "https://www.express-serverless.io/resource/pdf-guides/",
 	"title": "PDF Guides",
 	"tags": [],
 	"description": "Download detailed comparison guides on serverless platform pricing, features and more",
 	"content": " Download detailed comparison guides on pricing, features and more. \r\rServerless Plaform Comparison Guides\r\r\rComparison - AWS Lambda vs Express Serverless Platform on AWS.pdf\r\r(1700 ko)\r\r\rComparison - Apigee Edge vs Express Serverless Platform.pdf\r\r(605 ko)\r\r\rComparison - Azure Functions vs Express Serverless Platform on Azure.pdf\r\r(695 ko)\r\r\rComparison - Google Cloud Functions vs Express Serverless Platform on GCP.pdf\r\r(693 ko)\r\r\rComparison - IBM Cloud Functions vs Express Serverless Platform on IBM.pdf\r\r(591 ko)\r\r\r\r\r\rAPI Gateway Comparison Guides\r\r\rLunchBadger_API Gateways - Amazon API Gateway vs Express Gateway.pdf\r\r(800 ko)\r\r\rLunchBadger_API Gateways - Kong vs Express Gateway.pdf\r\r(1131 ko)\r\r\rLunchBadger_API Gateways - Tyk vs Express Gateway.pdf\r\r(352 ko)\r\r\r\r"
 },
 {
-	"uri": "https://www.express-serverless.io/resources/use-cases/",
+	"uri": "https://www.express-serverless.io/resource/use-cases/",
 	"title": "Use Cases",
 	"tags": [],
 	"description": "In depth use-cases on Microservices and Serverless Platforms and Functions across various industries.",
@@ -147,8 +147,8 @@
 	"content": " Blog Latest articles on Express Serverless Platform\u0026rsquo;s how-to\u0026rsquo;s, use-cases, examples and comparisons with other serverless platforms.\n"
 },
 {
-	"uri": "https://www.express-serverless.io/resources/",
-	"title": "Resources",
+	"uri": "https://www.express-serverless.io/resource/",
+	"title": "Resource",
 	"tags": [],
 	"description": "Download Express Serverless Platform&#39;s pdf guides on serverless platform comparisons and use-cases here.",
 	"content": " Resources Get detailed comparison analaysis between all the major serverless platforms togheter with downloadable pdf guides and use-cases here.\n"
