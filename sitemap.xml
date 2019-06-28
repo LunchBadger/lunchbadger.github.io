@@ -3,18 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.express-serverless.io/blog/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</loc>
+    <loc>https://www.express-serverless.io/resources/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</loc>
     <lastmod>2018-11-29T01:08:42+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.express-serverless.io/blog/serverless-based-functions/</loc>
     <lastmod>2018-08-07T02:50:41+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.express-serverless.io/resources/comparison-guides/</loc>
-    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
   </url>
   
   <url>
@@ -38,12 +33,7 @@
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/resources/use-cases/</loc>
-    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.express-serverless.io/blog/hello-world-esp-vs-google-cloud-functions-example/</loc>
+    <loc>https://www.express-serverless.io/resources/hello-world-esp-vs-google-cloud-functions-example/</loc>
     <lastmod>2018-05-01T17:04:42+00:00</lastmod>
   </url>
   
@@ -58,7 +48,7 @@
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/blog/get-started-azure-functions-vs-express-serverless-platform-tutorial/</loc>
+    <loc>https://www.express-serverless.io/resources/get-started-azure-functions-vs-express-serverless-platform-tutorial/</loc>
     <lastmod>2018-03-22T22:38:26+00:00</lastmod>
   </url>
   
@@ -68,7 +58,7 @@
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/</loc>
+    <loc>https://www.express-serverless.io/resources/hello-world-esp-vs-ibm-cloud-functions-example/</loc>
     <lastmod>2018-04-03T12:31:41+00:00</lastmod>
   </url>
   
@@ -78,32 +68,42 @@
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/blog/vs-apigee-features/</loc>
+    <loc>https://www.express-serverless.io/resources/vs-apigee-features/</loc>
     <lastmod>2018-03-15T13:00:05+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/basics/entity-palette/connectors/</loc>
+    <loc>https://www.express-serverless.io/getting-started/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.express-serverless.io/resources/pdf-guides/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.express-serverless.io/resources/use-cases/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/connectors/</loc>
     <lastmod>2018-05-21T18:37:50+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/basics/canvas/</loc>
+    <loc>https://www.express-serverless.io/user-guide/canvas/</loc>
     <lastmod>2018-05-21T18:25:07+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/basics/</loc>
-    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.express-serverless.io/blog/</loc>
-    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.express-serverless.io/comparisons/</loc>
     <lastmod>2018-05-21T18:23:50+03:00</lastmod>
   </url>
   
@@ -118,47 +118,51 @@
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/install/</loc>
+    <loc>https://www.express-serverless.io/developer-guide/</loc>
     <lastmod>2018-05-21T18:23:50+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/basics/entity-palette/models/</loc>
+    <loc>https://www.express-serverless.io/license/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/models/</loc>
     <lastmod>2018-05-21T18:37:43+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/basics/entity-palette/</loc>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/</loc>
     <lastmod>2018-05-21T18:24:24+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/basics/entity-palette/functions/</loc>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/functions/</loc>
     <lastmod>2018-05-21T18:37:43+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/basics/cloud-runtime/</loc>
+    <loc>https://www.express-serverless.io/user-guide/cloud-runtime/</loc>
     <lastmod>2018-05-21T18:25:07+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/basics/git-access/</loc>
+    <loc>https://www.express-serverless.io/user-guide/git-access/</loc>
     <lastmod>2018-05-29T15:31:09+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/basics/entity-palette/service-endpoints/</loc>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/service-endpoints/</loc>
     <lastmod>2018-05-21T18:38:14+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/basics/entity-palette/gateways/</loc>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/gateways/</loc>
     <lastmod>2018-05-21T18:37:58+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.express-serverless.io/basics/entity-palette/api-endpoints/</loc>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/api-endpoints/</loc>
     <lastmod>2018-05-21T18:38:14+03:00</lastmod>
   </url>
   
@@ -891,10 +895,6 @@
     <loc>https://www.express-serverless.io/tags/open-source-api-gateway/</loc>
     <lastmod>2018-01-09T15:42:13+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.express-serverless.io/license/</loc>
   </url>
   
 </urlset>

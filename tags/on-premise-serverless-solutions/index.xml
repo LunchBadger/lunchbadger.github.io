@@ -13,10 +13,10 @@
     
     <item>
       <title>ESP vs AWS Lambda</title>
-      <link>https://www.express-serverless.io/blog/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</link>
+      <link>https://www.express-serverless.io/resources/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</link>
       <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
       
-      <guid>https://www.express-serverless.io/blog/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</guid>
+      <guid>https://www.express-serverless.io/resources/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</guid>
       <description>Developer Challenges of Serverless and AWS AWS pioneered the idea behind serverless when they introduced AWS Lambda: focus on your business logic down to its atomic parts of your applications—functions—and let them worry about the rest. This whole idea eventually led to the NoOps movement.
 &amp;nbsp;
 Serverless is a great idea! It&amp;#8217;s a new paradigm that can be applied to how modern applications are developed and run in the cloud to drastically increase developer focus and productivity.</description>

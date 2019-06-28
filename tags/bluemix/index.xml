@@ -13,10 +13,10 @@
     
     <item>
       <title>ESP vs IBM Cloud Functions</title>
-      <link>https://www.express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/</link>
+      <link>https://www.express-serverless.io/resources/hello-world-esp-vs-ibm-cloud-functions-example/</link>
       <pubDate>Tue, 03 Apr 2018 12:31:41 +0000</pubDate>
       
-      <guid>https://www.express-serverless.io/blog/hello-world-esp-vs-ibm-cloud-functions-example/</guid>
+      <guid>https://www.express-serverless.io/resources/hello-world-esp-vs-ibm-cloud-functions-example/</guid>
       <description>IBM Cloud Functions are IBM Cloud&amp;#8217;s equivalent to AWS Lambda. Like Lambda, IBM Cloud Functions let you write custom functions and expose them via an HTTP interface through either IBM Cloud Function&amp;#8217;s minimal HTTP configuration or IBM API Connect for more sophisticated use cases. Express Serverless Platform offers a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I&amp;#8217;ll walk through setting up a rudimentary Node.</description>
     </item>
     
