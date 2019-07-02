@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>API Consumer Management on Express Serverless Platform</title>
+    <link>https://www.express-serverless.io/tags/api-consumer-management/</link>
+    <description>Recent content in API Consumer Management on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Nov 2018 12:21:22 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.express-serverless.io/tags/api-consumer-management/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How To Get Started with API Management and Express Serverless Platform</title>
+      <link>https://www.express-serverless.io/blog/get-started-api-management-express-serverless-platform/</link>
+      <pubDate>Mon, 05 Nov 2018 12:21:22 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/get-started-api-management-express-serverless-platform/</guid>
+      <description>In our last post, we discussed API Management and the key role that an API Gateway could play. API Gateways can enable secure access to its API endpoints. Features in an API Gateway are often categorized in three broad categories:
+ Authentication: Who is allowed to access (Access Control) Authorization: Who is allowed to perform operations of exposed APIs (Permissions / Privileges) Audit: Analyzing sufficient information for each client request   How does this work?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node on Express Serverless Platform</title>
+    <link>https://www.express-serverless.io/tags/node/</link>
+    <description>Recent content in Node on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Mar 2018 13:00:05 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.express-serverless.io/tags/node/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World with Express Serverless Platform vs Apigee Edge</title>
+      <link>https://www.express-serverless.io/resource/vs-apigee-features/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/resource/vs-apigee-features/</guid>
+      <description>Apigee Edge (acquired by Google in 2016) is a popular platform for deploying API proxies. Express Serverless Platform, like Apigee, allows you to build and deploy API gateways on their internal cloud computing service. At a high level, Express Serverless Platform and Apigee are similar, but there are several key differences in terms of Node.js version compatibility and vendor lock-in that you should be aware of before choosing one or the other.</description>
+    </item>
+    
+  </channel>
+</rss>

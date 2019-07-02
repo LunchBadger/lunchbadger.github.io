@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="description" content="Learn how to set up key-based authentication and other API Management best practices with Express Serverless Platform with code snippets.">
+<meta name="author" content="Al Tsang">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>API Management - Setting Up Key-Based Authentication :: Express Serverless Platform</title>
+
+    
+    <link href="/css/nucleus.css?1561715937" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561715937" rel="stylesheet">
+    <link href="/css/hybrid.css?1561715937" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561715937" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561715937" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561715937" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561715937" rel="stylesheet">
+    <link href="/css/theme.css?1561715937" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561715937" rel="stylesheet">
+    
+      <link href="/css/theme-lb.css?1561715937" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1561715937"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+<link rel="stylesheet" id="google_fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,latin-ext" type="text/css" media="all">
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta property="og:locale" content="en_US">
+	<meta property="og:title" content="API Management - Setting Up Key-Based Authentication | Express Serverless Platform">
+	<meta property="og:image" content="https://www.express-serverless.io/wp-content/uploads/2018/11/3.png">
+	<meta property="og:description" content="Learn how to set up key-based authentication and other API Management best practices with Express Serverless Platform with code snippets.">
+	<meta property="og:site_name" content="Express Serverless Platform">
+	
+	<link rel="preconnect" href="https://www.express-serverless.io">
+	<link rel="canonical" href="https://www.express-serverless.io/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/">
+
+
+  </head>
+  <body class="" data-url="/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+
+	<img class="logo"
+	src="/wp-content/uploads/2019/06/express-serverless-platform-final2.png" 
+	alt="Express Serverless Platform" 
+	title="Express Serverless Platform">
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1561715937"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1561715937"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/www.express-serverless.io";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1561715937"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/about/" title="About" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/about/">
+          About
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/getting-started/">
+          Getting Started
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/" title="User Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/">
+          User Guide
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/canvas/" title="Canvas" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/canvas/">
+          Canvas
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/" title="Entity Palette" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/">
+          Entity Palette
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/connectors/" title="Model Connectors" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/connectors/">
+          Model Connectors
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/models/" title="Models" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/models/">
+          Models
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/functions/" title="Functions" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/functions/">
+          Functions
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/service-endpoints/" title="Service Endpoints" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/service-endpoints/">
+          Service Endpoints
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/gateways/" title="Gateways" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/gateways/">
+          Gateways
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/api-endpoints/" title="API Endpoints" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/api-endpoints/">
+          API Endpoints
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/cloud-runtime/" title="Cloud Runtime" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/cloud-runtime/">
+          Cloud Runtime
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/git-access/" title="Git Access" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/git-access/">
+          Git Access
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/" title="Blog" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/blog/">
+          Blog
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/intro-articles/" title="Introduction" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/blog/intro-articles/">
+          Introduction
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/serverless-based-functions/" title="Building Serverless Based Functions" class="dd-item ">
+        <a href="/blog/serverless-based-functions/">
+        Serverless Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/get-started-api-management-express-serverless-platform/" title="How To Get Started with API Management and Express Serverless Platform" class="dd-item ">
+        <a href="/blog/get-started-api-management-express-serverless-platform/">
+        Get Started
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/" title="API Management - Setting Up Key-Based Authentication" class="dd-item active">
+        <a href="/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/">
+        Key Based Authentication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/2018/" title="2018 Articles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/2018/">
+          2018 Articles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/api-management-authentication-authorization-audit/" title="API Management Reimagined: Authentication Authorization Audit" class="dd-item ">
+        <a href="/blog/api-management-authentication-authorization-audit/">
+        API Management Reimagined
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/express-serverless-platform-lunchbadger/" title="LunchBadger Platform is now Express Serverless Platform" class="dd-item ">
+        <a href="/blog/express-serverless-platform-lunchbadger/">
+        LunchBadger is now ESP
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/kubernetes-scalability/" title="Leveraging Kubernetes For Microservices Based Cloud Strategy" class="dd-item ">
+        <a href="/blog/kubernetes-scalability/">
+        Leveraging Kubernetes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/compare-tyk-api-gateway-express-features/" title="API Gateways Comparison – Features and Pricing of Tyk API Gateway vs. Express Gateway" class="dd-item ">
+        <a href="/blog/compare-tyk-api-gateway-express-features/">
+        Tyk vs EG
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/compare-kong-api-gateway-express-features/" title="API Gateways Comparison: Features &amp; Pricing of Kong vs. Express Gateway" class="dd-item ">
+        <a href="/blog/compare-kong-api-gateway-express-features/">
+        Kong vs EG
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/compare-amazon-aws-api-gateway-express-features/" title="API Gateway Comparison – Features and Pricing of Amazon AWS API Gateway and Express Gateway" class="dd-item ">
+        <a href="/blog/compare-amazon-aws-api-gateway-express-features/">
+        AWS API Gateway vs EG
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/can-use-multi-cloud-strategy-grow-company/" title="How you can use a Multi-cloud Strategy to Grow your Company" class="dd-item ">
+        <a href="/blog/can-use-multi-cloud-strategy-grow-company/">
+        Multi-cloud Strategy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/2017/" title="2017 Articles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/2017/">
+          2017 Articles
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/2016/" title="2016 Articles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/2016/">
+          2016 Articles
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/resource/" title="Resource" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/resource/">
+          Resources
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/resource/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/" title="ESP vs AWS Lambda" class="dd-item ">
+        <a href="/resource/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/">
+        ESP vs AWS Lambda
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/resource/hello-world-esp-vs-google-cloud-functions-example/" title="ESP vs Google Cloud Functions" class="dd-item ">
+        <a href="/resource/hello-world-esp-vs-google-cloud-functions-example/">
+        ESP vs Google Cloud Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/" title="ESP vs Azure Functions" class="dd-item ">
+        <a href="/resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/">
+        ESP vs Azure Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/resource/hello-world-esp-vs-ibm-cloud-functions-example/" title="ESP vs IBM Cloud Functions" class="dd-item ">
+        <a href="/resource/hello-world-esp-vs-ibm-cloud-functions-example/">
+        ESP vs IBM Cloud Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/resource/vs-apigee-features/" title="Hello World with Express Serverless Platform vs Apigee Edge" class="dd-item ">
+        <a href="/resource/vs-apigee-features/">
+        ESP vs Apigee Edge
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/resource/pdf-guides/" title="PDF Guides" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/resource/pdf-guides/">
+          PDF Guides
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/resource/use-cases/" title="Use Cases" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/resource/use-cases/">
+          Use Cases
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/support/" title="Support" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/support/">
+          Support
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/developer-guide/" title="Developer Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developer-guide/">
+          Developer Guide
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/license/" title="License" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/license/">
+          License
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <span >
+<center>
+     <h5>©2019 All rights reserved.</h5>
+</center>
+</span>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Open Source, Kubernetes-native, Microservices & Serverless Platform</a> > <a href='/blog/'>Blog</a> > <a href='/blog/intro-articles/'>Introduction</a> > API Management - Setting Up Key-Based Authentication
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#how-to-set-up-key-based-authentication"><strong>How To Set Up Key-Based Authentication </strong></a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/api-endpoints">API endpoints</a>
+
+  <a class="tag-link" href="/tags/api-keys-sent-over-https">API keys sent over HTTPS</a>
+
+  <a class="tag-link" href="/tags/best-practices-on-api-management">best practices on API Management</a>
+
+  <a class="tag-link" href="/tags/end-to-end-request-path-from-the-api-endpoint-to-the-back-end-service">end-to-end request path from the API endpoint to the back-end service</a>
+
+  <a class="tag-link" href="/tags/key-auth-policy">key-auth policy</a>
+
+  <a class="tag-link" href="/tags/proxy-policy">Proxy policy</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              API Management - Setting Up Key-Based Authentication
+            </h1>
+          
+
+        
+
+
+
+
+
+<p>We&#8217;ve  discussed API Management and <a href="/blog/get-started-api-management-express-serverless-platform/">setting up the Service and API Endpoints</a>. As long time champions of all the ways you could be using an API Gateway, we&#8217;re going to walk through how take the next step with API Management and set up your Authentication.</p>
+
+<p><span style="font-weight: 400;">To recap, features in an API Gateway are often categorized in three broad categories:</span></p>
+
+<ul>
+<li><span style="font-weight: 400;">        <strong>Authentication:</strong> Who is allowed to access (Access Control)</span></li>
+<li><span style="font-weight: 400;">        <strong>Authorization:</strong> Who is allowed to perform operations of exposed APIs (Permissions / Privileges)</span></li>
+<li><span style="font-weight: 400;">        <strong>Audit:</strong> Analyzing sufficient information for each client request </span></li>
+</ul>
+
+<p>Here&#8217;s a quick diagram of what that looks like:<figure class="post-image"></p>
+
+<p><img class="aligncenter size-full wp-image-5640" src="/wp-content/uploads/2018/10/Authorization-Graphics.png" alt="API Management in the Enterprise" width="600" height="300" srcset="/wp-content/uploads/2018/10/Authorization-Graphics.png 600w, /wp-content/uploads/2018/10/Authorization-Graphics-300x150.png 300w, /wp-content/uploads/2018/10/Authorization-Graphics-225x113.png 225w, /wp-content/uploads/2018/10/Authorization-Graphics-512x256.png 512w" sizes="(max-width: 600px) 100vw, 600px" /></figure></p>
+
+<p><span style="font-weight: 400;">How does all of this work together?  We&#8217;ve broken out a step-by-step guide on how to get started with setting up key-based authentication  with Express Serverless Platform including best practices on API Management along the way.</span></p>
+
+<h2 id="how-to-set-up-key-based-authentication"><strong>How To Set Up Key-Based Authentication </strong></h2>
+
+<p><span style="font-weight: 400;">To enable key-based authentication, we recommend adding two policies in our pipeline in this order: </span></p>
+
+<ul>
+<li><span style="font-weight: 400;">key-auth, and</span></li>
+<li>proxy</li>
+</ul>
+
+<p>Check it out:<figure class="post-image"></p>
+
+<p><img class="aligncenter size-full wp-image-5750" src="/wp-content/uploads/2018/11/pasted-image-0-5.png" alt="Setting Up Authentication" width="631" height="313" srcset="/wp-content/uploads/2018/11/pasted-image-0-5.png 631w, /wp-content/uploads/2018/11/pasted-image-0-5-300x149.png 300w, /wp-content/uploads/2018/11/pasted-image-0-5-225x112.png 225w, /wp-content/uploads/2018/11/pasted-image-0-5-512x254.png 512w" sizes="(max-width: 631px) 100vw, 631px" /></figure></p>
+
+<p>&nbsp;<figure class="post-image"></p>
+
+<p><img class="aligncenter size-full wp-image-5751" src="/wp-content/uploads/2018/11/pasted-image-0-5-copy.png" alt="Setting Up Authentication" width="628" height="324" srcset="/wp-content/uploads/2018/11/pasted-image-0-5-copy.png 628w, /wp-content/uploads/2018/11/pasted-image-0-5-copy-300x155.png 300w, /wp-content/uploads/2018/11/pasted-image-0-5-copy-225x116.png 225w, /wp-content/uploads/2018/11/pasted-image-0-5-copy-496x256.png 496w" sizes="(max-width: 628px) 100vw, 628px" /></figure></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400;">Now we will connect our Service Endpoint to the pipeline just created. The first time we do so, an API Endpoint will be automatically created in the &#8216;Public&#8217; quadrant and connected to the Gateway. This creates an end-to-end request path from the API Endpoint to the back-end service.</span></p>
+
+<p>&nbsp;<figure class="post-image"></p>
+
+<p><img class="aligncenter size-full wp-image-5752" src="/wp-content/uploads/2018/11/pasted-image-0-1.png" alt="Setting Up Authentication" width="627" height="316" srcset="/wp-content/uploads/2018/11/pasted-image-0-1.png 627w, /wp-content/uploads/2018/11/pasted-image-0-1-300x151.png 300w, /wp-content/uploads/2018/11/pasted-image-0-1-225x113.png 225w, /wp-content/uploads/2018/11/pasted-image-0-1-508x256.png 508w" sizes="(max-width: 627px) 100vw, 627px" /></figure></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400;">The API Endpoint will expect a path to be specified. Here we have specified the path &#8216;/now&#8217;. </span></p>
+
+<p><span style="font-weight: 400;">So, when a request comes into the Express Serverless Platform for the URL: <API Endpoint Root URL>/now, it is routed to the URL: <Service Endpoint Base URL>/now. So effectively, the response will come from the backend service.</span></p>
+
+<p><strong>Testing</strong><span style="font-weight: 400;">: Now the API end-point should be accessible to an authenticated user.</span></p>
+
+<p><span style="font-weight: 400;">First let us simply access it without supplying credentials for key-based authentication.</span></p>
+
+<p>&nbsp;<figure class="post-image"></p>
+
+<p><img class="aligncenter size-full wp-image-5753" src="/wp-content/uploads/2018/11/pasted-image-0-2.png" alt="Setting Up Authentication" width="628" height="67" srcset="/wp-content/uploads/2018/11/pasted-image-0-2.png 628w, /wp-content/uploads/2018/11/pasted-image-0-2-300x32.png 300w, /wp-content/uploads/2018/11/pasted-image-0-2-225x24.png 225w, /wp-content/uploads/2018/11/pasted-image-0-2-512x55.png 512w" sizes="(max-width: 628px) 100vw, 628px" /></figure></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400;">We get a message &#8216;Unauthorized&#8217;, which is expected.</span></p>
+
+<p><span style="font-weight: 400;">Now we access the API as user &#8216;bob&#8217;. We will receive a response indicating current UTC time, from the back-end service. To send the key-based authentication credentials, the request should be as follows:</span></p>
+
+<p><span style="font-weight: 400;">curl -H &#8220;Authorization: apiKey ${keyId}:${keySecret}&#8221; <API Endpoint></span></p>
+
+<p>&nbsp;<figure class="post-image"></p>
+
+<p><img class="aligncenter size-full wp-image-5754" src="/wp-content/uploads/2018/11/pasted-image-0-5-copy-2.png" alt="Setting Up Authentication" width="628" height="111" srcset="/wp-content/uploads/2018/11/pasted-image-0-5-copy-2.png 628w, /wp-content/uploads/2018/11/pasted-image-0-5-copy-2-300x53.png 300w, /wp-content/uploads/2018/11/pasted-image-0-5-copy-2-225x40.png 225w, /wp-content/uploads/2018/11/pasted-image-0-5-copy-2-512x90.png 512w" sizes="(max-width: 628px) 100vw, 628px" /></figure></p>
+
+<p><span style="font-weight: 400;">User &#8216;alice&#8217; would also be able to access the API as shown below.</span></p>
+
+<p>&nbsp;<figure class="post-image"></p>
+
+<p><img class="aligncenter size-full wp-image-5755" src="/wp-content/uploads/2018/11/pasted-image-0-2-copy.png" alt="Setting Up Authentication" width="628" height="108" srcset="/wp-content/uploads/2018/11/pasted-image-0-2-copy.png 628w, /wp-content/uploads/2018/11/pasted-image-0-2-copy-300x52.png 300w, /wp-content/uploads/2018/11/pasted-image-0-2-copy-225x39.png 225w, /wp-content/uploads/2018/11/pasted-image-0-2-copy-512x88.png 512w" sizes="(max-width: 628px) 100vw, 628px" /></figure></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400;"><strong>Pro Tip:</strong> <em>API keys should only be sent over HTTPS, so that it is not intercepted on the wire. Note that Express Serverless Platform by default creates API Endpoints that are secured using HTTPS protocol.</em></span></p>
+
+<p>&nbsp;</p>
+
+<p>If you&#8217;re interested in more of these topics, join the live discussion on twitter <strong><a href="http://www.twitter.com/lunchbadger">@lunchbadger</a></strong> or <strong><a href="https://twitter.com/express_gateway">@express_gateway.</a></strong></p>
+
+<p>&nbsp;
+&nbsp;</p>
+
+
+<a  href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fexpress-serverless.io%2Fblog%2Fapi-management-setting-up-key-based-authentication-with-express-serverless-platform%2F" target="_blank"  class="btn btn-default">
+  
+  
+  
+    
+  <i class="fab fa-facebook"></i>
+    
+  
+  Share
+  
+</a>
+
+
+
+<a  href="https://twitter.com/intent/tweet/?text=API%20Management%20-%20Setting%20Up%20Key-Based%20Authentication&amp;amp;url=https%3A%2F%2Fexpress-serverless.io%2Fblog%2Fapi-management-setting-up-key-based-authentication-with-express-serverless-platform%2F" target="_blank"  class="btn btn-default">
+  
+  
+  
+    
+  <i class="fab fa-twitter"></i>
+    
+  
+  Tweet
+  
+</a>
+
+
+
+<a  href="https://www.linkedin.com/shareArticle?mini=true&amp;amp;url=https%3A%2F%2Fexpress-serverless.io%2Fblog%2Fapi-management-setting-up-key-based-authentication-with-express-serverless-platform%2F&amp;amp;title=API%20Management%20-%20Setting%20Up%20Key-Based%20Authentication&amp;amp;summary=API%20Management%20-%20Setting%20Up%20Key-Based%20Authentication&amp;amp;source=https%3A%2F%2Fexpress-serverless.io%2Fblog%2Fapi-management-setting-up-key-based-authentication-with-express-serverless-platform%2F" target="_blank"  class="btn btn-default">
+  
+  
+  
+    
+  <i class="fab fa-linkedin"></i>
+    
+  
+  Link
+  
+</a>
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/blog/get-started-api-management-express-serverless-platform/" title="How To Get Started with API Management and Express Serverless Platform"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/blog/2018/" title="2018 Articles" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1561715938"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561715938"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561715938"></script>
+    <script src="/js/jquery.sticky.js?1561715938"></script>
+    <script src="/js/featherlight.min.js?1561715938"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561715938"></script>
+    <script src="/js/highlight.pack.js?1561715938"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561715938"></script>
+    <script src="/js/learn.js?1561715938"></script>
+    <script src="/js/hugo-learn.js?1561715938"></script>
+
+    <link href="/mermaid/mermaid.css?1561715938" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561715938"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+  </body>
+</html>
+

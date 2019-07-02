@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello world with Azure on Express Serverless Platform</title>
+    <link>https://www.express-serverless.io/tags/hello-world-with-azure/</link>
+    <description>Recent content in Hello world with Azure on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Mar 2018 22:38:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.express-serverless.io/tags/hello-world-with-azure/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ESP vs Azure Functions</title>
+      <link>https://www.express-serverless.io/resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/</guid>
+      <description>If you&amp;#8217;re looking at getting started with Azure, we&amp;#8217;ve put together a comprehensive &amp;#8220;Hello, World&amp;#8217; guide. In addition to Azure, we&amp;#8217;ve put together a no-frills comparison of the getting started experience from the developer perspective. Learn more, build more and check out the latest from Val Karpov in this latest installment of our Developer Spotlight Series.
+Azure Functions are Microsoft Azure&amp;#8217;s equivalent to AWS Lambda. Like Lambda, Azure Functions let you write custom functions and expose them via an HTTP interface using Azure API Management.</description>
+    </item>
+    
+  </channel>
+</rss>

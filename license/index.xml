@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>License on Express Serverless Platform</title>
+    <link>https://www.express-serverless.io/license/</link>
+    <description>Recent content in License on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.express-serverless.io/license/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

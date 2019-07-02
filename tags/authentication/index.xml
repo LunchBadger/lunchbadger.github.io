@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>authentication on Express Serverless Platform</title>
+    <link>https://www.express-serverless.io/tags/authentication/</link>
+    <description>Recent content in authentication on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Oct 2018 21:06:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.express-serverless.io/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>API Management Reimagined: Authentication Authorization Audit</title>
+      <link>https://www.express-serverless.io/blog/api-management-authentication-authorization-audit/</link>
+      <pubDate>Tue, 16 Oct 2018 21:06:48 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/api-management-authentication-authorization-audit/</guid>
+      <description>Authentication Authorization And Audit: The Operations Perspective API Gateways provide a set of features that enable secure access to its API endpoints. These features fall under three broad categories:
+ Authentication: Who is allowed to access the API Gateway at all? (Access Control) Authorization: Who is allowed to perform a certain operation using exposed APIs (Permissions / Privileges) Audit: Capturing sufficient information for each client request to be able to detect and possibly prevent malicious activity  An administrator of any API Gateway platform need to be aware of these capabilities, which could be a bit different compared to securing web sites and databases.</description>
+    </item>
+    
+  </channel>
+</rss>

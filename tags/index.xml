@@ -1,14 +1,1005 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on LunchBadger Documentation site</title>
-    <link>https://docs.lunchbadger.com/tags/</link>
-    <description>Recent content in Tags on LunchBadger Documentation site</description>
+    <title>Tags on Express Serverless Platform</title>
+    <link>https://www.express-serverless.io/tags/</link>
+    <description>Recent content in Tags on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 29 Nov 2018 01:08:42 +0000</lastBuildDate>
     
-	<atom:link href="https://docs.lunchbadger.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.express-serverless.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS Lambda</title>
+      <link>https://www.express-serverless.io/tags/aws-lambda/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/aws-lambda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon API Gateway</title>
+      <link>https://www.express-serverless.io/tags/amazon-api-gateway/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/amazon-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services Pricing</title>
+      <link>https://www.express-serverless.io/tags/amazon-web-services-pricing/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/amazon-web-services-pricing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amiram Shachar</title>
+      <link>https://www.express-serverless.io/tags/amiram-shachar/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/amiram-shachar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevOps</title>
+      <link>https://www.express-serverless.io/tags/devops/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Developers</title>
+      <link>https://www.express-serverless.io/tags/developers/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/developers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functions as a Service</title>
+      <link>https://www.express-serverless.io/tags/functions-as-a-service/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/functions-as-a-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lambda</title>
+      <link>https://www.express-serverless.io/tags/lambda/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/lambda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>No-Ops</title>
+      <link>https://www.express-serverless.io/tags/no-ops/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/no-ops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On Premise Serverless Solutions</title>
+      <link>https://www.express-serverless.io/tags/on-premise-serverless-solutions/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/on-premise-serverless-solutions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>api gateway</title>
+      <link>https://www.express-serverless.io/tags/api-gateway/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API endpoints</title>
+      <link>https://www.express-serverless.io/tags/api-endpoints/</link>
+      <pubDate>Thu, 08 Nov 2018 09:09:25 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/api-endpoints/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API keys sent over HTTPS</title>
+      <link>https://www.express-serverless.io/tags/api-keys-sent-over-https/</link>
+      <pubDate>Thu, 08 Nov 2018 09:09:25 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/api-keys-sent-over-https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proxy policy</title>
+      <link>https://www.express-serverless.io/tags/proxy-policy/</link>
+      <pubDate>Thu, 08 Nov 2018 09:09:25 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/proxy-policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>best practices on API Management</title>
+      <link>https://www.express-serverless.io/tags/best-practices-on-api-management/</link>
+      <pubDate>Thu, 08 Nov 2018 09:09:25 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/best-practices-on-api-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>end-to-end request path from the API endpoint to the back-end service</title>
+      <link>https://www.express-serverless.io/tags/end-to-end-request-path-from-the-api-endpoint-to-the-back-end-service/</link>
+      <pubDate>Thu, 08 Nov 2018 09:09:25 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/end-to-end-request-path-from-the-api-endpoint-to-the-back-end-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>key-auth policy</title>
+      <link>https://www.express-serverless.io/tags/key-auth-policy/</link>
+      <pubDate>Thu, 08 Nov 2018 09:09:25 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/key-auth-policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API Consumer Management</title>
+      <link>https://www.express-serverless.io/tags/api-consumer-management/</link>
+      <pubDate>Mon, 05 Nov 2018 12:21:22 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/api-consumer-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Endpoint</title>
+      <link>https://www.express-serverless.io/tags/service-endpoint/</link>
+      <pubDate>Mon, 05 Nov 2018 12:21:22 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/service-endpoint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Endpoint can be front-ended by an API Gateway</title>
+      <link>https://www.express-serverless.io/tags/service-endpoint-can-be-front-ended-by-an-api-gateway/</link>
+      <pubDate>Mon, 05 Nov 2018 12:21:22 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/service-endpoint-can-be-front-ended-by-an-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>model-based microservices and serverless functions</title>
+      <link>https://www.express-serverless.io/tags/model-based-microservices-and-serverless-functions/</link>
+      <pubDate>Mon, 05 Nov 2018 12:21:22 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/model-based-microservices-and-serverless-functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API Management</title>
+      <link>https://www.express-serverless.io/tags/api-management/</link>
+      <pubDate>Tue, 16 Oct 2018 21:06:48 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/api-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Authentication with an API Gateways</title>
+      <link>https://www.express-serverless.io/tags/authentication-with-an-api-gateways/</link>
+      <pubDate>Tue, 16 Oct 2018 21:06:48 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/authentication-with-an-api-gateways/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>authentication</title>
+      <link>https://www.express-serverless.io/tags/authentication/</link>
+      <pubDate>Tue, 16 Oct 2018 21:06:48 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/authentication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>authorization and audit capabilities</title>
+      <link>https://www.express-serverless.io/tags/authorization-and-audit-capabilities/</link>
+      <pubDate>Tue, 16 Oct 2018 21:06:48 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/authorization-and-audit-capabilities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scalable Kubernetes infrastructure</title>
+      <link>https://www.express-serverless.io/tags/scalable-kubernetes-infrastructure/</link>
+      <pubDate>Tue, 16 Oct 2018 21:06:48 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/scalable-kubernetes-infrastructure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Barebone serverless functions</title>
+      <link>https://www.express-serverless.io/tags/barebone-serverless-functions/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/barebone-serverless-functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brendan Burns</title>
+      <link>https://www.express-serverless.io/tags/brendan-burns/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/brendan-burns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functions in Java</title>
+      <link>https://www.express-serverless.io/tags/functions-in-java/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/functions-in-java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functions in Node.js</title>
+      <link>https://www.express-serverless.io/tags/functions-in-node.js/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/functions-in-node.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functions in PHP</title>
+      <link>https://www.express-serverless.io/tags/functions-in-php/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/functions-in-php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functions in Ruby</title>
+      <link>https://www.express-serverless.io/tags/functions-in-ruby/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/functions-in-ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go Language</title>
+      <link>https://www.express-serverless.io/tags/go-language/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/go-language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://www.express-serverless.io/tags/kubernetes/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node.js</title>
+      <link>https://www.express-serverless.io/tags/node.js/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/node.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://www.express-serverless.io/tags/python/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serverless Platform</title>
+      <link>https://www.express-serverless.io/tags/serverless-platform/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/serverless-platform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serverless orchestration</title>
+      <link>https://www.express-serverless.io/tags/serverless-orchestration/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/serverless-orchestration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The NewStack</title>
+      <link>https://www.express-serverless.io/tags/the-newstack/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/the-newstack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualize APIs</title>
+      <link>https://www.express-serverless.io/tags/visualize-apis/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/visualize-apis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microservices</title>
+      <link>https://www.express-serverless.io/tags/microservices/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/microservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open source</title>
+      <link>https://www.express-serverless.io/tags/open-source/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to get started with Kubernetes</title>
+      <link>https://www.express-serverless.io/tags/how-to-get-started-with-kubernetes/</link>
+      <pubDate>Mon, 13 Aug 2018 19:26:15 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/how-to-get-started-with-kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubectl</title>
+      <link>https://www.express-serverless.io/tags/kubectl/</link>
+      <pubDate>Mon, 13 Aug 2018 19:26:15 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/kubectl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Pod</title>
+      <link>https://www.express-serverless.io/tags/kubernetes-pod/</link>
+      <pubDate>Mon, 13 Aug 2018 19:26:15 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/kubernetes-pod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Runtime</title>
+      <link>https://www.express-serverless.io/tags/kubernetes-runtime/</link>
+      <pubDate>Mon, 13 Aug 2018 19:26:15 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/kubernetes-runtime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>auto deployment in a kubernetes runtime</title>
+      <link>https://www.express-serverless.io/tags/auto-deployment-in-a-kubernetes-runtime/</link>
+      <pubDate>Mon, 13 Aug 2018 19:26:15 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/auto-deployment-in-a-kubernetes-runtime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>command-line tool called kubectl for deploying containerized applications and managing services</title>
+      <link>https://www.express-serverless.io/tags/command-line-tool-called-kubectl-for-deploying-containerized-applications-and-managing-services/</link>
+      <pubDate>Mon, 13 Aug 2018 19:26:15 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/command-line-tool-called-kubectl-for-deploying-containerized-applications-and-managing-services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Build a Microservice</title>
+      <link>https://www.express-serverless.io/tags/build-a-microservice/</link>
+      <pubDate>Tue, 07 Aug 2018 02:50:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/build-a-microservice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Build an API</title>
+      <link>https://www.express-serverless.io/tags/build-an-api/</link>
+      <pubDate>Tue, 07 Aug 2018 02:50:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/build-an-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building Enterprise-Ready Serverless Functions</title>
+      <link>https://www.express-serverless.io/tags/building-enterprise-ready-serverless-functions/</link>
+      <pubDate>Tue, 07 Aug 2018 02:50:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/building-enterprise-ready-serverless-functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deploy an API Gateway</title>
+      <link>https://www.express-serverless.io/tags/deploy-an-api-gateway/</link>
+      <pubDate>Tue, 07 Aug 2018 02:50:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/deploy-an-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to build an API</title>
+      <link>https://www.express-serverless.io/tags/how-to-build-an-api/</link>
+      <pubDate>Tue, 07 Aug 2018 02:50:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/how-to-build-an-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>a minimalistic framework for Node.js</title>
+      <link>https://www.express-serverless.io/tags/a-minimalistic-framework-for-node.js/</link>
+      <pubDate>Tue, 07 Aug 2018 02:50:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/a-minimalistic-framework-for-node.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>express.js</title>
+      <link>https://www.express-serverless.io/tags/express.js/</link>
+      <pubDate>Tue, 07 Aug 2018 02:50:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/express.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud Functions</title>
+      <link>https://www.express-serverless.io/tags/cloud-functions/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/cloud-functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Express Gateway pipeline.</title>
+      <link>https://www.express-serverless.io/tags/express-gateway-pipeline./</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/express-gateway-pipeline./</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Get Started with Google Cloud Functions</title>
+      <link>https://www.express-serverless.io/tags/get-started-with-google-cloud-functions/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/get-started-with-google-cloud-functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Get started with Node.js functions in LunchBadger</title>
+      <link>https://www.express-serverless.io/tags/get-started-with-node.js-functions-in-lunchbadger/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/get-started-with-node.js-functions-in-lunchbadger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Get started with how to write custom functions</title>
+      <link>https://www.express-serverless.io/tags/get-started-with-how-to-write-custom-functions/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/get-started-with-how-to-write-custom-functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Cloud</title>
+      <link>https://www.express-serverless.io/tags/google-cloud/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/google-cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Functions</title>
+      <link>https://www.express-serverless.io/tags/google-cloud-functions/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/google-cloud-functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google&#39;s cloud functions emulator</title>
+      <link>https://www.express-serverless.io/tags/googles-cloud-functions-emulator/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/googles-cloud-functions-emulator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LunchBadger GUI</title>
+      <link>https://www.express-serverless.io/tags/lunchbadger-gui/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/lunchbadger-gui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node.js function</title>
+      <link>https://www.express-serverless.io/tags/node.js-function/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/node.js-function/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>minimal HTTP configuration</title>
+      <link>https://www.express-serverless.io/tags/minimal-http-configuration/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/minimal-http-configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bluemix</title>
+      <link>https://www.express-serverless.io/tags/bluemix/</link>
+      <pubDate>Tue, 03 Apr 2018 12:31:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/bluemix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Express Gateway</title>
+      <link>https://www.express-serverless.io/tags/express-gateway/</link>
+      <pubDate>Tue, 03 Apr 2018 12:31:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/express-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How Do I Get Started with IBM Connect</title>
+      <link>https://www.express-serverless.io/tags/how-do-i-get-started-with-ibm-connect/</link>
+      <pubDate>Tue, 03 Apr 2018 12:31:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/how-do-i-get-started-with-ibm-connect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IBM API Connect</title>
+      <link>https://www.express-serverless.io/tags/ibm-api-connect/</link>
+      <pubDate>Tue, 03 Apr 2018 12:31:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/ibm-api-connect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node.js APIs</title>
+      <link>https://www.express-serverless.io/tags/node.js-apis/</link>
+      <pubDate>Tue, 03 Apr 2018 12:31:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/node.js-apis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What are IBM Cloud Functions</title>
+      <link>https://www.express-serverless.io/tags/what-are-ibm-cloud-functions/</link>
+      <pubDate>Tue, 03 Apr 2018 12:31:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/what-are-ibm-cloud-functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS Lambda versus Azure</title>
+      <link>https://www.express-serverless.io/tags/aws-lambda-versus-azure/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/aws-lambda-versus-azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure Function App</title>
+      <link>https://www.express-serverless.io/tags/azure-function-app/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/azure-function-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure UI</title>
+      <link>https://www.express-serverless.io/tags/azure-ui/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/azure-ui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Create a resource in Azure Portal</title>
+      <link>https://www.express-serverless.io/tags/create-a-resource-in-azure-portal/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/create-a-resource-in-azure-portal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Getting started with Microsoft Azure</title>
+      <link>https://www.express-serverless.io/tags/getting-started-with-microsoft-azure/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/getting-started-with-microsoft-azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTTP Interafce</title>
+      <link>https://www.express-serverless.io/tags/http-interafce/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/http-interafce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello world with Azure</title>
+      <link>https://www.express-serverless.io/tags/hello-world-with-azure/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/hello-world-with-azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsofot Azure UI</title>
+      <link>https://www.express-serverless.io/tags/microsofot-azure-ui/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/microsofot-azure-ui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft Azure</title>
+      <link>https://www.express-serverless.io/tags/microsoft-azure/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/microsoft-azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open source API</title>
+      <link>https://www.express-serverless.io/tags/open-source-api/</link>
+      <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/open-source-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API Proxies</title>
+      <link>https://www.express-serverless.io/tags/api-proxies/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/api-proxies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apigee Edge</title>
+      <link>https://www.express-serverless.io/tags/apigee-edge/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/apigee-edge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>https://www.express-serverless.io/tags/google/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google acquired Apigee</title>
+      <link>https://www.express-serverless.io/tags/google-acquired-apigee/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/google-acquired-apigee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How do I deploy an API gateway?</title>
+      <link>https://www.express-serverless.io/tags/how-do-i-deploy-an-api-gateway/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/how-do-i-deploy-an-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to Deploy an API Proxy?</title>
+      <link>https://www.express-serverless.io/tags/how-to-deploy-an-api-proxy/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/how-to-deploy-an-api-proxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node</title>
+      <link>https://www.express-serverless.io/tags/node/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What is Apigee Edge</title>
+      <link>https://www.express-serverless.io/tags/what-is-apigee-edge/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/what-is-apigee-edge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Administration of Tyk API Gateway</title>
+      <link>https://www.express-serverless.io/tags/administration-of-tyk-api-gateway/</link>
+      <pubDate>Tue, 13 Feb 2018 13:42:54 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/administration-of-tyk-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compare open source API Gateway</title>
+      <link>https://www.express-serverless.io/tags/compare-open-source-api-gateway/</link>
+      <pubDate>Tue, 13 Feb 2018 13:42:54 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/compare-open-source-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Express API Gateway</title>
+      <link>https://www.express-serverless.io/tags/express-api-gateway/</link>
+      <pubDate>Tue, 13 Feb 2018 13:42:54 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/express-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How does Tyk compare to</title>
+      <link>https://www.express-serverless.io/tags/how-does-tyk-compare-to/</link>
+      <pubDate>Tue, 13 Feb 2018 13:42:54 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/how-does-tyk-compare-to/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tyk API Gateway</title>
+      <link>https://www.express-serverless.io/tags/tyk-api-gateway/</link>
+      <pubDate>Tue, 13 Feb 2018 13:42:54 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/tyk-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What is an API Gateway?</title>
+      <link>https://www.express-serverless.io/tags/what-is-an-api-gateway/</link>
+      <pubDate>Tue, 13 Feb 2018 13:42:54 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/what-is-an-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Administration of Kong API Gateway</title>
+      <link>https://www.express-serverless.io/tags/administration-of-kong-api-gateway/</link>
+      <pubDate>Tue, 30 Jan 2018 14:10:49 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/administration-of-kong-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How does Kong compare to</title>
+      <link>https://www.express-serverless.io/tags/how-does-kong-compare-to/</link>
+      <pubDate>Tue, 30 Jan 2018 14:10:49 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/how-does-kong-compare-to/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kong API Gateway</title>
+      <link>https://www.express-serverless.io/tags/kong-api-gateway/</link>
+      <pubDate>Tue, 30 Jan 2018 14:10:49 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/kong-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS API Gateway</title>
+      <link>https://www.express-serverless.io/tags/aws-api-gateway/</link>
+      <pubDate>Tue, 23 Jan 2018 13:30:58 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/aws-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Administration and Maintenance of AWS API Gateway</title>
+      <link>https://www.express-serverless.io/tags/administration-and-maintenance-of-aws-api-gateway/</link>
+      <pubDate>Tue, 23 Jan 2018 13:30:58 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/administration-and-maintenance-of-aws-api-gateway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How does AWS compare to</title>
+      <link>https://www.express-serverless.io/tags/how-does-aws-compare-to/</link>
+      <pubDate>Tue, 23 Jan 2018 13:30:58 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/how-does-aws-compare-to/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>APIs</title>
+      <link>https://www.express-serverless.io/tags/apis/</link>
+      <pubDate>Tue, 09 Jan 2018 15:42:13 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/apis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Containerworld</title>
+      <link>https://www.express-serverless.io/tags/containerworld/</link>
+      <pubDate>Tue, 09 Jan 2018 15:42:13 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/containerworld/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joyent</title>
+      <link>https://www.express-serverless.io/tags/joyent/</link>
+      <pubDate>Tue, 09 Jan 2018 15:42:13 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/joyent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shubhra</title>
+      <link>https://www.express-serverless.io/tags/shubhra/</link>
+      <pubDate>Tue, 09 Jan 2018 15:42:13 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/shubhra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shubhra Kar</title>
+      <link>https://www.express-serverless.io/tags/shubhra-kar/</link>
+      <pubDate>Tue, 09 Jan 2018 15:42:13 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/shubhra-kar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud agnostic to avoid vendor lock in</title>
+      <link>https://www.express-serverless.io/tags/cloud-agnostic-to-avoid-vendor-lock-in/</link>
+      <pubDate>Tue, 09 Jan 2018 15:42:13 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/cloud-agnostic-to-avoid-vendor-lock-in/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multi-cloud strategy</title>
+      <link>https://www.express-serverless.io/tags/multi-cloud-strategy/</link>
+      <pubDate>Tue, 09 Jan 2018 15:42:13 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/multi-cloud-strategy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open source API Gateway</title>
+      <link>https://www.express-serverless.io/tags/open-source-api-gateway/</link>
+      <pubDate>Tue, 09 Jan 2018 15:42:13 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/tags/open-source-api-gateway/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

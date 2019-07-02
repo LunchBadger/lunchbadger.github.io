@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>express.js on Express Serverless Platform</title>
+    <link>https://www.express-serverless.io/tags/express.js/</link>
+    <description>Recent content in express.js on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Aug 2018 02:50:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.express-serverless.io/tags/express.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building Serverless Based Functions</title>
+      <link>https://www.express-serverless.io/blog/serverless-based-functions/</link>
+      <pubDate>Tue, 07 Aug 2018 02:50:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/serverless-based-functions/</guid>
+      <description>Fired up! Ready to go! You’ve heard every buzzword. Microservices, APIs, Kubernetes and serverless just to name a few catchy ones. Let’s get real for a moment and acknowledge that these are just fancy words for the work that you and your team are doing day in and day out. What if there was a way to do this work that was less painful? Less frustrating?
+&amp;nbsp;
+Using Express Serverless Platform, we believe in the power of developers.</description>
+    </item>
+    
+    <item>
+      <title>ESP vs Google Cloud Functions</title>
+      <link>https://www.express-serverless.io/resource/hello-world-esp-vs-google-cloud-functions-example/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/resource/hello-world-esp-vs-google-cloud-functions-example/</guid>
+      <description>Google Cloud Functions are Google Cloud&amp;#8217;s equivalent to AWS Lambda. Like Lambda, Google Cloud Functions let you write custom functions and expose them via an HTTP interface through either Google Cloud Function&amp;#8217;s minimal HTTP configuration or Google Cloud Endpoints for more sophisticated use cases. Express Serverless Platfom is a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I&amp;#8217;ll walk through setting up a rudimentary Node.</description>
+    </item>
+    
+    <item>
+      <title>ESP vs IBM Cloud Functions</title>
+      <link>https://www.express-serverless.io/resource/hello-world-esp-vs-ibm-cloud-functions-example/</link>
+      <pubDate>Tue, 03 Apr 2018 12:31:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/resource/hello-world-esp-vs-ibm-cloud-functions-example/</guid>
+      <description>IBM Cloud Functions are IBM Cloud&amp;#8217;s equivalent to AWS Lambda. Like Lambda, IBM Cloud Functions let you write custom functions and expose them via an HTTP interface through either IBM Cloud Function&amp;#8217;s minimal HTTP configuration or IBM API Connect for more sophisticated use cases. Express Serverless Platform offers a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I&amp;#8217;ll walk through setting up a rudimentary Node.</description>
+    </item>
+    
+    <item>
+      <title>Hello World with Express Serverless Platform vs Apigee Edge</title>
+      <link>https://www.express-serverless.io/resource/vs-apigee-features/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/resource/vs-apigee-features/</guid>
+      <description>Apigee Edge (acquired by Google in 2016) is a popular platform for deploying API proxies. Express Serverless Platform, like Apigee, allows you to build and deploy API gateways on their internal cloud computing service. At a high level, Express Serverless Platform and Apigee are similar, but there are several key differences in terms of Node.js version compatibility and vendor lock-in that you should be aware of before choosing one or the other.</description>
+    </item>
+    
+    <item>
+      <title>API Gateways Comparison – Features and Pricing of Tyk API Gateway vs. Express Gateway</title>
+      <link>https://www.express-serverless.io/blog/compare-tyk-api-gateway-express-features/</link>
+      <pubDate>Tue, 13 Feb 2018 13:42:54 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/compare-tyk-api-gateway-express-features/</guid>
+      <description>Tyk API Gateway VS. Express Gateway Open source: beyond the pretty packaging. There are a lot of choices when it comes to choosing and API Gateway. If you&amp;#8217;re considering a new API strategy or just kicking the tires, we&amp;#8217;ve found that it&amp;#8217;s tough find hype-free information that actually helps understand what to look for in an API Gateway and how it fits into even traditional Microservices architecture. So, we rallied the community of developers, executives and thought leaders to get the skinny on the differences (and similarities) of the most popular projects for the API Gateway use case.</description>
+    </item>
+    
+    <item>
+      <title>API Gateways Comparison: Features &amp; Pricing of Kong vs. Express Gateway</title>
+      <link>https://www.express-serverless.io/blog/compare-kong-api-gateway-express-features/</link>
+      <pubDate>Tue, 30 Jan 2018 14:10:49 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/compare-kong-api-gateway-express-features/</guid>
+      <description>Kong API Gateway VS. Express Gateway Two popular open source projects &amp;#8211; two very different approaches. We&amp;#8217;ve gotten a lot of questions about what to look for in an API Gateway, what is an API Gateway and even how an API gateway fits into your Microservices architecture. So, let&amp;#8217;s take a deeper look at all of this and more as we break down the differences (and similarities) of the most popular projects for the API Gateway use case.</description>
+    </item>
+    
+    <item>
+      <title>API Gateway Comparison – Features and Pricing of Amazon AWS API Gateway and Express Gateway</title>
+      <link>https://www.express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</link>
+      <pubDate>Tue, 23 Jan 2018 13:30:58 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</guid>
+      <description>Amazon API Gateway VS. Express Gateway If you&amp;#8217;re curious about how your API Gateway stacks up, now&amp;#8217;s the time to listen up because we&amp;#8217;re breaking down the differences (and similarities) of the most popular projects for the API Gateway use case.
+First up, we&amp;#8217;ve got Amazon API Gateway and we&amp;#8217;re going to compare it toExpress Gateway, an open source API Gateway built entirely on Express.js.
+&amp;nbsp;
+TLDR: You can skip ahead to the deep dive.</description>
+    </item>
+    
+  </channel>
+</rss>

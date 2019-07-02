@@ -1,0 +1,19 @@
+
+<svg viewBox="0 0 15 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="fb-path-1" points="15 0 15 33 0 33 0 0"></polygon>
+    </defs>
+    <g id="fb" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Blog-Post" transform="translate(-853.000000, -2836.000000)">
+            <g id="Group-2-Copy-2" transform="translate(749.000000, 2836.000000)">
+                <g id="Facebook-icon" transform="translate(104.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#fb-path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M14.7538124,17.51538 L9.34218671,17.51538 L9.34218671,33 L3.82927241,33 L3.82927241,17.51538 L0,17.51538 L0,11.9402669 L3.82927241,11.9402669 L3.82927241,7.17836044 C3.82927241,3.43634673 6.09110348,0 11.3026841,0 C13.4128637,0 14.9735524,0.216313544 14.9735524,0.216313544 L14.8505993,5.42258041 C14.8505993,5.42258041 13.2592426,5.40603348 11.5227055,5.40603348 C9.64323898,5.40603348 9.34218671,6.33206002 9.34218671,7.86911968 L9.34218671,8.13026037 L9.34218671,11.9402669 L15,11.9402669 L14.7538124,17.51538 Z" id="Fill-1" fill="#B2EAED" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

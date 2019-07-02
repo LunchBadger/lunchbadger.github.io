@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="description" content="An open source, Kubernetes-native, microservices and serverless platform for developing, managing and deploying APIs insanely fast.">
+<meta name="author" content="Al Tsang">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Leveraging Kubernetes For Microservices Based Cloud Strategy :: Express Serverless Platform</title>
+
+    
+    <link href="/css/nucleus.css?1561715939" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1561715939" rel="stylesheet">
+    <link href="/css/hybrid.css?1561715939" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1561715939" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1561715939" rel="stylesheet">
+    <link href="/css/auto-complete.css?1561715939" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1561715939" rel="stylesheet">
+    <link href="/css/theme.css?1561715939" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1561715939" rel="stylesheet">
+    
+      <link href="/css/theme-lb.css?1561715939" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1561715939"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+<link rel="stylesheet" id="google_fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,latin-ext" type="text/css" media="all">
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta property="og:locale" content="en_US">
+	<meta property="og:title" content="Leveraging Kubernetes For Microservices Based Cloud Strategy | Express Serverless Platform">
+	<meta property="og:image" content="https://www.express-serverless.io/wp-content/uploads/2018/08/Trial-3.png">
+	<meta property="og:description" content="An open source, Kubernetes-native, microservices and serverless platform for developing, managing and deploying APIs insanely fast.">
+	<meta property="og:site_name" content="Express Serverless Platform">
+	
+	<link rel="preconnect" href="https://www.express-serverless.io">
+	<link rel="canonical" href="https://www.express-serverless.io/blog/kubernetes-scalability/">
+
+
+  </head>
+  <body class="" data-url="/blog/kubernetes-scalability/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+
+	<img class="logo"
+	src="/wp-content/uploads/2019/06/express-serverless-platform-final2.png" 
+	alt="Express Serverless Platform" 
+	title="Express Serverless Platform">
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1561715939"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1561715939"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/www.express-serverless.io";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1561715939"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/about/" title="About" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/about/">
+          About
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/getting-started/">
+          Getting Started
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/" title="User Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/">
+          User Guide
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/canvas/" title="Canvas" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/canvas/">
+          Canvas
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/" title="Entity Palette" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/">
+          Entity Palette
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/connectors/" title="Model Connectors" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/connectors/">
+          Model Connectors
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/models/" title="Models" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/models/">
+          Models
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/functions/" title="Functions" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/functions/">
+          Functions
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/service-endpoints/" title="Service Endpoints" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/service-endpoints/">
+          Service Endpoints
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/gateways/" title="Gateways" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/gateways/">
+          Gateways
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/api-endpoints/" title="API Endpoints" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/api-endpoints/">
+          API Endpoints
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/cloud-runtime/" title="Cloud Runtime" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/cloud-runtime/">
+          Cloud Runtime
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/git-access/" title="Git Access" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/git-access/">
+          Git Access
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/" title="Blog" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/blog/">
+          Blog
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/intro-articles/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/intro-articles/">
+          Introduction
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/serverless-based-functions/" title="Building Serverless Based Functions" class="dd-item ">
+        <a href="/blog/serverless-based-functions/">
+        Serverless Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/get-started-api-management-express-serverless-platform/" title="How To Get Started with API Management and Express Serverless Platform" class="dd-item ">
+        <a href="/blog/get-started-api-management-express-serverless-platform/">
+        Get Started
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/" title="API Management - Setting Up Key-Based Authentication" class="dd-item ">
+        <a href="/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/">
+        Key Based Authentication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/2018/" title="2018 Articles" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/blog/2018/">
+          2018 Articles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/api-management-authentication-authorization-audit/" title="API Management Reimagined: Authentication Authorization Audit" class="dd-item ">
+        <a href="/blog/api-management-authentication-authorization-audit/">
+        API Management Reimagined
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/express-serverless-platform-lunchbadger/" title="LunchBadger Platform is now Express Serverless Platform" class="dd-item ">
+        <a href="/blog/express-serverless-platform-lunchbadger/">
+        LunchBadger is now ESP
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/kubernetes-scalability/" title="Leveraging Kubernetes For Microservices Based Cloud Strategy" class="dd-item active">
+        <a href="/blog/kubernetes-scalability/">
+        Leveraging Kubernetes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/compare-tyk-api-gateway-express-features/" title="API Gateways Comparison – Features and Pricing of Tyk API Gateway vs. Express Gateway" class="dd-item ">
+        <a href="/blog/compare-tyk-api-gateway-express-features/">
+        Tyk vs EG
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/compare-kong-api-gateway-express-features/" title="API Gateways Comparison: Features &amp; Pricing of Kong vs. Express Gateway" class="dd-item ">
+        <a href="/blog/compare-kong-api-gateway-express-features/">
+        Kong vs EG
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/compare-amazon-aws-api-gateway-express-features/" title="API Gateway Comparison – Features and Pricing of Amazon AWS API Gateway and Express Gateway" class="dd-item ">
+        <a href="/blog/compare-amazon-aws-api-gateway-express-features/">
+        AWS API Gateway vs EG
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/can-use-multi-cloud-strategy-grow-company/" title="How you can use a Multi-cloud Strategy to Grow your Company" class="dd-item ">
+        <a href="/blog/can-use-multi-cloud-strategy-grow-company/">
+        Multi-cloud Strategy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/2017/" title="2017 Articles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/2017/">
+          2017 Articles
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/2016/" title="2016 Articles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/2016/">
+          2016 Articles
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/resource/" title="Resource" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/resource/">
+          Resources
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/resource/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/" title="ESP vs AWS Lambda" class="dd-item ">
+        <a href="/resource/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/">
+        ESP vs AWS Lambda
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/resource/hello-world-esp-vs-google-cloud-functions-example/" title="ESP vs Google Cloud Functions" class="dd-item ">
+        <a href="/resource/hello-world-esp-vs-google-cloud-functions-example/">
+        ESP vs Google Cloud Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/" title="ESP vs Azure Functions" class="dd-item ">
+        <a href="/resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/">
+        ESP vs Azure Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/resource/hello-world-esp-vs-ibm-cloud-functions-example/" title="ESP vs IBM Cloud Functions" class="dd-item ">
+        <a href="/resource/hello-world-esp-vs-ibm-cloud-functions-example/">
+        ESP vs IBM Cloud Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/resource/vs-apigee-features/" title="Hello World with Express Serverless Platform vs Apigee Edge" class="dd-item ">
+        <a href="/resource/vs-apigee-features/">
+        ESP vs Apigee Edge
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/resource/pdf-guides/" title="PDF Guides" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/resource/pdf-guides/">
+          PDF Guides
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/resource/use-cases/" title="Use Cases" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/resource/use-cases/">
+          Use Cases
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/support/" title="Support" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/support/">
+          Support
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/developer-guide/" title="Developer Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developer-guide/">
+          Developer Guide
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/license/" title="License" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/license/">
+          License
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <span >
+<center>
+     <h5>©2019 All rights reserved.</h5>
+</center>
+</span>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Open Source, Kubernetes-native, Microservices & Serverless Platform</a> > <a href='/blog/'>Blog</a> > <a href='/blog/2018/'>2018 Articles</a> > Leveraging Kubernetes For Microservices Based Cloud Strategy
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#how-lunchbadger-integrates-with-kubernetes">How LunchBadger integrates with Kubernetes</a></li>
+<li><a href="#kubernetes-in-a-nutshell"><strong>Kubernetes In A Nutshell</strong></a>
+<ul>
+<li><a href="#how-kubernetes-microservices-and-serverless-work-together"><strong>How Kubernetes, Microservices And Serverless work together</strong></a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/auto-deployment-in-a-kubernetes-runtime">auto deployment in a kubernetes runtime</a>
+
+  <a class="tag-link" href="/tags/command-line-tool-called-kubectl-for-deploying-containerized-applications-and-managing-services">command-line tool called kubectl for deploying containerized applications and managing services</a>
+
+  <a class="tag-link" href="/tags/how-to-get-started-with-kubernetes">How to get started with Kubernetes</a>
+
+  <a class="tag-link" href="/tags/kubectl">Kubectl</a>
+
+  <a class="tag-link" href="/tags/kubernetes">Kubernetes</a>
+
+  <a class="tag-link" href="/tags/kubernetes-pod">Kubernetes Pod</a>
+
+  <a class="tag-link" href="/tags/kubernetes-runtime">Kubernetes Runtime</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Leveraging Kubernetes For Microservices Based Cloud Strategy
+            </h1>
+          
+
+        
+
+
+
+
+
+<p><span style="font-weight: 400;">Enterprise applications have to be designed upfront for <strong>scalability and change</strong>. This has significant implications for both application architecture and application infrastructure. Application architecture is evolving from unmanageable monolithic or three-tier patterns to interconnected microservices.</span> <a href="https://www.martinfowler.com/articles/microservices.html"><span style="font-weight: 400;">Microservices</span></a> <span style="font-weight: 400;">introduce new form factors not only for functionality and team-size (the so-called two-pizza teams), but also for the unit of infrastructure. It is not surprising that a portable container or a pod of handful interrelated containers often works out as the most befitting unit of infrastructure for microservices-based architecture. </span><span style="font-weight: 400;">Fortunately, container-based scalable infrastructure is a reality today, thanks to the</span> <a href="https://kubernetes.io/"><span style="font-weight: 400;">Kubernetes</span></a> <span style="font-weight: 400;">project incepted in and open-sourced by</span> <a href="https://www.google.com/about/"><span style="font-weight: 400;">Google</span></a> <span style="font-weight: 400;">in 2014. But for the sake of business agility, it is critical for enterprise development teams to focus on the business logic with the insurance that deployment onto a suitable infrastructure would be relatively painless.</span></p>
+
+<h2 id="how-lunchbadger-integrates-with-kubernetes">How LunchBadger integrates with Kubernetes</h2>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400;">This is where LunchBadger comes in. LunchBadger offers a visual interface called the Canvas to model and define services, and deploy them onto a Kubernetes-based infrastructure in a single pane of glass. These services could be business-to-business services or intra-organization, or even intra-application microservices. They could be synchronously invoked</span> <a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm"><span style="font-weight: 400;">REST</span></a> <span style="font-weight: 400;">URLs or asynchronously invoked serverless functions. In any case, it allows the developer to focus on application development and deploy the application onto a scalable Kubernetes-based infrastructure without any administrative intervention. LunchBadger is a Kubernetes-native solution such that the application developer does not switch from the Canvas, even as the requisite container instances are created and orchestrated behind the scene. So, let&#8217;s take a tour of life without LunchBadger &#8211; how it takes a sequence of steps to deploy and expose a service on a Kubernetes cluster &#8211; and then explore how LunchBadger cuts down the complexity to a one-click deployment.</span></p>
+
+<p>&nbsp;</p>
+
+<h2 id="kubernetes-in-a-nutshell"><strong>Kubernetes In A Nutshell</strong></h2>
+
+<p><span style="font-weight: 400;">Kubernetes is an deployment and orchestration framework for containerized applications. Given a farm of compute resources, Kubernetes allocates resources to containers and performs replication, scaling, failover, and other management tasks necessary to run enterprise applications reliably with efficient resource utilization.</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400;">Datacenters that run applications on virtualization technologies like VMWare depend on a suite of tools like</span> <a href="https://www.vmware.com/in/products/vsphere.html"><span style="font-weight: 400;">VSphere</span></a> <span style="font-weight: 400;">to deploy and manage Virtual Machines on a server farm. Kubernetes plays a similar role in the world of containerized applications.</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400;">The unit of deployment in Kubernetes is a &#8216;pod&#8217;. A</span> <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod/"><span style="font-weight: 400;">Pod</span></a> <span style="font-weight: 400;">consists of one a small number of containers that are deployed and scaled together as a unit. A cluster consists of Nodes, which are compute resources that can join or leave a cluster. Pods can be deployed onto a running cluster using a </span><a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"><span style="font-weight: 400;">deployment</span></a> <span style="font-weight: 400;">specification. Among other attributes, a deployment spec includes the desired state of the cluster in terms of number of replicas of a pod that should be running at any point in time. The run-time ensures that the desired number of replicas are always maintained, even if one or more pods crash.  Secondly, a deployment spec can be used to run rolling upgrades on the specified pods. </span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400;">Finally, Kubernetes defines &#8216;</span><a href="https://kubernetes.io/docs/concepts/services-networking/service/"><span style="font-weight: 400;">Service</span></a><span style="font-weight: 400;">&#8216; as a location-independent abstraction of the server processes running within pods. That is, while the pods may be allocated to different compute resources at different times based on availability, the service endpoint remains unchanged, so that it can be discovered and accessed externally without any disruption.</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400;">Kubernetes also comes with a command-line tool called</span> <a href="https://kubernetes.io/docs/reference/kubectl/overview/"><span style="font-weight: 400;">kubectl</span></a> <span style="font-weight: 400;">for deploying containerized applications and managing services.</span></p>
+
+<p>&nbsp;</p>
+
+<p><em>Let&#8217;s break it down:</em><figure class="post-image"></p>
+
+<p><img class="aligncenter wp-image-4847" src="/wp-content/uploads/2018/08/Container.png" alt="Overview of Kubernetes" width="755" height="378" srcset="/wp-content/uploads/2018/08/Container.png 1024w, /wp-content/uploads/2018/08/Container.png 300w, /wp-content/uploads/2018/08/Container.png 768w, /wp-content/uploads/2018/08/Container.png 225w, /wp-content/uploads/2018/08/Container.png 512w" sizes="(max-width: 755px) 100vw, 755px" /></figure></p>
+
+<p>&nbsp;</p>
+
+<h3 id="how-kubernetes-microservices-and-serverless-work-together"><strong>How Kubernetes, Microservices And Serverless work together</strong></h3>
+
+<p><span style="font-weight: 400;">Martin Fowler lists out a few</span> <a href="https://www.martinfowler.com/articles/microservices.html"><span style="font-weight: 400;">characteristics of Microservices architecture</span></a><span style="font-weight: 400;">, two of which may be worth calling out here:</span></p>
+
+<p>&nbsp;</p>
+
+<ol>
+<li><span style="font-weight: 400;">    Componentization via Services</span></li>
+<li><span style="font-weight: 400;">    Smart Endpoints and &#8220;dumb pipes&#8221;</span></li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400;">Kubernetes is uniquely positioned to be the deployment platform of choice for Microservices. The &#8216;components&#8217; of a microservices-based application can be developed, built, tested, deployed and scaled independently. Kubernetes uses containers, and containers enable application components to be portable and easily integrated in a larger application.</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400;">In event-driven scenarios, traditionally, enterprise service bus or similar technologies have been used to process message streams and trigger workflows. In microservices, the preference is to reduce complexity of the pipeline between application components, because otherwise the pipeline itself tends to become a monolithic component that has to be deployed and managed separately. Event driven microservices can be deployed as</span> <a href="https://serverless.com/"><span style="font-weight: 400;">serverless</span></a> <span style="font-weight: 400;">functions. </span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400;">With Kubernetes-native serverless frameworks like</span> <a href="https://github.com/kubeless/kubeless"><span style="font-weight: 400;">kubeless</span></a><span style="font-weight: 400;">, Kubernetes is capable of  serving as the deployment infrastructure for event-driven microservices as well.</span></p>
+
+<p>&nbsp;<figure class="post-image"></p>
+
+<p><img class="aligncenter wp-image-4848" src="/wp-content/uploads/2018/08/Container-1.png" alt="Deployment infrastructure for event-driven microservices" width="693" height="347" srcset="/wp-content/uploads/2018/08/Container-1.png 1024w, /wp-content/uploads/2018/08/Container-1.png 300w, /wp-content/uploads/2018/08/Container-1.png 768w, /wp-content/uploads/2018/08/Container-1.png 225w, /wp-content/uploads/2018/08/Container-1.png 512w" sizes="(max-width: 693px) 100vw, 693px" /></figure></p>
+
+<p><span style="font-weight: 400;">Microservices components &#8211; event-driven or otherwise, have to expose an interface for other components or the external world to access its services. This is where APIs have to be carefully defined, and an infrastructure for setting up and managing secure API endpoints has to be supported. </span><span style="font-weight: 400;">LunchBadger brings together a development platform for microservices &#8211; both synchronous and event-driven (serverless) &#8211; with an API management framework, with end-to-end development and deployment support.  </span></p>
+
+<p>&nbsp;</p>
+
+<p>Over the next few posts, we&#8217;ll cover tactical examples, guides and walk through how-tos so you can deploy a service in Kubernetes, understand and create a Kubernetes deployment spec, understand and create a Kubernetes Service Spec or just what Kubernetes is all about.</p>
+
+<p>&nbsp;</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/blog/express-serverless-platform-lunchbadger/" title="LunchBadger Platform is now Express Serverless Platform"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/blog/compare-tyk-api-gateway-express-features/" title="API Gateways Comparison – Features and Pricing of Tyk API Gateway vs. Express Gateway" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1561715939"></script>
+    <script src="/js/perfect-scrollbar.min.js?1561715939"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1561715939"></script>
+    <script src="/js/jquery.sticky.js?1561715939"></script>
+    <script src="/js/featherlight.min.js?1561715939"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1561715939"></script>
+    <script src="/js/highlight.pack.js?1561715939"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1561715939"></script>
+    <script src="/js/learn.js?1561715939"></script>
+    <script src="/js/hugo-learn.js?1561715939"></script>
+
+    <link href="/mermaid/mermaid.css?1561715939" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1561715939"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+  </body>
+</html>
+

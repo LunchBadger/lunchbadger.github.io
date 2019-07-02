@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>api gateway on Express Serverless Platform</title>
+    <link>https://www.express-serverless.io/tags/api-gateway/</link>
+    <description>Recent content in api gateway on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Nov 2018 01:08:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.express-serverless.io/tags/api-gateway/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ESP vs AWS Lambda</title>
+      <link>https://www.express-serverless.io/resource/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</link>
+      <pubDate>Thu, 29 Nov 2018 01:08:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/resource/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</guid>
+      <description>Developer Challenges of Serverless and AWS AWS pioneered the idea behind serverless when they introduced AWS Lambda: focus on your business logic down to its atomic parts of your applications—functions—and let them worry about the rest. This whole idea eventually led to the NoOps movement.
+&amp;nbsp;
+Serverless is a great idea! It&amp;#8217;s a new paradigm that can be applied to how modern applications are developed and run in the cloud to drastically increase developer focus and productivity.</description>
+    </item>
+    
+    <item>
+      <title>How To Get Started with API Management and Express Serverless Platform</title>
+      <link>https://www.express-serverless.io/blog/get-started-api-management-express-serverless-platform/</link>
+      <pubDate>Mon, 05 Nov 2018 12:21:22 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/get-started-api-management-express-serverless-platform/</guid>
+      <description>In our last post, we discussed API Management and the key role that an API Gateway could play. API Gateways can enable secure access to its API endpoints. Features in an API Gateway are often categorized in three broad categories:
+ Authentication: Who is allowed to access (Access Control) Authorization: Who is allowed to perform operations of exposed APIs (Permissions / Privileges) Audit: Analyzing sufficient information for each client request   How does this work?</description>
+    </item>
+    
+    <item>
+      <title>Hello World with Express Serverless Platform vs Apigee Edge</title>
+      <link>https://www.express-serverless.io/resource/vs-apigee-features/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/resource/vs-apigee-features/</guid>
+      <description>Apigee Edge (acquired by Google in 2016) is a popular platform for deploying API proxies. Express Serverless Platform, like Apigee, allows you to build and deploy API gateways on their internal cloud computing service. At a high level, Express Serverless Platform and Apigee are similar, but there are several key differences in terms of Node.js version compatibility and vendor lock-in that you should be aware of before choosing one or the other.</description>
+    </item>
+    
+  </channel>
+</rss>

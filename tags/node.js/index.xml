@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node.js on Express Serverless Platform</title>
+    <link>https://www.express-serverless.io/tags/node.js/</link>
+    <description>Recent content in Node.js on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Oct 2018 00:12:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.express-serverless.io/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ESP vs Google Cloud Functions</title>
+      <link>https://www.express-serverless.io/resource/hello-world-esp-vs-google-cloud-functions-example/</link>
+      <pubDate>Tue, 01 May 2018 17:04:42 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/resource/hello-world-esp-vs-google-cloud-functions-example/</guid>
+      <description>Google Cloud Functions are Google Cloud&amp;#8217;s equivalent to AWS Lambda. Like Lambda, Google Cloud Functions let you write custom functions and expose them via an HTTP interface through either Google Cloud Function&amp;#8217;s minimal HTTP configuration or Google Cloud Endpoints for more sophisticated use cases. Express Serverless Platfom is a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I&amp;#8217;ll walk through setting up a rudimentary Node.</description>
+    </item>
+    
+    <item>
+      <title>ESP vs IBM Cloud Functions</title>
+      <link>https://www.express-serverless.io/resource/hello-world-esp-vs-ibm-cloud-functions-example/</link>
+      <pubDate>Tue, 03 Apr 2018 12:31:41 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/resource/hello-world-esp-vs-ibm-cloud-functions-example/</guid>
+      <description>IBM Cloud Functions are IBM Cloud&amp;#8217;s equivalent to AWS Lambda. Like Lambda, IBM Cloud Functions let you write custom functions and expose them via an HTTP interface through either IBM Cloud Function&amp;#8217;s minimal HTTP configuration or IBM API Connect for more sophisticated use cases. Express Serverless Platform offers a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I&amp;#8217;ll walk through setting up a rudimentary Node.</description>
+    </item>
+    
+    <item>
+      <title>Hello World with Express Serverless Platform vs Apigee Edge</title>
+      <link>https://www.express-serverless.io/resource/vs-apigee-features/</link>
+      <pubDate>Thu, 15 Mar 2018 13:00:05 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/resource/vs-apigee-features/</guid>
+      <description>Apigee Edge (acquired by Google in 2016) is a popular platform for deploying API proxies. Express Serverless Platform, like Apigee, allows you to build and deploy API gateways on their internal cloud computing service. At a high level, Express Serverless Platform and Apigee are similar, but there are several key differences in terms of Node.js version compatibility and vendor lock-in that you should be aware of before choosing one or the other.</description>
+    </item>
+    
+    <item>
+      <title>LunchBadger Platform is now Express Serverless Platform</title>
+      <link>https://www.express-serverless.io/blog/express-serverless-platform-lunchbadger/</link>
+      <pubDate>Tue, 09 Oct 2018 00:12:30 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/express-serverless-platform-lunchbadger/</guid>
+      <description>Express Serverless Platform has arrived! After three long months of hard work, we&amp;#8217;re proud to announce that the LunchBadger Platform is now the Express Serverless Platform. New name, new features and an opportunity to experience a visual canvas ripe with all the important functionality that developers need, without the hype.
+&amp;nbsp;
+TLDR: Install ESP right over here
+&amp;nbsp;
+For Developers, DevOps teams and CTOs driving impact in top companies, it&amp;#8217;s not just a name change &amp;#8211; it&amp;#8217;s a game changer and we can&amp;#8217;t wait to show you why.</description>
+    </item>
+    
+  </channel>
+</rss>
