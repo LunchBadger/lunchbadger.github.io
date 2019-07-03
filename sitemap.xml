@@ -13,6 +13,16 @@
   </url>
   
   <url>
+    <loc>https://www.express-serverless.io/developer-guide/ui-guide/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.express-serverless.io/getting-started/front-end/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.express-serverless.io/blog/intro-articles/</loc>
     <lastmod>2018-05-21T18:23:50+03:00</lastmod>
   </url>
@@ -33,6 +43,16 @@
   </url>
   
   <url>
+    <loc>https://www.express-serverless.io/developer-guide/actualizer/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.express-serverless.io/getting-started/back-end/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.express-serverless.io/resource/hello-world-esp-vs-google-cloud-functions-example/</loc>
     <lastmod>2018-05-01T17:04:42+00:00</lastmod>
   </url>
@@ -48,6 +68,11 @@
   </url>
   
   <url>
+    <loc>https://www.express-serverless.io/developer-guide/configstore/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.express-serverless.io/resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/</loc>
     <lastmod>2018-03-22T22:38:26+00:00</lastmod>
   </url>
@@ -58,8 +83,18 @@
   </url>
   
   <url>
+    <loc>https://www.express-serverless.io/developer-guide/serverless-api/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.express-serverless.io/resource/hello-world-esp-vs-ibm-cloud-functions-example/</loc>
     <lastmod>2018-04-03T12:31:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.express-serverless.io/developer-guide/kube-watcher/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
   </url>
   
   <url>
@@ -73,6 +108,11 @@
   </url>
   
   <url>
+    <loc>https://www.express-serverless.io/developer-guide/git-api/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.express-serverless.io/getting-started/</loc>
     <lastmod>2018-05-21T18:23:50+03:00</lastmod>
   </url>
@@ -83,12 +123,22 @@
   </url>
   
   <url>
+    <loc>https://www.express-serverless.io/developer-guide/lunchbadger-api/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.express-serverless.io/resource/use-cases/</loc>
     <lastmod>2018-05-21T18:23:50+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.express-serverless.io/user-guide/</loc>
+    <lastmod>2018-05-21T18:23:50+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.express-serverless.io/developer-guide/graphql-api/</loc>
     <lastmod>2018-05-21T18:23:50+03:00</lastmod>
   </url>
   
