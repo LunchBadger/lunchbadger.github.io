@@ -35,17 +35,5 @@ TLDR: Install ESP right over here
 For Developers, DevOps teams and CTOs driving impact in top companies, it&amp;#8217;s not just a name change &amp;#8211; it&amp;#8217;s a game changer and we can&amp;#8217;t wait to show you why.</description>
     </item>
     
-    <item>
-      <title>API Gateway Comparison – Features and Pricing of Amazon AWS API Gateway and Express Gateway</title>
-      <link>https://www.express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</link>
-      <pubDate>Tue, 23 Jan 2018 13:30:58 +0000</pubDate>
-      
-      <guid>https://www.express-serverless.io/blog/compare-amazon-aws-api-gateway-express-features/</guid>
-      <description>Amazon API Gateway VS. Express Gateway If you&amp;#8217;re curious about how your API Gateway stacks up, now&amp;#8217;s the time to listen up because we&amp;#8217;re breaking down the differences (and similarities) of the most popular projects for the API Gateway use case.
-First up, we&amp;#8217;ve got Amazon API Gateway and we&amp;#8217;re going to compare it toExpress Gateway, an open source API Gateway built entirely on Express.js.
-&amp;nbsp;
-TLDR: You can skip ahead to the deep dive.</description>
-    </item>
-    
   </channel>
 </rss>
