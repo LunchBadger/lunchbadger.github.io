@@ -165,7 +165,7 @@
 	"title": "PDF Guides",
 	"tags": [],
 	"description": "Download detailed comparison guides on serverless platform pricing, features and more",
-	"content": " Download detailed comparison guides on pricing, features and more. \r\rServerless Plaform Comparison Guides\r\r\rComparison - AWS Lambda vs Express Serverless Platform on AWS.pdf\r\r(1700 ko)\r\r\rComparison - Apigee Edge vs Express Serverless Platform.pdf\r\r(605 ko)\r\r\rComparison - Azure Functions vs Express Serverless Platform on Azure.pdf\r\r(695 ko)\r\r\rComparison - Google Cloud Functions vs Express Serverless Platform on GCP.pdf\r\r(693 ko)\r\r\rComparison - IBM Cloud Functions vs Express Serverless Platform on IBM.pdf\r\r(591 ko)\r\r\r\r"
+	"content": " Download detailed comparison guides on pricing, features and more. \r\rServerless Plaform Comparison Guides\r\r\rComparison - AWS Lambda vs Express Serverless Platform on AWS.pdf\r\r(1700 ko)\r\r\rComparison - Azure Functions vs Express Serverless Platform on Azure.pdf\r\r(695 ko)\r\r\rComparison - Google Cloud Functions vs Express Serverless Platform on GCP.pdf\r\r(693 ko)\r\r\rComparison-Apigee_Edge_vs_Express_Serverless_Platform.pdf\r\r(605 ko)\r\r\rComparison-IBM_Cloud_Functions_vs_Express_Serverless_Platform_on_IBM.pdf\r\r(591 ko)\r\r\r\r"
 },
 {
 	"uri": "https://www.express-serverless.io/developer-guide/lunchbadger-api/",
