@@ -59,5 +59,14 @@ Azure Functions are Microsoft Azure&amp;#8217;s equivalent to AWS Lambda. Li
       <description>Apigee Edge (acquired by Google in 2016) is a popular platform for deploying API proxies. Express Serverless Platform, like Apigee, allows you to build and deploy API gateways on their internal cloud computing service. At a high level, Express Serverless Platform and Apigee are similar, but there are several key differences in terms of Node.js version compatibility and vendor lock-in that you should be aware of before choosing one or the other.</description>
     </item>
     
+    <item>
+      <title>PDF Guides</title>
+      <link>https://www.express-serverless.io/resource/pdf-guides/page/</link>
+      <pubDate>Mon, 21 May 2018 18:23:50 +0300</pubDate>
+      
+      <guid>https://www.express-serverless.io/resource/pdf-guides/page/</guid>
+      <description>Download detailed comparison guides on pricing, features and more. Serverless Plaform Comparison GuidesComparison - AWS Lambda vs Express Serverless Platform on AWS.pdf(1700 ko)Comparison - Azure Functions vs Express Serverless Platform on Azure.pdf(695 ko)Comparison - Google Cloud Functions vs Express Serverless Platform on GCP.pdf(693 ko)Comparison - IBM Cloud Functions vs Express Serverless Platform on IBM.</description>
+    </item>
+    
   </channel>
 </rss>

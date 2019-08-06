@@ -92,6 +92,15 @@ Azure Functions are Microsoft Azure&amp;#8217;s equivalent to AWS Lambda. Li
     </item>
     
     <item>
+      <title>PDF Guides</title>
+      <link>https://www.express-serverless.io/resource/pdf-guides/page/</link>
+      <pubDate>Mon, 21 May 2018 18:23:50 +0300</pubDate>
+      
+      <guid>https://www.express-serverless.io/resource/pdf-guides/page/</guid>
+      <description>Download detailed comparison guides on pricing, features and more. Serverless Plaform Comparison GuidesComparison - AWS Lambda vs Express Serverless Platform on AWS.pdf(1700 ko)Comparison - Azure Functions vs Express Serverless Platform on Azure.pdf(695 ko)Comparison - Google Cloud Functions vs Express Serverless Platform on GCP.pdf(693 ko)Comparison - IBM Cloud Functions vs Express Serverless Platform on IBM.</description>
+    </item>
+    
+    <item>
       <title>API Management Reimagined: Authentication Authorization Audit</title>
       <link>https://www.express-serverless.io/blog/api-management-authentication-authorization-audit/</link>
       <pubDate>Tue, 16 Oct 2018 21:06:48 +0000</pubDate>
