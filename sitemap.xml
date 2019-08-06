@@ -2,37 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.express-serverless.io/</loc>
-    <lastmod>2019-08-05</lastmod>
+    <lastmod>2019-08-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.express-serverless.io/developer-guide/kube-watcher/</loc>
-    <lastmod>2019-08-05</lastmod>
+    <lastmod>2019-08-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/user-guide/git-access/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/public_keys.png</image:loc>
-        <image:title>Public Key</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/settings_ssh_add.png</image:loc>
-        <image:title>SSH settings</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/git_access_url.png</image:loc>
-        <image:title>Git Access URL</image:title>
-      </image:image>
   </url>
   <url>
     <loc>https://www.express-serverless.io/blog/get-started-api-management-express-serverless-platform/</loc>
-    <lastmod>2019-08-05</lastmod>
+    <lastmod>2019-08-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
       <image:image>
@@ -93,8 +75,38 @@
       </image:image>
   </url>
   <url>
+    <loc>https://www.express-serverless.io/add-resource/pdf-guides/page/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/use-cases/usecase/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/git-access/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/public_keys.png</image:loc>
+        <image:title>Public Key</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/settings_ssh_add.png</image:loc>
+        <image:title>SSH settings</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/git_access_url.png</image:loc>
+        <image:title>Git Access URL</image:title>
+      </image:image>
+  </url>
+  <url>
     <loc>https://www.express-serverless.io/user-guide/entity-palette/models/</loc>
-    <lastmod>2019-08-05</lastmod>
+    <lastmod>2019-08-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
       <image:image>
@@ -127,8 +139,380 @@
       </image:image>
   </url>
   <url>
-    <loc>https://www.express-serverless.io/resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/</loc>
-    <lastmod>2019-08-05</lastmod>
+    <loc>https://www.express-serverless.io/developer-guide/configstore/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/developer-guide/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/lb-graph-final.png</image:loc>
+        <image:title>Express Serverless Platform Architecture</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/gateways/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/icon_gateway_dark.svg</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/gateway_example.png</image:loc>
+        <image:title>Gateway Example</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/gateway_flow_1.png</image:loc>
+        <image:title>Gateway Flow 1</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/gateway_flow_2.png</image:loc>
+        <image:title>Gateway Flow 2</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/gateway_flow_3.png</image:loc>
+        <image:title>Gateway Flow 3</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/gateway_flow_4.png</image:loc>
+        <image:title>Gateway Flow 4</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/gateway_flow_5.png</image:loc>
+        <image:title>Gateway Flow 5</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/gateway_flow_6.png</image:loc>
+        <image:title>Gateway Flow 6</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/gateway_access.png</image:loc>
+        <image:title>Access Gateway</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/gw_consumer_mgmt.png</image:loc>
+        <image:title>Consumer Management</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/gw_cm_add_user.png</image:loc>
+        <image:title>Consumer Management Add User</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/gw_cm_add_user_cred.png</image:loc>
+        <image:title>Consumer Management Add User Credentials</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/getting-started/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/cloud-runtime/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/full_canvas.png</image:loc>
+        <image:title>Express Serverless Platform Canvas</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/kubernetes_pods.png</image:loc>
+        <image:title>Kubernetes Pods</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/canvas_to_pods.png</image:loc>
+        <image:title>Canvas To Pod Mapping</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/license/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/developer-guide/git-api/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/vs-apigee-features/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/about/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/lb-graph-final.png</image:loc>
+        <image:title>Express Serverless Platform Architecture</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/canvas/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/full_canvas.png</image:loc>
+        <image:title>Express Serverless Platform Canvas Image</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/header.png</image:loc>
+        <image:title>Header</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/entity_palette.png</image:loc>
+        <image:title>Entity Palette</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/quadrants.png</image:loc>
+        <image:title>Quadrants</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/toolbar.png</image:loc>
+        <image:title>Toolbar</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/panels.png</image:loc>
+        <image:title>Panel</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/chat.png</image:loc>
+        <image:title>Chat</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/getting-started/back-end/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/blog/2016/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/developer-guide/serverless-api/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/api-endpoints/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/icon_endpoint_dark.svg</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/gateway_access.png</image:loc>
+        <image:title>Access an API Endpoint</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/api_endpoint_details.png</image:loc>
+        <image:title>API Endpoint Methods</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/connectors/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/icon_datasource_dark.svg</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/connector_submenu.png</image:loc>
+        <image:title>Connector Submenu</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/model_connector_connection.png</image:loc>
+        <image:title>Model Connected to MySQL Connector</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/blog/can-use-multi-cloud-strategy-grow-company/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/hello-world-esp-vs-google-cloud-functions-example/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/getting-started/front-end/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/blog/intro-articles/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/blog/2017/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/developer-guide/graphql-api/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/developer-guide/lunchbadger-api/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/developer-guide/actualizer/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/functions/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/icon_function_dark.svg</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/function_details_icon.png</image:loc>
+        <image:title>Function Details Icon</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/function_details.png</image:loc>
+        <image:title>Function Details</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/service-endpoints/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/images/icon_endpoint_dark.svg</image:loc>
+        <image:title></image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/user-guide/entity-palette/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/blog/kubernetes-scalability/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/wp-content/uploads/2018/08/Container.png</image:loc>
+        <image:title>Overview of Kubernetes</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.express-serverless.io/wp-content/uploads/2018/08/Container-1.png</image:loc>
+        <image:title>Deployment infrastructure for event-driven microservices</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/blog/2018/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/blog/express-serverless-platform-lunchbadger/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/blog/api-management-authentication-authorization-audit/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/support/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/developer-guide/ui-guide/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/hello-world-esp-vs-ibm-cloud-functions-example/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/blog/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/blog/serverless-based-functions/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/github-repo/</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/</loc>
+    <lastmod>2019-08-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
       <image:image>
@@ -189,407 +573,61 @@
       </image:image>
   </url>
   <url>
-    <loc>https://www.express-serverless.io/getting-started/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/license/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/user-guide/entity-palette/gateways/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/icon_gateway_dark.svg</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/gateway_example.png</image:loc>
-        <image:title>Gateway Example</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/gateway_flow_1.png</image:loc>
-        <image:title>Gateway Flow 1</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/gateway_flow_2.png</image:loc>
-        <image:title>Gateway Flow 2</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/gateway_flow_3.png</image:loc>
-        <image:title>Gateway Flow 3</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/gateway_flow_4.png</image:loc>
-        <image:title>Gateway Flow 4</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/gateway_flow_5.png</image:loc>
-        <image:title>Gateway Flow 5</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/gateway_flow_6.png</image:loc>
-        <image:title>Gateway Flow 6</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/gateway_access.png</image:loc>
-        <image:title>Access Gateway</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/gw_consumer_mgmt.png</image:loc>
-        <image:title>Consumer Management</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/gw_cm_add_user.png</image:loc>
-        <image:title>Consumer Management Add User</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/gw_cm_add_user_cred.png</image:loc>
-        <image:title>Consumer Management Add User Credentials</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/developer-guide/configstore/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/developer-guide/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/lb-graph-final.png</image:loc>
-        <image:title>Express Serverless Platform Architecture</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/user-guide/cloud-runtime/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/full_canvas.png</image:loc>
-        <image:title>Express Serverless Platform Canvas</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/kubernetes_pods.png</image:loc>
-        <image:title>Kubernetes Pods</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/canvas_to_pods.png</image:loc>
-        <image:title>Canvas To Pod Mapping</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/resource/pdf-guides/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/developer-guide/git-api/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/about/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/lb-graph-final.png</image:loc>
-        <image:title>Express Serverless Platform Architecture</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/blog/2016/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/user-guide/canvas/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/full_canvas.png</image:loc>
-        <image:title>Express Serverless Platform Canvas Image</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/header.png</image:loc>
-        <image:title>Header</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/entity_palette.png</image:loc>
-        <image:title>Entity Palette</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/quadrants.png</image:loc>
-        <image:title>Quadrants</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/toolbar.png</image:loc>
-        <image:title>Toolbar</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/panels.png</image:loc>
-        <image:title>Panel</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/chat.png</image:loc>
-        <image:title>Chat</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/developer-guide/serverless-api/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/getting-started/back-end/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/user-guide/entity-palette/api-endpoints/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/icon_endpoint_dark.svg</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/gateway_access.png</image:loc>
-        <image:title>Access an API Endpoint</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/api_endpoint_details.png</image:loc>
-        <image:title>API Endpoint Methods</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/user-guide/entity-palette/connectors/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/icon_datasource_dark.svg</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/connector_submenu.png</image:loc>
-        <image:title>Connector Submenu</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/model_connector_connection.png</image:loc>
-        <image:title>Model Connected to MySQL Connector</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/blog/can-use-multi-cloud-strategy-grow-company/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/user-guide/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/resource/hello-world-esp-vs-ibm-cloud-functions-example/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/getting-started/front-end/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/blog/intro-articles/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/developer-guide/lunchbadger-api/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/blog/2017/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/resource/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/wp-content/uploads/2018/12/ESPonAWS_diagram.png</image:loc>
-        <image:title>Express Serverless Platform on AWS</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/developer-guide/graphql-api/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/user-guide/entity-palette/functions/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/icon_function_dark.svg</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/function_details_icon.png</image:loc>
-        <image:title>Function Details Icon</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/function_details.png</image:loc>
-        <image:title>Function Details</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/developer-guide/actualizer/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/user-guide/entity-palette/service-endpoints/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/images/icon_endpoint_dark.svg</image:loc>
-        <image:title></image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/user-guide/entity-palette/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/resource/use-cases/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/blog/kubernetes-scalability/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/wp-content/uploads/2018/08/Container.png</image:loc>
-        <image:title>Overview of Kubernetes</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.express-serverless.io/wp-content/uploads/2018/08/Container-1.png</image:loc>
-        <image:title>Deployment infrastructure for event-driven microservices</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/blog/express-serverless-platform-lunchbadger/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/blog/2018/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/blog/api-management-authentication-authorization-audit/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/support/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/resource/hello-world-esp-vs-google-cloud-functions-example/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/developer-guide/ui-guide/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/resource/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/blog/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/resource/vs-apigee-features/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/github-repo/</loc>
-    <lastmod>2019-08-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.express-serverless.io/blog/serverless-based-functions/</loc>
-    <lastmod>2019-08-05</lastmod>
+    <loc>https://www.express-serverless.io/add-resource/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/</loc>
+    <lastmod>2019-08-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.express-serverless.io/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/</loc>
-    <lastmod>2019-08-05</lastmod>
+    <lastmod>2019-08-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://www.express-serverless.io/wp-content/uploads/2018/10/Authorization-Graphics.png</image:loc>
         <image:title>API Management in the Enterprise</image:title>
       </image:image>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/pdf-guides/page.files/Comparison%20-%20Google%20Cloud%20Functions%20vs%20Express%20Serverless%20Platform%20on%20GCP.pdf</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/pdf-guides/page.files/Comparison%20-%20IBM%20Cloud%20Functions%20vs%20Express%20Serverless%20Platform%20on%20IBM.pdf</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/pdf-guides/page.files/Comparison%20-%20Apigee%20Edge%20vs%20Express%20Serverless%20Platform.pdf</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/use-cases/usecase.files/Use%20Case%20-%20Credit%20Application%20Automation%20for%20a%20Multi-National%20Bank.pdf</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/pdf-guides/page.files/Comparison%20-%20AWS%20Lambda%20vs%20Express%20Serverless%20Platform%20on%20AWS.pdf</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/use-cases/usecase.files/Use%20Case%20-%20Mobile%20Device%20Management%20System%20for%20a%20Telecom%20Provider.pdf</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.express-serverless.io/add-resource/pdf-guides/page.files/Comparison%20-%20Azure%20Functions%20vs%20Express%20Serverless%20Platform%20on%20Azure.pdf</loc>
+    <lastmod>2019-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
