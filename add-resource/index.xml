@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resource on Express Serverless Platform</title>
-    <link>https://www.express-serverless.io/add-resource/</link>
+    <link>https://www.express-serverless.io/resource/</link>
     <description>Recent content in Resource on Express Serverless Platform</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 May 2018 18:23:50 +0300</lastBuildDate>
     
-	<atom:link href="https://www.express-serverless.io/add-resource/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.express-serverless.io/resource/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -61,20 +61,11 @@ Azure Functions are Microsoft Azure&amp;#8217;s equivalent to AWS Lambda. Li
     
     <item>
       <title>PDF Guides</title>
-      <link>https://www.express-serverless.io/add-resource/pdf-guides/page/</link>
+      <link>https://www.express-serverless.io/resource/pdf-guides/page/</link>
       <pubDate>Mon, 21 May 2018 18:23:50 +0300</pubDate>
       
-      <guid>https://www.express-serverless.io/add-resource/pdf-guides/page/</guid>
+      <guid>https://www.express-serverless.io/resource/pdf-guides/page/</guid>
       <description>Download detailed comparison guides on pricing, features and more. Serverless Plaform Comparison GuidesComparison - AWS Lambda vs Express Serverless Platform on AWS.pdf(1700 ko)Comparison - Azure Functions vs Express Serverless Platform on Azure.pdf(695 ko)Comparison - Google Cloud Functions vs Express Serverless Platform on GCP.pdf(693 ko)Comparison - IBM Cloud Functions vs Express Serverless Platform on IBM.</description>
-    </item>
-    
-    <item>
-      <title>Use Cases</title>
-      <link>https://www.express-serverless.io/add-resource/use-cases/usecase/</link>
-      <pubDate>Mon, 21 May 2018 18:23:50 +0300</pubDate>
-      
-      <guid>https://www.express-serverless.io/add-resource/use-cases/usecase/</guid>
-      <description> In depth use-cases on Express Serverless Platform across various industries. Use CasesUse Case - Credit Application Automation for a Multi-National Bank.pdf(1456 ko)Use Case - Mobile Device Management System for a Telecom Provider.pdf(1276 ko)</description>
     </item>
     
   </channel>
