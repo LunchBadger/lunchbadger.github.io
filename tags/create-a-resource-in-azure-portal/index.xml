@@ -13,10 +13,10 @@
     
     <item>
       <title>ESP vs Azure Functions</title>
-      <link>https://www.express-serverless.io/resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/</link>
+      <link>https://www.express-serverless.io/add-resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/</link>
       <pubDate>Thu, 22 Mar 2018 22:38:26 +0000</pubDate>
       
-      <guid>https://www.express-serverless.io/resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/</guid>
+      <guid>https://www.express-serverless.io/add-resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/</guid>
       <description>If you&amp;#8217;re looking at getting started with Azure, we&amp;#8217;ve put together a comprehensive &amp;#8220;Hello, World&amp;#8217; guide. In addition to Azure, we&amp;#8217;ve put together a no-frills comparison of the getting started experience from the developer perspective. Learn more, build more and check out the latest from Val Karpov in this latest installment of our Developer Spotlight Series.
 Azure Functions are Microsoft Azure&amp;#8217;s equivalent to AWS Lambda. Like Lambda, Azure Functions let you write custom functions and expose them via an HTTP interface using Azure API Management.</description>
     </item>
