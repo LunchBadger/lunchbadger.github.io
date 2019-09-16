@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mesosphere on Express Serverless Platform</title>
+    <link>https://www.express-serverless.io/tags/mesosphere/</link>
+    <description>Recent content in Mesosphere on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Oct 2016 16:51:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.express-serverless.io/tags/mesosphere/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubernetes for API and Microservice Orchestration</title>
+      <link>https://www.express-serverless.io/blog/kubernetes-for-api-and-microservice-orchestration/</link>
+      <pubDate>Tue, 25 Oct 2016 16:51:20 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/kubernetes-for-api-and-microservice-orchestration/</guid>
+      <description>Two weeks ago, we talked about the benefits that Docker brings to organizations building out an API infrastruture. Last week, we went one level higher to look at how container orchestrators promise to simplify the deployment and management of applications and APIs. This week, I&amp;#8217;ll describe a more personal perspective &amp;#8211; why we chose Kubernetes as our container orchestrator.
+The decision came down to three major reasons: community, ease of use, and feature set.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,2400 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="description" content="An open source, Kubernetes-native, microservices and serverless platform for developing, managing and deploying APIs insanely fast.">
+<meta name="author" content="Al Tsang">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>The Ultimate IoT Backend using Node.js, Serverless and Kubernetes :: Express Serverless Platform</title>
+
+    
+    <link href="/css/nucleus.css?1568613093" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1568613093" rel="stylesheet">
+    <link href="/css/hybrid.css?1568613093" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1568613093" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1568613093" rel="stylesheet">
+    <link href="/css/auto-complete.css?1568613093" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1568613093" rel="stylesheet">
+    <link href="/css/theme.css?1568613093" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1568613093" rel="stylesheet">
+    
+      <link href="/css/theme-lb.css?1568613093" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1568613093"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-52P5D2W');</script>
+
+
+<link rel="stylesheet" id="google_fonts-css" href="//fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,latin-ext" type="text/css" media="all">
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta property="og:locale" content="en_US">
+	<meta property="og:title" content="The Ultimate IoT Backend using Node.js, Serverless and Kubernetes | Express Serverless Platform">
+	<meta property="og:image" content="https://www.express-serverless.io/images/site-logo.png">
+	<meta property="og:description" content="An open source, Kubernetes-native, microservices and serverless platform for developing, managing and deploying APIs insanely fast.">
+	<meta property="og:site_name" content="Express Serverless Platform">
+	
+	<link rel="preconnect" href="https://www.express-serverless.io">
+	<link rel="canonical" href="https://www.express-serverless.io/blog/ultimate-iot-backend-using-node-js-serverless-kubernetes/">
+
+
+  </head>
+  <body class="" data-url="/blog/ultimate-iot-backend-using-node-js-serverless-kubernetes/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+
+	<img class="logo"
+	src="/wp-content/uploads/2019/06/express-serverless-platform-final2.png" 
+	alt="Express Serverless Platform" 
+	title="Express Serverless Platform">
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1568613093"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1568613093"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/www.express-serverless.io";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1568613093"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/about/" title="About" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/about/">
+          About
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/getting-started/">
+          Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/front-end/" title="Front End Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/getting-started/front-end/">
+          Front End - UI Guide
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/back-end/" title="Back End Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/getting-started/back-end/">
+          Back End - Helm Charts
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/" title="User Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/">
+          User Guide
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/canvas/" title="Canvas" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/canvas/">
+          Canvas
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/" title="Entity Palette" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/">
+          Entity Palette
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/connectors/" title="Model Connectors" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/connectors/">
+          Model Connectors
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/models/" title="Models" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/models/">
+          Models
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/functions/" title="Functions" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/functions/">
+          Functions
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/service-endpoints/" title="Service Endpoints" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/service-endpoints/">
+          Service Endpoints
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/gateways/" title="Gateways" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/gateways/">
+          Gateways
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/entity-palette/api-endpoints/" title="API Endpoints" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/entity-palette/api-endpoints/">
+          API Endpoints
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/cloud-runtime/" title="Cloud Runtime" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/cloud-runtime/">
+          Cloud Runtime
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/user-guide/git-access/" title="Git Access" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-guide/git-access/">
+          Git Access
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/" title="Blog" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/blog/">
+          Blog
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/intro-articles/" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/intro-articles/">
+          Introduction
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/serverless-based-functions/" title="Building Serverless Based Functions" class="dd-item ">
+        <a href="/blog/serverless-based-functions/">
+        Serverless Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/get-started-api-management-express-serverless-platform/" title="How To Get Started with API Management and Express Serverless Platform" class="dd-item ">
+        <a href="/blog/get-started-api-management-express-serverless-platform/">
+        Get Started
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/" title="API Management - Setting Up Key-Based Authentication" class="dd-item ">
+        <a href="/blog/api-management-setting-up-key-based-authentication-with-express-serverless-platform/">
+        Key Based Authentication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/2018/" title="2018 Articles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/2018/">
+          2018 Articles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/api-management-authentication-authorization-audit/" title="API Management Reimagined: Authentication Authorization Audit" class="dd-item ">
+        <a href="/blog/api-management-authentication-authorization-audit/">
+        API Management Reimagined
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/express-serverless-platform-lunchbadger/" title="LunchBadger Platform is now Express Serverless Platform" class="dd-item ">
+        <a href="/blog/express-serverless-platform-lunchbadger/">
+        LunchBadger is now ESP
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/kubernetes-scalability/" title="Leveraging Kubernetes For Microservices Based Cloud Strategy" class="dd-item ">
+        <a href="/blog/kubernetes-scalability/">
+        Leveraging Kubernetes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/can-use-multi-cloud-strategy-grow-company/" title="How you can use a Multi-cloud Strategy to Grow your Company" class="dd-item ">
+        <a href="/blog/can-use-multi-cloud-strategy-grow-company/">
+        Multi-cloud Strategy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/2017/" title="2017 Articles" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/blog/2017/">
+          2017 Articles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/ultimate-iot-backend-using-node-js-serverless-kubernetes/" title="The Ultimate IoT Backend using Node.js, Serverless and Kubernetes" class="dd-item active">
+        <a href="/blog/ultimate-iot-backend-using-node-js-serverless-kubernetes/">
+        The Ultimate IoT Backend
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/2016/" title="2016 Articles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/blog/2016/">
+          2016 Articles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/kubernetes-for-api-and-microservice-orchestration/" title="Kubernetes for API and Microservice Orchestration" class="dd-item ">
+        <a href="/blog/kubernetes-for-api-and-microservice-orchestration/">
+        Kubernetes for API and Microservice Orchestration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/add-resource/" title="Resource" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/add-resource/">
+          Resources
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/add-resource/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/" title="ESP vs AWS Lambda" class="dd-item ">
+        <a href="/add-resource/microservices-platform-comparison-express-serverless-on-aws-vs-lambda/">
+        ESP vs AWS Lambda
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/add-resource/hello-world-esp-vs-google-cloud-functions-example/" title="ESP vs Google Cloud Functions" class="dd-item ">
+        <a href="/add-resource/hello-world-esp-vs-google-cloud-functions-example/">
+        ESP vs Google Cloud Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/add-resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/" title="ESP vs Azure Functions" class="dd-item ">
+        <a href="/add-resource/get-started-azure-functions-vs-express-serverless-platform-tutorial/">
+        ESP vs Azure Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/add-resource/hello-world-esp-vs-ibm-cloud-functions-example/" title="ESP vs IBM Cloud Functions" class="dd-item ">
+        <a href="/add-resource/hello-world-esp-vs-ibm-cloud-functions-example/">
+        ESP vs IBM Cloud Functions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/add-resource/vs-apigee-features/" title="Hello World with Express Serverless Platform vs Apigee Edge" class="dd-item ">
+        <a href="/add-resource/vs-apigee-features/">
+        ESP vs Apigee Edge
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/add-resource/pdf-guides/page/" title="PDF Guides" class="dd-item ">
+        <a href="/add-resource/pdf-guides/page/">
+        PDF Guides
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/add-resource/use-cases/usecase/" title="Use Cases" class="dd-item ">
+        <a href="/add-resource/use-cases/usecase/">
+        Use Cases
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/support/" title="Support" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/support/">
+          Support
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/developer-guide/" title="Developer Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developer-guide/">
+          Developer Guide
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/developer-guide/ui-guide/" title="Developer Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developer-guide/ui-guide/">
+          Front End - UI Guide
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/developer-guide/actualizer/" title="Developer Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developer-guide/actualizer/">
+          Back End - Actualizer
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/developer-guide/configstore/" title="Developer Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developer-guide/configstore/">
+          Back End - Configstore
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/developer-guide/serverless-api/" title="Developer Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developer-guide/serverless-api/">
+          Back End - Serverless API
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/developer-guide/kube-watcher/" title="Developer Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developer-guide/kube-watcher/">
+          Back End - Kube Watcher
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/developer-guide/git-api/" title="Developer Guide - Git API" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developer-guide/git-api/">
+          Back End - Git API
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/developer-guide/lunchbadger-api/" title="Developer Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developer-guide/lunchbadger-api/">
+          Back End - LunchBadger API
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/developer-guide/graphql-api/" title="Developer Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developer-guide/graphql-api/">
+          Back End - Graphql API
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/license/" title="License" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/license/">
+          License
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/github-repo/" title="GitHub Repo" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/github-repo/">
+          <i class='fab fa-github'></i> GitHub Repo
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <span >
+<center>
+     <h5>©2019 All rights reserved.</h5>
+</center>
+</span>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Open Source, Kubernetes-native, Microservices & Serverless Platform</a> > <a href='/blog/'>Blog</a> > <a href='/blog/2017/'>2017 Articles</a> > The Ultimate IoT Backend using Node.js, Serverless and Kubernetes
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#what-is-an-iot-backend-p2"><strong>What is an IoT Backend?</strong> {.p2}</a></li>
+<li><a href="#where-do-node-js-serverless-and-kubernetes-fit-in-p2"><strong>Where do Node.js, Serverless and Kubernetes fit in?</strong> {.p2}</a></li>
+<li><a href="#api-growth-strategies-start-with-api-management">API Growth Strategies Start With API Management</a></li>
+<li><a href="#express-gateway-as-the-api-gateway-solution">Express Gateway as the API Gateway Solution</a></li>
+<li><a href="#think-function-as-a-service">Think Function As A Service</a></li>
+<li><a href="#key-takeaways">Key Takeaways</a></li>
+<li><a href="#moving-on">Moving On</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/api">api</a>
+
+  <a class="tag-link" href="/tags/api-design">API Design</a>
+
+  <a class="tag-link" href="/tags/api-management">API Management</a>
+
+  <a class="tag-link" href="/tags/apis">APIs</a>
+
+  <a class="tag-link" href="/tags/build-an-iot-backend">Build an IoT Backend</a>
+
+  <a class="tag-link" href="/tags/docker">Docker</a>
+
+  <a class="tag-link" href="/tags/express-gateway">Express Gateway</a>
+
+  <a class="tag-link" href="/tags/iot">IoT</a>
+
+  <a class="tag-link" href="/tags/joyent">Joyent</a>
+
+  <a class="tag-link" href="/tags/node.js">Node.js</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              The Ultimate IoT Backend using Node.js, Serverless and Kubernetes
+            </h1>
+          
+
+        
+
+
+
+
+
+<p class="p1">
+  In this post, we&#8217;ll cover the components of an IoT backend using Node.js, FaaS (functions-as-a-service or serverless) and Kubernetes to sustainably build a backend to your IoT applications. We&#8217;ll provide new concepts, as well as helpful tips to get you off to a great start.
+</p>
+
+<h2 id="what-is-an-iot-backend-p2"><strong>What is an IoT Backend?</strong> {.p2}</h2>
+
+<p class="p1">
+  There are a few primary components to constructing the backend of an IoT application.
+</p>
+
+<ul class="ul1">
+  <li class="li1">
+    <b>Data Storage</b> &#8211; <i>You need the right tools to manage your machine data can make the difference between success and failure.</i>
+  </li>
+  <li>
+    <b>Protocols</b> &#8211; <i>Devices or &#8220;things&#8221; communicate through more compact and efficient the payloads We&#8217;re talking about protocol support just as MQTT and CoAP in addition to standard JSON over REST</i><i>.</i>
+  </li>
+  <li class="li1">
+    <b>Analytics</b> &#8211; <i>It&#8217;s not enough to just collect and store data. In order to truly have an impact on your growth trajectory, you need</i> a<i>nalytics to provide valuable insights.</i>
+  </li>
+  <li class="li1">
+    <b>Services</b> &#8211; <i>Next, you need the appropriate services to be able to execute on those insights.</i>
+  </li>
+</ul>
+
+<p>So, all of these components take expertise to understand. When it comes to stitching them altogether, it can be difficult for enterprise executives and developers to understand where to start.</p>
+
+<h2 id="where-do-node-js-serverless-and-kubernetes-fit-in-p2"><strong>Where do Node.js, Serverless and Kubernetes fit in?</strong> {.p2}</h2>
+
+<p>As you begin to think about how to design your backend, you need to consider different aspects of your API Strategy. Specifically, what languages can you use (such a Node.js) that will help you hire quickly or maintain a flexible and productive development environment. For developers, choosing a Runtime may not seem important, but Docker and Kubernetes make your Runtime portable because every cloud provider supports containers.  In addition, Serverless provides a layer of ease of use and productivity.</p>
+
+<p>So even if you&#8217;re just focused on Microservices integration and composition, you can still achieve seamless API and Microservices development.</p>
+
+<h2 id="api-growth-strategies-start-with-api-management">API Growth Strategies Start With API Management</h2>
+
+<p><em>As you already know, API Management is a <a href="https://www.lunchbadger.com/api-strategies-in-the-enterprise/">key growth strategy for Enterprise companies and developers alike.</a></em></p>
+
+<p>In our example, we have used Node.js, Docker and Serverless runtime as a powerful combination within the LunchBadger platform. Even though we are using this to build an Backend for our IoT application, it works for a broad spectrum of use cases.</p>
+
+<p>If you have already been on the LunchBadger platform, you&#8217;ll notice that there&#8217;s a brand new box in the GUI. <em><strong>(We&#8217;ll have more on that in the upcoming weeks!)</strong></em></p>
+
+<h2 id="express-gateway-as-the-api-gateway-solution">Express Gateway as the API Gateway Solution</h2>
+
+<p>An API Gateway Solution is just one last piece to the puzzle. By now, you will have heard of our open source project, <a href="http://www.express-gateway.io">Express Gateway</a>.  As cosponsors of Express Gateway, we&#8217;re partnering with Joyent and the Node.js developer community to provide an open source API Gateway built entirely on Express.js.</p>
+
+<p>Together, we provide a s<em>imple, flexible and community driven open source tool that can be used anywhere by anyone.</em></p>
+
+<p>The API Gateway is at the heart of Microservices which means it will continue to play an important part in your IoT Backend. We are keeping Express Gateway open source because we believe that developers deserve next generation tooling. When you pair this project with an infrastructure platform like LunchBadger which supports the management and composition of your microservices, you can get started in minutes &#8211; not hours or days.</p>
+
+<h2 id="think-function-as-a-service">Think Function As A Service</h2>
+
+<p>If you have never heard of this term before, get with the program!</p>
+
+<blockquote>
+<p><strong>Function as a service</strong> (FaaS) describes a category of cloud computing <strong>services</strong> which are a platform. This platform allows customers to run, develop and manage application functionalities without having to build or maintain the infrastructure.</p>
+</blockquote>
+
+<p>Instead of having to maintain all of your own infrastructure, you can leverage a platform to do it for you? Seems pretty simple. However; it&#8217;s very powerful and can help you add some velocity to your development cycles.</p>
+
+<h2 id="key-takeaways">Key Takeaways</h2>
+
+<p>Express Gateway gives you API gateway capabilities while LunchBadger gives you composition and aggregation/mashup for rolling up fine grain microservices into engagement level APIs.</p>
+
+<p>In the next week, we&#8217;ll share a live demo on our latest concepts.</p>
+
+<ul>
+<li>How to pull together Serverless, Docker/Kubernetes (Runtime) and an open source API gateway into an easy to use platform</li>
+<li>How to conserve resources at the Enterprise level to maximize productivity</li>
+<li>and more ideas on how to pilot this within your company.</li>
+</ul>
+
+<p>If you&#8217;ve been looking for a deep dive into LunchBadger&#8217;s capabilities and ease of use or just protips on how to execute your API Strategy &#8211; stay tuned for more!</p>
+
+<h2 id="moving-on">Moving On</h2>
+
+<p>Next week, we&#8217;re headed to the <a href="https://www.sdc2017.com/program/session-catalog/">Samsung Developer&#8217;s Conference</a> to make some noise with the co-sponsor of <a href="http://www.express-gateway.io">Express Gateway</a>, Joyent. Building IoT applications is hard enough, building a sustainable backend infrastructure shouldn&#8217;t be.</p>
+
+<p>So we&#8217;ve chosen the Samsung Developer&#8217;s conference as a way to make this important aspect of your tech stack easier, more flexible and with a little love from open source tools like <a href="http://www.express-gateway.io">Express Gateway</a>, an open source API gateway built entirely on Express.js.</p>
+
+<p>Additionally, if you&#8217;re interested in more of these topics, join the live discussion on twitter <strong>(<a href="http://www.twitter.com/lunchbadger">@lunchbadger</a>)</strong> or (<strong><a href="https://twitter.com/express_gateway">@express_gateway).</a></strong></p>
+
+<p>If you have questions about Express Gateway or want to get more involved in our community, please <a href="https://gitter.im/ExpressGateway/express-gateway">consider joining our Gitter</a>. We&#8217;ve been working hard to create an open and transparent environment where you can get your questions answered and meet other devs interested in open source.</p>
+
+<hr />
+
+<ul>
+<li><a href="https://www.express-serverless.io/getting-started/">Get Started With Express Serverless Platform</a> &#8211; your feedback helps prioritize our roadmap with the most value realized within the shortest amount of time</li>
+<li>Learn about the <a href="https://www.express-serverless.io/">inaugural feature set</a> we’re striving for to make APIs repeatedly fast, easy and manageable as you evolve through the API lifecycle itself.</li>
+<li>Check out our Open Source Initiative: <a href="http://www.express-gateway.io">The Express Gateway</a></li>
+</ul>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/blog/2017/" title="2017 Articles"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/blog/2016/" title="2016 Articles" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1568613093"></script>
+    <script src="/js/perfect-scrollbar.min.js?1568613093"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1568613093"></script>
+    <script src="/js/jquery.sticky.js?1568613093"></script>
+    <script src="/js/featherlight.min.js?1568613093"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1568613093"></script>
+    <script src="/js/highlight.pack.js?1568613093"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1568613093"></script>
+    <script src="/js/learn.js?1568613093"></script>
+    <script src="/js/hugo-learn.js?1568613093"></script>
+
+    <link href="/mermaid/mermaid.css?1568613093" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1568613093"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52P5D2W"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  </body>
+</html>
+

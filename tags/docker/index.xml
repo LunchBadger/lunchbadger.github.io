@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Express Serverless Platform</title>
+    <link>https://www.express-serverless.io/tags/docker/</link>
+    <description>Recent content in Docker on Express Serverless Platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Oct 2017 16:21:32 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.express-serverless.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Ultimate IoT Backend using Node.js, Serverless and Kubernetes</title>
+      <link>https://www.express-serverless.io/blog/ultimate-iot-backend-using-node-js-serverless-kubernetes/</link>
+      <pubDate>Wed, 11 Oct 2017 16:21:32 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/ultimate-iot-backend-using-node-js-serverless-kubernetes/</guid>
+      <description>In this post, we&amp;#8217;ll cover the components of an IoT backend using Node.js, FaaS (functions-as-a-service or serverless) and Kubernetes to sustainably build a backend to your IoT applications. We&amp;#8217;ll provide new concepts, as well as helpful tips to get you off to a great start. What is an IoT Backend? {.p2} There are a few primary components to constructing the backend of an IoT application. Data Storage &amp;#8211; You need the right tools to manage your machine data can make the difference between success and failure.</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes for API and Microservice Orchestration</title>
+      <link>https://www.express-serverless.io/blog/kubernetes-for-api-and-microservice-orchestration/</link>
+      <pubDate>Tue, 25 Oct 2016 16:51:20 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/kubernetes-for-api-and-microservice-orchestration/</guid>
+      <description>Two weeks ago, we talked about the benefits that Docker brings to organizations building out an API infrastruture. Last week, we went one level higher to look at how container orchestrators promise to simplify the deployment and management of applications and APIs. This week, I&amp;#8217;ll describe a more personal perspective &amp;#8211; why we chose Kubernetes as our container orchestrator.
+The decision came down to three major reasons: community, ease of use, and feature set.</description>
+    </item>
+    
+  </channel>
+</rss>

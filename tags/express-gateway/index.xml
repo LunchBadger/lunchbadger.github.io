@@ -30,5 +30,14 @@ Azure Functions are Microsoft Azure&amp;#8217;s equivalent to AWS Lambda. Li
       <description>IBM Cloud Functions are IBM Cloud&amp;#8217;s equivalent to AWS Lambda. Like Lambda, IBM Cloud Functions let you write custom functions and expose them via an HTTP interface through either IBM Cloud Function&amp;#8217;s minimal HTTP configuration or IBM API Connect for more sophisticated use cases. Express Serverless Platform offers a similar stack that lets you write Node.js APIs and expose those APIs through Express Gateway without vendor lock in. In this article, I&amp;#8217;ll walk through setting up a rudimentary Node.</description>
     </item>
     
+    <item>
+      <title>The Ultimate IoT Backend using Node.js, Serverless and Kubernetes</title>
+      <link>https://www.express-serverless.io/blog/ultimate-iot-backend-using-node-js-serverless-kubernetes/</link>
+      <pubDate>Wed, 11 Oct 2017 16:21:32 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/ultimate-iot-backend-using-node-js-serverless-kubernetes/</guid>
+      <description>In this post, we&amp;#8217;ll cover the components of an IoT backend using Node.js, FaaS (functions-as-a-service or serverless) and Kubernetes to sustainably build a backend to your IoT applications. We&amp;#8217;ll provide new concepts, as well as helpful tips to get you off to a great start. What is an IoT Backend? {.p2} There are a few primary components to constructing the backend of an IoT application. Data Storage &amp;#8211; You need the right tools to manage your machine data can make the difference between success and failure.</description>
+    </item>
+    
   </channel>
 </rss>

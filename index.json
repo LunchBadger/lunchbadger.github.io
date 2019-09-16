@@ -1062,4 +1062,81 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "https://www.express-serverless.io/tags/api-design/",
+	"title": "API Design",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://www.express-serverless.io/tags/build-an-iot-backend/",
+	"title": "Build an IoT Backend",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://www.express-serverless.io/tags/docker/",
+	"title": "Docker",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://www.express-serverless.io/tags/iot/",
+	"title": "IoT",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://www.express-serverless.io/blog/ultimate-iot-backend-using-node-js-serverless-kubernetes/",
+	"title": "The Ultimate IoT Backend using Node.js, Serverless and Kubernetes",
+	"tags": ["api", "API Design", "API Management", "APIs", "Build an IoT Backend", "Docker", "Express Gateway", "IoT", "Joyent", "Node.js"],
+	"description": "",
+	"content": " In this post, we\u0026#8217;ll cover the components of an IoT backend using Node.js, FaaS (functions-as-a-service or serverless) and Kubernetes to sustainably build a backend to your IoT applications. We\u0026#8217;ll provide new concepts, as well as helpful tips to get you off to a great start. What is an IoT Backend? {.p2} There are a few primary components to constructing the backend of an IoT application. Data Storage \u0026#8211; You need the right tools to manage your machine data can make the difference between success and failure.   Protocols \u0026#8211; Devices or \u0026#8220;things\u0026#8221; communicate through more compact and efficient the payloads We\u0026#8217;re talking about protocol support just as MQTT and CoAP in addition to standard JSON over REST.  Analytics \u0026#8211; It\u0026#8217;s not enough to just collect and store data. In order to truly have an impact on your growth trajectory, you need analytics to provide valuable insights.  Services \u0026#8211; Next, you need the appropriate services to be able to execute on those insights.   So, all of these components take expertise to understand. When it comes to stitching them altogether, it can be difficult for enterprise executives and developers to understand where to start.\nWhere do Node.js, Serverless and Kubernetes fit in? {.p2} As you begin to think about how to design your backend, you need to consider different aspects of your API Strategy. Specifically, what languages can you use (such a Node.js) that will help you hire quickly or maintain a flexible and productive development environment. For developers, choosing a Runtime may not seem important, but Docker and Kubernetes make your Runtime portable because every cloud provider supports containers. In addition, Serverless provides a layer of ease of use and productivity.\nSo even if you\u0026#8217;re just focused on Microservices integration and composition, you can still achieve seamless API and Microservices development.\nAPI Growth Strategies Start With API Management As you already know, API Management is a key growth strategy for Enterprise companies and developers alike.\nIn our example, we have used Node.js, Docker and Serverless runtime as a powerful combination within the LunchBadger platform. Even though we are using this to build an Backend for our IoT application, it works for a broad spectrum of use cases.\nIf you have already been on the LunchBadger platform, you\u0026#8217;ll notice that there\u0026#8217;s a brand new box in the GUI. (We\u0026#8217;ll have more on that in the upcoming weeks!)\nExpress Gateway as the API Gateway Solution An API Gateway Solution is just one last piece to the puzzle. By now, you will have heard of our open source project, Express Gateway. As cosponsors of Express Gateway, we\u0026#8217;re partnering with Joyent and the Node.js developer community to provide an open source API Gateway built entirely on Express.js.\nTogether, we provide a simple, flexible and community driven open source tool that can be used anywhere by anyone.\nThe API Gateway is at the heart of Microservices which means it will continue to play an important part in your IoT Backend. We are keeping Express Gateway open source because we believe that developers deserve next generation tooling. When you pair this project with an infrastructure platform like LunchBadger which supports the management and composition of your microservices, you can get started in minutes \u0026#8211; not hours or days.\nThink Function As A Service If you have never heard of this term before, get with the program!\n Function as a service (FaaS) describes a category of cloud computing services which are a platform. This platform allows customers to run, develop and manage application functionalities without having to build or maintain the infrastructure.\n Instead of having to maintain all of your own infrastructure, you can leverage a platform to do it for you? Seems pretty simple. However; it\u0026#8217;s very powerful and can help you add some velocity to your development cycles.\nKey Takeaways Express Gateway gives you API gateway capabilities while LunchBadger gives you composition and aggregation/mashup for rolling up fine grain microservices into engagement level APIs.\nIn the next week, we\u0026#8217;ll share a live demo on our latest concepts.\n How to pull together Serverless, Docker/Kubernetes (Runtime) and an open source API gateway into an easy to use platform How to conserve resources at the Enterprise level to maximize productivity and more ideas on how to pilot this within your company.  If you\u0026#8217;ve been looking for a deep dive into LunchBadger\u0026#8217;s capabilities and ease of use or just protips on how to execute your API Strategy \u0026#8211; stay tuned for more!\nMoving On Next week, we\u0026#8217;re headed to the Samsung Developer\u0026#8217;s Conference to make some noise with the co-sponsor of Express Gateway, Joyent. Building IoT applications is hard enough, building a sustainable backend infrastructure shouldn\u0026#8217;t be.\nSo we\u0026#8217;ve chosen the Samsung Developer\u0026#8217;s conference as a way to make this important aspect of your tech stack easier, more flexible and with a little love from open source tools like Express Gateway, an open source API gateway built entirely on Express.js.\nAdditionally, if you\u0026#8217;re interested in more of these topics, join the live discussion on twitter (@lunchbadger) or (@express_gateway).\nIf you have questions about Express Gateway or want to get more involved in our community, please consider joining our Gitter. We\u0026#8217;ve been working hard to create an open and transparent environment where you can get your questions answered and meet other devs interested in open source.\n Get Started With Express Serverless Platform \u0026#8211; your feedback helps prioritize our roadmap with the most value realized within the shortest amount of time Learn about the inaugural feature set we’re striving for to make APIs repeatedly fast, easy and manageable as you evolve through the API lifecycle itself. Check out our Open Source Initiative: The Express Gateway  "
+},
+{
+	"uri": "https://www.express-serverless.io/tags/api/",
+	"title": "api",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://www.express-serverless.io/blog/kubernetes-for-api-and-microservice-orchestration/",
+	"title": "Kubernetes for API and Microservice Orchestration",
+	"tags": ["container management", "Docker", "Kubernetes", "Mesosphere", "orchestrator", "Swarm"],
+	"description": "",
+	"content": " Two weeks ago, we talked about the benefits that Docker brings to organizations building out an API infrastruture. Last week, we went one level higher to look at how container orchestrators promise to simplify the deployment and management of applications and APIs. This week, I\u0026#8217;ll describe a more personal perspective \u0026#8211; why we chose Kubernetes as our container orchestrator.\nThe decision came down to three major reasons: community, ease of use, and feature set.\n\u0026nbsp;\nCommunity While Mesos/Marathon is the oldest and most mature of the three solutions we discussed last time (the others being Kubernetes and Docker Swarm), Kubernetes is by far the most popular solution today. The community around this project from Google has grown extremely quickly. Here\u0026#8217;s a quick comparison of some basic metrics of the three communities:\n Kubernetes 38000 commits, 940 contributors, 4500 issues Mesos/Marathon: 4800 commits, 217 contributors, 655 issues Swarm: 3200 commits, 153 contributors, 288 issues  These metrics are definitely not scientific, but still provide a rough idea of the magnitude of work going into these projects. Kubernetes outstrips the competition by an order of magnitude.\n\u0026nbsp;\nEase of use and installation This was relatively important for us. With a small technical team, we don\u0026#8217;t have a lot of time to tackle complex procedures. On this point, Kubernetes is actually middle of the pack due to its somewhat sophisticated architecture. For installation, we ended up using the kube-aws tool from CoreOS to get us started. This tool generates CloudFormation templates. Shortly thereafter, though, we moved from CloudFormation to Terraform. This is mostly preference, but does make infrastructure management a little easier.\nThe Kubernetes team seems to be aware of this potential roadblock to adoption; and, in version 1.4, a new tool (kubeadm) has shipped that makes it easier to set up Kubernetes clusters. This is a welcome step forward; I look forward to seeing this tool grow and evolve.\nAfter it is installed, using Kubernetes to deploy and manage containers is a cinch. The kubectl CLI tool is very easy to understand and set up on your machine. Resources are defined declaratively as YAML or JSON files and pushed into the cluster. Kubernetes takes over from there.\nMesos/Marathon is a bit more difficult to install, because the batteries are not included. As a result, additional pieces, such as RexRay and marathon-lb need to be installed as well. This increases complexity overall.\nDocker Swarm gets you to a base installation very quickly. It ships automatically with every Docker Engine installation. The Swarm is managed via the same docker CLI that engineers are already used to. As a result, it is probably the easiest to use of the three. However, some features are still missing and must be filled in with 3rd party software.\n\u0026nbsp;\nFeatures This is the biggest draw towards Kubernetes. With this project, Google are successfully building a batteries-included \u0026#8220;works out of the box\u0026#8221; solution. The does come at a cost of some flexibility, but so far it has worked really well for our use case.\nPretty well every feature we could conceive of or problem we encountered is either already in beta, has a workaround, or is being somehow addressed in Github\u0026#8217;s issue tracker. This is a very reassuring sign when dealing with cutting edge technology. In particular, many of the items we discussed in the previous blog post have mainstream solutions in the Kubernetes ecosystem:\n Storage (persistent volumes / AWS EBS volume management) Configuration Secrets Load balancing Service discovery Flexible scheduling policy  \u0026#8230; and many more.\n\u0026nbsp;\nConclusion Of the three orchestrators we considered, we have found Kubernetes to be the closest to a feature-complete turn-key solution. The ecosystem around it is the largest of the three, and growing rapidly. While ease of installation does leave much to be desired, this is already being addressed and is something we can live with.\nDocker Swarm is the youngest contender for this market, and is following in Kubernetes\u0026#8217; footsteps. Many features clearly take inspiration from their Kubernetes analogs. If they are successful at building out their feature set, they could gain a leg up in this space over the coming months and years. Docker has a major advantage: Docker Engine is ubiquitous and now ships with Docker Swarm built in.\nMesos/Marathon is the most mature and flexible solution; however, it is also the most complex. If you are a larger entreprise with a wide range of use cases, you should probably consider this option more seriously.\nPlease check out LunchBadger for more information on how we’re using Kubernetes to empower companies to compose, manage, monitor, and monetize their APIs:\n Check out the demo to see how LunchBadger provides a Docker container based runtime for APIs that works natively in your cloud and also harnesses the simplicity of a serverless experience. Read about the features modeled after the API lifecycle as a solution from start to end, all on the same Docker container runtime. Become an early participant to realize the simplicity and speed of having APIs work for you and your business. For more information please contact us at admin@express-serverless.io.  "
+},
+{
+	"uri": "https://www.express-serverless.io/tags/mesosphere/",
+	"title": "Mesosphere",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://www.express-serverless.io/tags/swarm/",
+	"title": "Swarm",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://www.express-serverless.io/tags/container-management/",
+	"title": "container management",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://www.express-serverless.io/tags/orchestrator/",
+	"title": "orchestrator",
+	"tags": [],
+	"description": "",
+	"content": ""
 }]

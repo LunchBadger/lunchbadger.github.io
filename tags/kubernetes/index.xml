@@ -44,5 +44,15 @@ For Developers, DevOps teams and CTOs driving impact in top companies, it&amp;#8
       <description>Enterprise applications have to be designed upfront for scalability and change. This has significant implications for both application architecture and application infrastructure. Application architecture is evolving from unmanageable monolithic or three-tier patterns to interconnected microservices. Microservices introduce new form factors not only for functionality and team-size (the so-called two-pizza teams), but also for the unit of infrastructure. It is not surprising that a portable container or a pod of handful interrelated containers often works out as the most befitting unit of infrastructure for microservices-based architecture.</description>
     </item>
     
+    <item>
+      <title>Kubernetes for API and Microservice Orchestration</title>
+      <link>https://www.express-serverless.io/blog/kubernetes-for-api-and-microservice-orchestration/</link>
+      <pubDate>Tue, 25 Oct 2016 16:51:20 +0000</pubDate>
+      
+      <guid>https://www.express-serverless.io/blog/kubernetes-for-api-and-microservice-orchestration/</guid>
+      <description>Two weeks ago, we talked about the benefits that Docker brings to organizations building out an API infrastruture. Last week, we went one level higher to look at how container orchestrators promise to simplify the deployment and management of applications and APIs. This week, I&amp;#8217;ll describe a more personal perspective &amp;#8211; why we chose Kubernetes as our container orchestrator.
+The decision came down to three major reasons: community, ease of use, and feature set.</description>
+    </item>
+    
   </channel>
 </rss>
